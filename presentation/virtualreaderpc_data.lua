@@ -2065,6 +2065,13 @@ VirtualReaderPC_Data.HexCoinData = {
     MetaData = "Disney"
   },
   {
+    sku_id = "4000198",
+    Name = "IGP_COIN_Lightjet",
+    CoinType = "VRPC_HexCoin_Object",
+    SparkCost = "1000",
+    MetaData = "Disney"
+  },
+  {
     sku_id = "4000135",
     Name = "IGP_COIN_MrToadsCar",
     CoinType = "VRPC_HexCoin_Object",
@@ -3339,6 +3346,104 @@ VirtualReaderPC_Data.RoundCoinData = {
     CoinType = "VRPC_RoundCoin_Event",
     SparkCost = "75",
     MetaData = "Marvel"
+  },
+  {
+    sku_id = "3000230",
+    Name = "IGP_COIN_NovaCoreStrike",
+    CoinType = "VRPC_RoundCoin_Event",
+    SparkCost = "75",
+    MetaData = "Marvel"
+  },
+  {
+    sku_id = "3000003",
+    Name = "IGP_COIN_BoltStrength",
+    CoinType = "VRPC_RoundCoin_Strength",
+    SparkCost = "75",
+    MetaData = "Disney"
+  },
+  {
+    sku_id = "3000011",
+    Name = "IGP_COIN_Chrome_DamageControl",
+    CoinType = "VRPC_RoundCoin_Shield",
+    SparkCost = "75",
+    MetaData = "Disney"
+  },
+  {
+    sku_id = "3000006",
+    Name = "IGP_COIN_ChromeDamageIncreaser",
+    CoinType = "VRPC_RoundCoin_Strength",
+    SparkCost = "75",
+    MetaData = "Disney"
+  },
+  {
+    sku_id = "3000007",
+    Name = "IGP_COIN_DoofinshmirtzDamage",
+    CoinType = "VRPC_RoundCoin_Strength",
+    SparkCost = "75",
+    MetaData = "Disney"
+  },
+  {
+    sku_id = "3000062",
+    Name = "IGP_COIN_ZurgWrath",
+    CoinType = "VRPC_RoundCoin_Strength",
+    SparkCost = "75",
+    MetaData = "Disney"
+  },
+  {
+    sku_id = "3000009",
+    Name = "IGP_COIN_FelixFixYou",
+    CoinType = "VRPC_RoundCoin_Health",
+    SparkCost = "75",
+    MetaData = "Disney"
+  },
+  {
+    sku_id = "3000014",
+    Name = "IGP_COIN_PirateBooty",
+    CoinType = "VRPC_RoundCoin_Economy",
+    SparkCost = "75",
+    MetaData = "Disney"
+  },
+  {
+    sku_id = "3000004",
+    Name = "IGP_COIN_WreckItDamage",
+    CoinType = "VRPC_RoundCoin_Strength",
+    SparkCost = "75",
+    MetaData = "Disney"
+  },
+  {
+    sku_id = "3000010",
+    Name = "IGP_COIN_RapunzelHealing",
+    CoinType = "VRPC_RoundCoin_Health",
+    SparkCost = "75",
+    MetaData = "Disney"
+  },
+  {
+    sku_id = "3000015",
+    Name = "IGP_COIN_ScroogeDime",
+    CoinType = "VRPC_RoundCoin_Economy",
+    SparkCost = "75",
+    MetaData = "Disney"
+  },
+  {
+    sku_id = "3000012",
+    Name = "IGP_COIN_StarCommandShield",
+    CoinType = "VRPC_RoundCoin_Shield",
+    SparkCost = "75",
+    MetaData = "Disney"
+  },
+  {
+    sku_id = "3000016",
+    Name = "IGP_COIN_UserControl",
+    CoinType = "VRPC_RoundCoin_Ability",
+    SparkCost = "75",
+    MetaData = "Disney"
+  },
+  {
+    sku_id = "3000013",
+    Name = "IGP_COIN_VioletForceField",
+    CoinType = "VRPC_RoundCoin_Shield",
+    SparkCost = "75",
+    MetaData = "Disney"
   },
   {
     sku_id = "3000169",
