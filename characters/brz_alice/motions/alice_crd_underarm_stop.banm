@@ -1,0 +1,38 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Speed" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/ali_alice/motions/alice_crd_underarm_pose.oct"
+			}
+		}
+	}
+	KeyBlendTrack "Key Blend2" =
+	{
+		BlendMethod = 1
+		Weight = 0.6
+		Value = "Speed"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/biped/motions/biped_crd_underarm_add.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/biped/motions/biped_crd_underarm_runstop_add.oct"
+			}
+		}
+	}
+}

@@ -1,0 +1,13 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/biped/motions/biped_pipev_climb.oct"
+	}
+	ReferencedTrack =
+	{
+		Filename = "characters/ali_alice/motions/alice_skirt_pipefix.oct"
+	}
+}
