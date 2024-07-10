@@ -1,0 +1,51 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Speed" =
+	{
+	}
+	FloatParameter "Lightsaber" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Speed"
+		Tracks =
+		{
+			KeyBlendTrack "Key Blend" =
+			{
+				Value = "Lightsaber"
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_jump_double_notool.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_jump_double_saber_notool.oct"
+					}
+				}
+			}
+			KeyBlendTrack "Key Blend2" =
+			{
+				Value = "Lightsaber"
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_jump_doubleforward_notool.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_jump_doubleforward_saber_notool.oct"
+					}
+				}
+			}
+		}
+	}
+}

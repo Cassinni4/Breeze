@@ -1,0 +1,31 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Lightsaber" =
+	{
+	}
+}
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/tcw_ahsoka/motions/ahsoka_force_dash.oct"
+	}
+	KeyBlendTrack "SaberAdditive" =
+	{
+		BlendMethod = 1
+		Value = "Lightsaber"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/tcw_ahsoka/motions/ahsoka_blank_add.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/tcw_ahsoka/motions/ahsoka_force_dash_nosaber_add.oct"
+			}
+		}
+	}
+}

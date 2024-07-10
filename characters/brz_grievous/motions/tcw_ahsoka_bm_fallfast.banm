@@ -1,0 +1,32 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Lightsaber" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Lightsaber"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/class_herofemale/motions/herofml_am_fall.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_fallfast_pose.oct"
+			}
+		}
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Weight = 0.42
+		Filename = "characters/biped/motions/biped_bm_fallfast_add.oct"
+	}
+}

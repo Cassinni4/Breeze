@@ -1,0 +1,26 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Lightsaber" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Lightsaber"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/tcw_ahsoka/motions/ahsoka_force_jump_nosabre.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/tcw_ahsoka/motions/ahsoka_force_jump.oct"
+			}
+		}
+	}
+}

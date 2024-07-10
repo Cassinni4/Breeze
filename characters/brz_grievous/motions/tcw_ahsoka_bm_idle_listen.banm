@@ -1,0 +1,32 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Lightsaber" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Lightsaber"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_passive_pose.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/tcw_ahsoka/motions/tcw_ahsoka_idle_sabers.oct"
+			}
+		}
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Weight = 0.6
+		Filename = "characters/biped/motions/biped_bm_idle_listen_add.oct"
+	}
+}

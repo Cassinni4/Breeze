@@ -1,0 +1,36 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Lightsaber" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Lightsaber"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/class_herofemale/motions/herofml_bm_idle_active_pose.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/tcw_ahsoka/motions/tcw_ahsoka_idle_sabers.oct"
+			}
+		}
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Filename = "characters/class_herosmall/motions/herosm_bm_idle_active_short15_add.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Filename = "characters/class_herosmall/motions/herosm_bm_idle_active_eyes_short15.oct"
+	}
+}

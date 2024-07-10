@@ -1,0 +1,36 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Lightsaber" =
+	{
+		DefaultPhase = 1.0
+	}
+}
+Tracks =
+{
+	GroupTrack "Idle" =
+	{
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/class_herofemale/motions/herofml_bm_idle_active_pose.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/tcw_ahsoka/motions/ahsoka_carry_override.oct"
+			}
+		}
+	}
+	ReferencedTrack =
+	{
+		Weight = "Lightsaber"
+		Filename = "characters/tcw_ahsoka/motions/tcw_ahsoka_idle_sabers.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Filename = "characters/class_herofemale/motions/herofml_bm_turn90l_add.oct"
+	}
+}

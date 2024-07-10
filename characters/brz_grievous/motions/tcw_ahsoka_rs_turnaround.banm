@@ -1,0 +1,37 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Lightsaber" =
+	{
+		DefaultPhase = 1.0
+	}
+}
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/class_herofemale/motions/herofml_rs_turnaround.oct"
+	}
+	ReferencedTrack =
+	{
+		Filename = "characters/class_herofemale/motions/herofml_rs_land_normal.oct"
+	}
+	ReferencedTrack =
+	{
+		Filename = "characters/class_herofemale/motions/herofml_rs_jumpr.oct"
+	}
+	ReferencedTrack =
+	{
+		Filename = "characters/class_herofemale/motions/herofml_rs_jumpl.oct"
+	}
+	ReferencedTrack =
+	{
+		Filename = "characters/class_herofemale/motions/herofml_rs_jump.oct"
+	}
+	ReferencedTrack =
+	{
+		Weight = "Lightsaber"
+		Filename = "characters/tcw_ahsoka/motions/ahsoka_rs_proc_hand.oct"
+	}
+}
