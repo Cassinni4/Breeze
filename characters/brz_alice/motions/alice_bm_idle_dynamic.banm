@@ -13,16 +13,16 @@ Tracks =
 {
 	ReferencedTrack =
 	{
-		Filename = "characters/brz_alice/motions/ali_alice_bm_idle_dynamic_normal.oct"
+		Filename = "characters/ali_alice/motions/ali_alice_bm_idle_dynamic_normal.oct"
 	}
 	ReferencedTrack =
 	{
 		Weight = "Small"
-		Filename = "characters/brz_alice/motions/ali_alice_bm_idle_dynamic_small.oct"
+		Filename = "characters/ali_alice/motions/ali_alice_bm_idle_dynamic_small.oct"
 	}
 	ReferencedTrack =
 	{
 		Weight = "Big"
-		Filename = "characters/brz_alice/motions/alice_bm_grown_idle_passive_add.oct"
+		Filename = "characters/ali_alice/motions/alice_bm_grown_idle_passive_add.oct"
 	}
 }

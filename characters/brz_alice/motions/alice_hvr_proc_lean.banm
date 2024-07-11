@@ -148,18 +148,18 @@ Tracks =
 	ReferencedTrack =
 	{
 		BlendMethod = 1
-		Filename = "characters/brz_alice/motions/alice_skirt_0_1.oct"
+		Filename = "characters/ali_alice/motions/alice_skirt_0_1.oct"
 	}
 	ReferencedTrack =
 	{
 		BlendMethod = 1
 		Weight = 0.42
-		Filename = "characters/brz_alice/motions/alice_hvr_larm_add.oct"
+		Filename = "characters/ali_alice/motions/alice_hvr_larm_add.oct"
 	}
 	ReferencedTrack =
 	{
 		BlendMethod = 1
 		Weight = 0.16
-		Filename = "characters/brz_alice/motions/alice_hvr_arm_add.oct"
+		Filename = "characters/ali_alice/motions/alice_hvr_arm_add.oct"
 	}
 }
