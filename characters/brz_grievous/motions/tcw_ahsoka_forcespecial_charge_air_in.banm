@@ -4,10 +4,10 @@ Tracks =
 {
 	ReferencedTrack =
 	{
-		Filename = "characters/tcw_ahsoka/motions/ahsoka_atk_forcespecial_charge_in.oct"
+		Filename = "characters/brz_grievous/motions/ahsoka_atk_forcespecial_charge_in.oct"
 	}
 	ReferencedTrack =
 	{
-		Filename = "characters/tcw_ahsoka/motions/ahsoka_atk_forcespecial_charge_air_in.oct"
+		Filename = "characters/brz_grievous/motions/ahsoka_atk_forcespecial_charge_air_in.oct"
 	}
 }

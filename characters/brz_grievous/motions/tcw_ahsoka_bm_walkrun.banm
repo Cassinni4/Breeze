@@ -38,7 +38,7 @@ Tracks =
 								{
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_walkf.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_walkf.oct"
 									}
 								}
 							}
@@ -48,7 +48,7 @@ Tracks =
 								{
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_walkrf.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_walkrf.oct"
 									}
 								}
 							}
@@ -58,7 +58,7 @@ Tracks =
 								{
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_walkr.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_walkr.oct"
 									}
 								}
 							}
@@ -68,7 +68,7 @@ Tracks =
 								{
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_walkrb.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_walkrb.oct"
 									}
 								}
 							}
@@ -78,7 +78,7 @@ Tracks =
 								{
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_walkb.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_walkb.oct"
 									}
 								}
 							}
@@ -88,7 +88,7 @@ Tracks =
 								{
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_walklb.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_walklb.oct"
 									}
 								}
 							}
@@ -98,7 +98,7 @@ Tracks =
 								{
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_walkl.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_walkl.oct"
 									}
 								}
 							}
@@ -108,7 +108,7 @@ Tracks =
 								{
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_walklf.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_walklf.oct"
 									}
 								}
 							}
@@ -118,7 +118,7 @@ Tracks =
 								{
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_walkf.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_walkf.oct"
 									}
 								}
 							}
@@ -130,12 +130,12 @@ Tracks =
 						{
 							ReferencedTrack =
 							{
-								Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_walkf_upbody.oct"
+								Filename = "characters/brz_grievous/motions/ahsoka_bm_walkf_upbody.oct"
 							}
 							ReferencedTrack =
 							{
 								Weight = "Lightsaber"
-								Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_walkf_saber_upbody.oct"
+								Filename = "characters/brz_grievous/motions/ahsoka_bm_walkf_saber_upbody.oct"
 							}
 							KeyBlendTrack "Lean" =
 							{
@@ -151,39 +151,39 @@ Tracks =
 								{
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_run_lean_f.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_run_lean_f.oct"
 									}
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_run_lean_rf.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_run_lean_rf.oct"
 									}
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_run_lean_r.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_run_lean_r.oct"
 									}
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_run_lean_rb.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_run_lean_rb.oct"
 									}
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_run_lean_b.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_run_lean_b.oct"
 									}
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_run_lean_lb.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_run_lean_lb.oct"
 									}
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_run_lean_l.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_run_lean_l.oct"
 									}
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_run_lean_lf.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_run_lean_lf.oct"
 									}
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_run_lean_f.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_run_lean_f.oct"
 									}
 								}
 							}
@@ -206,7 +206,7 @@ Tracks =
 								{
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_runf.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_runf.oct"
 									}
 								}
 							}
@@ -216,7 +216,7 @@ Tracks =
 								{
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_runrf.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_runrf.oct"
 									}
 								}
 							}
@@ -226,7 +226,7 @@ Tracks =
 								{
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_runr.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_runr.oct"
 									}
 								}
 							}
@@ -236,7 +236,7 @@ Tracks =
 								{
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_runrb.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_runrb.oct"
 									}
 								}
 							}
@@ -246,7 +246,7 @@ Tracks =
 								{
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_runb.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_runb.oct"
 									}
 								}
 							}
@@ -256,7 +256,7 @@ Tracks =
 								{
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_runlb.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_runlb.oct"
 									}
 								}
 							}
@@ -266,7 +266,7 @@ Tracks =
 								{
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_runl.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_runl.oct"
 									}
 								}
 							}
@@ -276,7 +276,7 @@ Tracks =
 								{
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_runlf.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_runlf.oct"
 									}
 								}
 							}
@@ -286,7 +286,7 @@ Tracks =
 								{
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_runf.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_runf.oct"
 									}
 								}
 							}
@@ -298,12 +298,12 @@ Tracks =
 						{
 							ReferencedTrack =
 							{
-								Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_runf_upbody.oct"
+								Filename = "characters/brz_grievous/motions/ahsoka_bm_runf_upbody.oct"
 							}
 							ReferencedTrack =
 							{
 								Weight = "Lightsaber"
-								Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_runf_saber_upbody.oct"
+								Filename = "characters/brz_grievous/motions/ahsoka_bm_runf_saber_upbody.oct"
 							}
 							KeyBlendTrack "Lean" =
 							{
@@ -319,39 +319,39 @@ Tracks =
 								{
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_run_lean_f.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_run_lean_f.oct"
 									}
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_run_lean_rf.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_run_lean_rf.oct"
 									}
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_run_lean_r.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_run_lean_r.oct"
 									}
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_run_lean_rb.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_run_lean_rb.oct"
 									}
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_run_lean_b.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_run_lean_b.oct"
 									}
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_run_lean_lb.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_run_lean_lb.oct"
 									}
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_run_lean_l.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_run_lean_l.oct"
 									}
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_run_lean_lf.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_run_lean_lf.oct"
 									}
 									ReferencedTrack =
 									{
-										Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_run_lean_f.oct"
+										Filename = "characters/brz_grievous/motions/ahsoka_bm_run_lean_f.oct"
 									}
 								}
 							}

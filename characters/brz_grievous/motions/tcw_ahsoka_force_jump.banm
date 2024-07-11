@@ -15,11 +15,11 @@ Tracks =
 		{
 			ReferencedTrack =
 			{
-				Filename = "characters/tcw_ahsoka/motions/ahsoka_force_jump_nosabre.oct"
+				Filename = "characters/brz_grievous/motions/ahsoka_force_jump_nosabre.oct"
 			}
 			ReferencedTrack =
 			{
-				Filename = "characters/tcw_ahsoka/motions/ahsoka_force_jump.oct"
+				Filename = "characters/brz_grievous/motions/ahsoka_force_jump.oct"
 			}
 		}
 	}

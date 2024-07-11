@@ -42,7 +42,7 @@ Tracks =
 					}
 					ReferencedTrack =
 					{
-						Filename = "characters/tcw_ahsoka/motions/ahsoka_carry_override.oct"
+						Filename = "characters/brz_grievous/motions/ahsoka_carry_override.oct"
 					}
 				}
 			}
@@ -52,7 +52,7 @@ Tracks =
 				{
 					ReferencedTrack =
 					{
-						Filename = "characters/tcw_ahsoka/motions/tcw_ahsoka_idle_sabers.oct"
+						Filename = "characters/brz_grievous/motions/brz_grievous_idle_sabers.oct"
 					}
 					KeyBlendTrack "Key Blend" =
 					{
@@ -62,11 +62,11 @@ Tracks =
 						{
 							ReferencedTrack =
 							{
-								Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_turn0landstop_small_add.oct"
+								Filename = "characters/brz_grievous/motions/ahsoka_bm_turn0landstop_small_add.oct"
 							}
 							ReferencedTrack =
 							{
-								Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_turn0landstop_add.oct"
+								Filename = "characters/brz_grievous/motions/ahsoka_bm_turn0landstop_add.oct"
 							}
 						}
 					}

@@ -15,11 +15,11 @@ Tracks =
 		{
 			ReferencedTrack =
 			{
-				Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_land.oct"
+				Filename = "characters/brz_grievous/motions/ahsoka_bm_land.oct"
 			}
 			ReferencedTrack =
 			{
-				Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_land_sabers.oct"
+				Filename = "characters/brz_grievous/motions/ahsoka_bm_land_sabers.oct"
 			}
 		}
 	}

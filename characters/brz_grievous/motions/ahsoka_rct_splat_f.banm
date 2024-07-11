@@ -16,11 +16,11 @@ Tracks =
 	{
 		BlendMethod = 1
 		Weight = "Lightsaber"
-		Filename = "characters/tcw_ahsoka/motions/ahsoka_rct_splat_f_l.oct"
+		Filename = "characters/brz_grievous/motions/ahsoka_rct_splat_f_l.oct"
 	}
 	ReferencedTrack =
 	{
 		Weight = "Lightsaber"
-		Filename = "characters/tcw_ahsoka/motions/ahsoka_hold_sabers.oct"
+		Filename = "characters/brz_grievous/motions/ahsoka_hold_sabers.oct"
 	}
 }

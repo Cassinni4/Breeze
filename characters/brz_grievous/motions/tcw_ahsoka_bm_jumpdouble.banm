@@ -23,11 +23,11 @@ Tracks =
 				{
 					ReferencedTrack =
 					{
-						Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_jump_double_notool.oct"
+						Filename = "characters/brz_grievous/motions/ahsoka_bm_jump_double_notool.oct"
 					}
 					ReferencedTrack =
 					{
-						Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_jump_double_saber_notool.oct"
+						Filename = "characters/brz_grievous/motions/ahsoka_bm_jump_double_saber_notool.oct"
 					}
 				}
 			}
@@ -38,11 +38,11 @@ Tracks =
 				{
 					ReferencedTrack =
 					{
-						Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_jump_doubleforward_notool.oct"
+						Filename = "characters/brz_grievous/motions/ahsoka_bm_jump_doubleforward_notool.oct"
 					}
 					ReferencedTrack =
 					{
-						Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_jump_doubleforward_saber_notool.oct"
+						Filename = "characters/brz_grievous/motions/ahsoka_bm_jump_doubleforward_saber_notool.oct"
 					}
 				}
 			}

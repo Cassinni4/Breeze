@@ -10,7 +10,7 @@ Tracks =
 {
 	ReferencedTrack =
 	{
-		Filename = "characters/tcw_ahsoka/motions/ahsoka_clashlock_loop_range.oct"
+		Filename = "characters/brz_grievous/motions/ahsoka_clashlock_loop_range.oct"
 		Phase = "ClashlockProgress"
 	}
 	KeyBlendTrack "Key Blend" =

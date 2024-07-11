@@ -10,7 +10,7 @@ Tracks =
 {
 	ReferencedTrack =
 	{
-		Filename = "characters/tcw_ahsoka/motions/ahsoka_force_dash.oct"
+		Filename = "characters/brz_grievous/motions/ahsoka_force_dash.oct"
 	}
 	KeyBlendTrack "SaberAdditive" =
 	{
@@ -20,11 +20,11 @@ Tracks =
 		{
 			ReferencedTrack =
 			{
-				Filename = "characters/tcw_ahsoka/motions/ahsoka_blank_add.oct"
+				Filename = "characters/brz_grievous/motions/ahsoka_blank_add.oct"
 			}
 			ReferencedTrack =
 			{
-				Filename = "characters/tcw_ahsoka/motions/ahsoka_force_dash_nosaber_add.oct"
+				Filename = "characters/brz_grievous/motions/ahsoka_force_dash_nosaber_add.oct"
 			}
 		}
 	}

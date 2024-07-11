@@ -15,11 +15,11 @@ Tracks =
 		{
 			ReferencedTrack =
 			{
-				Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_idle_active_pose.oct"
+				Filename = "characters/brz_grievous/motions/ahsoka_bm_idle_active_pose.oct"
 			}
 			ReferencedTrack =
 			{
-				Filename = "characters/tcw_ahsoka/motions/tcw_ahsoka_idle_sabers.oct"
+				Filename = "characters/brz_grievous/motions/brz_grievous_idle_sabers.oct"
 			}
 		}
 	}

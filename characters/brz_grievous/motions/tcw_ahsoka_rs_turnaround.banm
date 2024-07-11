@@ -32,6 +32,6 @@ Tracks =
 	ReferencedTrack =
 	{
 		Weight = "Lightsaber"
-		Filename = "characters/tcw_ahsoka/motions/ahsoka_rs_proc_hand.oct"
+		Filename = "characters/brz_grievous/motions/ahsoka_rs_proc_hand.oct"
 	}
 }

@@ -21,17 +21,17 @@ Tracks =
 		{
 			ReferencedTrack =
 			{
-				Filename = "characters/tcw_ahsoka/motions/ahsoka_rs_proc_lr_fast.oct"
+				Filename = "characters/brz_grievous/motions/ahsoka_rs_proc_lr_fast.oct"
 				Phase = "Turn"
 			}
 			ReferencedTrack =
 			{
-				Filename = "characters/tcw_ahsoka/motions/ahsoka_rs_proc_lr_slow.oct"
+				Filename = "characters/brz_grievous/motions/ahsoka_rs_proc_lr_slow.oct"
 				Phase = "Turn"
 			}
 			ReferencedTrack =
 			{
-				Filename = "characters/tcw_ahsoka/motions/ahsoka_rs_proc_lr_med.oct"
+				Filename = "characters/brz_grievous/motions/ahsoka_rs_proc_lr_med.oct"
 				Phase = "Turn"
 			}
 		}
@@ -39,6 +39,6 @@ Tracks =
 	ReferencedTrack =
 	{
 		Weight = "Lightsaber"
-		Filename = "characters/tcw_ahsoka/motions/ahsoka_rs_proc_hand.oct"
+		Filename = "characters/brz_grievous/motions/ahsoka_rs_proc_hand.oct"
 	}
 }

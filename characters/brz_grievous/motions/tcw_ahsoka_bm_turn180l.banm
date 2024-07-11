@@ -19,14 +19,14 @@ Tracks =
 			}
 			ReferencedTrack =
 			{
-				Filename = "characters/tcw_ahsoka/motions/ahsoka_carry_override.oct"
+				Filename = "characters/brz_grievous/motions/ahsoka_carry_override.oct"
 			}
 		}
 	}
 	ReferencedTrack =
 	{
 		Weight = "Lightsaber"
-		Filename = "characters/tcw_ahsoka/motions/tcw_ahsoka_idle_sabers.oct"
+		Filename = "characters/brz_grievous/motions/brz_grievous_idle_sabers.oct"
 	}
 	ReferencedTrack =
 	{
