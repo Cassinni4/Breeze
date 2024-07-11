@@ -47,7 +47,7 @@ Tracks =
 							}
 							ReferencedTrack =
 							{
-								Filename = "characters/ali_alice/motions/alice_bm_walk_upbody_big.oct"
+								Filename = "characters/brz_alice/motions/alice_bm_walk_upbody_big.oct"
 							}
 						}
 					}
@@ -67,7 +67,7 @@ Tracks =
 							}
 							ReferencedTrack =
 							{
-								Filename = "characters/ali_alice/motions/alice_bm_walk_upbody_big.oct"
+								Filename = "characters/brz_alice/motions/alice_bm_walk_upbody_big.oct"
 							}
 						}
 					}
@@ -87,7 +87,7 @@ Tracks =
 							}
 							ReferencedTrack =
 							{
-								Filename = "characters/ali_alice/motions/alice_bm_walk_upbody_big.oct"
+								Filename = "characters/brz_alice/motions/alice_bm_walk_upbody_big.oct"
 							}
 						}
 					}
@@ -107,7 +107,7 @@ Tracks =
 							}
 							ReferencedTrack =
 							{
-								Filename = "characters/ali_alice/motions/alice_bm_walk_upbody_big.oct"
+								Filename = "characters/brz_alice/motions/alice_bm_walk_upbody_big.oct"
 							}
 						}
 					}
@@ -127,7 +127,7 @@ Tracks =
 							}
 							ReferencedTrack =
 							{
-								Filename = "characters/ali_alice/motions/alice_bm_walk_upbody_big.oct"
+								Filename = "characters/brz_alice/motions/alice_bm_walk_upbody_big.oct"
 							}
 						}
 					}
@@ -147,7 +147,7 @@ Tracks =
 							}
 							ReferencedTrack =
 							{
-								Filename = "characters/ali_alice/motions/alice_bm_walk_upbody_big.oct"
+								Filename = "characters/brz_alice/motions/alice_bm_walk_upbody_big.oct"
 							}
 						}
 					}
@@ -167,7 +167,7 @@ Tracks =
 							}
 							ReferencedTrack =
 							{
-								Filename = "characters/ali_alice/motions/alice_bm_walk_upbody_big.oct"
+								Filename = "characters/brz_alice/motions/alice_bm_walk_upbody_big.oct"
 							}
 						}
 					}
@@ -187,7 +187,7 @@ Tracks =
 							}
 							ReferencedTrack =
 							{
-								Filename = "characters/ali_alice/motions/alice_bm_walk_upbody_big.oct"
+								Filename = "characters/brz_alice/motions/alice_bm_walk_upbody_big.oct"
 							}
 						}
 					}
@@ -207,7 +207,7 @@ Tracks =
 							}
 							ReferencedTrack =
 							{
-								Filename = "characters/ali_alice/motions/alice_bm_walk_upbody_big.oct"
+								Filename = "characters/brz_alice/motions/alice_bm_walk_upbody_big.oct"
 							}
 						}
 					}
@@ -230,11 +230,11 @@ Tracks =
 						{
 							ReferencedTrack =
 							{
-								Filename = "characters/ali_alice/motions/alice_bm_runf.oct"
+								Filename = "characters/brz_alice/motions/alice_bm_runf.oct"
 							}
 							ReferencedTrack =
 							{
-								Filename = "characters/ali_alice/motions/alice_bm_run_upbody.oct"
+								Filename = "characters/brz_alice/motions/alice_bm_run_upbody.oct"
 							}
 							ReferencedTrack =
 							{
@@ -249,11 +249,11 @@ Tracks =
 						{
 							ReferencedTrack =
 							{
-								Filename = "characters/ali_alice/motions/alice_bm_runrf.oct"
+								Filename = "characters/brz_alice/motions/alice_bm_runrf.oct"
 							}
 							ReferencedTrack =
 							{
-								Filename = "characters/ali_alice/motions/alice_bm_run_upbody.oct"
+								Filename = "characters/brz_alice/motions/alice_bm_run_upbody.oct"
 							}
 							ReferencedTrack =
 							{
@@ -272,7 +272,7 @@ Tracks =
 							}
 							ReferencedTrack =
 							{
-								Filename = "characters/ali_alice/motions/alice_bm_run_upbody.oct"
+								Filename = "characters/brz_alice/motions/alice_bm_run_upbody.oct"
 							}
 							ReferencedTrack =
 							{
@@ -291,7 +291,7 @@ Tracks =
 							}
 							ReferencedTrack =
 							{
-								Filename = "characters/ali_alice/motions/alice_bm_run_upbody.oct"
+								Filename = "characters/brz_alice/motions/alice_bm_run_upbody.oct"
 							}
 							ReferencedTrack =
 							{
@@ -310,7 +310,7 @@ Tracks =
 							}
 							ReferencedTrack =
 							{
-								Filename = "characters/ali_alice/motions/alice_bm_run_upbody.oct"
+								Filename = "characters/brz_alice/motions/alice_bm_run_upbody.oct"
 							}
 							ReferencedTrack =
 							{
@@ -329,7 +329,7 @@ Tracks =
 							}
 							ReferencedTrack =
 							{
-								Filename = "characters/ali_alice/motions/alice_bm_run_upbody.oct"
+								Filename = "characters/brz_alice/motions/alice_bm_run_upbody.oct"
 							}
 							ReferencedTrack =
 							{
@@ -348,7 +348,7 @@ Tracks =
 							}
 							ReferencedTrack =
 							{
-								Filename = "characters/ali_alice/motions/alice_bm_run_upbody.oct"
+								Filename = "characters/brz_alice/motions/alice_bm_run_upbody.oct"
 							}
 							ReferencedTrack =
 							{
@@ -363,11 +363,11 @@ Tracks =
 						{
 							ReferencedTrack =
 							{
-								Filename = "characters/ali_alice/motions/alice_bm_runlf.oct"
+								Filename = "characters/brz_alice/motions/alice_bm_runlf.oct"
 							}
 							ReferencedTrack =
 							{
-								Filename = "characters/ali_alice/motions/alice_bm_run_upbody.oct"
+								Filename = "characters/brz_alice/motions/alice_bm_run_upbody.oct"
 							}
 							ReferencedTrack =
 							{
@@ -382,11 +382,11 @@ Tracks =
 						{
 							ReferencedTrack =
 							{
-								Filename = "characters/ali_alice/motions/alice_bm_runf.oct"
+								Filename = "characters/brz_alice/motions/alice_bm_runf.oct"
 							}
 							ReferencedTrack =
 							{
-								Filename = "characters/ali_alice/motions/alice_bm_run_upbody.oct"
+								Filename = "characters/brz_alice/motions/alice_bm_run_upbody.oct"
 							}
 							ReferencedTrack =
 							{

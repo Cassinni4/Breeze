@@ -14,7 +14,7 @@ Tracks =
 	ReferencedTrack =
 	{
 		BlendMethod = 1
-		Filename = "characters/ali_alice/motions/alice_bm_idle_passive_into.oct"
+		Filename = "characters/brz_alice/motions/alice_bm_idle_passive_into.oct"
 	}
 	GroupTrack "Small" =
 	{
@@ -24,7 +24,7 @@ Tracks =
 			ReferencedTrack =
 			{
 				BlendMethod = 1
-				Filename = "characters/ali_alice/motions/alice_bm_idle_small_passive_into.oct"
+				Filename = "characters/brz_alice/motions/alice_bm_idle_small_passive_into.oct"
 			}
 		}
 	}
@@ -35,7 +35,7 @@ Tracks =
 		{
 			ReferencedTrack =
 			{
-				Filename = "characters/ali_alice/motions/alice_bm_grown_idle_passive_into.oct"
+				Filename = "characters/brz_alice/motions/alice_bm_grown_idle_passive_into.oct"
 			}
 		}
 	}
