@@ -9,6 +9,6 @@ Tracks =
 	ReferencedTrack =
 	{
 		BlendMethod = 1
-		Filename = "characters/dor_nemo/motions/nemo_swim_idle_add.oct"
+		Filename = "characters/brz_nemo/motions/nemo_swim_idle_add.oct"
 	}
 }

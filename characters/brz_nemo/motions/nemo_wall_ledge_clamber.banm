@@ -13,7 +13,7 @@ Tracks =
 			ReferencedTrack =
 			{
 				BlendMethod = 1
-				Filename = "characters/dor_nemo/motions/nemo_swim_slow_add.oct"
+				Filename = "characters/brz_nemo/motions/nemo_swim_slow_add.oct"
 			}
 		}
 	}

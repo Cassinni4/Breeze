@@ -15,11 +15,11 @@ Tracks =
 		{
 			ReferencedTrack =
 			{
-				Filename = "characters/dor_nemo/motions/nemo_mnt_saddle_crab_rideidle.oct"
+				Filename = "characters/brz_nemo/motions/nemo_mnt_saddle_crab_rideidle.oct"
 			}
 			ReferencedTrack =
 			{
-				Filename = "characters/dor_nemo/motions/nemo_mnt_saddle_crab_rideidle_effort.oct"
+				Filename = "characters/brz_nemo/motions/nemo_mnt_saddle_crab_rideidle_effort.oct"
 			}
 		}
 	}

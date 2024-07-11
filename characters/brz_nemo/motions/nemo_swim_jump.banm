@@ -22,7 +22,7 @@ Tracks =
 				{
 					ReferencedTrack =
 					{
-						Filename = "characters/dor_nemo/motions/nemo_swim_proc_center_lr.oct"
+						Filename = "characters/brz_nemo/motions/nemo_swim_proc_center_lr.oct"
 						Phase = "LeftRight"
 					}
 				}
@@ -30,7 +30,7 @@ Tracks =
 			ReferencedTrack =
 			{
 				BlendMethod = 1
-				Filename = "characters/dor_nemo/motions/nemo_swim_jump_add.oct"
+				Filename = "characters/brz_nemo/motions/nemo_swim_jump_add.oct"
 			}
 		}
 	}

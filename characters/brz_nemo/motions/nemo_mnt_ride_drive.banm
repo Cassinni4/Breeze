@@ -14,7 +14,7 @@ Tracks =
 			{
 				BlendMethod = 1
 				Weight = 0.6
-				Filename = "characters/dor_nemo/motions/nemo_swim_fast_add.oct"
+				Filename = "characters/brz_nemo/motions/nemo_swim_fast_add.oct"
 			}
 		}
 	}

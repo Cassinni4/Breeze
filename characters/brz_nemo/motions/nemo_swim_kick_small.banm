@@ -28,7 +28,7 @@ Tracks =
 				{
 					ReferencedTrack =
 					{
-						Filename = "characters/dor_nemo/motions/nemo_swim_proc_center_lr.oct"
+						Filename = "characters/brz_nemo/motions/nemo_swim_proc_center_lr.oct"
 						Phase = "LeftRight"
 					}
 				}
@@ -41,7 +41,7 @@ Tracks =
 				{
 					ReferencedTrack =
 					{
-						Filename = "characters/dor_nemo/motions/nemo_swim_kick_small_add.oct"
+						Filename = "characters/brz_nemo/motions/nemo_swim_kick_small_add.oct"
 					}
 				}
 			}
@@ -54,15 +54,15 @@ Tracks =
 				{
 					ReferencedTrack =
 					{
-						Filename = "characters/dor_nemo/motions/nemo_swim_proc_center_headup_add.oct"
+						Filename = "characters/brz_nemo/motions/nemo_swim_proc_center_headup_add.oct"
 					}
 					ReferencedTrack =
 					{
-						Filename = "characters/dor_nemo/motions/nemo_swim_proc_center_headlevel_add.oct"
+						Filename = "characters/brz_nemo/motions/nemo_swim_proc_center_headlevel_add.oct"
 					}
 					ReferencedTrack =
 					{
-						Filename = "characters/dor_nemo/motions/nemo_swim_proc_center_headdown_add.oct"
+						Filename = "characters/brz_nemo/motions/nemo_swim_proc_center_headdown_add.oct"
 					}
 				}
 			}

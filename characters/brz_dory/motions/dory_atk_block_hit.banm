@@ -4,11 +4,11 @@ Tracks =
 {
 	ReferencedTrack =
 	{
-		Filename = "characters/dor_dory/motions/dory_atk_block_pose.oct"
+		Filename = "characters/brz_dory/motions/dory_atk_block_pose.oct"
 	}
 	ReferencedTrack =
 	{
 		BlendMethod = 1
-		Filename = "characters/dor_dory/motions/dory_atk_block_hit_add.oct"
+		Filename = "characters/brz_dory/motions/dory_atk_block_hit_add.oct"
 	}
 }
