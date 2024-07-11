@@ -88,7 +88,7 @@ VirtualReaderPC_Data.AvatarData = {
    },
    {
     Name = "BRZ_Premium_Yoda",
-    sku_id = "1000444",
+    sku_id = "1000451",
     SteamDLCAppId = "",
     PCSKU = "",
     WINRTSKU = "win.disney.disneyinfinity3.ch_Yoda",
@@ -322,7 +322,7 @@ VirtualReaderPC_Data.AvatarData = {
    },
    {
     Name = "BRZ_Nemo",
-    sku_id = "1000451",
+    sku_id = "1000444",
     SteamDLCAppId = "",
     PCSKU = "",
     WINRTSKU = "win.disney.disneyinfinity3.ch_Nemo",
@@ -331,7 +331,7 @@ VirtualReaderPC_Data.AvatarData = {
     VideoLink = "",
     ProgressionTree = "IN3_BRZ_Nemo",
     CostumeCoin = "",
-    MetaData = "Disney,Franchise_BRZ"
+    MetaData = "Disney,Franchise_DOR"
    },
    {
     Name = "BRZ_Dory",
