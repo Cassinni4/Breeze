@@ -9,6 +9,6 @@ Tracks =
 	ReferencedTrack =
 	{
 		BlendMethod = 1
-		Filename = "characters/ali_alice/motions/alice_skirt_0_2.oct"
+		Filename = "characters/brz_alice/motions/alice_skirt_0_2.oct"
 	}
 }

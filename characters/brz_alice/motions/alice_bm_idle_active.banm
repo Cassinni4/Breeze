@@ -22,7 +22,7 @@ Tracks =
 			ReferencedTrack =
 			{
 				BlendMethod = 1
-				Filename = "characters/ali_alice/motions/alice_bm_idle_active_add.oct"
+				Filename = "characters/brz_alice/motions/alice_bm_idle_active_add.oct"
 			}
 			ReferencedTrack =
 			{
@@ -43,7 +43,7 @@ Tracks =
 			ReferencedTrack =
 			{
 				BlendMethod = 1
-				Filename = "characters/ali_alice/motions/alice_bm_idle_active_add.oct"
+				Filename = "characters/brz_alice/motions/alice_bm_idle_active_add.oct"
 			}
 			ReferencedTrack =
 			{
@@ -59,11 +59,11 @@ Tracks =
 		{
 			ReferencedTrack =
 			{
-				Filename = "characters/ali_alice/motions/alice_bm_grown_idle_passive_pose.oct"
+				Filename = "characters/brz_alice/motions/alice_bm_grown_idle_passive_pose.oct"
 			}
 			ReferencedTrack =
 			{
-				Filename = "characters/ali_alice/motions/alice_bm_grown_idle_passive_add.oct"
+				Filename = "characters/brz_alice/motions/alice_bm_grown_idle_passive_add.oct"
 			}
 			ReferencedTrack =
 			{

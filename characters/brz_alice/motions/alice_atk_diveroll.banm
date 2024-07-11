@@ -15,23 +15,23 @@ Tracks =
 		{
 			ReferencedTrack =
 			{
-				Filename = "characters/ali_alice/motions/alice_atk_diveroll_f.oct"
+				Filename = "characters/brz_alice/motions/alice_atk_diveroll_f.oct"
 			}
 			ReferencedTrack =
 			{
-				Filename = "characters/ali_alice/motions/alice_atk_diveroll_r.oct"
+				Filename = "characters/brz_alice/motions/alice_atk_diveroll_r.oct"
 			}
 			ReferencedTrack =
 			{
-				Filename = "characters/ali_alice/motions/alice_atk_diveroll_b.oct"
+				Filename = "characters/brz_alice/motions/alice_atk_diveroll_b.oct"
 			}
 			ReferencedTrack =
 			{
-				Filename = "characters/ali_alice/motions/alice_atk_diveroll_l.oct"
+				Filename = "characters/brz_alice/motions/alice_atk_diveroll_l.oct"
 			}
 			ReferencedTrack =
 			{
-				Filename = "characters/ali_alice/motions/alice_atk_diveroll_f.oct"
+				Filename = "characters/brz_alice/motions/alice_atk_diveroll_f.oct"
 			}
 		}
 	}
