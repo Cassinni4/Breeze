@@ -1,0 +1,96 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Direction" =
+	{
+	}
+	FloatParameter "Crouch" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Sneaking" =
+	{
+		Value = "Direction"
+		Tracks =
+		{
+			KeyBlendTrack "Forward0" =
+			{
+				Value = "Crouch"
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/emp_hansolo/motions/hansolo_sneakf.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/emp_hansolo/motions/hansolo_bm_crouchf.oct"
+					}
+				}
+			}
+			KeyBlendTrack "Right" =
+			{
+				Value = "Crouch"
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/emp_hansolo/motions/hansolo_sneakr.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/emp_hansolo/motions/hansolo_bm_crouchr.oct"
+					}
+				}
+			}
+			KeyBlendTrack "Back" =
+			{
+				Value = "Crouch"
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/emp_hansolo/motions/hansolo_sneakb.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/emp_hansolo/motions/hansolo_bm_crouchb.oct"
+					}
+				}
+			}
+			KeyBlendTrack "Left" =
+			{
+				Value = "Crouch"
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/emp_hansolo/motions/hansolo_sneakl.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/emp_hansolo/motions/hansolo_bm_crouchl.oct"
+					}
+				}
+			}
+			KeyBlendTrack "Forward100" =
+			{
+				Value = "Crouch"
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/emp_hansolo/motions/hansolo_sneakf.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/emp_hansolo/motions/hansolo_bm_crouchf.oct"
+					}
+				}
+			}
+		}
+	}
+}
