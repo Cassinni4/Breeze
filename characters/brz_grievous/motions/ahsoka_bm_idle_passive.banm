@@ -19,13 +19,13 @@ Tracks =
 				{
 					ReferencedTrack =
 					{
-						Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_passive_pose.oct"
+						Filename = "characters/brz_grievous/motions/ahsoka_bm_passive_pose.oct"
 					}
 					ReferencedTrack =
 					{
 						BlendMethod = 1
 						Weight = 0.17
-						Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_idle_active_add.oct"
+						Filename = "characters/brz_grievous/motions/ahsoka_bm_idle_active_add.oct"
 					}
 				}
 			}
@@ -35,13 +35,13 @@ Tracks =
 				{
 					ReferencedTrack =
 					{
-						Filename = "characters/tcw_ahsoka/motions/tcw_ahsoka_idle_sabers.oct"
+						Filename = "characters/brz_grievous/motions/brz_grievous_idle_sabers.oct"
 					}
 					ReferencedTrack =
 					{
 						BlendMethod = 1
 						Weight = 0.5
-						Filename = "characters/tcw_ahsoka/motions/ahsoka_bm_idle_active_add.oct"
+						Filename = "characters/brz_grievous/motions/ahsoka_bm_idle_active_add.oct"
 					}
 				}
 			}

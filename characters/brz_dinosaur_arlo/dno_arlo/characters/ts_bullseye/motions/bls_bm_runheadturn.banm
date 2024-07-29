@@ -1,0 +1,17 @@
+Version = "1.0g"
+Parameters =
+{
+	FloatParameter "Angle" =
+	{
+		DefaultPhase = 0.0
+	}
+}
+BlendMethod = 1
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/ts_bullseye/motions/bls_bm_runheadturns_add_rl.oct"
+		Phase = "Angle"
+	}
+}
