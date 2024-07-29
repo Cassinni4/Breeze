@@ -1,0 +1,4 @@
+power disc chars (bhs_baymax_markone, emp_hansolo_old, tcw_obiwan_old)
+rename existing char files (eg. brz_alice to ali_alice)
+putin missing char files
+finish gateway
