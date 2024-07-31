@@ -31,17 +31,17 @@ Tracks =
 				{
 					ReferencedTrack =
 					{
-						Filename = "characters/brz_peter_pan/motions/pan_am_fly_proc_up_lr.oct"
+						Filename = "characters/tbx_peter_pan/motions/pan_am_fly_proc_up_lr.oct"
 						Phase = "LeftRight"
 					}
 					ReferencedTrack =
 					{
-						Filename = "characters/brz_peter_pan/motions/pan_am_fly_proc_center_lr.oct"
+						Filename = "characters/tbx_peter_pan/motions/pan_am_fly_proc_center_lr.oct"
 						Phase = "LeftRight"
 					}
 					ReferencedTrack =
 					{
-						Filename = "characters/brz_peter_pan/motions/pan_am_fly_proc_down_lr.oct"
+						Filename = "characters/tbx_peter_pan/motions/pan_am_fly_proc_down_lr.oct"
 						Phase = "LeftRight"
 					}
 				}

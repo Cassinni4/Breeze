@@ -4,7 +4,7 @@ Tracks =
 {
 	ReferencedTrack =
 	{
-		Filename = "characters/brz_peter_pan/motions/pan_bm_idle_passive_pose.oct"
+		Filename = "characters/tbx_peter_pan/motions/pan_bm_idle_passive_pose.oct"
 	}
 	ReferencedTrack =
 	{

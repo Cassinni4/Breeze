@@ -20,23 +20,23 @@ Tracks =
 				{
 					ReferencedTrack =
 					{
-						Filename = "characters/brz_peterpan/motions/pan_am_hvr_stopf.oct"
+						Filename = "characters/tbx_peter_pan/motions/pan_am_hvr_stopf.oct"
 					}
 					ReferencedTrack =
 					{
-						Filename = "characters/brz_peterpan/motions/pan_am_hvr_stopr.oct"
+						Filename = "characters/tbx_peter_pan/motions/pan_am_hvr_stopr.oct"
 					}
 					ReferencedTrack =
 					{
-						Filename = "characters/brz_peterpan/motions/pan_am_hvr_stopb.oct"
+						Filename = "characters/tbx_peter_pan/motions/pan_am_hvr_stopb.oct"
 					}
 					ReferencedTrack =
 					{
-						Filename = "characters/brz_peterpan/motions/pan_am_hvr_stopl.oct"
+						Filename = "characters/tbx_peter_pan/motions/pan_am_hvr_stopl.oct"
 					}
 					ReferencedTrack =
 					{
-						Filename = "characters/brz_peterpan/motions/pan_am_hvr_stopf.oct"
+						Filename = "characters/tbx_peter_pan/motions/pan_am_hvr_stopf.oct"
 					}
 				}
 			}

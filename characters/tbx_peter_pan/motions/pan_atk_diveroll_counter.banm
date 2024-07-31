@@ -15,23 +15,23 @@ Tracks =
 		{
 			ReferencedTrack =
 			{
-				Filename = "characters/tbx_peterpan/motions/pan_atk_diveroll_counter_f.oct"
+				Filename = "characters/tbx_peter_pan/motions/pan_atk_diveroll_counter_f.oct"
 			}
 			ReferencedTrack =
 			{
-				Filename = "characters/tbx_peterpan/motions/pan_atk_diveroll_counter_r.oct"
+				Filename = "characters/tbx_peter_pan/motions/pan_atk_diveroll_counter_r.oct"
 			}
 			ReferencedTrack =
 			{
-				Filename = "characters/tbx_peterpan/motions/pan_atk_diveroll_counter_b.oct"
+				Filename = "characters/tbx_peter_pan/motions/pan_atk_diveroll_counter_b.oct"
 			}
 			ReferencedTrack =
 			{
-				Filename = "characters/tbx_peterpan/motions/pan_atk_diveroll_counter_l.oct"
+				Filename = "characters/tbx_peter_pan/motions/pan_atk_diveroll_counter_l.oct"
 			}
 			ReferencedTrack =
 			{
-				Filename = "characters/tbx_peterpan/motions/pan_atk_diveroll_counter_f.oct"
+				Filename = "characters/tbx_peter_pan/motions/pan_atk_diveroll_counter_f.oct"
 			}
 		}
 	}
