@@ -8,6 +8,6 @@ Tracks =
 	}
 	ReferencedTrack =
 	{
-		Filename = "characters/brz_alice/motions/alice_skirt_pipefix.oct"
+		Filename = "characters/ali_alice/motions/alice_skirt_pipefix.oct"
 	}
 }

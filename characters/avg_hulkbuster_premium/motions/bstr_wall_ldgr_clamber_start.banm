@@ -1,0 +1,14 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/class_hero/motions/hero_wall_ldgr_clamber_start.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Filename = "characters/avg_hulkbuster/motions/bstr_wall_ldghand_add.oct"
+	}
+}

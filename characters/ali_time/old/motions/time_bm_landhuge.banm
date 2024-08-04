@@ -1,0 +1,20 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Filename = "characters/biped/motions/biped_bm_landhuge.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Filename = "characters/human/motions/human_bm_landhuge_add.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Filename = "characters/ali_time/motions/time_bm_idle_offset.oct"
+	}
+}

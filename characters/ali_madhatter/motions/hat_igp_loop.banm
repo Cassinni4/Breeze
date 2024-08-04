@@ -1,0 +1,14 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/ali_madhatter/motions/hat_igp_loop_pose.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Filename = "characters/biped/motions/biped_igp_loop_add.oct"
+	}
+}

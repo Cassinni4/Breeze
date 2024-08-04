@@ -1,0 +1,45 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Direction" =
+	{
+	}
+}
+BlendMethod = 1
+Tracks =
+{
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Filename = "characters/biped/motions/biped_rct_stunned_add.oct"
+	}
+	KeyBlendTrack "Key Blend" =
+	{
+		BlendMethod = 1
+		Value = "Direction"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/biped/motions/biped_rct_hitch_add_f_small.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/biped/motions/biped_rct_hitch_add_r_small.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/biped/motions/biped_rct_hitch_add_b_small.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/biped/motions/biped_rct_hitch_add_l_small.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/biped/motions/biped_rct_hitch_add_f_small.oct"
+			}
+		}
+	}
+}

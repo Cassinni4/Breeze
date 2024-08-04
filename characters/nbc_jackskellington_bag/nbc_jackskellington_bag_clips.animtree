@@ -1,0 +1,74 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="3.01.140 x64" branch="in3" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="0">
+  <p:Interface value="Main"/>
+  <p:StartState value="BagIdle"/>
+  <AnimTreeState name="BagIdle" pos="0 0">
+   <p:Color value="1 1 1"/>
+   <p:Clip value="BAG_IDLE"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:PostBehavior value="Loop"/>
+  </AnimTreeState>
+  <AnimTreeState name="KillInterface" pos="0 -1.3">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.0192308 0.0192308 0.0192308"/>
+  </AnimTreeState>
+  <AnimTreeState name="Launcher" pos="-1.3 1.3">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.0192308 1 0.0192308"/>
+   <p:Clip value="LAUNCHER_COMBO"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <AnimTreeBranch name="Branch1">
+    <p:BranchTo value="BagIdle"/>
+    <p:DefaultBranch value="TRUE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeState>
+  <AnimTreeState name="AirCombo1" pos="1.3 1.3">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.0192308 1 0.0192308"/>
+   <p:Clip value="AIR_COMBO_01"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <AnimTreeBranch name="Branch1">
+    <p:BranchTo value="BagIdle"/>
+    <p:DefaultBranch value="TRUE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeState>
+  <AnimTreeBranch name="Branch1">
+   <p:BranchTo value="Launcher"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="LightsaberLauncher"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch2">
+   <p:BranchTo value="AirCombo1"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="LightsaberAirCombo1"/>
+   </p:Events>
+  </AnimTreeBranch>
+ </AnimTree>
+
+</d:SnipeFile>

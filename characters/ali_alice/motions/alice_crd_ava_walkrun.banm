@@ -25,6 +25,6 @@ Tracks =
 	}
 	ReferencedTrack =
 	{
-		Filename = "characters/brz_alice/motions/alice_crd_ava_skirt.oct"
+		Filename = "characters/ali_alice/motions/alice_crd_ava_skirt.oct"
 	}
 }

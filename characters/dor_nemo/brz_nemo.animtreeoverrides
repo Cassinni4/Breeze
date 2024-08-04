@@ -1,6 +1,0 @@
-Reaction:Lightsaber_HelmbreakerLand:EventsFired:SET_INTERRUPTIBLE:Offset:13;
-ShoulderCharge:ShoulderChargeWallHit:EventsFired:SET_INTERRUPTIBLE:Offset:19;
-Fish_ShoulderCharge:ShoulderChargeWallHit:EventsFired:SET_INTERRUPTIBLE:Offset:19;
-Fish_ShoulderCharge:ShoulderChargeFinish_Miss:EventsFired:SET_INTERRUPTIBLE:Offset:4;
-PowerUp:PowerUpAttack:EventsFired:SET_INTERRUPTIBLE:Offset:98;
-Reaction:LightsaberAirCombo1:EventsFired:FALL_HARD:Offset:34;

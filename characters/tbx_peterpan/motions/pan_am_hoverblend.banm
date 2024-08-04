@@ -1,0 +1,57 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "LeanFB" =
+	{
+		DefaultPhase = 0.5
+	}
+	FloatParameter "LeftRight" =
+	{
+		DefaultPhase = 0.5
+	}
+}
+Tracks =
+{
+	GroupTrack "Group1" =
+	{
+		Tracks =
+		{
+			KeyBlendTrack "Hover" =
+			{
+				Value = "LeanFB"
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/tbx_peterpan/motions/pan_am_hvr_proc_frwd_lr.oct"
+						Phase = "LeftRight"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/tbx_peterpan/motions/pan_am_hvr_proc_center_lr.oct"
+						Phase = "LeftRight"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/tbx_peterpan/motions/pan_am_hvr_proc_back_lr.oct"
+						Phase = "LeftRight"
+					}
+				}
+			}
+			KeyBlendTrack "Key Blend" =
+			{
+				BlendMethod = 1
+				Value = "LeanFB"
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						BlendMethod = 1
+						Filename = "characters/spd_nova/motions/nova_am_hvr_center_proc_add.oct"
+					}
+				}
+			}
+		}
+	}
+}

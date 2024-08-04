@@ -41,7 +41,7 @@ Tracks =
 							}
 							ReferencedTrack =
 							{
-								Filename = "characters/brz_baloo/motions/baloo_bm_walk_upbody.oct"
+								Filename = "characters/tbx_baloo/motions/baloo_bm_walk_upbody.oct"
 							}
 							ReferencedTrack =
 							{
@@ -61,7 +61,7 @@ Tracks =
 							}
 							ReferencedTrack =
 							{
-								Filename = "characters/brz_baloo/motions/baloo_bm_walk_upbody.oct"
+								Filename = "characters/tbx_baloo/motions/baloo_bm_walk_upbody.oct"
 							}
 							ReferencedTrack =
 							{
@@ -81,7 +81,7 @@ Tracks =
 							}
 							ReferencedTrack =
 							{
-								Filename = "characters/brz_baloo/motions/baloo_bm_walk_upbody.oct"
+								Filename = "characters/tbx_baloo/motions/baloo_bm_walk_upbody.oct"
 							}
 							ReferencedTrack =
 							{
@@ -101,7 +101,7 @@ Tracks =
 							}
 							ReferencedTrack =
 							{
-								Filename = "characters/brz_baloo/motions/baloo_bm_walk_upbody.oct"
+								Filename = "characters/tbx_baloo/motions/baloo_bm_walk_upbody.oct"
 							}
 							ReferencedTrack =
 							{
@@ -121,7 +121,7 @@ Tracks =
 							}
 							ReferencedTrack =
 							{
-								Filename = "characters/brz_baloo/motions/baloo_bm_walk_upbody.oct"
+								Filename = "characters/tbx_baloo/motions/baloo_bm_walk_upbody.oct"
 							}
 							ReferencedTrack =
 							{
@@ -141,7 +141,7 @@ Tracks =
 							}
 							ReferencedTrack =
 							{
-								Filename = "characters/brz_baloo/motions/baloo_bm_walk_upbody.oct"
+								Filename = "characters/tbx_baloo/motions/baloo_bm_walk_upbody.oct"
 							}
 							ReferencedTrack =
 							{
@@ -161,7 +161,7 @@ Tracks =
 							}
 							ReferencedTrack =
 							{
-								Filename = "characters/brz_baloo/motions/baloo_bm_walk_upbody.oct"
+								Filename = "characters/tbx_baloo/motions/baloo_bm_walk_upbody.oct"
 							}
 							ReferencedTrack =
 							{
@@ -181,7 +181,7 @@ Tracks =
 							}
 							ReferencedTrack =
 							{
-								Filename = "characters/brz_baloo/motions/baloo_bm_walk_upbody.oct"
+								Filename = "characters/tbx_baloo/motions/baloo_bm_walk_upbody.oct"
 							}
 							ReferencedTrack =
 							{
@@ -201,7 +201,7 @@ Tracks =
 							}
 							ReferencedTrack =
 							{
-								Filename = "characters/brz_baloo/motions/baloo_bm_walk_upbody.oct"
+								Filename = "characters/tbx_baloo/motions/baloo_bm_walk_upbody.oct"
 							}
 							ReferencedTrack =
 							{
@@ -234,7 +234,7 @@ Tracks =
 							}
 							ReferencedTrack =
 							{
-								Filename = "characters/brz_baloo/motions/baloo_bm_run_upbody.oct"
+								Filename = "characters/tbx_baloo/motions/baloo_bm_run_upbody.oct"
 							}
 							ReferencedTrack =
 							{
@@ -254,7 +254,7 @@ Tracks =
 							ReferencedTrack =
 							{
 								Weight = 0.9
-								Filename = "characters/brz_baloo/motions/baloo_bm_run_upbody.oct"
+								Filename = "characters/tbx_baloo/motions/baloo_bm_run_upbody.oct"
 							}
 							ReferencedTrack =
 							{
@@ -274,7 +274,7 @@ Tracks =
 							ReferencedTrack =
 							{
 								Weight = 0.85
-								Filename = "characters/brz_baloo/motions/baloo_bm_run_upbody.oct"
+								Filename = "characters/tbx_baloo/motions/baloo_bm_run_upbody.oct"
 							}
 							ReferencedTrack =
 							{
@@ -294,7 +294,7 @@ Tracks =
 							ReferencedTrack =
 							{
 								Weight = 0.8
-								Filename = "characters/brz_baloo/motions/baloo_bm_run_upbody.oct"
+								Filename = "characters/tbx_baloo/motions/baloo_bm_run_upbody.oct"
 							}
 							ReferencedTrack =
 							{
@@ -314,7 +314,7 @@ Tracks =
 							ReferencedTrack =
 							{
 								Weight = 0.75
-								Filename = "characters/brz_baloo/motions/baloo_bm_run_upbody.oct"
+								Filename = "characters/tbx_baloo/motions/baloo_bm_run_upbody.oct"
 							}
 							ReferencedTrack =
 							{
@@ -334,7 +334,7 @@ Tracks =
 							ReferencedTrack =
 							{
 								Weight = 0.8
-								Filename = "characters/brz_baloo/motions/baloo_bm_run_upbody.oct"
+								Filename = "characters/tbx_baloo/motions/baloo_bm_run_upbody.oct"
 							}
 							ReferencedTrack =
 							{
@@ -354,7 +354,7 @@ Tracks =
 							ReferencedTrack =
 							{
 								Weight = 0.85
-								Filename = "characters/brz_baloo/motions/baloo_bm_run_upbody.oct"
+								Filename = "characters/tbx_baloo/motions/baloo_bm_run_upbody.oct"
 							}
 							ReferencedTrack =
 							{
@@ -374,7 +374,7 @@ Tracks =
 							ReferencedTrack =
 							{
 								Weight = 0.9
-								Filename = "characters/brz_baloo/motions/baloo_bm_run_upbody.oct"
+								Filename = "characters/tbx_baloo/motions/baloo_bm_run_upbody.oct"
 							}
 							ReferencedTrack =
 							{
@@ -393,7 +393,7 @@ Tracks =
 							}
 							ReferencedTrack =
 							{
-								Filename = "characters/brz_baloo/motions/baloo_bm_run_upbody.oct"
+								Filename = "characters/tbx_baloo/motions/baloo_bm_run_upbody.oct"
 							}
 							ReferencedTrack =
 							{
