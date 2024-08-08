@@ -45,11 +45,11 @@ var config = {
 
 /*==================== Do Stuff ========================*/
 
-decryptGateway();
+//decryptGateway();
 
 // Example of calling encrypt on a single value needs more testing and 
 // output value needs converting back to lua string
-//encrypt("IGP_Nemo");
+encrypt("TBX_Ursula_Premium");
 
 /*====================== Logic =========================*/
 function decryptGateway() {
