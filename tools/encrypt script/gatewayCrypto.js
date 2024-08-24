@@ -20,8 +20,8 @@ const fs = require('fs');
 const logLevel = 0
 
 // filenames to read and write assume relative if no path specified
-const sourceGatewayFile = 'fl.txt'; // needs to have been unluaced
-const decodedGatewayFile = 'fl2.txt';
+const sourceGatewayFile = 'di_2(fuckyoudisney).txt'; // needs to have been unluaced
+const decodedGatewayFile = 'di2done.txt';
 
 /*=============== Encryption Settings ==================*/
 const key = CryptoJS.enc.Hex.parse("000102030405060708090a0b0c0d0e0f");
@@ -45,11 +45,11 @@ var config = {
 
 /*==================== Do Stuff ========================*/
 
-//decryptGateway();
+decryptGateway();
 
 // Example of calling encrypt on a single value needs more testing and 
 // output value needs converting back to lua string
-encrypt("TBX_Ursula_Premium");
+//encrypt("TBX_Ursula_Premium");
 
 /*====================== Logic =========================*/
 function decryptGateway() {
