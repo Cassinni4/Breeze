@@ -135,7 +135,7 @@ VirtualReaderPC_Data.AvatarData = {
     Description = "Upsell_AVG_Hulk_desc",
     VideoLink = "",
     ProgressionTree = "IN3_AVG_Hulk_Premium",
-    CostumeCoin = "",
+    CostumeCoin = "IGP_Coin_GamaRays",
     MetaData = "Marvel,Franchise_AVG"
    },
    {
@@ -241,19 +241,6 @@ VirtualReaderPC_Data.AvatarData = {
     ProgressionTree = "IN3_AV_Zurg",
     CostumeCoin = "",
     MetaData = "Disney,Franchise_TOY"
-   },
-   {
-    Name = "AVG_Hulk_Premium",
-    sku_id = "1000309",
-    SteamDLCAppId = "",
-    PCSKU = "",
-    WINRTSKU = "win.disney.disneyinfinity3.ch_Hulk",
-    Icon = "HUD_PlayerIcons_AVG_Hulk",
-    Description = "Upsell_AVG_Hulk_desc",
-    VideoLink = "",
-    ProgressionTree = "IN3_AVG_Hulk_Premium",
-    CostumeCoin = "",
-    MetaData = "Marvel,Franchise_AVG"
    },
    {
     Name = "AV_McQueen_Premium",
@@ -407,7 +394,7 @@ VirtualReaderPC_Data.AvatarData = {
     Icon = "HUD_PlayerIcons_TBX_Baloo",
     Description = "This swingin' bear knows how to roll with the crazy jungle beat.",
     VideoLink = "",
-    ProgressionTree = "IN3_BRZ_Baloo",
+    ProgressionTree = "IN3_TBX_Baloo",
     CostumeCoin = "",
     MetaData = "Disney,Franchise_DIS"
    },
@@ -496,7 +483,7 @@ VirtualReaderPC_Data.AvatarData = {
     PCSKU = "",
     WINRTSKU = "win.disney.disneyinfinity3.ch_Moana",
     Icon = "HUD_PlayerIcons_MOA_Moana",
-    Description = "",
+    Description = "Upsell_MOA_Moana_desc",
     VideoLink = "",
     ProgressionTree = "IN3_MOA_Moana",
     CostumeCoin = "",
@@ -509,7 +496,7 @@ VirtualReaderPC_Data.AvatarData = {
     PCSKU = "",
     WINRTSKU = "win.disney.disneyinfinity3.ch_Maui",
     Icon = "HUD_PlayerIcons_MOA_Maui",
-    Description = "",
+    Description = "Upsell_MOA_Maui_desc",
     VideoLink = "",
     ProgressionTree = "IN3_MOA_Maui",
     CostumeCoin = "",
@@ -1460,8 +1447,8 @@ VirtualReaderPC_Data.AvatarData = {
     Icon = "HUD_PlayerIcons_ObiWan",
     Description = "Upsell_TCW_ObiWan_desc",
     VideoLink = "HOH__Info_ObiWan",
-    ProgressionTree = "IN3_TCW_Obiwan",
-    CostumeCoin = "IGP_COIN_Obiwan_Old",
+    ProgressionTree = "IN3_TCW_ObiWan",
+    CostumeCoin = "IGP_COIN_ObiWan_Old",
     MetaData = "StarWars,Franchise_TCW"
   },
   {
@@ -1526,7 +1513,7 @@ VirtualReaderPC_Data.AvatarData = {
     Description = "Upsell_EMP_HanSolo_desc",
     VideoLink = "HOH__Info_HanSolo",
     ProgressionTree = "IN3_EMP_HanSolo",
-    CostumeCoin = "IGP_COIN_Hansolo_old",
+    CostumeCoin = "IGP_COIN_HanSolo_old",
     MetaData = "StarWars,Franchise_EMP"
   },
   {
@@ -3605,21 +3592,21 @@ VirtualReaderPC_Data.RoundCoinData = {
   },
   {
     sku_id = "3000444",
-    Name = "IGP_COIN_Baymax_Markone",
+    Name = "IGP_COIN_Baymax_MarkOne",
     CoinType = "VRPC_RoundCoin_Costume",
     SparkCost = "10000",
     MetaData = "Disney"
   },
   {
     sku_id = "3000445",
-    Name = "IGP_COIN_Obiwan_Old",
+    Name = "IGP_COIN_ObiWan_Old",
     CoinType = "VRPC_RoundCoin_Costume",
     SparkCost = "10000",
     MetaData = "StarWars"
   },
   {
     sku_id = "3000446",
-    Name = "IGP_COIN_Hansolo_Old",
+    Name = "IGP_COIN_HanSolo_Old",
     CoinType = "VRPC_RoundCoin_Costume",
     SparkCost = "10000",
     MetaData = "Disney"
