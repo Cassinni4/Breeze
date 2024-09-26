@@ -1,0 +1,43 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Direction" =
+	{
+	}
+}
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/tcw_yoda/motions/yoda_mnt_mtrcyc_norm_cntr_pose.oct"
+	}
+	KeyBlendTrack "Key Blend" =
+	{
+		BlendMethod = 1
+		Value = "Direction"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/biped/motions/biped_mnt_mtrcyc_norm_impct_frnt_add.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/biped/motions/biped_mnt_mtrcyc_norm_impct_lft_add.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/biped/motions/biped_mnt_mtrcyc_norm_impct_bck_add.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/biped/motions/biped_mnt_mtrcyc_norm_impct_rht_add.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/biped/motions/biped_mnt_mtrcyc_norm_impct_frnt_add.oct"
+			}
+		}
+	}
+}

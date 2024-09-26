@@ -1,0 +1,13 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/biped/motions/biped_rct_vader_choke_in.oct"
+	}
+	ReferencedTrack =
+	{
+		Filename = "characters/tcw_yoda/motions/yoda_rct_vader_choke_in.oct"
+	}
+}

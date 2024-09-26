@@ -1,0 +1,37 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Speed" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/human/motions/human_bm_idle_active_pose.oct"
+			}
+		}
+	}
+	KeyBlendTrack "Land" =
+	{
+		BlendMethod = 1
+		Value = "Speed"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/human/motions/human_bm_land_normal_add.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/human/motions/human_bm_jump_land_add.oct"
+			}
+		}
+	}
+}

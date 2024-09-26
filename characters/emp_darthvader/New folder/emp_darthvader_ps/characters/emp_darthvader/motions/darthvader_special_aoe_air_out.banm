@@ -1,0 +1,26 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "SpecialLevel" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "SpecialLevel"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/emp_darthvader/motions/darthvader_special_aoe_air_out.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/emp_darthvader/motions/darthvader_special_aoe_air_out.oct"
+			}
+		}
+	}
+}

@@ -1,0 +1,26 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Weight" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Weight"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/class_hero/motions/hero_cr_ava.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/avg_hulkbuster/motions/bstr_cr_ava_sm.oct"
+			}
+		}
+	}
+}
