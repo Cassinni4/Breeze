@@ -21882,6 +21882,7 @@ L52 = "Cho|mrinc_groundpound"
 L53 = "GameDB|gamedb/core/in3_avg_hulk_premium.lua|1|progression"
 L54 = "GameDB|gamedb/core/in3_avg_hulk_premium_toolset.lua|1|toolset"
 L55 = "MaterialBundle|materials/materials__fx__igp_premium_silhouette__skinning_isenabled_true"
+L56 = "DNA|expendables_data/dna/avg_hulk_premium_charged1
 L5[1] = L6
 L5[2] = L7
 L5[3] = L8

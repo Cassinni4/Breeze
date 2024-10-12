@@ -1,0 +1,26 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="2.0.83 x64" branch="in3" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="9">
+  <p:Interface value="Additive2_UpperBody2"/>
+  <p:StartState value="KillInterface"/>
+  <AnimTreeState name="KillInterface" pos="-4.2 1.2"/>
+  <AnimTreeState name="Directional_Rct_Hitch" pos="-4.2 2.4">
+   <p:Clip value="REACT_HITCH"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <AnimTreeBranch name="Branch1">
+    <p:BranchTo value="KillInterface"/>
+    <p:DefaultBranch value="TRUE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeState>
+  <AnimTreeBranch name="Branch1">
+   <p:BranchTo value="Directional_Rct_Hitch"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="RCT_HITCH"/>
+   </p:Events>
+  </AnimTreeBranch>
+ </AnimTree>
+
+</d:SnipeFile>

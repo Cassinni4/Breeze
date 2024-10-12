@@ -1,0 +1,46 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="2.0.174 x64" branch="M2" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="0">
+  <p:Interface value="FullBody"/>
+  <p:StartState value=""/>
+  <AnimTreeBranch name="Branch1">
+   <p:BranchTo value="PushButton"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="PRESS_BUTTON"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch2">
+   <p:BranchTo value="PushButtonLarge"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="PRESS_BUTTON_LARGE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="PushButton_Group" expanded="1" pos="0 0">
+   <AnimTreeState name="PushButton" pos="-7.15256e-007 1.19209e-007">
+    <p:Clip value="PUSH_BUTTON"/>
+    <p:ClipTimeSource value="Global.Time"/>
+    <p:EaseDuration value="3"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="18"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="PushButtonLarge" pos="0.0474387 -1.4">
+    <p:Clip value="PUSH_BUTTON_LARGE"/>
+    <p:ClipTimeSource value="Global.Time"/>
+    <p:EaseDuration value="3"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="22"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+ </AnimTree>
+
+</d:SnipeFile>

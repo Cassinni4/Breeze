@@ -1,0 +1,32 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="2.0.213 x64" branch="M2" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="19">
+  <p:Interface value="AdditiveChar_Reactions"/>
+  <p:StartState value="KillInterface"/>
+  <AnimTreeState name="KillInterface" pos="0.2 0.6">
+   <p:Color value="0 0 0"/>
+   <p:Clip value="VSM_ZERO"/>
+   <p:ClipTimeSource value="Global.Time"/>
+  </AnimTreeState>
+  <AnimTreeState name="FartPlant_Reaction" pos="1.8 -1.6">
+   <p:Color value="0.7 1 0.7"/>
+   <p:Clip value="RCT_FARTPLANT"/>
+   <p:ClipTimeSource value="Global.Time"/>
+   <p:EaseDuration value="8"/>
+   <AnimTreeBranch name="Branch1">
+    <p:BranchTo value="KillInterface"/>
+    <p:DefaultBranch value="TRUE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeState>
+  <AnimTreeBranch name="Branch1">
+   <p:BranchTo value="FartPlant_Reaction"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="STINK_DISGUST"/>
+   </p:Events>
+  </AnimTreeBranch>
+ </AnimTree>
+
+</d:SnipeFile>

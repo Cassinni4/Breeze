@@ -1,0 +1,293 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="2.0.330 x64" branch="in2" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="0">
+  <p:Interface value="FullBody"/>
+  <p:StartState value=""/>
+  <AnimTreeStateGroup name="GroundPound_Group" expanded="1" pos="-132.4 79.2">
+   <p:Color value="1 0.5 1"/>
+   <p:StartState value="GroundPound_Default_State"/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <p:EventsFired>
+    <p:Event class="AnimTreeStateEventProperty" value="Face_Intense_Start">
+     <p:When value="EnteringGroup"/>
+    </p:Event>
+    <p:Event2 class="AnimTreeStateEventProperty" value="Face_Kill"/>
+   </p:EventsFired>
+   <AnimTreeState name="GroundPoundStart" pos="126.8 -65.8">
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="GROUNDPOUND_START"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:Speed value="1"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="2"/>
+    <p:CurveSlope value="1"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="ELASTIGIRL_STICKYARM">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="7"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="GroundPoundAir" pos="126.8 -67">
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="GROUNDPOUND_AIR"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:Speed value="1"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="0"/>
+    <p:CurveSlope value="1"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="GroundPoundAirLoop"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="GroundPoundHit" pos="129.4 -65.8">
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="GROUNDPOUND_HIT"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Stop"/>
+    <p:CurveSlope value="1"/>
+    <p:AISync value="FALSE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="Face_Kill">
+      <p:When value="EnteringState"/>
+     </p:Event>
+     <p:Event2 class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="1000"/>
+     </p:Event2>
+    </p:EventsFired>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="GroundPoundFinish"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="GroundPoundFinish" pos="129.4 -67.2">
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="GROUNDPOUND_FINISH"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:Speed value="1"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="1"/>
+    <p:CurveSlope value="1"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="15"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeBranch name="Branch17">
+    <p:BranchTo value="GroundPoundHit"/>
+    <p:DefaultBranch value="FALSE"/>
+    <p:Speed value="1"/>
+    <p:CurveSlope value="1"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="GROUNDPOUNDHIT"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeBranch name="Branch25">
+    <p:BranchTo value="GroundPoundAir"/>
+    <p:DefaultBranch value="FALSE"/>
+    <p:Speed value="1"/>
+    <p:CurveSlope value="1"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="GROUNDPOUNDAIR"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeState name="GroundPoundAirLoop" pos="126.8 -68">
+    <p:Clip value="GROUNDPOUND_AIR_LOOP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+   </AnimTreeState>
+   <AnimTreeState name="GroundPound_Default_State" pos="128 -64.6"/>
+   <AnimTreeBranch name="Branch2">
+    <p:BranchTo value="GroundPoundStart"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="GROUNDPOUND_START"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch1">
+   <p:BranchTo value="GroundPound_Group"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="GROUNDPOUND"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="GroundPound_Scare_Group" expanded="1" pos="-132.4 73.4">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="1 0.5 1"/>
+   <p:StartState value="GroundPound_Default_State2"/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <AnimTreeState name="GroundPoundScareStart" pos="126.8 -65.8">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="ATK_SCARE_AIR_START"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:Speed value="1"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="2"/>
+    <p:CurveSlope value="1"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeState name="GroundPoundScareAir" pos="126.8 -67.2">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="ATK_SCARE_AIR_AIR"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:Speed value="1"/>
+    <p:PostBehavior value="Pause"/>
+    <p:EaseDuration value="0"/>
+    <p:CurveSlope value="1"/>
+    <p:AISync value="FALSE"/>
+   </AnimTreeState>
+   <AnimTreeState name="GroundPoundScareHit" pos="129.4 -65.8">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="ATK_SCARE_AIR_HIT"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Stop"/>
+    <p:CurveSlope value="1"/>
+    <p:AISync value="FALSE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="Face_Kill">
+      <p:When value="EnteringState"/>
+      <p:Offset value="0"/>
+     </p:Event>
+    </p:EventsFired>
+    <AnimTreeBranch name="Branch1">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="GroundPoundScareFinish"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value=""/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="GroundPoundScareFinish" pos="129.4 -67.2">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="ATK_SCARE_AIR_FINISH"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:Speed value="1"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="1"/>
+    <p:CurveSlope value="1"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="15"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeBranch name="Branch3">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:BranchTo value="GroundPoundScareHit"/>
+    <p:DefaultBranch value="FALSE"/>
+    <p:Speed value="1"/>
+    <p:CurveSlope value="1"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="GROUNDPOUNDHIT"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeBranch name="Branch4">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:BranchTo value="GroundPoundScareAir"/>
+    <p:DefaultBranch value="FALSE"/>
+    <p:Speed value="1"/>
+    <p:CurveSlope value="1"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="GROUNDPOUNDAIR"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeState name="GroundPound_Default_State2" pos="128 -64.4"/>
+   <AnimTreeBranch name="Branch6">
+    <p:BranchTo value="GroundPoundScareStart"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="GROUNDPOUND_START"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch5">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:BranchTo value="GroundPound_Scare_Group"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="GROUNDPOUND_SCARE"/>
+   </p:Events>
+  </AnimTreeBranch>
+ </AnimTree>
+
+</d:SnipeFile>

@@ -1,0 +1,72 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="2.0.267 x64" branch="M2" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="0">
+  <p:Interface value="FullBody"/>
+  <p:StartState value=""/>
+  <AnimTreeBranch name="Branch1">
+   <p:BranchTo value="StartUseCannon"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="CANNON_START"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch2">
+   <p:BranchTo value="StopUseCannon"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="CANNON_STOP"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Cannon_Group" expanded="1" pos="0 0">
+   <p:EventsFired>
+    <p:Event class="AnimTreeStateEventProperty" value="Face_Intense_Start">
+     <p:When value="EnteringGroup"/>
+    </p:Event>
+    <p:Event2 class="AnimTreeStateEventProperty" value="Face_Kill">
+     <p:When value="ExitingGroup"/>
+    </p:Event2>
+   </p:EventsFired>
+   <AnimTreeState name="StartUseCannon" pos="-1.8 -2.91323e-013">
+    <p:Clip value="CANNON_MOUNT"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:EaseDuration value="3"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeState name="StopUseCannon" pos="-1.8 -2.4">
+    <p:Clip value="CANNON_DISMOUNT"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:EaseDuration value="3"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="CannonDismount_Land"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="UseCannonActive" pos="-0.4 -1.2">
+    <p:Clip value="CANNON_STANCE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+   </AnimTreeState>
+   <AnimTreeState name="CannonDismount_Land" pos="-1.8 -3.4">
+    <p:Clip value="LAND"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:EaseDuration value="3"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="EnteringState"/>
+      <p:Offset value="6"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch3">
+   <p:BranchTo value="UseCannonActive"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="CANNON_STANCE"/>
+   </p:Events>
+  </AnimTreeBranch>
+ </AnimTree>
+
+</d:SnipeFile>
