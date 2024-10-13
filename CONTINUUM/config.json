@@ -1,0 +1,70 @@
+{
+  "Version": "1.0",
+  "ModID": "Breeze",
+  "Author": {
+    "Name": "Cassinni4",
+    "Role": "Main Mod Creator"
+  },
+  "Contributors": [
+    {
+      "Name": "Bread",
+      "Role": "Provided help with the Text Creator; helped with some early developer Rouge One characters."
+    },
+    {
+      "Name": "satoru-kun",
+      "Role": "Gateway insight, Original character creation graph"
+    }
+    {
+      "Name": "JiroTheOne",
+      "Role": "Along with my help, made the script to crack the gateway and add characters!"
+    }
+    {
+      "Name": "JohnLogostini",
+      "Role": "Helped port the mod to Continuum."
+    }
+    {
+      "Name": "BeyondCarL",
+      "Role": "Gave me permission to use some of his texture mods to make some of the Premium Figures more unique."
+    }
+    {
+      "Name": "TheSithEternal",
+      "Role": "Gave me permission to use his Emperor Palpatine and Evil Emperor Zurg mods."
+    }
+    {
+      "Name": "EXTRA CREDITS",
+      "Role": "Below are some names I would think deserve credit, but played a minor role in development."
+    }
+    {
+      "Name": "mrc",
+      "Role": "Major Beta Tester and bug finder."
+    }
+  ],
+  "DisplayName": "Breeze,
+  "DisplayImage": "portrait.png",
+  "DisplayBackground": "background.png",
+  "Description": "#Info\nA mod that restores unfinished and left out content to the Gold Edition of Disney Infinity 3.0"
+  "LinkedIntegrations": [
+    {
+      "IntegrationID": "disney-infinity-3-0",
+      "TargetVersion": "1.*",
+      "MinimumVersion": "1.*",
+      "ModCategory": "character"
+    }
+  ],
+  "InstallActions": [
+     {
+  "Action": "UnzipFile",
+  "TargetFile": "[Game]\\assets\\expendables_data\\dna\\dna.zip",
+  "DestinationPath": "[Game]\\assets\\expendables_data\\dna",
+  "UseAutomapping": true,
+  "DeleteWhenComplete": true
+},
+{
+  "Action": "CopyFiles",
+  "TargetPath": "[Mod]\\resources\\expendables_data\\dna\\avg_hulk_premium_charged1.dnax",
+  "FileFilter": ".*",
+  "IncludeSubfolders": true,
+  "DestinationPath": "[Game]\\assets\\expendables_data\\dna",
+},
+  ]
+}
