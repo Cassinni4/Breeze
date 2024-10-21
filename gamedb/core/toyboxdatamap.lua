@@ -16459,6 +16459,7 @@ L15 = "Cho|mri_swooshe"
 L16 = "GameDB|gamedb/core/in3_moa_maui.lua|1|progression"
 L17 = "GameDB|gamedb/core/in3_moa_maui_toolset.lua|1|toolset"
 L18 = "Particles|moa_maui"
+L19 = "GameDB|gamedb/core/in3_moa_maui.lua|1|progression"
 L5[1] = L6
 L5[2] = L7
 L5[3] = L8
