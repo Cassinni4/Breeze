@@ -1,0 +1,2 @@
+elseif self.closeOption == "MoreSparks" then
+ UI_IncrementSparks(5000)

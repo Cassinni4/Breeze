@@ -1,0 +1,113 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="2.0.80 x64" branch="in3" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="0">
+  <p:Interface value="FullBody"/>
+  <AnimTreeStateGroup name="MissionGiverIdles" expanded="1" pos="0 0">
+   <p:Color value="0.7 0.439595 0.106144"/>
+   <AnimTreeState name="MissionGiver_Idle1" pos="-1.8 0.4">
+    <p:Clip value="IDLE_BREAKA"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="PASSIVE_DIALOG">
+      <p:When value="EnteringState"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="RandomIdler" pos="0.8 2.2">
+    <p:AutoBranchSequence value="Random"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="MissionGiver_Idle1"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch2">
+     <p:BranchTo value="MissionGiver_Idle2"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch3">
+     <p:BranchTo value="MissionGiver_Idle3"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="MissionGiver_Idle2" pos="0.7 0.5">
+    <p:Clip value="IDLE_BREAKB"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="PASSIVE_DIALOG">
+      <p:When value="EnteringState"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="MissionGiver_Idle3" pos="3.45 0.5">
+    <p:Clip value="IDLE_BREAKC"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="PASSIVE_DIALOG">
+      <p:When value="EnteringState"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch1">
+   <p:BranchTo value="RandomIdler"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MG_IDLE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="OUT_BubbleStateGroup" expanded="1" pos="-1.2 0.6">
+   <p:Color value="0.7 0.155632 0.666521"/>
+   <AnimTreeState name="OUT_BubbleState_Start" pos="8.2 2.4">
+    <p:Clip value="IGP_START"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="OUT_BubbleState_Loop"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="OUT_BubbleState_Loop" pos="8.2 1.4">
+    <p:Clip value="IGP_LOOP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="OUT_BubbleState_End"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="OUT_BubbleState_Exit"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="OUT_BubbleState_End" pos="8.2 0.3">
+    <p:Clip value="IGP_END"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="IDLE">
+      <p:When value="ExitingState"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch2">
+   <p:BranchTo value="OUT_BubbleState_Start"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="OUT_BubbleState_Enter"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeState name="State11" pos="-11 -7.2"/>
+ </AnimTree>
+
+</d:SnipeFile>

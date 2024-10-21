@@ -1,0 +1,247 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="2.0.59 x64" branch="in3" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="0">
+  <p:Interface value="FullBody"/>
+  <AnimTreeStateGroup name="Towed_State_Group" expanded="1" pos="3.00001 2.4">
+   <p:StartState value="BeingTowed"/>
+   <AnimTreeState name="BeingTowed" pos="-5.8 -0.8">
+    <p:Clip value="DRIVE_MINI_DRIVE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <p:EventsIgnored>
+     <p:Event class="AnimTreeEventPointerProperty" value="LAND"/>
+    </p:EventsIgnored>
+   </AnimTreeState>
+   <AnimTreeStateGroup name="Thrown_Air" expanded="1" pos="22.8 3.4">
+    <AnimTreeState name="ThrownAirInto" pos="-23.4 -4.60001">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="DROPKICKED_LIGHT_RHAND"/>
+     <p:AISync value="FALSE"/>
+     <AnimTreeBranch name="Branch1">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:BranchTo value="Thrown_Air_Loop"/>
+      <p:DefaultBranch value="FALSE"/>
+      <p:CropStart value="30"/>
+      <p:CropEnd value="0"/>
+      <p:InitialTime value="30"/>
+      <p:Speed value="1"/>
+      <p:PostBehavior value="Loop"/>
+      <p:EaseDuration value="0"/>
+      <p:CurveSlope value="1"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="RELEASE"/>
+      </p:Events>
+     </AnimTreeBranch>
+     <AnimTreeBranch name="Branch2">
+      <p:BranchTo value="ThrownAir_Splat"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="ONGROUND"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="Thrown_Air_Loop" pos="-20.6 -4.60001">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="DROPKICKED_AIR"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:CropStart value="0"/>
+     <p:CropEnd value="30"/>
+     <p:InitialTime value="0"/>
+     <p:Speed value="1"/>
+     <p:PostBehavior value="Loop"/>
+     <p:AISync value="FALSE"/>
+     <AnimTreeBranch name="Branch1">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:BranchTo value="ThrownAir_Splat"/>
+      <p:DefaultBranch value="FALSE"/>
+      <p:CropStart value="0"/>
+      <p:InitialTime value="0"/>
+      <p:Speed value="1"/>
+      <p:PostBehavior value="Pause"/>
+      <p:EaseDuration value="0"/>
+      <p:CurveSlope value="1"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="ONGROUND"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="ThrownAir_Splat" pos="-20.6 -5.60001">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="DROPKICKED_SPLAT"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:CropStart value="0"/>
+     <p:Speed value="1"/>
+     <p:AISync value="FALSE"/>
+     <p:EventsIgnored>
+      <p:Event class="AnimTreeEventPointerProperty" value="LAND"/>
+      <p:Event2 class="AnimTreeEventPointerProperty" value="LAND_HARD"/>
+      <p:Event4 class="AnimTreeEventPointerProperty" value="IDLE"/>
+     </p:EventsIgnored>
+     <AnimTreeBranch name="Branch1">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:BranchTo value="ThrownAir_Stun"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:PostBehavior value="Pause"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value=""/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="ThrownAir_Getup" pos="-20.6 -7.60001">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="DROPKICKED_GETUP"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:CropStart value="0"/>
+     <p:PostBehavior value="Stop"/>
+     <p:AISync value="TRUE"/>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="GetupToIdle"/>
+      <p:DefaultBranch value="TRUE"/>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="ThrownAir_Stun" pos="-20.6 -6.6">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="DROPKICKED_STUN"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:AISync value="FALSE"/>
+     <p:EventsFired>
+      <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+       <p:When value="ExitingState"/>
+      </p:Event>
+     </p:EventsFired>
+     <AnimTreeBranch name="Branch1">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:BranchTo value="ThrownAir_Getup"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value=""/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="LandHard" pos="-23.2 -6.2">
+     <p:Clip value="LAND_HARD"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:AISync value="TRUE"/>
+     <p:EventsFired>
+      <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE"/>
+     </p:EventsFired>
+     <p:EventsIgnored>
+      <p:Event class="AnimTreeEventPointerProperty" value="LAND"/>
+     </p:EventsIgnored>
+    </AnimTreeState>
+    <AnimTreeState name="GetupToIdle" pos="-20.6 -8.6">
+     <p:EventsFired>
+      <p:Event class="AnimTreeStateEventProperty" value="IDLE">
+       <p:When value="EnteringState"/>
+      </p:Event>
+     </p:EventsFired>
+    </AnimTreeState>
+   </AnimTreeStateGroup>
+   <AnimTreeState name="Towed_Hop" pos="-5.80001 -3">
+    <p:Clip value="DRIVE_MINI_HOP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Towed_Land"/>
+     <p:DefaultBranch value="TRUE"/>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Towed_Land" pos="-3.20001 -3">
+    <p:Clip value="DRIVE_MINI_LAND"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="BeingTowed"/>
+     <p:DefaultBranch value="TRUE"/>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeBranch name="Branch3">
+    <p:BranchTo value="Towed_Land"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="LAND"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeBranch name="Branch4">
+    <p:BranchTo value="Towed_Hop"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="HOP"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch1">
+   <p:BranchTo value="BeingTowed"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="TowAttached"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch2">
+   <p:BranchTo value="ThrownAirInto"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="TOW_THROW_AIR"/>
+   </p:Events>
+  </AnimTreeBranch>
+ </AnimTree>
+
+</d:SnipeFile>

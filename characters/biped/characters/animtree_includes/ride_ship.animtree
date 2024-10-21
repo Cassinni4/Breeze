@@ -1,0 +1,344 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="2.0.335 x64" branch="in2" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="0">
+  <p:Interface value="FullBody"/>
+  <p:StartState value="Killinterface"/>
+  <AnimTreeStateGroup name="Ship" expanded="1" pos="2.4 3.2">
+   <p:StartState value="ShipSteer"/>
+   <AnimTreeState name="ShipSteer" pos="-2.8 2.6">
+    <p:Clip value="SHIP_STEER"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:CropStart value="0"/>
+    <p:CropEnd value="0"/>
+    <p:InitialTime value="0"/>
+    <p:PostBehavior value="Loop"/>
+    <p:EaseDuration value="5"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="SpinRight"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="SPIN_RIGHT"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="LeftToRight" pos="-4.55 -3.5">
+    <p:Clip value="SHIP_LEFTSPIN_TO_RIGHTSPIN"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:Speed value="0.7"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="SpinRight4"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="RightToLeft" pos="-0.55 -3.5">
+    <p:Clip value="SHIP_RIGHTSPIN_TO_LEFTSPIN"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:Speed value="0.7"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="SpinLeft4"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeBranch name="Branch2">
+    <p:BranchTo value="LeftToRight"/>
+    <p:EaseDuration value="5"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="SPIN_LEFT_TO_RIGHT"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeBranch name="Branch4">
+    <p:BranchTo value="RightToLeft"/>
+    <p:EaseDuration value="5"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="SPIN_RIGHT_TO_LEFT"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeStateGroup name="SpinRight4" expanded="1" pos="1.2 -0.4">
+    <p:StartState value="SpinRight"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="Face_Intense_Start">
+      <p:When value="EnteringGroup"/>
+     </p:Event>
+    </p:EventsFired>
+    <AnimTreeState name="SpinRight" pos="2.1 -1.4">
+     <p:Clip value="SHIP_RIGHTSPIN"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:Speed value="1"/>
+     <p:PostBehavior value="Stop"/>
+     <p:EaseDuration value="3"/>
+     <p:EventsIgnored>
+      <p:Event class="AnimTreeEventPointerProperty" value="STEER_SHIP"/>
+     </p:EventsIgnored>
+     <AnimTreeBranch name="Branch3">
+      <p:BranchTo value="SpinRight2"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="SHORT_RETURN2"/>
+      <p:EaseDuration value="5"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="STEER_SHIP"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="SpinRight2" pos="4.8 -1">
+     <p:Clip value="SHIP_RIGHTSPIN"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="SpinRight3"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+     <AnimTreeBranch name="Branch2">
+      <p:BranchTo value="SHORT_RETURN2"/>
+      <p:EaseDuration value="5"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="STEER_SHIP"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="SpinRight3" pos="7.34999 -0.500001">
+     <p:Clip value="SHIP_RIGHTSPIN"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="RIGHT_SETTLE"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+     <AnimTreeBranch name="Branch2">
+      <p:BranchTo value="SHORT_RETURN2"/>
+      <p:EaseDuration value="5"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="STEER_SHIP"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch7">
+     <p:BranchTo value="RIGHT_TO_LEFT"/>
+     <p:EaseDuration value="5"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="STEER_SHIP"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeState name="RIGHT_SETTLE" pos="7.325 -1.55">
+     <p:Clip value="STEER_RIGHT_SETTLE"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="RIGHT_HOLD"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="RIGHT_HOLD" pos="7.325 -2.625">
+     <p:Clip value="SHIP_STEER_RIGHT_HOLD"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:PostBehavior value="Loop"/>
+    </AnimTreeState>
+   </AnimTreeStateGroup>
+   <AnimTreeBranch name="Branch3">
+    <p:BranchTo value="SpinLeft4"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="SPIN_LEFT"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeBranch name="Branch5">
+    <p:BranchTo value="SpinRight4"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="SPIN_RIGHT"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeState name="LEFT_TO_RIGHT" pos="-6.2 -1.8">
+    <p:Clip value="SHIP_LEFTSPIN_TO_RIGHTSPIN"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:CropEnd value="23"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="RETURN_SETTLE2"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="RIGHT_TO_LEFT" pos="0.799997 -1.8">
+    <p:Clip value="SHIP_RIGHTSPIN_TO_LEFTSPIN"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:CropEnd value="23"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="RETURN_SETTLE"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeStateGroup name="SpinLeft4" expanded="1" pos="-9.6 -1.2">
+    <p:StartState value="SpinLeft"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="Face_Intense_Start">
+      <p:When value="EnteringGroup"/>
+     </p:Event>
+    </p:EventsFired>
+    <AnimTreeState name="SpinLeft" pos="0.600003 -0.4">
+     <p:Clip value="SHIP_LEFTSPIN"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:Speed value="1"/>
+     <p:PostBehavior value="Stop"/>
+     <p:EaseDuration value="5"/>
+     <p:EventsIgnored>
+      <p:Event class="AnimTreeEventPointerProperty" value="STEER_SHIP"/>
+     </p:EventsIgnored>
+     <AnimTreeBranch name="Branch2">
+      <p:BranchTo value="SpinLeft2"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="SHORT_RETURN"/>
+      <p:EaseDuration value="5"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="STEER_SHIP"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="SpinLeft2" pos="-2.2 -7.00354e-007">
+     <p:Clip value="SHIP_LEFTSPIN"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="SpinLeft3"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+     <AnimTreeBranch name="Branch2">
+      <p:BranchTo value="SHORT_RETURN"/>
+      <p:EaseDuration value="5"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="STEER_SHIP"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="SpinLeft3" pos="-4.79999 0.3">
+     <p:Clip value="SHIP_LEFTSPIN"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="LEFT_SETTLE"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+     <AnimTreeBranch name="Branch2">
+      <p:BranchTo value="SHORT_RETURN"/>
+      <p:EaseDuration value="5"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="STEER_SHIP"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch6">
+     <p:BranchTo value="LEFT_TO_RIGHT"/>
+     <p:EaseDuration value="5"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="STEER_SHIP"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeState name="LEFT_SETTLE" pos="-4.69999 -0.85">
+     <p:Clip value="STEER_LEFT_SETTLE"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="LEFT_HOLD"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="LEFT_HOLD" pos="-4.69999 -1.875">
+     <p:Clip value="SHIP_STEER_LEFT_HOLD"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:PostBehavior value="Loop"/>
+    </AnimTreeState>
+   </AnimTreeStateGroup>
+   <AnimTreeStateGroup name="State Group" expanded="1" pos="-0.2 1">
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="Face_Happy_Start">
+      <p:When value="EnteringGroup"/>
+     </p:Event>
+    </p:EventsFired>
+    <AnimTreeState name="SHORT_RETURN" pos="-5.83749 -0.35">
+     <p:Clip value="STEER_LEFT_SHORTRETURN"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="ShipSteer"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="RETURN_SETTLE2" pos="-3.8 -0.999999">
+     <p:Clip value="STEER_LEFT_RETURNSETTLE"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="ShipSteer"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:EaseDuration value="0"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="RETURN_SETTLE" pos="-1.4 -1">
+     <p:Clip value="STEER_RIGHT_RETURNSETTLE"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="ShipSteer"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:EaseDuration value="0"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="SHORT_RETURN2" pos="0.562505 -0.55">
+     <p:Clip value="STEER_RIGHT_SHORTRETURN"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="ShipSteer"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+   </AnimTreeStateGroup>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch1">
+   <p:BranchTo value="ShipSteer"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="STEER_SHIP"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeState name="Killinterface" pos="-0.8 8.2">
+   <p:Color value="0 0 0"/>
+  </AnimTreeState>
+ </AnimTree>
+
+</d:SnipeFile>

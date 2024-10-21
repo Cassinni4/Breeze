@@ -1,0 +1,115 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="2.0.341 x64" branch="in2" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="-1">
+  <p:Interface value="Additive_UpperBodyLeftArm"/>
+  <p:StartState value="KillInterface"/>
+  <AnimTreeState name="KillInterface" pos="0 1.19209e-007"/>
+  <AnimTreeStateGroup name="Dual_Arm_Gun_Add_Group" expanded="1" pos="0.2 1.4">
+   <AnimTreeBranch name="Branch1">
+    <p:BranchTo value="KillInterface"/>
+    <p:DefaultBranch value="TRUE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeState name="Dual_Add_Fire_Gun_Left_Auto" pos="3.70002 0.60001">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="ADD_FIRE_GUN_L"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="FALSE"/>
+   </AnimTreeState>
+   <AnimTreeState name="Dual_Add_Fire_Gun_Left" pos="3.70002 2.00001">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="ADD_FIRE_GUN_L"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="FALSE"/>
+   </AnimTreeState>
+   <AnimTreeState name="Dual_Add_Fire_Pulse_Left" pos="3.70002 -0.79999">
+    <p:Clip value="ADD_FIRE_PULSE_L"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch2">
+   <p:BranchTo value="Dual_Add_Fire_Gun_Left_Auto"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="DUAL_USE_GUN_AUTO_L_ADD"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch3">
+   <p:BranchTo value="Dual_Add_Fire_Gun_Left"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="DUAL_USE_GUN_L_ADD"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="StingerAdd_Group" expanded="1" pos="0 0">
+   <AnimTreeState name="Dual_Add_Fire_Stinger_Left" pos="4.10002 -1.79999">
+    <p:Clip value="ADD_FIRE_STINGER_L"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+   </AnimTreeState>
+   <AnimTreeBranch name="Branch4">
+    <p:BranchTo value="KillInterface"/>
+    <p:DefaultBranch value="TRUE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch5">
+   <p:BranchTo value="Dual_Add_Fire_Stinger_Left"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="DUAL_FIRE_STINGER_L_ADD"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="WebDual_Group" expanded="1" pos="-0.2 -0.2">
+   <p:EventsFired>
+    <p:Event class="AnimTreeStateEventProperty" value="WEBGRAPPLE_LEFT_DONE"/>
+   </p:EventsFired>
+   <AnimTreeState name="State" pos="-0.8 -2">
+    <p:Clip value="ADD_FIRE_WEB_L"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="KillInterface"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch6">
+   <p:BranchTo value="State"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="START_WEBADDITIVE_LEFT"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch7">
+   <p:BranchTo value="Dual_Add_Fire_Pulse_Left"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="DUAL_FIRE_PULSE_L_ADD"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch8">
+   <p:BranchTo value="KillInterface"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="STOP_UPPERBODY_ADDITIVE_LEFTARM"/>
+   </p:Events>
+  </AnimTreeBranch>
+ </AnimTree>
+
+</d:SnipeFile>

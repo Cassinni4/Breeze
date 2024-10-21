@@ -1,0 +1,192 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="2.0.90 x64" branch="in3" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="4">
+  <p:Interface value="FullBodyBlends"/>
+  <p:StartState value="KillInterface"/>
+  <AnimTreeState name="KillInterface" pos="1.8 0.8">
+   <p:Color value="0.7 0.7 0.7"/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <p:Clip value=""/>
+  </AnimTreeState>
+  <AnimTreeBranch name="Branch1">
+   <p:BranchTo value="KillInterface"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:CropStart value="0"/>
+   <p:InitialTime value="0"/>
+   <p:Speed value="1"/>
+   <p:PostBehavior value="Pause"/>
+   <p:EaseDuration value="1"/>
+   <p:CurveSlope value="1"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="STOP_FULLBODYBLENDS"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeState name="Fall" pos="-0.2 2.2">
+   <p:Color value="0.7 0.7 0.7"/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <p:Clip value="FALL"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:PostBehavior value="Stop"/>
+   <p:EaseDuration value="4"/>
+   <p:EventsFired>
+    <p:Event class="AnimTreeStateEventProperty" value="FALL_HARD">
+     <p:When value="ClipEnds"/>
+    </p:Event>
+    <p:Event2 class="AnimTreeStateEventProperty" value="STOP_FULLBODYBLENDS">
+     <p:When value="ClipEnds"/>
+    </p:Event2>
+   </p:EventsFired>
+   <AnimTreeBranch name="Branch1">
+    <p:BranchTo value="FallHardBlend"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="FALL_HARD"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeBranch name="Branch2">
+    <p:BranchTo value="KillInterface"/>
+    <p:DefaultBranch value="FALSE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="STOP_FULLBODYBLENDS"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeState>
+  <AnimTreeBranch name="Branch2">
+   <p:BranchTo value="Fall"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:Speed value="1"/>
+   <p:PostBehavior value="Pause"/>
+   <p:CurveSlope value="1"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="FALL"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeState name="LandRun" pos="-3.6 2.4">
+   <p:Color value="0.7 0.7 0.7"/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <p:Clip value="LANDRUN"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+  </AnimTreeState>
+  <AnimTreeState name="FallHardBlend" pos="2.4 2.2"/>
+  <AnimTreeStateGroup name="Ride_Group" expanded="1" pos="-1 -2.8">
+   <p:StartState value="KillInterface2"/>
+   <p:EventsIgnored>
+    <p:Event class="AnimTreeEventPointerProperty" value="FALL"/>
+    <p:Event2 class="AnimTreeEventPointerProperty" value="STOP_FULLBODYBLENDS"/>
+   </p:EventsIgnored>
+   <AnimTreeState name="KillInterface2" pos="-0.4 2.98023e-007">
+    <p:Clip value="SPRINTSTART_EASEOUT"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:EaseDuration value="6"/>
+   </AnimTreeState>
+   <AnimTreeBranch name="Branch4">
+    <p:BranchTo value="KillInterface2"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="FALL"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeBranch name="Branch7">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:BranchTo value="Ride_SprintStart"/>
+    <p:DefaultBranch value="FALSE"/>
+    <p:EaseDuration value="6"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="SPRINT_START"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeState name="Ride_SprintStart" pos="3.19999 -0.0395404">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="RIDE_SPRINTSTART"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Stop"/>
+    <p:AISync value="FALSE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE"/>
+    </p:EventsFired>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="KillInterface2"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="SPRINT_STOP"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeBranch name="Branch9">
+    <p:BranchTo value="KillInterface"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="DISMOUNT"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch3">
+   <p:BranchTo value="Ride_Group"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MOUNTUP_BULLSEYE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeState name="JetPack_HockeyStop" pos="4.2 0.4">
+   <p:Clip value="JETPACK_HOCKEYSTOP"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:PostBehavior value="Pause"/>
+   <p:EaseDuration value="1"/>
+  </AnimTreeState>
+  <AnimTreeBranch name="Branch5">
+   <p:BranchTo value="JetPack_HockeyStop"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="HOCKEY_STOP"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch6">
+   <p:BranchTo value="Ride_Group"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MOUNTUP_HORSE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch8">
+   <p:BranchTo value="Ride_Group"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MOUNTUP_ELEPHANT"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Drive_Group" expanded="1" pos="-4.4 -0.8">
+   <p:StartState value="KillInterface3"/>
+   <p:EventsIgnored>
+    <p:Event class="AnimTreeEventPointerProperty" value="FALL"/>
+    <p:Event2 class="AnimTreeEventPointerProperty" value="STOP_FULLBODYBLENDS"/>
+   </p:EventsIgnored>
+   <AnimTreeState name="KillInterface3" pos="4.76837e-007 -8.9407e-008"/>
+   <AnimTreeBranch name="Branch11">
+    <p:BranchTo value="KillInterface"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="DISMOUNT"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch10">
+   <p:BranchTo value="Drive_Group"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="DRIVE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch12">
+   <p:BranchTo value="Ride_Group"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MOUNTUP_ATST"/>
+   </p:Events>
+  </AnimTreeBranch>
+ </AnimTree>
+
+</d:SnipeFile>
