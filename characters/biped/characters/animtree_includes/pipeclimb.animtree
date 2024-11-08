@@ -1,0 +1,89 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="2.0.265 x64" branch="M2" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="0">
+  <p:Interface value="FullBody"/>
+  <AnimTreeStateGroup name="PipeClimb_Group" expanded="1" pos="-1 -1">
+   <p:StartState value="MountPipe"/>
+   <AnimTreeState name="MountPipe" pos="1.6 0.2">
+    <p:Clip value="PIPECLIMB_LAND"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:EaseDuration value="3"/>
+    <p:CurveSlope value="1"/>
+    <p:AISync value="TRUE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="JumpOffPipe"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="DOUBLE_JUMP"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch2">
+     <p:BranchTo value="ReachTopOfPipe"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="DISMOUNT"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="ClimbPipe" pos="0 -1">
+    <p:Clip value="PIPECLIMB_CLIMB"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <p:EaseDuration value="4"/>
+    <p:CurveSlope value="1"/>
+    <AnimTreeBranch name="Branch2">
+     <p:BranchTo value="ReachTopOfPipe"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="DISMOUNT"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="JumpOffPipe"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="DOUBLE_JUMP"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="ReachTopOfPipe" pos="0 -2.05">
+    <p:Clip value="PIPECLIMB_JUMP_OFF_AT_TOP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:EaseDuration value="3"/>
+    <p:CurveSlope value="1"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="FallAfterJumping"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="JumpOffPipe" pos="2.8 -1.5125">
+    <p:Clip value="JUMPDOUBLE_AIR_BLEND"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="3"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="FallAfterJumping"/>
+     <p:DefaultBranch value="TRUE"/>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="FallAfterJumping" pos="2.8 -3.1125">
+    <p:Clip value="PIPECLIMB_FALL_AFTER_JUMP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <p:EaseDuration value="7"/>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch1">
+   <p:BranchTo value="PipeClimb_Group"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="PIPECLIMB"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch2">
+   <p:BranchTo value="ClimbPipe"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="PIPECLIMB_CLIMB"/>
+   </p:Events>
+  </AnimTreeBranch>
+ </AnimTree>
+
+</d:SnipeFile>

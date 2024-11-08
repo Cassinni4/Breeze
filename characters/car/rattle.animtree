@@ -1,0 +1,92 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="2.0.184 x64" branch="M2" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="4">
+  <p:Interface value="Rattle"/>
+  <p:StartState value="Rattle_Idle"/>
+  <AnimTreeState name="Rattle_Large" pos="2.4 -1.2">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      "Grass, Gravel, etc."
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Clip value="RCT_RATTLE_LRG"/>
+   <p:ClipTimeSource value="Global.Time"/>
+   <p:PostBehavior value="Loop"/>
+  </AnimTreeState>
+  <AnimTreeState name="Rattle_Small" pos="-2.4 -1.2">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      "Tarmack (road)"
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Clip value="RCT_RATTLE_SML"/>
+   <p:ClipTimeSource value="Global.Time"/>
+   <p:PostBehavior value="Loop"/>
+  </AnimTreeState>
+  <AnimTreeState name="Rattle_Medium" pos="1.49012e-007 -1.2">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      "Dirt"
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Clip value="RCT_RATTLE_MED"/>
+   <p:ClipTimeSource value="Global.Time"/>
+   <p:PostBehavior value="Loop"/>
+  </AnimTreeState>
+  <AnimTreeState name="Rattle_Idle" pos="2.98023e-008 2.98023e-008">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      "Idle (static)"
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Clip value="RCT_RATTLE_IDLE"/>
+   <p:ClipTimeSource value="Global.Time"/>
+   <p:PostBehavior value="Loop"/>
+  </AnimTreeState>
+  <AnimTreeBranch name="Branch1">
+   <p:BranchTo value="Rattle_Idle"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Brake_Stop"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch2">
+   <p:BranchTo value="Rattle_Small"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="React_Rattle_Small"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch3">
+   <p:BranchTo value="Rattle_Medium"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="React_Rattle_Medium"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch4">
+   <p:BranchTo value="Rattle_Large"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="React_Rattle_Large"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeState name="KillInterface" pos="-2.6 2">
+   <p:Color value="0 0 0"/>
+   <p:Clip value="BM_IDLE"/>
+   <p:ClipTimeSource value="Global.Time"/>
+   <AnimTreeBranch name="Branch1">
+    <p:BranchTo value="Rattle_Idle"/>
+    <p:DefaultBranch value="TRUE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="BaseEyes_End"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeState>
+ </AnimTree>
+
+</d:SnipeFile>

@@ -1,0 +1,179 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="2.0.267 x64" branch="M2" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="0">
+  <p:Interface value="FullBody"/>
+  <p:StartState value=""/>
+  <AnimTreeStateGroup name="Slingshot_Group" expanded="1" pos="-1.60001 0.6">
+   <p:Color value="0.6 0.4 0.7"/>
+   <p:StartState value="SlingshotMount"/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <p:EventsFired>
+    <p:Event class="AnimTreeStateEventProperty" value="Face_Happy_Start">
+     <p:When value="EnteringGroup"/>
+    </p:Event>
+    <p:Event2 class="AnimTreeStateEventProperty" value="Face_Kill">
+     <p:When value="ExitingGroup"/>
+    </p:Event2>
+   </p:EventsFired>
+   <AnimTreeState name="SlingshotMount" pos="2.4 -0.799998">
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="JUMPAIR_BLEND"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Pause"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="SlingshotLand"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:CropStart value="0"/>
+     <p:InitialTime value="0"/>
+     <p:Speed value="1"/>
+     <p:PostBehavior value="Pause"/>
+     <p:EaseDuration value="0"/>
+     <p:CurveSlope value="1"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="SLINGSHOT_SEATED"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="SlingshotLand" pos="-0.999999 -0.799999">
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="DRIVE_NORMAL_LAND"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:CropStart value="0"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="0"/>
+    <p:CurveSlope value="1"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="SlingshotIdle"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:CropStart value="0"/>
+     <p:InitialTime value="0"/>
+     <p:Speed value="1"/>
+     <p:PostBehavior value="Pause"/>
+     <p:EaseDuration value="0"/>
+     <p:CurveSlope value="1"/>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeStateGroup name="DriveIdle_Group" expanded="1" pos="0.4 -0.4">
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:StartState value=""/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <AnimTreeState name="SlingshotIdle" pos="1.8 -2.2">
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="DRIVE_NORMAL_DRIVE"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:CropStart value="0"/>
+     <p:Speed value="1"/>
+     <p:PostBehavior value="Loop"/>
+     <p:EaseDuration value="3"/>
+     <p:CurveSlope value="1"/>
+     <p:AISync value="FALSE"/>
+     <AnimTreeBranch name="Branch7">
+      <p:BranchTo value="SlingshotLand"/>
+      <p:DefaultBranch value="FALSE"/>
+      <p:CropStart value="0"/>
+      <p:InitialTime value="0"/>
+      <p:Speed value="1"/>
+      <p:PostBehavior value="Pause"/>
+      <p:EaseDuration value="0"/>
+      <p:CurveSlope value="1"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="DRIVELAND"/>
+      </p:Events>
+     </AnimTreeBranch>
+     <AnimTreeBranch name="Branch4">
+      <p:BranchTo value="Slingshot_Idle_Decision"/>
+      <p:DefaultBranch value="FALSE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="IDLE_BREAK"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="SlingshotIdlePassive" pos="-0.400004 -5.2">
+     <p:Clip value="MNT_SEAT_IDLE_PASSIVE"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="SlingshotIdle"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="SlingshotIdleLook" pos="4 -5.2">
+     <p:Clip value="MNT_SEAT_IDLE_LOOK"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="SlingshotIdle"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="Slingshot_Idle_Decision" pos="1.8 -4.2">
+     <p:AutoBranchSequence value="Random"/>
+     <p:EventsFired>
+      <p:Event class="AnimTreeStateEventProperty" value="IDLE_BREAK">
+       <p:When value="EnteringState"/>
+      </p:Event>
+     </p:EventsFired>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="SlingshotIdlePassive"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:ChanceToTake value="0.5"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+     <AnimTreeBranch name="Branch2">
+      <p:BranchTo value="SlingshotIdleLook"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:ChanceToTake value="0.5"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+   </AnimTreeStateGroup>
+   <AnimTreeState name="Slingshot_Dismount" pos="3.40001 -7.4">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="JUMPAIR_BLEND"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:CropStart value="0"/>
+    <p:CropEnd value="30"/>
+    <p:InitialTime value="0"/>
+    <p:Speed value="1"/>
+    <p:PostBehavior value="Loop"/>
+    <p:EaseDuration value="0"/>
+    <p:CurveSlope value="1"/>
+    <p:AISync value="FALSE"/>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch1">
+   <p:BranchTo value="Slingshot_Group"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MOUNT_SLINGSHOT"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch2">
+   <p:BranchTo value="Slingshot_Dismount"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="DISMOUNT_SLINGSHOT"/>
+   </p:Events>
+  </AnimTreeBranch>
+ </AnimTree>
+
+</d:SnipeFile>

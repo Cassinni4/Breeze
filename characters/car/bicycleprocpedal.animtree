@@ -1,0 +1,38 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="2.0.247 x64" branch="M2" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="10">
+  <p:Interface value="Bicycle_Override2"/>
+  <p:StartState value="KillInterface"/>
+  <AnimTreeState name="KillInterface" pos="0.2 1.4">
+   <p:Color value="0 0 0"/>
+  </AnimTreeState>
+  <AnimTreeState name="Bicycle_Peddle" pos="0.2 2.98023e-008">
+   <p:AutoBranchSequence value="Sequential"/>
+   <p:Clip value="BK_BM_PEDDLE_F"/>
+   <p:ClipTimeSource value=".Params.PedalsRot"/>
+   <p:PostBehavior value="Loop"/>
+  </AnimTreeState>
+  <AnimTreeBranch name="Branch1">
+   <p:BranchTo value="Bicycle_Peddle"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="BikeStart"/>
+    <p:Event2 class="AnimTreeEventPointerProperty" value="Idle"/>
+    <p:Event3 class="AnimTreeEventPointerProperty" value="Drift_Stop"/>
+    <p:Event4 class="AnimTreeEventPointerProperty" value="DriftLeftStop"/>
+    <p:Event5 class="AnimTreeEventPointerProperty" value="DriftRightStop"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch2">
+   <p:BranchTo value="KillInterface"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="BikeEnd"/>
+    <p:Event2 class="AnimTreeEventPointerProperty" value="DriftLeftStart"/>
+    <p:Event3 class="AnimTreeEventPointerProperty" value="DriftRightStart"/>
+    <p:Event4 class="AnimTreeEventPointerProperty" value="BikeIdle"/>
+    <p:Event5 class="AnimTreeEventPointerProperty" value="DriftRightJump"/>
+    <p:Event6 class="AnimTreeEventPointerProperty" value="DriftLeftJump"/>
+   </p:Events>
+  </AnimTreeBranch>
+ </AnimTree>
+
+</d:SnipeFile>
