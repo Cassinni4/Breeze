@@ -1,0 +1,26 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Speed" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Speed"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/class_shorthuman/motions/shorthuman_wall_ldgr_clamber_slow.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/class_shorthuman/motions/shorthuman_wall_ldgr_clamber_fast.oct"
+			}
+		}
+	}
+}

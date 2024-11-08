@@ -1,0 +1,37 @@
+Version = "1.0g"
+Parameters =
+{
+	FloatParameter "LeanFB" =
+	{
+		DefaultPhase = 0.5
+	}
+	FloatParameter "Turn" =
+	{
+		DefaultPhase = 0.5
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Drive" =
+	{
+		Value = "LeanFB"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/class_bear/motions/bear_rs_proc_lr_fast.oct"
+				Phase = "Turn"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/class_bear/motions/bear_rs_proc_lr_med.oct"
+				Phase = "Turn"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/class_bear/motions/bear_rs_proc_lr_slow.oct"
+				Phase = "Turn"
+			}
+		}
+	}
+}

@@ -1,0 +1,47 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "WebSwingRoll" =
+	{
+	}
+	FloatParameter "WebSwingPitch" =
+	{
+	}
+}
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/spd_spiderman/motions/spd_am_webswing_procupper_center.oct"
+		Phase = "WebSwingPitch"
+	}
+	KeyBlendTrack "Key Blend" =
+	{
+		BlendMethod = 1
+		Value = "WebSwingRoll"
+		Keys =
+		[
+			0.0 0.25 0.75 1.0
+		]
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/spd_spiderman/motions/spd_am_webswing_leanleft_110_add.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/spd_spiderman/motions/spd_am_webswing_leanleft_add.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/spd_spiderman/motions/spd_am_webswing_leanright_add.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/spd_spiderman/motions/spd_am_webswing_leanright_110_add.oct"
+			}
+		}
+	}
+}

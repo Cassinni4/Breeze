@@ -1,0 +1,60 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Roll" =
+	{
+	}
+	FloatParameter "GlideSpeed" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend2" =
+	{
+		Value = "GlideSpeed"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/biped/motions/biped_cp_glide_slow.oct"
+			}
+			KeyBlendTrack "Key Blend" =
+			{
+				Value = "Roll"
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/biped/motions/biped_cp_glide_bankl.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/biped/motions/biped_cp_glide.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/biped/motions/biped_cp_glide_bankr.oct"
+					}
+				}
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/biped/motions/biped_cp_glide_fast.oct"
+			}
+		}
+	}
+	KeyBlendTrack "Key Blend3" =
+	{
+		BlendMethod = 1
+		Weight = 0.66
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/class_shorthuman/motions/shorthuman_cp_add.oct"
+			}
+		}
+	}
+}

@@ -2961,6 +2961,20 @@ ZoneList =
 				SplitScreenAllowed = true,
 				ZonePath = "worlds/holo_ayliffe/holo_ayliffe",
 			},	
+			gametest =
+                        {
+				ReturnToHubString = "Scn_ReturnToyBox",
+				_Inherits_ = "Inherit_RumpusRoom_Parent",
+				_ShowInMenu_ = true,
+				availableInConsumerBuild = true,
+				availableInE3Build = true,
+				availableInShippingBuild = true,
+				isPrebuiltToyBox = false,
+				listOrder = 20,
+				lock = "TBX_WORLD_BLANK",
+				SplitScreenAllowed = true,
+				ZonePath = "worlds/onehundred_geo/onehundred_geo",
+			},
 			RumpusRoom_Bridges = 
 			{
 				_Inherits_ = "Inherit_RumpusRoom_Parent",

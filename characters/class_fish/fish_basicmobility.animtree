@@ -1,0 +1,1394 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="3.02.141 x64" branch="in3" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="0">
+  <p:Interface value="FullBody"/>
+  <p:StartState value="StanceActive"/>
+  <AnimTreeStateGroup name="Swim_Group" expanded="1" pos="-526.2 518">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.792683 0.897223 1"/>
+   <p:StartState value=""/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <AnimTreeStateGroup name="SwimActive_Group" expanded="1" pos="-0.999987 0.599975">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="1 1 1"/>
+    <p:StartState value=""/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <AnimTreeState name="Swim" pos="530.4 -529.2">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="1 0.5 0"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="SWIM"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:PostBehavior value="Loop"/>
+     <p:EaseDuration value="10"/>
+     <p:AISync value="FALSE"/>
+    </AnimTreeState>
+    <AnimTreeState name="Swim_Start" pos="530.4 -527.8">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="1 0.5 0"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="SWIM_START"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:EaseDuration value="3"/>
+     <p:AISync value="FALSE"/>
+     <AnimTreeBranch name="Branch1">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:BranchTo value="Swim"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value=""/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="Swim_Kick_Loop" pos="530.4 -530.6">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="1 0.5 0"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="SWIM_KICK_LOOP"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:PostBehavior value="Loop"/>
+     <p:EaseDuration value="10"/>
+     <p:AISync value="FALSE"/>
+     <p:EventsIgnored>
+      <p:Event class="AnimTreeEventPointerProperty" value="SWIM_BURST"/>
+      <p:Event2 class="AnimTreeEventPointerProperty" value="SWIM_BURST_SMALL"/>
+     </p:EventsIgnored>
+    </AnimTreeState>
+   </AnimTreeStateGroup>
+   <AnimTreeState name="Swim_Kick_Big" pos="532.8 -530.6">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="1 0.5 0"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="SWIM_KICK_BIG"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:EaseDuration value="10"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="Swim_Kick_Loop"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value=""/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="SwimStop" pos="532.8 -526.6">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="1 0.5 0"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="SWIM_STOP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:EaseDuration value="3"/>
+    <p:AISync value="TRUE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="Swim"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value=""/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Swim_Jump" pos="532.8 -527.8">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="1 0.5 0"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="SWIM_JUMP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:EaseDuration value="3"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="Swim"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value=""/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Swim_Kick_Small" pos="532.8 -529.2">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="1 0.5 0"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="SWIM_KICK_SMALL"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:EaseDuration value="10"/>
+    <p:AISync value="FALSE"/>
+    <p:EventsIgnored>
+     <p:Event class="AnimTreeEventPointerProperty" value="SWIM_BURST_SMALL"/>
+    </p:EventsIgnored>
+    <AnimTreeBranch name="Branch1">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="Swim_Kick_Loop"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value=""/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Swim_180Turn_L" pos="535.8 -527.8">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.932927 0.554878 0.0853659"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="SWIM_180_TURN_L"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:EaseDuration value="3"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeState name="Swim_180Turn_R" pos="535.8 -529">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.932927 0.554878 0.0853659"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="SWIM_180_TURN_R"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:EaseDuration value="3"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeStateGroup name="Rage_Group" expanded="1" pos="-0.2 5.21541e-007">
+   <p:Color value="0.7 0.7 0.7"/>
+   <p:StartState value="PowerUpAttack"/>
+   <AnimTreeState name="PowerUpAttack" pos="9.8 -6.6">
+    <p:Color value="0.7 0.0469512 0.0469512"/>
+    <p:Clip value="POWERUP_RAGE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="1000"/>
+     </p:Event>
+     <p:Event2 class="AnimTreeStateEventProperty" value="Face_Kill">
+      <p:When value="ClipStarts"/>
+     </p:Event2>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch2">
+   <p:BranchTo value="PowerUpAttack"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_RAGE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="BasicMobility_Group" expanded="1" pos="-3.79999 0.400001">
+   <p:Color value="0.602833 0.7 0.435366"/>
+   <p:StartState value="Idle_Group"/>
+   <AnimTreeStateGroup name="Idle_Group" expanded="1" pos="0 0">
+    <p:StartState value="StanceActive"/>
+    <AnimTreeState name="StanceActive" pos="-2.6 -7.2">
+     <p:Clip value="SWIM_IDLE"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:EaseDuration value="5"/>
+     <p:EventsFired>
+      <p:Event class="AnimTreeStateEventProperty" value="Face_Happy_Start">
+       <p:When value="EnteringState"/>
+       <p:Offset value="1"/>
+      </p:Event>
+      <p:Event2 class="AnimTreeStateEventProperty" value="Face_Start_Eyes">
+       <p:When value="EnteringState"/>
+       <p:Offset value="15"/>
+      </p:Event2>
+     </p:EventsFired>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="Active2Passive"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeStateGroup name="Stance_Group" expanded="1" pos="0 8.6">
+     <p:StartState value="Stance"/>
+     <AnimTreeState name="Stance" pos="-3.6 -19.8">
+      <p:Clip value="STANCE"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:EventsFired>
+       <p:Event class="AnimTreeStateEventProperty" value="CHECK_FOR_ITEM_EQUIPPED"/>
+      </p:EventsFired>
+      <AnimTreeBranch name="Branch1">
+       <p:BranchTo value="StanceCont"/>
+       <p:DefaultBranch value="TRUE"/>
+       <p:Events>
+        <p:Event class="AnimTreeEventPointerProperty"/>
+       </p:Events>
+      </AnimTreeBranch>
+     </AnimTreeState>
+     <AnimTreeState name="StanceCont" pos="-3.6 -20.8">
+      <p:Clip value="STANCE"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:EventsFired>
+       <p:Event class="AnimTreeStateEventProperty" value="CHECK_FOR_ITEM_EQUIPPED"/>
+      </p:EventsFired>
+      <AnimTreeBranch name="Branch1">
+       <p:BranchTo value="Stance"/>
+       <p:DefaultBranch value="TRUE"/>
+       <p:Events>
+        <p:Event class="AnimTreeEventPointerProperty"/>
+       </p:Events>
+      </AnimTreeBranch>
+     </AnimTreeState>
+    </AnimTreeStateGroup>
+    <AnimTreeState name="SelectTool_Wait" pos="-2 -9.5">
+     <p:Clip value="STANCE"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="Stance_Group"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="StanceSelectTool" pos="-2 -8.5">
+     <p:Clip value="STANCE"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:PostBehavior value="Loop"/>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="SelectTool_Wait"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch6">
+     <p:BranchTo value="StanceSelectTool"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="ENTER_SELECTTOOLSTANCE"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeStateGroup name="Passive_Group" expanded="1" pos="0 0">
+     <AnimTreeState name="Idle_BreakA" pos="-7.9 -8.5">
+      <p:Clip value="IDLE_BREAKA"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:EaseDuration value="3"/>
+      <p:EventsFired>
+       <p:Event class="AnimTreeStateEventProperty" value="RELAXINNATEITEM"/>
+       <p:Event2 class="AnimTreeStateEventProperty" value="Face_Kill"/>
+       <p:Event3 class="AnimTreeStateEventProperty" value="RESTOREINNATEITEM"/>
+      </p:EventsFired>
+      <AnimTreeBranch name="Branch1">
+       <p:BranchTo value="StancePassive2"/>
+       <p:DefaultBranch value="TRUE"/>
+       <p:Events>
+        <p:Event class="AnimTreeEventPointerProperty"/>
+       </p:Events>
+      </AnimTreeBranch>
+     </AnimTreeState>
+     <AnimTreeState name="IdleBreakB" pos="-7.9 -10.5">
+      <p:Clip value="IDLE_BREAKB"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:EaseDuration value="3"/>
+      <p:EventsFired>
+       <p:Event class="AnimTreeStateEventProperty" value="SEND_IDLEFORAWHILE_MESSAGE"/>
+       <p:Event2 class="AnimTreeStateEventProperty" value="RELAXINNATEITEM"/>
+       <p:Event3 class="AnimTreeStateEventProperty" value="RESTOREINNATEITEM"/>
+      </p:EventsFired>
+      <AnimTreeBranch name="Branch1">
+       <p:BranchTo value="StancePassive3"/>
+       <p:DefaultBranch value="TRUE"/>
+       <p:Events>
+        <p:Event class="AnimTreeEventPointerProperty"/>
+       </p:Events>
+      </AnimTreeBranch>
+     </AnimTreeState>
+     <AnimTreeState name="IdleBreakC" pos="-7.9 -12.5">
+      <p:Clip value="IDLE_BREAKC"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:EaseDuration value="3"/>
+      <p:EventsFired>
+       <p:Event class="AnimTreeStateEventProperty" value="RELAXINNATEITEM"/>
+       <p:Event2 class="AnimTreeStateEventProperty" value="RESTOREINNATEITEM"/>
+      </p:EventsFired>
+      <AnimTreeBranch name="Branch1">
+       <p:BranchTo value="StancePassive"/>
+       <p:DefaultBranch value="TRUE"/>
+       <p:Events>
+        <p:Event class="AnimTreeEventPointerProperty"/>
+       </p:Events>
+      </AnimTreeBranch>
+     </AnimTreeState>
+     <AnimTreeState name="StancePassive" pos="-7.9 -7.3">
+      <p:Clip value="STANCE_PASSIVE"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:EaseDuration value="3"/>
+      <p:EventsFired>
+       <p:Event class="AnimTreeStateEventProperty" value="Face_Happy_Start">
+        <p:When value="EnteringState"/>
+       </p:Event>
+       <p:Event2 class="AnimTreeStateEventProperty" value="Face_Start_Eyes">
+        <p:When value="EnteringState"/>
+       </p:Event2>
+      </p:EventsFired>
+      <AnimTreeBranch name="Branch1">
+       <p:BranchTo value="Idle_BreakA"/>
+       <p:DefaultBranch value="TRUE"/>
+       <p:Events>
+        <p:Event class="AnimTreeEventPointerProperty"/>
+       </p:Events>
+      </AnimTreeBranch>
+     </AnimTreeState>
+     <AnimTreeState name="StancePassive2" pos="-7.9 -9.5">
+      <p:Clip value="STANCE_PASSIVE"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:EaseDuration value="3"/>
+      <p:EventsFired>
+       <p:Event class="AnimTreeStateEventProperty" value="Face_Happy_Start">
+        <p:When value="EnteringState"/>
+       </p:Event>
+       <p:Event2 class="AnimTreeStateEventProperty" value="Face_Start_Eyes">
+        <p:When value="EnteringState"/>
+       </p:Event2>
+      </p:EventsFired>
+      <AnimTreeBranch name="Branch1">
+       <p:BranchTo value="IdleBreakB"/>
+       <p:DefaultBranch value="TRUE"/>
+       <p:Events>
+        <p:Event class="AnimTreeEventPointerProperty"/>
+       </p:Events>
+      </AnimTreeBranch>
+     </AnimTreeState>
+     <AnimTreeState name="StancePassive3" pos="-7.9 -11.5">
+      <p:Clip value="STANCE_PASSIVE"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:EaseDuration value="3"/>
+      <p:EventsFired>
+       <p:Event class="AnimTreeStateEventProperty" value="Face_Happy_Start">
+        <p:When value="EnteringState"/>
+       </p:Event>
+       <p:Event2 class="AnimTreeStateEventProperty" value="Face_Start_Eyes">
+        <p:When value="EnteringState"/>
+       </p:Event2>
+      </p:EventsFired>
+      <AnimTreeBranch name="Branch1">
+       <p:BranchTo value="IdleBreakC"/>
+       <p:DefaultBranch value="TRUE"/>
+       <p:Events>
+        <p:Event class="AnimTreeEventPointerProperty"/>
+       </p:Events>
+      </AnimTreeBranch>
+     </AnimTreeState>
+    </AnimTreeStateGroup>
+    <AnimTreeState name="ActivityIdle" pos="-4.85 -9.3">
+     <p:Clip value="STANCE_SELECTWAIT"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:PostBehavior value="Loop"/>
+    </AnimTreeState>
+    <AnimTreeState name="Active2Passive" pos="-5.25 -7.3">
+     <p:Clip value="ACTIVE2PASSIVE"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:EaseDuration value="3"/>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="StancePassive"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch3">
+     <p:BranchTo value="StanceActive"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="ACTIVE_STANCE"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeState name="IGP_End" pos="1.0001 -9.00031">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.7 0 0"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="IGP_END"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:AISync value="FALSE"/>
+     <p:EventsFired>
+      <p:Event class="AnimTreeStateEventProperty" value="CHECK_FOR_ITEM_EQUIPPED">
+       <p:When value="ClipEnds"/>
+       <p:Offset value="0"/>
+      </p:Event>
+     </p:EventsFired>
+     <AnimTreeBranch name="Branch1">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:BranchTo value="Stance_Group"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:CropStart value="0"/>
+      <p:CropEnd value="30"/>
+      <p:InitialTime value="0"/>
+      <p:Speed value="1"/>
+      <p:PostBehavior value="Pause"/>
+      <p:EaseDuration value="0"/>
+      <p:CurveSlope value="1"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value=""/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeStateGroup name="IGP_Suspended" expanded="1" pos="-550 557.1">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.685897 0.366219 0.444118"/>
+     <p:StartState value="IGP_Start"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:EventsIgnored>
+      <p:Event class="AnimTreeEventPointerProperty" value="SHOW_LIGHTSABER"/>
+      <p:Event2 class="AnimTreeEventPointerProperty" value="HIDE_LIGHTSABER"/>
+     </p:EventsIgnored>
+     <AnimTreeState name="IGP_Start" pos="550 -563.1">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:Color value="0.7 0 0"/>
+      <p:AutoBranchSequence value="Sequential"/>
+      <p:Clip value="IGP_START"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:EaseDuration value="3"/>
+      <p:AISync value="FALSE"/>
+      <AnimTreeBranch name="Branch1">
+       <p:Notes>
+        <p:Notes>
+         <d:Value>
+          ""
+         </d:Value>
+        </p:Notes>
+       </p:Notes>
+       <p:BranchTo value="IGP_Loop"/>
+       <p:DefaultBranch value="TRUE"/>
+       <p:CropStart value="0"/>
+       <p:CropEnd value="30"/>
+       <p:InitialTime value="0"/>
+       <p:Speed value="1"/>
+       <p:PostBehavior value="Pause"/>
+       <p:EaseDuration value="0"/>
+       <p:CurveSlope value="1"/>
+       <p:Events>
+        <p:Event class="AnimTreeEventPointerProperty" value=""/>
+       </p:Events>
+      </AnimTreeBranch>
+      <AnimTreeBranch name="Branch2">
+       <p:Notes>
+        <p:Notes>
+         <d:Value>
+          ""
+         </d:Value>
+        </p:Notes>
+       </p:Notes>
+       <p:BranchTo value="IGP_Coin"/>
+       <p:DefaultBranch value="FALSE"/>
+       <p:CropStart value="0"/>
+       <p:CropEnd value="30"/>
+       <p:InitialTime value="0"/>
+       <p:Speed value="1"/>
+       <p:PostBehavior value="Pause"/>
+       <p:EaseDuration value="0"/>
+       <p:CurveSlope value="1"/>
+       <p:Events>
+        <p:Event class="AnimTreeEventPointerProperty" value="IGP_COIN"/>
+       </p:Events>
+      </AnimTreeBranch>
+     </AnimTreeState>
+     <AnimTreeState name="IGP_Loop" pos="550 -563.9">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:Color value="0.7 0 0"/>
+      <p:AutoBranchSequence value="Sequential"/>
+      <p:Clip value="IGP_LOOP"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:PostBehavior value="Loop"/>
+      <p:AISync value="FALSE"/>
+      <AnimTreeBranch name="Branch1">
+       <p:Notes>
+        <p:Notes>
+         <d:Value>
+          ""
+         </d:Value>
+        </p:Notes>
+       </p:Notes>
+       <p:BranchTo value="IGP_Coin"/>
+       <p:DefaultBranch value="FALSE"/>
+       <p:CropStart value="0"/>
+       <p:CropEnd value="30"/>
+       <p:InitialTime value="0"/>
+       <p:Speed value="1"/>
+       <p:PostBehavior value="Pause"/>
+       <p:EaseDuration value="0"/>
+       <p:CurveSlope value="1"/>
+       <p:Events>
+        <p:Event class="AnimTreeEventPointerProperty" value="IGP_COIN"/>
+       </p:Events>
+      </AnimTreeBranch>
+     </AnimTreeState>
+     <AnimTreeBranch name="Branch31">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:BranchTo value="IGP_End"/>
+      <p:DefaultBranch value="FALSE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="IGP_END"/>
+      </p:Events>
+     </AnimTreeBranch>
+     <AnimTreeState name="IGP_Coin" pos="552.4 -563">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:Color value="0.7 0 0"/>
+      <p:AutoBranchSequence value="Sequential"/>
+      <p:Clip value="IGP_COIN"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:EaseDuration value="3"/>
+      <p:AISync value="FALSE"/>
+      <AnimTreeBranch name="Branch1">
+       <p:Notes>
+        <p:Notes>
+         <d:Value>
+          ""
+         </d:Value>
+        </p:Notes>
+       </p:Notes>
+       <p:BranchTo value="IGP_Loop"/>
+       <p:DefaultBranch value="TRUE"/>
+       <p:Events>
+        <p:Event class="AnimTreeEventPointerProperty" value=""/>
+       </p:Events>
+      </AnimTreeBranch>
+     </AnimTreeState>
+    </AnimTreeStateGroup>
+    <AnimTreeBranch name="Branch32">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="IGP_Suspended"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="IGP_START_LATE"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeStateGroup>
+   <AnimTreeState name="KillInterface" pos="-0.800001 -2.8">
+    <p:Color value="0 0 0"/>
+   </AnimTreeState>
+   <AnimTreeStateGroup name="Move_Group" expanded="1" pos="0 0">
+    <p:StartState value="WalkRun"/>
+    <AnimTreeState name="WalkRun" pos="-12.65 -7.05">
+     <p:Clip value="WALKRUN"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:PostBehavior value="Loop"/>
+    </AnimTreeState>
+    <AnimTreeState name="DiveRoll" pos="-11.05 -8.05">
+     <p:Clip value="REACT_SHAKEOFF"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="WalkRun"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+   </AnimTreeStateGroup>
+   <AnimTreeStateGroup name="Jump_Group" expanded="1" pos="0 0">
+    <p:StartState value="Jump"/>
+    <AnimTreeState name="Jump" pos="-12.125 -11.25">
+     <p:Clip value="JUMPAIR_BLEND"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:PostBehavior value="Pause"/>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="DoubleJump"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="DoubleJump" pos="-11.725 -12.45">
+     <p:Clip value="JUMPAIR_BLEND"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:PostBehavior value="Pause"/>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch25">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="DoubleJump"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:CropStart value="0"/>
+     <p:CropEnd value="30"/>
+     <p:InitialTime value="0"/>
+     <p:Speed value="1"/>
+     <p:PostBehavior value="Pause"/>
+     <p:EaseDuration value="2"/>
+     <p:CurveSlope value="1"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="JUMP"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeStateGroup name="SuperJump_Group" expanded="1" pos="-544.8 524.8">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:StartState value=""/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <AnimTreeState name="SuperJumpAir_Loop" pos="533.4 -539.4">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:Color value="0.7 0.7 0.7"/>
+      <p:AutoBranchSequence value="Sequential"/>
+      <p:Clip value="SUPERJUMP_LOOP"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:PostBehavior value="Loop"/>
+      <p:AISync value="FALSE"/>
+      <AnimTreeBranch name="Branch1">
+       <p:Notes>
+        <p:Notes>
+         <d:Value>
+          ""
+         </d:Value>
+        </p:Notes>
+       </p:Notes>
+       <p:BranchTo value="DoubleJump"/>
+       <p:DefaultBranch value="FALSE"/>
+       <p:EaseDuration value="2"/>
+       <p:Events>
+        <p:Event class="AnimTreeEventPointerProperty" value="JUMP"/>
+       </p:Events>
+      </AnimTreeBranch>
+     </AnimTreeState>
+     <AnimTreeState name="SuperJumpAir" pos="530.6 -539.4">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:Color value="0.7 0.7 0.7"/>
+      <p:AutoBranchSequence value="Sequential"/>
+      <p:Clip value="SUPERJUMP"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:AISync value="FALSE"/>
+      <p:EventsFired>
+       <p:Event class="AnimTreeStateEventProperty" value="SJ_RELEASEWEB">
+        <p:When value="ClipStarts"/>
+        <p:Offset value="5"/>
+       </p:Event>
+      </p:EventsFired>
+      <AnimTreeBranch name="Branch1">
+       <p:Notes>
+        <p:Notes>
+         <d:Value>
+          ""
+         </d:Value>
+        </p:Notes>
+       </p:Notes>
+       <p:BranchTo value="DoubleJump"/>
+       <p:DefaultBranch value="FALSE"/>
+       <p:EaseDuration value="2"/>
+       <p:Events>
+        <p:Event class="AnimTreeEventPointerProperty" value="JUMP"/>
+       </p:Events>
+      </AnimTreeBranch>
+      <AnimTreeBranch name="Branch2">
+       <p:Notes>
+        <p:Notes>
+         <d:Value>
+          ""
+         </d:Value>
+        </p:Notes>
+       </p:Notes>
+       <p:BranchTo value="SuperJumpAir_Loop"/>
+       <p:DefaultBranch value="TRUE"/>
+       <p:Events>
+        <p:Event class="AnimTreeEventPointerProperty" value=""/>
+       </p:Events>
+      </AnimTreeBranch>
+     </AnimTreeState>
+    </AnimTreeStateGroup>
+    <AnimTreeState name="JumpFloat" pos="-14.2001 -12.4001">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="JUMP_FLOAT"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:PostBehavior value="Loop"/>
+     <p:EaseDuration value="5"/>
+     <p:AISync value="FALSE"/>
+    </AnimTreeState>
+   </AnimTreeStateGroup>
+   <AnimTreeStateGroup name="Stop_Group" expanded="1" pos="-1.6 1.8">
+    <p:StartState value="MoveStop"/>
+    <AnimTreeState name="MoveStop" pos="-3.725 -4.65">
+     <p:Clip value="MOVESTOP"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:EaseDuration value="6"/>
+     <p:AISync value="TRUE"/>
+     <p:EventsFired>
+      <p:Event class="AnimTreeStateEventProperty" value="Face_Start_Eyes"/>
+     </p:EventsFired>
+    </AnimTreeState>
+   </AnimTreeStateGroup>
+   <AnimTreeState name="Land" pos="-12.925 -3.475">
+    <p:Clip value="REACT_SHAKEOFF"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeState name="FallHard" pos="-9.525 -2.675">
+    <p:Clip value="SWIM_IDLE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+   </AnimTreeState>
+   <AnimTreeState name="LandHard" pos="-13 -2.00004">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="LAND_HARD"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="FALSE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="20"/>
+     </p:Event>
+    </p:EventsFired>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Land"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="SuperLandHard" pos="-13 -4.8">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="SUPERJUMP_LAND"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="FALSE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="3"/>
+     </p:Event>
+    </p:EventsFired>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Land"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeBranch name="Branch40">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:BranchTo value="SuperLandHard"/>
+    <p:DefaultBranch value="FALSE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="SUPERJUMP_LAND_HARD"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch4">
+   <p:BranchTo value="Stance_Group"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="STANCE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch5">
+   <p:BranchTo value="StanceActive"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="TOY_CREATE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch7">
+   <p:BranchTo value="WalkRun"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MOVE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch8">
+   <p:BranchTo value="Swim_Kick_Big"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="SWIM_BURST"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch9">
+   <p:BranchTo value="Swim_Kick_Small"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="SWIM_BURST_SMALL"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch10">
+   <p:BranchTo value="SwimStop"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="SWIM_STOP"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch11">
+   <p:BranchTo value="Swim"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="SWIM"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch12">
+   <p:BranchTo value="Swim_Start"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="SWIM_START"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch14">
+   <p:BranchTo value="DiveRoll"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MOVEDIVEROLL"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch15">
+   <p:BranchTo value="DoubleJump"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Double_Jump"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch16">
+   <p:BranchTo value="ActivityIdle"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="ACTIVITY_IDLE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch17">
+   <p:BranchTo value="Stop_Group"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="STOP"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch18">
+   <p:BranchTo value="Land"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="LAND_HARD"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch19">
+   <p:BranchTo value="Land"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="LAND"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch20">
+   <p:BranchTo value="FallHard"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="FALL_HARD_ANIM"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch21">
+   <p:BranchTo value="Idle_Group"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="IDLE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch22">
+   <p:BranchTo value="Move_Group"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="LANDRUN"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch23">
+   <p:BranchTo value="Jump_Group"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="JUMP"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch24">
+   <p:BranchTo value="Swim_Jump"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="SWIM_JUMP"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch27">
+   <p:BranchTo value="SuperJumpAir"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="SUPERJUMP"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch1">
+   <p:BranchTo value="StanceActive"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="SWIM_IDLE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch26">
+   <p:BranchTo value="IGP_Suspended"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="IGP_START"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch13">
+   <p:BranchTo value="Swim_180Turn_L"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="SWIM_180TURN_LFT"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch28">
+   <p:BranchTo value="Swim_180Turn_R"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="SWIM_180TURN_RHT"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Death_Group" expanded="1" pos="1415.2 5.20005">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.534522 0.200946 0.647436"/>
+   <p:StartState value="Death_DownButNotOut"/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <AnimTreeState name="Death_Revive" pos="-1412.6 -5.40004">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="REACT_REVIVE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="FALSE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="Face_BlinkHold">
+      <p:When value="EnteringState"/>
+      <p:Offset value="0"/>
+     </p:Event>
+    </p:EventsFired>
+    <AnimTreeBranch name="Branch1">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="Death_Finish"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:CropStart value="0"/>
+     <p:CropEnd value="30"/>
+     <p:InitialTime value="0"/>
+     <p:Speed value="1"/>
+     <p:PostBehavior value="Pause"/>
+     <p:EaseDuration value="0"/>
+     <p:CurveSlope value="1"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="DEATH_RECOVER"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Death_Finish" pos="-1412.6 -6.60011">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="REACT_REVIVE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="FALSE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="Face_BlinkHold">
+      <p:When value="EnteringState"/>
+      <p:Offset value="0"/>
+     </p:Event>
+     <p:Event2 class="AnimTreeStateEventProperty" value="Face_Kill">
+      <p:When value="EnteringState"/>
+      <p:Offset value="15"/>
+     </p:Event2>
+    </p:EventsFired>
+    <AnimTreeBranch name="Branch1">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="Death_Recover"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:CropStart value="0"/>
+     <p:CropEnd value="30"/>
+     <p:InitialTime value="0"/>
+     <p:Speed value="1"/>
+     <p:PostBehavior value="Pause"/>
+     <p:EaseDuration value="0"/>
+     <p:CurveSlope value="1"/>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Death_Recover" pos="-1412.6 -7.80006">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="REACT_REVIVE_RECOVER"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeState name="Death_DownButNotOut" pos="-1409.8 -5.40005">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="REACT_HIT_STUMBLE_BACK"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="Death_Recover"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="DEATH_RECOVER"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Death_ReviveAFriend_Start" pos="-1410 -7.20005">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="SWIM_IDLE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="Death_ReviveAFriend_Loop"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:CropStart value="0"/>
+     <p:CropEnd value="30"/>
+     <p:InitialTime value="0"/>
+     <p:Speed value="1"/>
+     <p:PostBehavior value="Pause"/>
+     <p:EaseDuration value="0"/>
+     <p:CurveSlope value="1"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value=""/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch2">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="Death_ReviveAFriend_End"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:CropStart value="0"/>
+     <p:CropEnd value="30"/>
+     <p:InitialTime value="0"/>
+     <p:Speed value="1"/>
+     <p:PostBehavior value="Pause"/>
+     <p:EaseDuration value="0"/>
+     <p:CurveSlope value="1"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="REVIVE_A_FRIEND_COMPLETE"/>
+      <p:Event2 class="AnimTreeEventPointerProperty" value="SCANNER_END"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Death_ReviveAFriend_Loop" pos="-1408.5 -8.20005">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="SWIM_IDLE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="Death_ReviveAFriend_End"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:CropStart value="0"/>
+     <p:CropEnd value="30"/>
+     <p:InitialTime value="0"/>
+     <p:Speed value="1"/>
+     <p:PostBehavior value="Pause"/>
+     <p:EaseDuration value="0"/>
+     <p:CurveSlope value="1"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="REVIVE_A_FRIEND_COMPLETE"/>
+      <p:Event2 class="AnimTreeEventPointerProperty" value="SCANNER_END"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Death_ReviveAFriend_End" pos="-1410.05 -9.20005">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="REACT_SHAKEOFF"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:EaseDuration value="3"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="">
+      <p:When value="ExitingState"/>
+     </p:Event>
+     <p:Event2 class="AnimTreeStateEventProperty" value="STOP_ADDITIVEFULLBODY">
+      <p:When value="EnteringState"/>
+      <p:Offset value="0"/>
+     </p:Event2>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch44">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:BranchTo value="Death_ReviveAFriend_Start"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="REVIVE_A_FRIEND"/>
+    <p:Event2 class="AnimTreeEventPointerProperty" value="SCANNER_START"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch45">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:BranchTo value="Death_Recover"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="DEATH_RECOVER"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch29">
+   <p:BranchTo value="JumpFloat"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="JUMP_FLOAT"/>
+   </p:Events>
+  </AnimTreeBranch>
+ </AnimTree>
+
+</d:SnipeFile>

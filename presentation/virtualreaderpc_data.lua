@@ -274,16 +274,16 @@ VirtualReaderPC_Data.AvatarData = {
     SteamDLCAppId = "",
     PCSKU = "",
     WINRTSKU = "win.disney.disneyinfinity3.ch_Ferb",
-    Icon = "HUD_PlayerIcons_BRZ_Ferb",
-    Description = "Upsell_BRZ_Ferb_desc",
+    Icon = "HUD_PlayerIcons_PNF_Ferb",
+    Description = "Upsell_PNF_Ferb_desc",
     VideoLink = "",
-    ProgressionTree = "IN3_BRZ_Ferb",
+    ProgressionTree = "IN3_PNF_Ferb",
     CostumeCoin = "",
-    MetaData = "Disney,Franchise_BRZ"
+    MetaData = "Disney,Franchise_PNF"
    },
    {
     Name = "AVG_CaptainMarvel",
-    sku_id = "1000458",
+    sku_id = "1000338",
     SteamDLCAppId = "",
     PCSKU = "",
     WINRTSKU = "win.disney.disneyinfinity3.ch_CaptainMarvel",

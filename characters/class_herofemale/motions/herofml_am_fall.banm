@@ -1,0 +1,15 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/class_herofemale/motions/herofml_am_fall.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Weight = 0.9
+		Filename = "characters/class_herofemale/motions/herofml_am_dive_add.oct"
+	}
+}
