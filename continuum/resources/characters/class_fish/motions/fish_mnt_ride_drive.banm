@@ -1,0 +1,21 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	GroupTrack "Group1" =
+	{
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/class_fish/motions/fish_wall_ldg_clamberpose.oct"
+			}
+			ReferencedTrack =
+			{
+				BlendMethod = 1
+				Weight = 0.6
+				Filename = "characters/class_fish/motions/fish_swim_fast_idle_add.oct"
+			}
+		}
+	}
+}

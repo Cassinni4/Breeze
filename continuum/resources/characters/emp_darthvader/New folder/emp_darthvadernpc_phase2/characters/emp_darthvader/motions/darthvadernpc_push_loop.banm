@@ -1,0 +1,15 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Filename = "characters/emp_darthvader/motions/darthvadernpc_push_loop.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Filename = "characters/emp_darthvader/motions/darthvadernpc_push_loop_add.oct"
+	}
+}

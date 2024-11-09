@@ -1,0 +1,48 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Velocity" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Velocity"
+		Tracks =
+		{
+			GroupTrack "Small" =
+			{
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/human/motions/human_bm_idle_active_pose.oct"
+					}
+					ReferencedTrack =
+					{
+						BlendMethod = 1
+						Filename = "characters/human/motions/human_rct_stmb_lower_r_sml_add.oct"
+					}
+				}
+			}
+			GroupTrack "Big" =
+			{
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/human/motions/human_bm_idle_active_pose.oct"
+					}
+					ReferencedTrack =
+					{
+						BlendMethod = 1
+						Filename = "characters/human/motions/human_rct_stmb_lower_r_big_add.oct"
+					}
+				}
+			}
+		}
+	}
+}

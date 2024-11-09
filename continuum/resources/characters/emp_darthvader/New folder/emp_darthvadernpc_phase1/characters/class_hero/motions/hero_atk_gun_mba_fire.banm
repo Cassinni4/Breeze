@@ -1,0 +1,30 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Pitch" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Pitch"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/class_hero/motions/hero_atk_gun_mba_fire_up90.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/class_hero/motions/hero_atk_gun_mba_fire.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/class_hero/motions/hero_atk_gun_mba_fire_down90.oct"
+			}
+		}
+	}
+}

@@ -1,0 +1,108 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="2.0.22 x64" branch="in3" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="1">
+  <p:Interface value="UpperBody1"/>
+  <p:StartState value="KillInterface"/>
+  <AnimTreeState name="KillInterface" pos="-2.4 0.4">
+   <p:Color value="0.7 0.7 0.7"/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <p:Clip value=""/>
+  </AnimTreeState>
+  <AnimTreeBranch name="Branch1">
+   <p:BranchTo value="KillInterface"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:CropStart value="0"/>
+   <p:InitialTime value="0"/>
+   <p:Speed value="1"/>
+   <p:PostBehavior value="Pause"/>
+   <p:EaseDuration value="7"/>
+   <p:CurveSlope value="1"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="STOP_UPPERBODY1"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeState name="HeadTurn" pos="-5.6 2.4">
+   <p:Color value="0.7 0.7 0.7"/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <p:Clip value="PROC_TURN_TORSO"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:PostBehavior value="Loop"/>
+   <p:EaseDuration value="7"/>
+  </AnimTreeState>
+  <AnimTreeBranch name="Branch2">
+   <p:BranchTo value="HeadTurn"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:CropStart value="0"/>
+   <p:InitialTime value="0"/>
+   <p:Speed value="1"/>
+   <p:PostBehavior value="Pause"/>
+   <p:EaseDuration value="7"/>
+   <p:CurveSlope value="1"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="HEADTURN"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeState name="HoldLightsaber" pos="-4.8 -2">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      "Gav, let me know when you're ready to add more functionality to this tree and i'll move this state to somewhere more sensible."
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.7 0.7 0.7"/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <p:Clip value="HOLD_LIGHTSABER"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:PostBehavior value="Loop"/>
+   <p:AISync value="FALSE"/>
+   <AnimTreeBranch name="Branch1">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:BranchTo value="KillInterface"/>
+    <p:DefaultBranch value="FALSE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="LIGHTSABER_RCT_HOLD_OFF"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeState>
+  <AnimTreeBranch name="Branch387">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:BranchTo value="HoldLightsaber"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="LIGHTSABER_RCT_HOLD"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeState name="Lightsaber_Swipe_Upper" pos="-7.2 -0.4">
+   <p:Clip value="GRIMM_BOSS_ATK_SWORD_SWIPE_UPPER"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:EaseDuration value="2"/>
+   <AnimTreeBranch name="Branch1">
+    <p:BranchTo value="KillInterface"/>
+    <p:DefaultBranch value="TRUE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeState>
+  <AnimTreeBranch name="Branch3">
+   <p:BranchTo value="Lightsaber_Swipe_Upper"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="LIGHTSABER_SWIPE_UPPER"/>
+   </p:Events>
+  </AnimTreeBranch>
+ </AnimTree>
+
+</d:SnipeFile>

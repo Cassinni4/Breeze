@@ -1,0 +1,35 @@
+Version = "1.0g"
+Parameters =
+{
+	FloatParameter "Turn" =
+	{
+	}
+	FloatParameter "Pitch" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Pitch"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/spd_spiderman/motions/spd_atk_web_turn_aim_rarm_down.oct"
+				Phase = "Turn"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/spd_spiderman/motions/spd_atk_web_turn_aim_rarm.oct"
+				Phase = "Turn"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/spd_spiderman/motions/spd_atk_web_turn_aim_rarm_up.oct"
+				Phase = "Turn"
+			}
+		}
+	}
+}

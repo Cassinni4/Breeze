@@ -1,0 +1,41 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Biped_GooScale" =
+	{
+		DefaultPhase = 0.48
+	}
+}
+BlendMethod = 1
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		BlendMethod = 1
+		Value = "Biped_GooScale"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/human/motions/human_mnt_saddle_goo_avasmall_mntbig.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/human/motions/human_mnt_saddle_goo_horse_avasmall.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/biped/motions/biped_mnt_saddle_goo_normal.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/human/motions/human_mnt_saddle_goo_horse_mntsmall.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/human/motions/human_mnt_saddle_goo_horse_mntsmall_avabig.oct"
+			}
+		}
+	}
+}

@@ -1,0 +1,20 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/class_herofemale/motions/herofml_hvr_mount_land.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Filename = "characters/ali_alice/motions/alice_skirt_0_2.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Weight = 0.58
+		Filename = "characters/ali_alice/motions/alice_hvr_larm_add.oct"
+	}
+}

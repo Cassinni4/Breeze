@@ -1,0 +1,37 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "UpDown" =
+	{
+	}
+	FloatParameter "LeftRight" =
+	{
+	}
+}
+Tracks =
+{
+	GroupTrack "Group1" =
+	{
+		Tracks =
+		{
+			KeyBlendTrack "LeftRight" =
+			{
+				Value = "UpDown"
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/class_fish/motions/fish_swim_proc_center_lr.oct"
+						Phase = "LeftRight"
+					}
+				}
+			}
+			ReferencedTrack =
+			{
+				BlendMethod = 1
+				Filename = "characters/class_fish/motions/fish_swim_jump_add.oct"
+			}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/tbx_peterpan/motions/pan_bm_idle_passive_pose.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Filename = "characters/ts_buzz/motions/bzz_bm_idle_passive_add.oct"
+	}
+}

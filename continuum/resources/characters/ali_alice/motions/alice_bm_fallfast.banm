@@ -1,0 +1,13 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/ali_alice/motions/alice_skirt_0_1.oct"
+	}
+	ReferencedTrack =
+	{
+		Filename = "characters/class_herofemale/motions/herofml_bm_fallfast.oct"
+	}
+}

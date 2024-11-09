@@ -1,0 +1,15 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/pir_barbossa/motions/bar_bm_idle_passive_pose.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Weight = 0.26
+		Filename = "characters/human/motions/human_bm_idle_passive_add.oct"
+	}
+}

@@ -1,0 +1,41 @@
+Version = "1.0g"
+Parameters =
+{
+	FloatParameter "Turn" =
+	{
+	}
+	FloatParameter "Pitch" =
+	{
+	}
+}
+Tracks =
+{
+	GroupTrack "Group1" =
+	{
+		Tracks =
+		{
+			KeyBlendTrack "Fly" =
+			{
+				Value = "Pitch"
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/class_hero/motions/hero_atk_head_turn_aim_down90.oct"
+						Phase = "Turn"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/class_hero/motions/hero_atk_head_turn_aim.oct"
+						Phase = "Turn"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/class_hero/motions/hero_atk_head_turn_aim_up90.oct"
+						Phase = "Turn"
+					}
+				}
+			}
+		}
+	}
+}

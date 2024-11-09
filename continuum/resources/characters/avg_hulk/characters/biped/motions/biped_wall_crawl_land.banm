@@ -1,0 +1,40 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Direction" =
+	{
+	}
+}
+BlendMethod = 1
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		BlendMethod = 1
+		Value = "Direction"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/biped/motions/biped_wall_crawl_land_add_l.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/biped/motions/biped_wall_crawl_land_add_tl.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/biped/motions/biped_wall_crawl_land_add_up.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/biped/motions/biped_wall_crawl_land_add_tr.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/biped/motions/biped_wall_crawl_land_add_r.oct"
+			}
+		}
+	}
+}
