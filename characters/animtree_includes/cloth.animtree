@@ -1,0 +1,289 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="2.0.85 x64" branch="in3" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="-1">
+  <p:Interface value="Cloth"/>
+  <p:StartState value="KillInterface"/>
+  <AnimTreeState name="KillInterface" pos="-4.76837e-007 5.96046e-008">
+   <p:Color value="0.00609756 0.00609756 0.00609756"/>
+   <AnimTreeBranch name="Branch1">
+    <p:BranchTo value="Cloth_Motorcycle"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="Cloth_Ramp_MtrCyc"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeBranch name="Branch2">
+    <p:BranchTo value="Cloth_Seat"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="Cloth_Ramp_Seat"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeBranch name="Branch3">
+    <p:BranchTo value="Cloth_Ride"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="Cloth_Ramp_Ride"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeState>
+  <AnimTreeStateGroup name="Cloth_Motorcycle" expanded="1" pos="4 -0.599998">
+   <p:Color value="0.158536 0.828151 1"/>
+   <p:StartState value="RampUp"/>
+   <AnimTreeState name="Loop" pos="0.23163 -1">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Clip value="CLOTH_MNT_MTRCYC_LOOP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="TaperOff"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="Cloth_Taper_MtrCyc"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="RampUp" pos="-2.56837 -1">
+    <p:Clip value="CLOTH_MNT_MTRCYC_RAMPUP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Loop"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="TaperOff" pos="2.83163 -1">
+    <p:Clip value="CLOTH_MNT_MTRCYC_TAPEROFF"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="KillInterface"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeBranch name="Branch3">
+    <p:BranchTo value="TaperOff"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="Cloth_Taper_MtrCyc"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeStateGroup>
+  <AnimTreeStateGroup name="Cloth_Seat" expanded="1" pos="-4.2 -0.6">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.532016 0.134816 0.597561"/>
+   <p:StartState value="Seat_RampUp"/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <AnimTreeState name="Seat_Loop" pos="0.231633 -1">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="CLOTH_MNT_SEAT_LOOP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="Seat_TaperOff"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="Cloth_Taper_Seat"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Seat_RampUp" pos="-2.56837 -1">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:Clip value="CLOTH_MNT_SEAT_RAMPUP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="Seat_Loop"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value=""/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Seat_TaperOff" pos="2.83163 -1">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="CLOTH_MNT_SEAT_TAPEROFF"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="KillInterface"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value=""/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeBranch name="Branch2">
+    <p:BranchTo value="Seat_TaperOff"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="Cloth_Taper_Seat"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeStateGroup>
+  <AnimTreeStateGroup name="Cloth_Ride" expanded="1" pos="0 -2.80001">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.843342 0.559116 0.890244"/>
+   <p:StartState value="Ride_RampUp"/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <AnimTreeState name="Ride_Loop" pos="0.231633 -1">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="CLOTH_MNT_RIDE_LOOP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="Ride_TaperOff"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="Cloth_Taper_Ride"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Ride_RampUp" pos="-2.56837 -1">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:Clip value="CLOTH_MNT_RIDE_RAMPUP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="Ride_Loop"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value=""/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Ride_TaperOff" pos="2.83163 -1">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="CLOTH_MNT_RIDE_TAPEROFF"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="KillInterface"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value=""/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeBranch name="Branch4">
+    <p:BranchTo value="Ride_TaperOff"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="Cloth_Taper_Ride"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch1">
+   <p:BranchTo value="KillInterface"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty"/>
+   </p:Events>
+  </AnimTreeBranch>
+ </AnimTree>
+
+</d:SnipeFile>

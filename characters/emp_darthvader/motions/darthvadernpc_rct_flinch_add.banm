@@ -1,0 +1,35 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Magnitude" =
+	{
+		RangeStart = 1.0
+		RangeSize = 0.0
+	}
+}
+BlendMethod = 1
+Tracks =
+{
+	KeyBlendTrack "B" =
+	{
+		BlendMethod = 1
+		Value = "Magnitude"
+		Keys =
+		[
+			0.0 0.0 
+		]
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/emp_darthvader/motions/darthvadernpc_rct_hit_add_0.oct"
+				Phase = "Magnitude"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/emp_darthvader/motions/darthvadernpc_rct_hit_add_b.oct"
+			}
+		}
+	}
+}

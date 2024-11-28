@@ -1,0 +1,37 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "MoveSpeed" =
+	{
+		DefaultPhase = 0.0
+	}
+}
+BlendMethod = 1
+Tracks =
+{
+	KeyBlendTrack "WalkRun" =
+	{
+		BlendMethod = 1
+		Value = "MoveSpeed"
+		Keys =
+		[
+			0.0 0.72 1.0
+		]
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/biped/motions/biped_mnt_saddle_walk_add.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/biped/motions/biped_mnt_saddle_run_add.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/biped/motions/biped_mnt_saddle_sprint_add.oct"
+			}
+		}
+	}
+}

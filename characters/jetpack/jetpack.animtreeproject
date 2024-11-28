@@ -1,0 +1,36 @@
+<d:SnipeFile type="AnimTreeProject" fileVersion="7" productVersion="1.9.0.95" branch="M2" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <Project>
+  <p:Notes/>
+  <p:FPS value="30"/>
+  <AnimTreeProject name="%FILENAME%">
+   <p:Params class="UserPropertyContainer"/>
+   <AnimTreeContainer>
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <d:IncludeFile file="JetPack_clips.animtree"/>
+   </AnimTreeContainer>
+   <AnimTreeEventContainer>
+    <AnimTreeEvent name="WINGS_OUT">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+    </AnimTreeEvent>
+    <AnimTreeEvent name="WINGS_IN"/>
+    <AnimTreeEvent name="IDLE_IN">
+     <p:Notes/>
+    </AnimTreeEvent>
+   </AnimTreeEventContainer>
+  </AnimTreeProject>
+ </Project>
+
+</d:SnipeFile>

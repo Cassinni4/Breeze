@@ -1,0 +1,28 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Small" =
+	{
+	}
+	FloatParameter "Big" =
+	{
+	}
+}
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/ali_alice/motions/ali_alice_bm_idle_dynamic_normal.oct"
+	}
+	ReferencedTrack =
+	{
+		Weight = "Small"
+		Filename = "characters/ali_alice/motions/ali_alice_bm_idle_dynamic_small.oct"
+	}
+	ReferencedTrack =
+	{
+		Weight = "Big"
+		Filename = "characters/ali_alice/motions/alice_bm_grown_idle_passive_add.oct"
+	}
+}

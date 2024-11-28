@@ -1,0 +1,31 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Roll" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Roll"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Mirror = "FullBody"
+				Filename = "characters/class_bear/motions/bear_jp_bankr.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/class_bear/motions/bear_jp_fly.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/class_bear/motions/bear_jp_bankr.oct"
+			}
+		}
+	}
+}

@@ -1,0 +1,30 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Roll" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Roll"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/class_brute/motions/brute_jp_bankl.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/class_brute/motions/brute_jp_fly.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/class_brute/motions/brute_jp_bankr.oct"
+			}
+		}
+	}
+}

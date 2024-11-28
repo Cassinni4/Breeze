@@ -1,0 +1,718 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="2.0.64 x64" branch="in3" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="0">
+  <p:Interface value="FullBody"/>
+  <p:StartState value=""/>
+  <AnimTreeBranch name="Branch42">
+   <p:BranchTo value="DropKick_Group"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:CropStart value="0"/>
+   <p:InitialTime value="0"/>
+   <p:Speed value="1"/>
+   <p:PostBehavior value="Pause"/>
+   <p:EaseDuration value="0"/>
+   <p:CurveSlope value="1"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="DROPKICK"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch43">
+   <p:BranchTo value="Slam_Group"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:CropStart value="0"/>
+   <p:InitialTime value="0"/>
+   <p:Speed value="1"/>
+   <p:PostBehavior value="Pause"/>
+   <p:CurveSlope value="1"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="SLAM"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch46">
+   <p:BranchTo value="Throw_Group"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:CropStart value="0"/>
+   <p:InitialTime value="0"/>
+   <p:Speed value="1"/>
+   <p:PostBehavior value="Pause"/>
+   <p:EaseDuration value="0"/>
+   <p:CurveSlope value="1"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="THROW"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Pickup_Carry_Throw_Group" expanded="1" pos="-8.10002 0.200001">
+   <p:Color value="1 0.7 0.7"/>
+   <p:StartState value=""/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <AnimTreeStateGroup name="DropKick_Group" expanded="1" pos="-909.4 365.6">
+    <p:Color value="1 0.7 0.7"/>
+    <p:StartState value="DropKick_Medium_Both"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="Appendage_CarryOff"/>
+    </p:EventsFired>
+    <AnimTreeState name="DropKick_Medium_Both" pos="887.2 -364.2">
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="DROPKICK_MEDIUM_BOTH"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:CropStart value="0"/>
+     <p:CropEnd value="24"/>
+     <p:PostBehavior value="Stop"/>
+     <p:EaseDuration value="3"/>
+     <p:CurveSlope value="1"/>
+     <p:AISync value="TRUE"/>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch58">
+     <p:BranchTo value="DropKick_Medium_Both"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:CropStart value="0"/>
+     <p:CropEnd value="22"/>
+     <p:InitialTime value="0"/>
+     <p:Speed value="1"/>
+     <p:PostBehavior value="Pause"/>
+     <p:EaseDuration value="0"/>
+     <p:CurveSlope value="1"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="MEDIUM_BOTH"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeState name="DropKick_Overhead" pos="887.2 -365.4">
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="DROPKICK_OVERHEAD"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:CropStart value="0"/>
+     <p:CropEnd value="24"/>
+     <p:Speed value="1"/>
+     <p:PostBehavior value="Stop"/>
+     <p:EaseDuration value="3"/>
+     <p:CurveSlope value="1"/>
+     <p:AISync value="TRUE"/>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch103">
+     <p:BranchTo value="DropKick_Overhead"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:CropStart value="0"/>
+     <p:InitialTime value="0"/>
+     <p:Speed value="1"/>
+     <p:PostBehavior value="Pause"/>
+     <p:EaseDuration value="0"/>
+     <p:CurveSlope value="1"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="OVERHEAD"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeState name="DropKick_ZeroPointEnergy" pos="887.2 -370.6">
+     <p:Clip value="DROPKICK_LIGHT_RHAND"/>
+     <p:AISync value="TRUE"/>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch2">
+     <p:BranchTo value="DropKick_ZeroPointEnergy"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="ZEROPOINTENERGY"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeState name="DropKick_Avatar" pos="887.2 -366.6">
+     <p:Clip value="DROPKICK_AVATAR_OVERHEAD"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:PostBehavior value="Stop"/>
+     <p:EaseDuration value="0"/>
+     <p:AISync value="TRUE"/>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="DropKick_Avatar"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="AVATAR_OVERHEAD"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch7">
+     <p:BranchTo value="DropKick_RArm_Overhead"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="RARM_OVERHEAD"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeState name="DropKick_Special" pos="887.2 -369">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="DROPKICK_AVATAR_OVERHEAD"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:CropStart value="0"/>
+     <p:CropEnd value="24"/>
+     <p:Speed value="1"/>
+     <p:PostBehavior value="Stop"/>
+     <p:EaseDuration value="3"/>
+     <p:CurveSlope value="1"/>
+     <p:AISync value="TRUE"/>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch8">
+     <p:BranchTo value="DropKick_Special"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="SPECIAL"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeState name="DropKick_RArm_Overhead" pos="887.2 -367.8">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="DROPKICK_AVATAR_OVERHEAD"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:CropStart value="0"/>
+     <p:CropEnd value="24"/>
+     <p:Speed value="1"/>
+     <p:PostBehavior value="Stop"/>
+     <p:EaseDuration value="3"/>
+     <p:CurveSlope value="1"/>
+     <p:AISync value="TRUE"/>
+    </AnimTreeState>
+   </AnimTreeStateGroup>
+   <AnimTreeStateGroup name="Slam_Group" expanded="1" pos="-1021.6 360.8">
+    <p:Color value="1 0.7 0.7"/>
+    <p:StartState value="Slam_Medium_Both"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="Appendage_CarryOff"/>
+    </p:EventsFired>
+    <AnimTreeBranch name="Branch59">
+     <p:BranchTo value="Slam_Medium_Both"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:CropStart value="0"/>
+     <p:InitialTime value="0"/>
+     <p:Speed value="1"/>
+     <p:PostBehavior value="Pause"/>
+     <p:EaseDuration value="0"/>
+     <p:CurveSlope value="1"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="MEDIUM_BOTH"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeState name="Slam_Medium_Both" pos="1006.4 -359.4">
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="SLAM_MEDIUM_BOTH"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:CropStart value="0"/>
+     <p:PostBehavior value="Stop"/>
+     <p:EaseDuration value="3"/>
+     <p:CurveSlope value="1"/>
+     <p:AISync value="TRUE"/>
+    </AnimTreeState>
+    <AnimTreeState name="Slam_Overhead" pos="1006.4 -360.6">
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="SLAM_OVERHEAD"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:CropStart value="0"/>
+     <p:Speed value="1"/>
+     <p:PostBehavior value="Stop"/>
+     <p:EaseDuration value="3"/>
+     <p:CurveSlope value="1"/>
+     <p:AISync value="TRUE"/>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch108">
+     <p:BranchTo value="Slam_Overhead"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:CropStart value="0"/>
+     <p:InitialTime value="0"/>
+     <p:Speed value="1"/>
+     <p:PostBehavior value="Pause"/>
+     <p:EaseDuration value="0"/>
+     <p:CurveSlope value="1"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="OVERHEAD"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeState name="Slam_ZeroPointEnergy" pos="1006.4 -366">
+     <p:Clip value="SLAM_LIGHT_RHAND"/>
+     <p:AISync value="TRUE"/>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch3">
+     <p:BranchTo value="Slam_ZeroPointEnergy"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="ZEROPOINTENERGY"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeState name="Slam_Avatar" pos="1006.4 -361.8">
+     <p:Clip value="SLAM_AVATAR_OVERHEAD"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:PostBehavior value="Stop"/>
+     <p:EaseDuration value="0"/>
+     <p:AISync value="TRUE"/>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch6">
+     <p:BranchTo value="Slam_Avatar"/>
+     <p:PostBehavior value="Pause"/>
+     <p:EaseDuration value="0"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="AVATAR_OVERHEAD"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeState name="Slam_RArm_Overhead" pos="1006.4 -363">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="SLAM_RARM_OVERHEAD"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:PostBehavior value="Stop"/>
+     <p:EaseDuration value="0"/>
+     <p:AISync value="TRUE"/>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch9">
+     <p:BranchTo value="Slam_RArm_Overhead"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="RARM_OVERHEAD"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeState name="Slam_Special" pos="1006.4 -364.2">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="SLAM_RARM_OVERHEAD"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:PostBehavior value="Stop"/>
+     <p:EaseDuration value="0"/>
+     <p:AISync value="TRUE"/>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch10">
+     <p:BranchTo value="Slam_Special"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="SPECIAL"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeStateGroup>
+   <AnimTreeStateGroup name="Throw_Group" expanded="1" pos="-1020 360.2">
+    <p:Color value="1 0.7 0.7"/>
+    <p:StartState value="ThrowAir_Group"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="Appendage_CarryOff"/>
+    </p:EventsFired>
+    <AnimTreeBranch name="Branch60">
+     <p:BranchTo value="Throw_Medium_Both"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:CropStart value="0"/>
+     <p:InitialTime value="0"/>
+     <p:Speed value="1"/>
+     <p:PostBehavior value="Pause"/>
+     <p:CurveSlope value="1"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="MEDIUM_BOTH"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch71">
+     <p:BranchTo value="Throw_Overhead"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:CropStart value="0"/>
+     <p:InitialTime value="0"/>
+     <p:Speed value="1"/>
+     <p:PostBehavior value="Pause"/>
+     <p:CurveSlope value="1"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="OVERHEAD"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeStateGroup name="ThrowAir_Group" expanded="1" pos="0 0">
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:StartState value="Throw_Medium_Both"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <AnimTreeState name="Throw_Medium_Both" pos="1009.4 -358.8">
+      <p:Color value="0.7 0.7 0.7"/>
+      <p:AutoBranchSequence value="Sequential"/>
+      <p:Clip value="THROW_MEDIUM_BOTH"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:CropStart value="0"/>
+      <p:CropEnd value="19"/>
+      <p:Speed value="1"/>
+      <p:PostBehavior value="Stop"/>
+      <p:EaseDuration value="1"/>
+      <p:CurveSlope value="1"/>
+      <p:AISync value="TRUE"/>
+     </AnimTreeState>
+     <AnimTreeState name="Throw_Overhead" pos="1009.4 -360">
+      <p:Color value="0.7 0.7 0.7"/>
+      <p:AutoBranchSequence value="Sequential"/>
+      <p:Clip value="THROW_OVERHEAD"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:CropStart value="0"/>
+      <p:EaseDuration value="3"/>
+      <p:CurveSlope value="1"/>
+      <p:AISync value="TRUE"/>
+     </AnimTreeState>
+     <AnimTreeState name="Throw_ZeroPointEnergy" pos="1009.4 -365.2">
+      <p:Clip value="THROW_ZEROPOINTENERGY"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:EaseDuration value="4"/>
+      <p:AISync value="TRUE"/>
+     </AnimTreeState>
+     <AnimTreeState name="Throw_Avatar" pos="1009.4 -361.2">
+      <p:Clip value="THROW_AVATAR_OVERHEAD"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:PostBehavior value="Stop"/>
+      <p:EaseDuration value="0"/>
+      <p:AISync value="TRUE"/>
+     </AnimTreeState>
+     <AnimTreeBranch name="Branch5">
+      <p:BranchTo value="Throw_Avatar"/>
+      <p:EaseDuration value="3"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="AVATAR_OVERHEAD"/>
+      </p:Events>
+     </AnimTreeBranch>
+     <AnimTreeState name="Throw_RArm_Overhead" pos="1009.4 -362.4">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:Color value="0.7 0.7 0.7"/>
+      <p:AutoBranchSequence value="Sequential"/>
+      <p:Clip value="THROW_RARM_OVERHEAD"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:PostBehavior value="Stop"/>
+      <p:EaseDuration value="0"/>
+      <p:AISync value="TRUE"/>
+     </AnimTreeState>
+     <AnimTreeBranch name="Branch11">
+      <p:BranchTo value="Throw_RArm_Overhead"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="RARM_OVERHEAD"/>
+      </p:Events>
+     </AnimTreeBranch>
+     <AnimTreeState name="Throw_Special" pos="1009.4 -363.8">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:Color value="0.7 0.7 0.7"/>
+      <p:AutoBranchSequence value="Sequential"/>
+      <p:Clip value="THROW_SPECIAL"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:PostBehavior value="Stop"/>
+      <p:EaseDuration value="0"/>
+      <p:AISync value="TRUE"/>
+     </AnimTreeState>
+     <AnimTreeBranch name="Branch13">
+      <p:BranchTo value="Throw_Special"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="SPECIAL"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeStateGroup>
+    <AnimTreeBranch name="Branch12">
+     <p:BranchTo value="ThrowAir_Group"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:CropStart value="0"/>
+     <p:InitialTime value="0"/>
+     <p:Speed value="1"/>
+     <p:PostBehavior value="Pause"/>
+     <p:EaseDuration value="0"/>
+     <p:CurveSlope value="1"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="REGULAR_THROW"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch4">
+     <p:BranchTo value="Throw_ZeroPointEnergy"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="ZEROPOINTENERGY"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeStateGroup>
+   <AnimTreeStateGroup name="Hoist_Group" expanded="1" pos="0.2 0.599999">
+    <p:Color value="1 0.7 0.7"/>
+    <p:StartState value="Hoist_Overhead"/>
+    <AnimTreeState name="Hoist_Overhead" pos="-6.99998 1.00004">
+     <p:Clip value="HOIST_OVERHEAD"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:AISync value="TRUE"/>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch15">
+     <p:BranchTo value="Hoist_Overhead"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="OVERHEAD"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeStateGroup>
+   <AnimTreeStateGroup name="MBA_Jump_Throw_Group" expanded="1" pos="-906.4 365.6">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       "Changing drop kicks to jump throws for MBA"
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.276899 0.404662 1"/>
+    <p:StartState value="MBA_JThrow_Medium_Both"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="Appendage_CarryOff">
+      <p:When value="ExitingGroup"/>
+     </p:Event>
+    </p:EventsFired>
+    <AnimTreeState name="MBA_JThrow_Medium_Both" pos="887.2 -364.2">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="MBA_THROW_OVERHEAD"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:CropStart value="0"/>
+     <p:CropEnd value="24"/>
+     <p:PostBehavior value="Stop"/>
+     <p:EaseDuration value="3"/>
+     <p:CurveSlope value="1"/>
+     <p:AISync value="TRUE"/>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch17">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="MBA_JThrow_Medium_Both"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:CropStart value="0"/>
+     <p:CropEnd value="22"/>
+     <p:InitialTime value="0"/>
+     <p:Speed value="1"/>
+     <p:PostBehavior value="Pause"/>
+     <p:EaseDuration value="0"/>
+     <p:CurveSlope value="1"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="MEDIUM_BOTH"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeState name="MBA_JThrow_Overhead" pos="887.2 -365.4">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="MBA_THROW_OVERHEAD"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:CropStart value="0"/>
+     <p:CropEnd value="24"/>
+     <p:Speed value="1"/>
+     <p:PostBehavior value="Stop"/>
+     <p:EaseDuration value="3"/>
+     <p:CurveSlope value="1"/>
+     <p:AISync value="TRUE"/>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch18">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="MBA_JThrow_Overhead"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:CropStart value="0"/>
+     <p:InitialTime value="0"/>
+     <p:Speed value="1"/>
+     <p:PostBehavior value="Pause"/>
+     <p:EaseDuration value="0"/>
+     <p:CurveSlope value="1"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="OVERHEAD"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeState name="MBA_JThrow_ZeroPointEnergy" pos="887.2 -370.6">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="DROPKICK_LIGHT_RHAND"/>
+     <p:AISync value="TRUE"/>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch19">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="MBA_JThrow_ZeroPointEnergy"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="ZEROPOINTENERGY"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeState name="MBA_JThrow_Avatar" pos="887.2 -366.6">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="MBA_THROW_AVATAR_OVERHEAD"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:PostBehavior value="Stop"/>
+     <p:EaseDuration value="0"/>
+     <p:AISync value="TRUE"/>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch20">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="MBA_JThrow_Avatar"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="AVATAR_OVERHEAD"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch21">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="MBA_JThrow_RArm_Overhead"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="RARM_OVERHEAD"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeState name="MBA_JThrow_Special" pos="887.2 -369">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="MBA_THROW_OVERHEAD"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:CropStart value="0"/>
+     <p:CropEnd value="24"/>
+     <p:Speed value="1"/>
+     <p:PostBehavior value="Stop"/>
+     <p:EaseDuration value="3"/>
+     <p:CurveSlope value="1"/>
+     <p:AISync value="TRUE"/>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch22">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="MBA_JThrow_Special"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="SPECIAL"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeState name="MBA_JThrow_RArm_Overhead" pos="887.2 -367.8">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="MBA_THROW_OVERHEAD"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:CropStart value="0"/>
+     <p:CropEnd value="24"/>
+     <p:Speed value="1"/>
+     <p:PostBehavior value="Stop"/>
+     <p:EaseDuration value="3"/>
+     <p:CurveSlope value="1"/>
+     <p:AISync value="TRUE"/>
+    </AnimTreeState>
+   </AnimTreeStateGroup>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch14">
+   <p:BranchTo value="Hoist_Group"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="HOIST"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch16">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:BranchTo value="MBA_Jump_Throw_Group"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:CropStart value="0"/>
+   <p:InitialTime value="0"/>
+   <p:Speed value="1"/>
+   <p:PostBehavior value="Pause"/>
+   <p:EaseDuration value="0"/>
+   <p:CurveSlope value="1"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MBA_JUMP_THROW"/>
+   </p:Events>
+  </AnimTreeBranch>
+ </AnimTree>
+
+</d:SnipeFile>

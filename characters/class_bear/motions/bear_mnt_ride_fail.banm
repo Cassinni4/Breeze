@@ -1,0 +1,20 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	GroupTrack "Group1" =
+	{
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/class_bear/motions/bear_mnt_ride_cntr_pose.oct"
+			}
+			ReferencedTrack =
+			{
+				BlendMethod = 1
+				Filename = "characters/biped/motions/biped_mnt_ride_fail_add.oct"
+			}
+		}
+	}
+}

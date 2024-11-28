@@ -1,0 +1,15 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/avg_hulkbuster/motions/bstr_wall_ldgr_clamber_stop.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Weight = 0.92
+		Filename = "characters/avg_hulkbuster/motions/bstr_wall_ldgr_clamber_stop_add.oct"
+	}
+}

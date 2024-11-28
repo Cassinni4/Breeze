@@ -1,0 +1,15 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/class_bear/motions/bear_bm_idle_passive_pose.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Weight = 0.35
+		Filename = "characters/biped/motions/biped_bm_idle_passive_add.oct"
+	}
+}

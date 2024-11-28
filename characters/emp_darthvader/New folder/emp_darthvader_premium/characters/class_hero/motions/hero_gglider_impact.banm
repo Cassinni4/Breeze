@@ -1,0 +1,93 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Direction" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Direction"
+		Tracks =
+		{
+			GroupTrack "Group1" =
+			{
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/class_hero/motions/hero_gglider_proc_cntr_pose.oct"
+					}
+					ReferencedTrack =
+					{
+						BlendMethod = 1
+						Filename = "characters/biped/motions/biped_gglider_impct_frnt_add.oct"
+					}
+				}
+			}
+			GroupTrack "Group2" =
+			{
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/class_hero/motions/hero_gglider_proc_cntr_pose.oct"
+					}
+					ReferencedTrack =
+					{
+						BlendMethod = 1
+						Filename = "characters/biped/motions/biped_gglider_impct_lft_add.oct"
+					}
+				}
+			}
+			GroupTrack "Group3" =
+			{
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/class_hero/motions/hero_gglider_proc_cntr_pose.oct"
+					}
+					ReferencedTrack =
+					{
+						BlendMethod = 1
+						Filename = "characters/biped/motions/biped_gglider_impct_bck_add.oct"
+					}
+				}
+			}
+			GroupTrack "Group4" =
+			{
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/class_hero/motions/hero_gglider_proc_cntr_pose.oct"
+					}
+					ReferencedTrack =
+					{
+						BlendMethod = 1
+						Filename = "characters/biped/motions/biped_gglider_impct_rht_add.oct"
+					}
+				}
+			}
+			GroupTrack "Group5" =
+			{
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/class_hero/motions/hero_gglider_proc_cntr_pose.oct"
+					}
+					ReferencedTrack =
+					{
+						BlendMethod = 1
+						Filename = "characters/biped/motions/biped_gglider_impct_frnt_add.oct"
+					}
+				}
+			}
+		}
+	}
+}

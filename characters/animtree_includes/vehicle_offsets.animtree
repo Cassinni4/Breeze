@@ -1,0 +1,194 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="2.0.265 x64" branch="M2" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="6">
+  <p:Interface value="Vehicle_Offsets"/>
+  <p:StartState value="KillInterface"/>
+  <AnimTreeStateGroup name="BikeOffset_perCharacter" expanded="1" pos="1.2 1.4">
+   <p:Color value="0.7 0.99359 0.7"/>
+   <AnimTreeState name="Sully_class" pos="1.4 -0.2">
+    <p:Color value="0 1 0"/>
+    <p:Clip value="SUL_NORM_BIKEOFFSET"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Pause"/>
+   </AnimTreeState>
+   <AnimTreeState name="Mike_W_Class" pos="-0.8 -0.2">
+    <p:Color value="0 1 0"/>
+    <p:Clip value="MKE_NORM_BIKEOFFSET"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Pause"/>
+   </AnimTreeState>
+   <AnimTreeState name="Biped" pos="-5.2 -0.2">
+    <p:Color value="0 1 0"/>
+    <p:Clip value="BIPED_NORM_BIKEOFFSET"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Pause"/>
+   </AnimTreeState>
+   <AnimTreeBranch name="Branch4">
+    <p:BranchTo value="KillInterface"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="BicycleExit"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeState name="Biped_Sml" pos="-5.2 -1.2">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0 1 0"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="BIPED_SML_BIKEOFFSET"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Pause"/>
+    <p:AISync value="FALSE"/>
+   </AnimTreeState>
+   <AnimTreeState name="Sully_Sml" pos="1.4 -1.2">
+    <p:Color value="0 1 0"/>
+    <p:Clip value="SUL_NORM_BIKEOFFSET"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Pause"/>
+   </AnimTreeState>
+   <AnimTreeState name="Mike_Sml" pos="-0.8 -1.2">
+    <p:Color value="0 1 0"/>
+    <p:Clip value="MKE_NORM_BIKEOFFSET"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Pause"/>
+   </AnimTreeState>
+   <AnimTreeState name="Class_Vio" pos="-3 -0.2">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0 1 0"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="CLASS_VIO_NORM_OFFSET"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Pause"/>
+    <p:AISync value="FALSE"/>
+   </AnimTreeState>
+   <AnimTreeState name="Class_Vio_Sml" pos="-3 -1.20001">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.518498 0.553434 0.564103"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="BIPED_SML_BIKEOFFSET"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Pause"/>
+    <p:AISync value="FALSE"/>
+   </AnimTreeState>
+   <AnimTreeState name="Randall" pos="3.6 -0.2">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0 1 0"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="SUL_NORM_BIKEOFFSET"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Pause"/>
+    <p:AISync value="FALSE"/>
+   </AnimTreeState>
+   <AnimTreeState name="Randall_Sml" pos="3.6 -1.2">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0 1 0"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="SUL_NORM_BIKEOFFSET"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Pause"/>
+    <p:AISync value="FALSE"/>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch1">
+   <p:BranchTo value="Sully_class"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Bk_offset_MU_Sul"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch2">
+   <p:BranchTo value="Mike_W_Class"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Bk_offset_MU_Mike"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch3">
+   <p:BranchTo value="Biped"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Bk_Offset_Biped"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeState name="KillInterface" pos="0.4 -2.6">
+   <p:Color value="0 0 0"/>
+  </AnimTreeState>
+  <AnimTreeBranch name="Branch7">
+   <p:BranchTo value="Biped_Sml"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Bk_Offset_Biped_Sml"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch8">
+   <p:BranchTo value="Mike_Sml"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Bk_offset_MU_Mike_Sml"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch9">
+   <p:BranchTo value="Sully_Sml"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Bk_offset_MU_Sul_Sml"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch11">
+   <p:BranchTo value="Randall"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Bk_offset_MU_Ran"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Attach_Mini_Offset" expanded="1" pos="0.4 -4.8">
+   <p:StartState value="Attache_Mini"/>
+   <AnimTreeState name="Attache_Mini" pos="0 -8.9407e-008">
+    <p:Clip value="DRIVER_ATTACH_MINI"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:CropEnd value="10"/>
+    <p:PostBehavior value="Loop"/>
+   </AnimTreeState>
+   <AnimTreeBranch name="Branch10">
+    <p:BranchTo value="KillInterface"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="DISMOUNT"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch5">
+   <p:BranchTo value="Attach_Mini_Offset"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="AttachMini"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch6">
+   <p:BranchTo value="KillInterface"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty"/>
+   </p:Events>
+  </AnimTreeBranch>
+ </AnimTree>
+
+</d:SnipeFile>

@@ -1,0 +1,619 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="3.01.129 x64" branch="in3" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="0">
+  <p:Interface value="FullBody"/>
+  <p:StartState value="KillInterface"/>
+  <AnimTreeState name="KillInterface" pos="-0.6 -2.2">
+   <p:Color value="0 0 0"/>
+   <p:Clip value="STANCE_PASSIVE"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:EaseDuration value="5"/>
+  </AnimTreeState>
+  <AnimTreeState name="Dial" pos="-3.8 -2.2">
+   <p:Clip value="SYN_FIGHT_DIAL"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:AISync value="TRUE"/>
+   <AnimTreeBranch name="Branch1">
+    <p:BranchTo value="KillInterface"/>
+    <p:DefaultBranch value="TRUE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeState>
+  <AnimTreeState name="Taunt1" pos="-3 -0.6">
+   <p:Clip value="SYN_FIGHT_TAUNT1"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:AISync value="TRUE"/>
+   <AnimTreeBranch name="Branch1">
+    <p:BranchTo value="KillInterface"/>
+    <p:DefaultBranch value="TRUE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeState>
+  <AnimTreeState name="Taunt2" pos="-0.6 -0.6">
+   <p:Clip value="SYN_FIGHT_TAUNT2"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:AISync value="TRUE"/>
+   <AnimTreeBranch name="Branch1">
+    <p:BranchTo value="KillInterface"/>
+    <p:DefaultBranch value="TRUE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeState>
+  <AnimTreeState name="Taunt3" pos="2.2 -0.6">
+   <p:Clip value="SYN_FIGHT_TAUNT3"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:AISync value="TRUE"/>
+   <AnimTreeBranch name="Branch1">
+    <p:BranchTo value="KillInterface"/>
+    <p:DefaultBranch value="TRUE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeState>
+  <AnimTreeBranch name="Branch2">
+   <p:BranchTo value="Dial"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="SYN_FIGHT_DIAL"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch1">
+   <p:BranchTo value="Taunt1"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="SYN_FIGHT_TAUNT"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch3">
+   <p:BranchTo value="Taunt2"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="SYN_FIGHT_TAUNT2"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch4">
+   <p:BranchTo value="Taunt3"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="SYN_FIGHT_TAUNT3"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="MU_Enemy_Distract_Group" expanded="1" pos="-9.2 -4.2">
+   <p:Color value="0.372436 0.473225 0.7"/>
+   <p:StartState value="Enemy_Distract"/>
+   <AnimTreeState name="Enemy_Distract" pos="10.2 -0.4">
+    <p:Color value="0.372436 0.473225 0.7"/>
+    <p:Clip value="IDLE_BREAKA"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Stop"/>
+    <AnimTreeBranch name="Branch2">
+     <p:BranchTo value="Idle2"/>
+     <p:DefaultBranch value="TRUE"/>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch3">
+     <p:BranchTo value="Idle1"/>
+     <p:DefaultBranch value="TRUE"/>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Idle2" pos="10.2 -2">
+    <p:Color value="0.372436 0.473225 0.7"/>
+    <p:Clip value="IDLE_BREAKB"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Enemy_Distract"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Idle1" pos="7.2 -2">
+    <p:Color value="0.372436 0.473225 0.7"/>
+    <p:Clip value="STANCE_PASSIVE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Enemy_Distract"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeBranch name="Branch6">
+    <p:BranchTo value="KillInterface"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="MU_EnemyDistract_End"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch5">
+   <p:BranchTo value="Enemy_Distract"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MU_EnemyDistract_Start"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="MU_Enemy_Specials" expanded="1" pos="3.6 -3.6">
+   <p:Color value="0.7 0.7 0.7"/>
+   <AnimTreeState name="Sentry_GiveUp" pos="0.2 -0.4">
+    <p:Color value="0.17 0.52 0.7"/>
+    <p:AutoBranchSequence value="Random"/>
+    <p:Clip value="STANCE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:CropStart value="0"/>
+    <p:CropEnd value="65"/>
+    <p:InitialTime value="0"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="GiveUp_A"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:ChanceToTake value="0.5"/>
+     <p:EaseDuration value="2"/>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch2">
+     <p:BranchTo value="GiveUp_B"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:ChanceToTake value="0.5"/>
+     <p:EaseDuration value="2"/>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Sabotage_Poster" pos="0.199999 -3.4">
+    <p:Color value="0.17 0.52 0.7"/>
+    <p:Clip value="BM_SABOTAGE_POSTER"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <p:AISync value="FALSE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="Face_Kill">
+      <p:When value="EnteringState"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="Sabotage_Prank" pos="0.2 -4.6">
+    <p:Color value="0.17 0.52 0.7"/>
+    <p:Clip value="BM_SABOTAGE_PRANK"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="Face_Kill">
+      <p:When value="EnteringState"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeBranch name="Branch10">
+    <p:BranchTo value="KillInterface"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="MU_ENEMY_SPECIALS_END"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeState name="GiveUp_A" pos="2.4 0.6">
+    <p:Color value="0.17 0.52 0.7"/>
+    <p:Clip value="SENTRY_CHASE_QUITA"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="Face_Kill">
+      <p:When value="EnteringState"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="GiveUp_B" pos="2.6 -1">
+    <p:Color value="0.17 0.52 0.7"/>
+    <p:Clip value="SENTRY_CHASE_QUITB"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="Face_Kill">
+      <p:When value="EnteringState"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="Enemy_Taunt" pos="4.885 -0.399998">
+    <p:Color value="0.9487 0.155714 0.121631"/>
+    <p:AutoBranchSequence value="Random"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Taunt_BringIt_A"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:ChanceToTake value="0.17"/>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch2">
+     <p:BranchTo value="Taunt_BringIt_B"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:ChanceToTake value="0.17"/>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch3">
+     <p:BranchTo value="Taunt_BringIt_C"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:ChanceToTake value="0.17"/>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch4">
+     <p:BranchTo value="Taunt_GetYou_A"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:ChanceToTake value="0.17"/>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch5">
+     <p:BranchTo value="Taunt_WatchYou_A"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:ChanceToTake value="0.17"/>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch6">
+     <p:BranchTo value="Taunt_WatchYou_B"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:ChanceToTake value="0.17"/>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Taunt_BringIt_A" pos="7.485 0.6">
+    <p:Color value="0.948718 0.155714 0.121631"/>
+    <p:Clip value="ENEMY_BM_TAUNT_BRINGIT_A"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="Face_Kill">
+      <p:When value="EnteringState"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="Taunt_BringIt_B" pos="7.485 -0.200001">
+    <p:Color value="0.948718 0.155714 0.121631"/>
+    <p:Clip value="ENEMY_BM_TAUNT_BRINGIT_B"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="Face_Kill">
+      <p:When value="EnteringState"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="Taunt_BringIt_C" pos="7.485 -1">
+    <p:Color value="0.95 0.16 0.12"/>
+    <p:Clip value="ENEMY_BM_TAUNT_BRINGIT_C"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="Face_Kill">
+      <p:When value="EnteringState"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="Taunt_GetYou_A" pos="7.485 -1.8">
+    <p:Color value="0.95 0.16 0.12"/>
+    <p:Clip value="ENEMY_BM_TAUNT_IMGONNAGETYOU_A"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="Face_Kill">
+      <p:When value="EnteringState"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="Taunt_WatchYou_A" pos="7.485 -2.6">
+    <p:Color value="0.95 0.16 0.12"/>
+    <p:Clip value="ENEMY_BM_TAUNT_IMWATCHINGYOU_A"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="Face_Kill">
+      <p:When value="EnteringState"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="Taunt_WatchYou_B" pos="7.485 -3.4">
+    <p:Color value="0.95 0.16 0.12"/>
+    <p:Clip value="ENEMY_BM_TAUNT_IMWATCHINGYOU_B"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="Face_Kill">
+      <p:When value="EnteringState"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="UpsetA" pos="0.227499 -2.2">
+    <p:Color value="0.17 0.52 0.7"/>
+    <p:Clip value="SENTRY_RCT_UPSETA"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="FALSE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="Face_Kill">
+      <p:When value="EnteringState"/>
+     </p:Event>
+    </p:EventsFired>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="UpdateB"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="UpdateB" pos="2.6275 -2.2">
+    <p:Color value="0.17 0.52 0.7"/>
+    <p:Clip value="ENEMY_BM_TAUNT_IMGONNAGETYOU_A"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="Face_Kill"/>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="MU_Enemy_Celebrate" pos="2.8425 -5.1">
+    <p:Color value="0.17 0.52 0.7"/>
+    <p:AutoBranchSequence value="Random"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="CelebrateA"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:ChanceToTake value="0.33"/>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch2">
+     <p:BranchTo value="CelebrateB"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:ChanceToTake value="0.33"/>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch3">
+     <p:BranchTo value="CelebrateC"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:ChanceToTake value="0.33"/>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="CelebrateA" pos="5.4425 -4.3">
+    <p:Color value="0.17 0.52 0.7"/>
+    <p:Clip value="RCT_CELEBRATEA"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="Face_Kill">
+      <p:When value="EnteringState"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="CelebrateB" pos="5.4425 -5.3">
+    <p:Color value="0.17 0.52 0.7"/>
+    <p:Clip value="RCT_CELEBRATEB"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="Face_Kill">
+      <p:When value="EnteringState"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="CelebrateC" pos="5.4425 -6.3">
+    <p:Color value="0.17 0.52 0.7"/>
+    <p:Clip value="RCT_CELEBRATEC"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="Face_Kill">
+      <p:When value="EnteringState"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch7">
+   <p:BranchTo value="Sentry_GiveUp"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MU_SEN_GIVEUP"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch8">
+   <p:BranchTo value="Sabotage_Poster"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MU_SAB_POSTER"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch9">
+   <p:BranchTo value="Sabotage_Prank"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MU_SAB_PRANK"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch11">
+   <p:BranchTo value="Enemy_Taunt"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MU_SEN_TAUNT"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch12">
+   <p:BranchTo value="UpsetA"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MU_SEN_UPSET"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch13">
+   <p:BranchTo value="MU_Enemy_Celebrate"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MU_CELEBRATE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="MG_JarJar_Binks" expanded="1" pos="2.4 2.2">
+   <AnimTreeState name="REFI_HANG_UPSIDE_DOWN" pos="8.4 3.8">
+    <p:Clip value="TCW_REFI_HANGING_UPSIDE_DOWN"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeState name="REFI_FALL_UPSIDE" pos="5.8 3.8">
+    <p:Clip value="TCW_REFI_FALL_UPSIDE_DOWN"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeState name="REFI_OPEN_GATE" pos="8.4 2.3">
+    <p:Clip value="TCW_REFI_OPEN_GATE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeState name="REFI_CLIMB_GATE" pos="11 2.35">
+    <p:Clip value="TCW_REFI_CLIMB_OPEN_GATE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeState name="REFI_USE_TERMINAL" pos="5.8 2.35">
+    <p:Clip value="TCW_REFI_USE_TERMINAL"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeState name="REFI_ELECTROCUTE" pos="8.4 0.950001">
+    <p:Clip value="TCW_REFI_ELECTROCUTE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeState name="REFI_COWER" pos="3 2.35">
+    <p:Clip value="TCW_REFI_BM_COWER"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeState name="REFI_IDLE_TO_COWER" pos="0 2.375">
+    <p:Clip value="TCW_REFI_IDLE_TO_COWER"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Stop"/>
+    <p:AISync value="TRUE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="REFI_COWER"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:PostBehavior value="Loop"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="REFI_COWER_IDLE" pos="3.8743e-007 1.15">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="TCW_REFI_BM_COWER_TO_IDLE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Stop"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch14">
+   <p:BranchTo value="REFI_FALL_UPSIDE"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="REFI_FALL_UPSIDE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch15">
+   <p:BranchTo value="REFI_OPEN_GATE"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="REFI_OPEN_GATE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch16">
+   <p:BranchTo value="REFI_CLIMB_GATE"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="REFI_CLIMB_GATE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch17">
+   <p:BranchTo value="REFI_HANG_UPSIDE_DOWN"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="REFI_HANG_UPSIDE_DOWN"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch18">
+   <p:BranchTo value="REFI_USE_TERMINAL"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="REFI_USE_TERMINAL"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch19">
+   <p:BranchTo value="REFI_IDLE_TO_COWER"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="REFI_COWER"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch20">
+   <p:BranchTo value="REFI_ELECTROCUTE"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="REFI_ELECTROCUTE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="MetalDetectDigSuccess" expanded="1" pos="-9.8 -0.8">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.7 0.7 0.7"/>
+   <p:StartState value=""/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <AnimTreeState name="MetalDetectDig" pos="-0.600001 1.2">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="METALDETECT_DIG"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SEND_ANIMTREESYNC">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="1"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch21">
+   <p:BranchTo value="MetalDetectDig"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MetalDetect_Dig"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch22">
+   <p:BranchTo value=""/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MetalDetect_Success"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch23">
+   <p:BranchTo value="REFI_COWER_IDLE"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="REFI_COWER_IDLE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="PSZ_VENT" expanded="1" pos="16 -4.2">
+   <p:Color value="0.243902 0.7 0.7"/>
+   <AnimTreeState name="PSZ_Vent_In" pos="-0.800001 -0.8">
+    <p:Clip value="SNEAK_VENT_IN"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeState name="PSZ_Vent_Out" pos="2.2 -0.799999">
+    <p:Clip value="SNEAK_VENT_OUT"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch24">
+   <p:BranchTo value="PSZ_Vent_In"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="PSZ_VENT_IN"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch25">
+   <p:BranchTo value="PSZ_Vent_Out"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="PSZ_VENT_OUT"/>
+   </p:Events>
+  </AnimTreeBranch>
+ </AnimTree>
+
+</d:SnipeFile>

@@ -1,0 +1,57 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "LeftRight" =
+	{
+		DefaultPhase = 0.5
+	}
+	FloatParameter "UpDown" =
+	{
+		DefaultPhase = 0.5
+	}
+}
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/class_fish/motions/fish_swim_idle_pose.oct"
+	}
+	ReferencedTrack =
+	{
+		Filename = "characters/class_fish/motions/fish_swim_idle_add.oct"
+	}
+	KeyBlendTrack "LeftRight" =
+	{
+		BlendMethod = 1
+		Value = "LeftRight"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/class_fish/motions/fish_swim_proc_center_lr.oct"
+				Phase = "LeftRight"
+			}
+		}
+	}
+	KeyBlendTrack "UpDown" =
+	{
+		BlendMethod = 1
+		Value = "UpDown"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/class_fish/motions/fish_swim_proc_center_headup_add.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/class_fish/motions/fish_swim_proc_center_headlevel_add.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/class_fish/motions/fish_swim_proc_center_headdown_add.oct"
+			}
+		}
+	}
+}

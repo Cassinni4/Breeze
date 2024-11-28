@@ -1,0 +1,15 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/avg_captainmarvel/motions/captainmarvel_bm_idle_passive_pose.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Weight = 0.55
+		Filename = "characters/class_hero/motions/hero_rct_smallb_add.oct"
+	}
+}

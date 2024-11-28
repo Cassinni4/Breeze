@@ -1,0 +1,406 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="2.0.85 x64" branch="in3" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="0">
+  <p:Interface value="Main"/>
+  <p:StartState value=""/>
+  <AnimTreeStateGroup name="Reaction_Group" expanded="1" pos="-2.2 -0.400001">
+   <p:StartState value="HitSmall"/>
+   <p:EventsFired>
+    <p:Event class="AnimTreeStateEventProperty" value="MG_DISTRESSED">
+     <p:When value="EnteringGroup"/>
+    </p:Event>
+    <p:Event2 class="AnimTreeStateEventProperty" value="MG_TALK_STOP">
+     <p:When value="EnteringGroup"/>
+    </p:Event2>
+   </p:EventsFired>
+   <AnimTreeState name="HitSmall" pos="-0.2 -1.2">
+    <p:Color value="0.7 0 0"/>
+    <p:Clip value="MG_REACT_HIT_SMALL"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Stop"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeState name="HitStumble" pos="-0.2 -2.4">
+    <p:Color value="0.7 0 0"/>
+    <p:Clip value="MG_REACT_HIT_STUMBLE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Stop"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="ShakeOff"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:EaseDuration value="4"/>
+     <p:CurveSlope value="1"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeStateGroup name="React_WaitingForOnGround" expanded="1" pos="2.98023e-007 -3.4">
+    <p:EventsIgnored>
+     <p:Event class="AnimTreeEventPointerProperty" value="STARTREACTION"/>
+    </p:EventsIgnored>
+    <AnimTreeState name="HitKnockdown" pos="-0.8 -0.600001">
+     <p:Clip value="MG_REACT_HIT_KNOCKDOWN"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:PostBehavior value="Pause"/>
+    </AnimTreeState>
+    <AnimTreeState name="HitTumble" pos="1 -2">
+     <p:Clip value="MG_REACT_HIT_TUMBLE"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:PostBehavior value="Loop"/>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch4">
+     <p:BranchTo value="Knockdown_Splat"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="ONGROUND"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeStateGroup>
+   <AnimTreeState name="HitFrozen" pos="3.57628e-007 -6.5">
+    <p:Clip value=""/>
+   </AnimTreeState>
+   <AnimTreeState name="Knockdown_Splat" pos="4 -4.45">
+    <p:Clip value="MG_REACT_HIT_KNOCKDOWN_SPLAT"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Stop"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Knockdown_Hold"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Knockdown_Hold" pos="6.65 -4.45">
+    <p:Clip value="MG_REACT_HIT_KNOCKDOWN_SPLAT_HOLD"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Stop"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Knockdown_Getup"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Knockdown_Getup" pos="9.725 -4.45">
+    <p:Clip value="MG_REACT_HIT_KNOCKDOWN_GETUP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Stop"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="ShakeOff"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:EaseDuration value="4"/>
+     <p:CurveSlope value="1"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="ShakeOff" pos="7.2 -2.2">
+    <p:Color value="0.7 0.179487 0.179487"/>
+    <p:Clip value="MG_REACT_HIT_SHAKEOFF"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:EaseDuration value="4"/>
+    <p:CurveSlope value="1"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeState name="Stunned_1" pos="7.2 -0.999999">
+    <p:Clip value="MG_RCT_STUNNED_POSE1"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <p:EaseDuration value="7"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="STUNNED_ADD">
+      <p:When value="ClipStarts"/>
+     </p:Event>
+    </p:EventsFired>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="ShakeOff"/>
+     <p:EaseDuration value="7"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="STUN_STOP"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="ForceStunStumble" pos="4.6 -0.999999">
+    <p:Clip value="MG_REACT_HIT_STUMBLE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Stunned_1"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="HitBounceTumble" pos="4 -6.8">
+    <p:Clip value="MG_REACT_HIT_TUMBLE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <p:EaseDuration value="3"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Knockdown_Splat"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="ONGROUND"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="HitBounceSplat" pos="7 -6.8">
+    <p:Clip value="MG_REACT_HIT_KNOCKDOWN_SPLAT"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:CropEnd value="3"/>
+    <p:PostBehavior value="Stop"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="HitBounceTumble"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch2">
+     <p:BranchTo value="Knockdown_Splat"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="ONGROUND"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="HitBounce" pos="10 -6.8">
+    <p:Clip value="MG_REACT_HIT_KNOCKDOWN"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Pause"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="HitBounceSplat"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="ONGROUND"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch1">
+   <p:BranchTo value="Reaction_Group"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="STARTREACTION"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch2">
+   <p:BranchTo value="HitSmall"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="HITSMALL"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch3">
+   <p:BranchTo value="HitStumble"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="HITSTUMBLE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch5">
+   <p:BranchTo value="HitKnockdown"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="HITKNOCKDOWN"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch6">
+   <p:BranchTo value="HitTumble"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="HITTUMBLE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch7">
+   <p:BranchTo value="HitFrozen"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="HITFROZEN"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="prank_reacts" expanded="1" pos="12.4 -3.40001">
+   <AnimTreeState name="prank_air_tumble" pos="5.96046e-008 -0.199999">
+    <p:Clip value="MG_REACT_HIT_TUMBLE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Knockdown_Splat"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="ONGROUND"/>
+      <p:Event2 class="AnimTreeEventPointerProperty" value="LAND"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="prank_hoop_fall" pos="-1.78814e-007 -2.4">
+    <p:Clip value="MG_REACT_HIT_TUMBLE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Knockdown_Splat"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="ONGROUND"/>
+      <p:Event2 class="AnimTreeEventPointerProperty" value="LAND"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="prank_wall_splat" pos="-1.6 -1.2">
+    <p:Clip value="MG_REACT_HIT_KNOCKDOWN_SPLAT"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeState name="prank_in_hoop" pos="1.8 -1.2">
+    <p:Clip value="MG_REACT_HIT_SMALL"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch8">
+   <p:BranchTo value="prank_air_tumble"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="PrankEnder_Air"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch9">
+   <p:BranchTo value="prank_wall_splat"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="PrankEnder_Wall"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch10">
+   <p:BranchTo value="prank_in_hoop"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="PrankEnder_Hoop"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch11">
+   <p:BranchTo value="prank_hoop_fall"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="FALL_FACEFIRST"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch12">
+   <p:BranchTo value="ForceStunStumble"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="HITSTUMBLE_STUN_FRONT"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch13">
+   <p:BranchTo value="ForceStunStumble"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="HIT_FORCESTUN_FRONT"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch14">
+   <p:BranchTo value="ForceStunStumble"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="HIT_FORCESTUN_BACK"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch15">
+   <p:BranchTo value="ForceStunStumble"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="HIT_FORCESTUN"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch16">
+   <p:BranchTo value="ForceStunStumble"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="HITSTUMBLESPIN_STUN"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch17">
+   <p:BranchTo value="Stunned_1"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="STUNNED"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch18">
+   <p:BranchTo value="Stunned_1"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="STUNNED_5"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch19">
+   <p:BranchTo value="Stunned_1"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="STUNNED_4"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch20">
+   <p:BranchTo value="Stunned_1"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="STUNNED_3"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch21">
+   <p:BranchTo value="Stunned_1"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="STUNNED_2"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch22">
+   <p:BranchTo value="Stunned_1"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="STUNNED_1"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch23">
+   <p:BranchTo value="HitTumble"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="HITTUMBLE_FRONT"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch24">
+   <p:BranchTo value="HitTumble"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="HITTUMBLE_BACK"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch25">
+   <p:BranchTo value="HitBounce"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="HITBOUNCE_FRONT"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch26">
+   <p:BranchTo value="HitBounce"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="HITBOUNCE_BACK"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch27">
+   <p:BranchTo value="HitKnockdown"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="REACT_HIT_KNOCK_FRONT"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch28">
+   <p:BranchTo value="HitKnockdown"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="REACT_HIT_KNOCK_BACK"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch29">
+   <p:BranchTo value="HitKnockdown"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="HITKNOCKDOWN_FRONT"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch30">
+   <p:BranchTo value="HitKnockdown"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="HITKNOCKDOWN_BACK"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch31">
+   <p:BranchTo value="HitBounceSplat"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="HITBOUNCESPLAT_FRONT"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch32">
+   <p:BranchTo value="HitBounceSplat"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="HITBOUNCESPLAT_BACK"/>
+   </p:Events>
+  </AnimTreeBranch>
+ </AnimTree>
+
+</d:SnipeFile>

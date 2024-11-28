@@ -1,0 +1,35 @@
+Version = "1.0g"
+Parameters =
+{
+	FloatParameter "Turn" =
+	{
+	}
+	FloatParameter "Pitch" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Pitch"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/class_girl/motions/grl_atk_bow_proc_aim_down_sideways.oct"
+				Phase = "Turn"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/class_girl/motions/grl_atk_bow_proc_aim_sideways.oct"
+				Phase = "Turn"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/class_girl/motions/grl_atk_bow_proc_aim_up_sideways.oct"
+				Phase = "Turn"
+			}
+		}
+	}
+}

@@ -1,0 +1,836 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="3.01.140 x64" branch="in3" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="0">
+  <p:Interface value="FullBody"/>
+  <p:StartState value=""/>
+  <AnimTreeStateGroup name="Riding_CRAB" expanded="1" pos="-23.0001 6.79992">
+   <p:Color value="0.7 0.7 0.7"/>
+   <p:StartState value="CRABRidingMounted_Group"/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <p:EventsFired>
+    <p:Event class="AnimTreeStateEventProperty" value="STOP_FULLBODYBLENDS"/>
+   </p:EventsFired>
+   <p:EventsIgnored>
+    <p:Event class="AnimTreeEventPointerProperty" value="SPRINT_START"/>
+    <p:Event2 class="AnimTreeEventPointerProperty" value="SPRINT_STOP"/>
+    <p:Event3 class="AnimTreeEventPointerProperty" value="SPRINT"/>
+    <p:Event4 class="AnimTreeEventPointerProperty" value="STARTATTACK"/>
+   </p:EventsIgnored>
+   <AnimTreeStateGroup name="CRABRidingMounted_Group" expanded="1" pos="23.4 -4.4">
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:StartState value="RideMount"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:EventsIgnored>
+     <p:Event class="AnimTreeEventPointerProperty" value="PrankEnder_Air"/>
+     <p:Event2 class="AnimTreeEventPointerProperty" value="PrankEnder_Hoop"/>
+     <p:Event3 class="AnimTreeEventPointerProperty" value="PrankEnder_Wall"/>
+    </p:EventsIgnored>
+    <AnimTreeState name="RideMount" pos="-3 0.599999">
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="RIDECRAB_MOUNT"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:PostBehavior value="Pause"/>
+     <p:AISync value="FALSE"/>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="RideMountLand"/>
+      <p:DefaultBranch value="FALSE"/>
+      <p:CropStart value="0"/>
+      <p:InitialTime value="0"/>
+      <p:Speed value="1"/>
+      <p:CurveSlope value="1"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="MOUNTUP"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch120">
+     <p:BranchTo value="RideDismount"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:CropStart value="0"/>
+     <p:InitialTime value="0"/>
+     <p:Speed value="1"/>
+     <p:PostBehavior value="Pause"/>
+     <p:CurveSlope value="1"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="DISMOUNT"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeState name="RideMountLand" pos="-5.8 0.599998">
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="RIDECRAB_RCT_HITSMALL"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:PostBehavior value="Stop"/>
+     <p:EaseDuration value="0"/>
+     <p:AISync value="FALSE"/>
+     <p:EventsFired>
+      <p:Event class="AnimTreeStateEventProperty" value="MOUNTUP_ATST">
+       <p:When value="EnteringState"/>
+      </p:Event>
+     </p:EventsFired>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="RideIdle2"/>
+      <p:DefaultBranch value="TRUE"/>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeStateGroup name="RideJump_Group" expanded="1" pos="-6.6 -4.59999">
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:StartState value="RideJumpAir"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <AnimTreeState name="RideJumpAir" pos="-2.4 0.200001">
+      <p:Color value="0.7 0.7 0.7"/>
+      <p:AutoBranchSequence value="Sequential"/>
+      <p:Clip value="RIDECRAB_POSE"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:PostBehavior value="Pause"/>
+      <p:EaseDuration value="2"/>
+      <p:AISync value="FALSE"/>
+      <AnimTreeBranch name="Branch1">
+       <p:BranchTo value="DoubleJump3"/>
+       <p:DefaultBranch value="FALSE"/>
+       <p:CropStart value="0"/>
+       <p:InitialTime value="0"/>
+       <p:Speed value="1"/>
+       <p:PostBehavior value="Pause"/>
+       <p:EaseDuration value="5"/>
+       <p:CurveSlope value="1"/>
+       <p:Events>
+        <p:Event class="AnimTreeEventPointerProperty" value="JUMP"/>
+       </p:Events>
+      </AnimTreeBranch>
+     </AnimTreeState>
+     <AnimTreeState name="DoubleJump3" pos="0.399999 0.200001">
+      <p:Color value="0.7 0.7 0.7"/>
+      <p:AutoBranchSequence value="Sequential"/>
+      <p:Clip value="RIDECRAB_POSE"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:PostBehavior value="Pause"/>
+      <p:AISync value="FALSE"/>
+      <AnimTreeBranch name="Branch1">
+       <p:BranchTo value="RideJumpAir"/>
+       <p:Events>
+        <p:Event class="AnimTreeEventPointerProperty"/>
+       </p:Events>
+      </AnimTreeBranch>
+     </AnimTreeState>
+    </AnimTreeStateGroup>
+    <AnimTreeBranch name="Branch124">
+     <p:BranchTo value="RideJump_Group"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:CropStart value="0"/>
+     <p:InitialTime value="0"/>
+     <p:Speed value="1"/>
+     <p:CurveSlope value="1"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="JUMP"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeStateGroup name="Move_Group3" expanded="1" pos="-9 -0.599991">
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:StartState value="RideMove"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <AnimTreeState name="RideMove" pos="-9.53674e-007 -0.2">
+      <p:Color value="0.7 0.7 0.7"/>
+      <p:AutoBranchSequence value="Sequential"/>
+      <p:Clip value="RIDECRAB_POSE"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:PostBehavior value="Loop"/>
+      <p:EaseDuration value="0"/>
+      <p:AISync value="FALSE"/>
+      <p:EventsIgnored>
+       <p:Event class="AnimTreeEventPointerProperty" value="MOVE"/>
+       <p:Event2 class="AnimTreeEventPointerProperty" value="RUN_STUMBLE_END"/>
+      </p:EventsIgnored>
+      <AnimTreeBranch name="Branch1">
+       <p:BranchTo value="Idle_Group2"/>
+       <p:Events>
+        <p:Event class="AnimTreeEventPointerProperty" value="IDLE"/>
+        <p:Event2 class="AnimTreeEventPointerProperty" value="STANCE"/>
+       </p:Events>
+      </AnimTreeBranch>
+     </AnimTreeState>
+    </AnimTreeStateGroup>
+    <AnimTreeBranch name="Branch125">
+     <p:BranchTo value="Move_Group3"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:CropStart value="0"/>
+     <p:InitialTime value="0"/>
+     <p:Speed value="1"/>
+     <p:CurveSlope value="1"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="MOVE"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeStateGroup name="Idle_Group2" expanded="1" pos="-2.99998 -3.6">
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:StartState value="RideIdle2"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <AnimTreeState name="RideIdle2" pos="0 -8.9407e-008">
+      <p:Color value="0.7 0.7 0.7"/>
+      <p:AutoBranchSequence value="Sequential"/>
+      <p:Clip value="RIDECRAB_POSE"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:PostBehavior value="Loop"/>
+      <p:EaseDuration value="4"/>
+      <p:AISync value="FALSE"/>
+      <AnimTreeBranch name="Branch1">
+       <p:BranchTo value="Idle_Prance"/>
+       <p:Events>
+        <p:Event class="AnimTreeEventPointerProperty" value="Idle_Prance"/>
+       </p:Events>
+      </AnimTreeBranch>
+     </AnimTreeState>
+     <AnimTreeState name="Idle_Prance" pos="-2.74777e-005 -0.999986">
+      <p:Clip value="RIDECRAB_POSE"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <AnimTreeBranch name="Branch1">
+       <p:BranchTo value="RideIdle2"/>
+       <p:DefaultBranch value="TRUE"/>
+       <p:Events>
+        <p:Event class="AnimTreeEventPointerProperty"/>
+       </p:Events>
+      </AnimTreeBranch>
+     </AnimTreeState>
+     <AnimTreeBranch name="Branch6">
+      <p:BranchTo value="Move_Group3"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="MOVE"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeStateGroup>
+    <AnimTreeBranch name="Branch126">
+     <p:BranchTo value="Idle_Group2"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:CropStart value="0"/>
+     <p:InitialTime value="0"/>
+     <p:Speed value="1"/>
+     <p:CurveSlope value="1"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="IDLE"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeStateGroup name="RideLand_Group" expanded="1" pos="-2.4 -1.2">
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:StartState value="RideLand"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <AnimTreeState name="RideLand" pos="0 3.8743e-007">
+      <p:Color value="0.7 0.7 0.7"/>
+      <p:AutoBranchSequence value="Sequential"/>
+      <p:Clip value="RIDECRAB_RCT_HITSMALL"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:PostBehavior value="Stop"/>
+      <p:AISync value="FALSE"/>
+      <AnimTreeBranch name="Branch1">
+       <p:BranchTo value="RideIdle2"/>
+       <p:DefaultBranch value="TRUE"/>
+      </AnimTreeBranch>
+     </AnimTreeState>
+    </AnimTreeStateGroup>
+    <AnimTreeBranch name="Branch127">
+     <p:BranchTo value="RideLand_Group"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:CropStart value="0"/>
+     <p:InitialTime value="0"/>
+     <p:Speed value="1"/>
+     <p:EaseDuration value="3"/>
+     <p:CurveSlope value="1"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="LAND"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeStateGroup name="RideStop_Group" expanded="1" pos="0.200001 -1.6">
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:StartState value="RideStop"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <AnimTreeState name="RideStop" pos="-1.90735e-006 -5.66244e-007">
+      <p:Color value="0.7 0.7 0.7"/>
+      <p:AutoBranchSequence value="Sequential"/>
+      <p:Clip value="RIDECRAB_POSE"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:PostBehavior value="Stop"/>
+      <p:AISync value="FALSE"/>
+      <AnimTreeBranch name="Branch1">
+       <p:BranchTo value="RideIdle2"/>
+       <p:DefaultBranch value="TRUE"/>
+      </AnimTreeBranch>
+     </AnimTreeState>
+    </AnimTreeStateGroup>
+    <AnimTreeBranch name="Branch128">
+     <p:BranchTo value="RideStop_Group"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:CropStart value="0"/>
+     <p:InitialTime value="0"/>
+     <p:Speed value="1"/>
+     <p:EaseDuration value="3"/>
+     <p:CurveSlope value="1"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="STOP"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch2">
+     <p:BranchTo value="Idle_Group2"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="STANCE"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch3">
+     <p:BranchTo value="Ride_RunLand"/>
+     <p:EaseDuration value="2"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="FULLLANDRUN"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeStateGroup name="RideReaction_Group" expanded="1" pos="41.6 -16.8">
+     <p:StartState value="HitSmall_F"/>
+     <AnimTreeBranch name="Branch26">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:BranchTo value="HitSmall_B"/>
+      <p:DefaultBranch value="FALSE"/>
+      <p:CropStart value="0"/>
+      <p:InitialTime value="0"/>
+      <p:Speed value="1"/>
+      <p:PostBehavior value="Pause"/>
+      <p:EaseDuration value="0"/>
+      <p:CurveSlope value="1"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="HITSMALL_BACK"/>
+      </p:Events>
+     </AnimTreeBranch>
+     <AnimTreeBranch name="Branch27">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:BranchTo value="HitStumble_F"/>
+      <p:DefaultBranch value="FALSE"/>
+      <p:CropStart value="0"/>
+      <p:InitialTime value="0"/>
+      <p:Speed value="1"/>
+      <p:PostBehavior value="Pause"/>
+      <p:EaseDuration value="0"/>
+      <p:CurveSlope value="1"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="HITSTUMBLE_FRONT"/>
+      </p:Events>
+     </AnimTreeBranch>
+     <AnimTreeBranch name="Branch28">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:BranchTo value="HitStumble_B"/>
+      <p:DefaultBranch value="FALSE"/>
+      <p:CropStart value="0"/>
+      <p:InitialTime value="0"/>
+      <p:Speed value="1"/>
+      <p:PostBehavior value="Pause"/>
+      <p:EaseDuration value="0"/>
+      <p:CurveSlope value="1"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="HITSTUMBLE_BACK"/>
+      </p:Events>
+     </AnimTreeBranch>
+     <AnimTreeBranch name="Branch14">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:BranchTo value="ShakeOff"/>
+      <p:DefaultBranch value="FALSE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="SHAKEOFF"/>
+      </p:Events>
+     </AnimTreeBranch>
+     <AnimTreeBranch name="Branch24">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:BranchTo value="HitSmall_F"/>
+      <p:DefaultBranch value="FALSE"/>
+      <p:CropStart value="0"/>
+      <p:InitialTime value="0"/>
+      <p:Speed value="1"/>
+      <p:PostBehavior value="Pause"/>
+      <p:EaseDuration value="0"/>
+      <p:CurveSlope value="1"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="HITSMALL_FRONT"/>
+      </p:Events>
+     </AnimTreeBranch>
+     <AnimTreeBranch name="Branch10">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:BranchTo value="Celebrate"/>
+      <p:DefaultBranch value="FALSE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="CELEBRATE"/>
+      </p:Events>
+     </AnimTreeBranch>
+     <AnimTreeState name="Celebrate" pos="-36.3999 8.4997">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:Color value="0.7 0.7 0.7"/>
+      <p:AutoBranchSequence value="Sequential"/>
+      <p:Clip value="DRIVE_NORMAL_IMPACT"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:AISync value="FALSE"/>
+      <p:EventsFired>
+       <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+        <p:When value="ClipStarts"/>
+        <p:Offset value="71"/>
+       </p:Event>
+       <p:Event2 class="AnimTreeStateEventProperty" value="Anim_HorseCelebrate">
+        <p:When value="EnteringState"/>
+       </p:Event2>
+      </p:EventsFired>
+     </AnimTreeState>
+     <AnimTreeState name="ShakeOff" pos="-33.3999 11.2998">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:Color value="0.7 0.7 0.7"/>
+      <p:AutoBranchSequence value="Sequential"/>
+      <p:Clip value="RIDECRAB_RCT_SHAKEOFF"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:CropStart value="0"/>
+      <p:PostBehavior value="Stop"/>
+      <p:EaseDuration value="3"/>
+      <p:CurveSlope value="1"/>
+      <p:AISync value="TRUE"/>
+     </AnimTreeState>
+     <AnimTreeState name="HitStumble_B" pos="-36.3999 10.7">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:Color value="0.7 0.7 0.7"/>
+      <p:AutoBranchSequence value="Sequential"/>
+      <p:Clip value="RIDECRAB_RCT_HITSMALL"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:Speed value="1"/>
+      <p:CurveSlope value="1"/>
+      <p:AISync value="FALSE"/>
+      <p:EventsFired>
+       <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+        <p:When value="ClipStarts"/>
+        <p:Offset value="17"/>
+       </p:Event>
+      </p:EventsFired>
+      <AnimTreeBranch name="Branch1">
+       <p:Notes>
+        <p:Notes>
+         <d:Value>
+          ""
+         </d:Value>
+        </p:Notes>
+       </p:Notes>
+       <p:BranchTo value="ShakeOff"/>
+       <p:DefaultBranch value="TRUE"/>
+       <p:CropStart value="0"/>
+       <p:InitialTime value="0"/>
+       <p:Speed value="1"/>
+       <p:PostBehavior value="Pause"/>
+       <p:EaseDuration value="0"/>
+       <p:CurveSlope value="1"/>
+      </AnimTreeBranch>
+     </AnimTreeState>
+     <AnimTreeState name="HitStumble_F" pos="-36.3999 11.7001">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:Color value="0.7 0.7 0.7"/>
+      <p:AutoBranchSequence value="Sequential"/>
+      <p:Clip value="RIDECRAB_RCT_HITSMALL"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:CropStart value="0"/>
+      <p:Speed value="1"/>
+      <p:PostBehavior value="Stop"/>
+      <p:EaseDuration value="0"/>
+      <p:CurveSlope value="1"/>
+      <p:AISync value="FALSE"/>
+      <p:EventsFired>
+       <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+        <p:When value="ClipStarts"/>
+        <p:Offset value="17"/>
+       </p:Event>
+      </p:EventsFired>
+      <AnimTreeBranch name="Branch1">
+       <p:Notes>
+        <p:Notes>
+         <d:Value>
+          ""
+         </d:Value>
+        </p:Notes>
+       </p:Notes>
+       <p:BranchTo value="ShakeOff"/>
+       <p:DefaultBranch value="TRUE"/>
+       <p:CropStart value="0"/>
+       <p:InitialTime value="0"/>
+       <p:Speed value="1"/>
+       <p:PostBehavior value="Pause"/>
+       <p:EaseDuration value="0"/>
+       <p:CurveSlope value="1"/>
+      </AnimTreeBranch>
+     </AnimTreeState>
+     <AnimTreeState name="HitSmall_B" pos="-36.3999 12.5002">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:Color value="0.7 0.7 0.7"/>
+      <p:AutoBranchSequence value="Sequential"/>
+      <p:Clip value="RIDECRAB_RCT_HITSMALL"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:CropStart value="0"/>
+      <p:Speed value="1"/>
+      <p:PostBehavior value="Stop"/>
+      <p:EaseDuration value="0"/>
+      <p:CurveSlope value="1"/>
+      <p:AISync value="TRUE"/>
+      <p:EventsFired>
+       <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+        <p:When value="ClipStarts"/>
+        <p:Offset value="11"/>
+       </p:Event>
+      </p:EventsFired>
+     </AnimTreeState>
+     <AnimTreeState name="HitSmall_F" pos="-36.3999 13.3003">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:Color value="0.7 0.7 0.7"/>
+      <p:AutoBranchSequence value="Sequential"/>
+      <p:Clip value="RIDECRAB_RCT_HITSMALL"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:CropStart value="0"/>
+      <p:Speed value="1"/>
+      <p:PostBehavior value="Stop"/>
+      <p:EaseDuration value="0"/>
+      <p:CurveSlope value="1"/>
+      <p:AISync value="TRUE"/>
+      <p:EventsFired>
+       <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+        <p:When value="ClipStarts"/>
+        <p:Offset value="11"/>
+       </p:Event>
+      </p:EventsFired>
+     </AnimTreeState>
+     <AnimTreeBranch name="Branch9">
+      <p:BranchTo value="HitStumble_B"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="HITSTUMBLE"/>
+      </p:Events>
+     </AnimTreeBranch>
+     <AnimTreeState name="Run_Stumble" pos="-36.3999 9.6001">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:Color value="0.7 0.7 0.7"/>
+      <p:AutoBranchSequence value="Sequential"/>
+      <p:Clip value="RIDECRAB_RCT_SHAKEOFF"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:PostBehavior value="Pause"/>
+      <p:AISync value="FALSE"/>
+     </AnimTreeState>
+     <AnimTreeBranch name="Branch15">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:BranchTo value="Run_Stumble"/>
+      <p:DefaultBranch value="FALSE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="RUN_STUMBLE_START"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeStateGroup>
+    <AnimTreeBranch name="Branch35">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="RideReaction_Group"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:PostBehavior value="Stop"/>
+     <p:CurveSlope value="1"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="STARTREACTION"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeState name="Ride_RunLand" pos="-6.49993 -1.35015">
+     <p:Clip value=""/>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="RideMove"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:EaseDuration value="2"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="RideFall" pos="-8.00003 -6.40002">
+     <p:Clip value="RIDECRAB_POSE"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:CropStart value="0"/>
+     <p:InitialTime value="0"/>
+     <p:PostBehavior value="Pause"/>
+     <p:EaseDuration value="5"/>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch4">
+     <p:BranchTo value="RideFall"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="FALL"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeState name="RearUp" pos="0.80007 0.20008">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="RIDECRAB_POSE"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:AISync value="FALSE"/>
+     <AnimTreeBranch name="Branch1">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:BranchTo value="RideIdle2"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value=""/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch5">
+     <p:BranchTo value="RearUp"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="REARUP"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeState name="TeleportStart" pos="5.0001 -0.79992">
+     <p:Clip value="RIDECRAB_POSE"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="RideIdle2"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="TeleportEnd" pos="5.00008 -1.79992">
+     <p:Clip value="RIDECRAB_POSE"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="RideIdle2"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch8">
+     <p:BranchTo value="TeleportStart"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="TELEPORT"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch7">
+     <p:BranchTo value="TeleportEnd"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="TELEPORT_END"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeStateGroup name="RideShoulderCharge_Group" expanded="1" pos="11.6001 -4.19992">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:StartState value="Headbutt"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <AnimTreeState name="Headbutt" pos="-0.400028 1.51992e-006">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:Color value="0.7 0.7 0.7"/>
+      <p:AutoBranchSequence value="Sequential"/>
+      <p:Clip value="RIDECRAB_RCT_HITSMALL"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:CropEnd value="40"/>
+      <p:AISync value="FALSE"/>
+      <p:EventsIgnored>
+       <p:Event class="AnimTreeEventPointerProperty" value="SHOULDERCHARGE_DASH"/>
+      </p:EventsIgnored>
+     </AnimTreeState>
+     <AnimTreeState name="Headbutt_WallHit" pos="-0.400021 -0.999998">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:Color value="0.7 0.7 0.7"/>
+      <p:AutoBranchSequence value="Sequential"/>
+      <p:Clip value="RIDECRAB_RCT_HITSMALL"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:AISync value="FALSE"/>
+     </AnimTreeState>
+     <AnimTreeState name="Headbutt_React" pos="-0.400021 -2">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:Color value="0.7 0.7 0.7"/>
+      <p:AutoBranchSequence value="Sequential"/>
+      <p:Clip value="RIDECRAB_RCT_HITSMALL"/>
+      <p:ClipTimeSource value=".Global.Time"/>
+      <p:AISync value="FALSE"/>
+     </AnimTreeState>
+     <AnimTreeBranch name="Branch11">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:BranchTo value="Headbutt_WallHit"/>
+      <p:DefaultBranch value="FALSE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="SHOULDERCHARGE_WALLHIT"/>
+      </p:Events>
+     </AnimTreeBranch>
+     <AnimTreeBranch name="Branch12">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:BranchTo value="Headbutt_React"/>
+      <p:DefaultBranch value="FALSE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="SHOULDERCHARGE_REACT"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeStateGroup>
+    <AnimTreeBranch name="Branch13">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="RideShoulderCharge_Group"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:Events>
+      <p:Event2 class="AnimTreeEventPointerProperty" value="SHOULDERCHARGE"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch16">
+     <p:BranchTo value="Move_Group3"/>
+     <p:EaseDuration value="5"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="RUN_STUMBLE_END"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeStateGroup>
+   <AnimTreeState name="RideDismount" pos="24.8 -9.4">
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="JUMPAIR_BLEND"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Pause"/>
+    <p:AISync value="FALSE"/>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch1">
+   <p:BranchTo value="Riding_CRAB"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="DOR_HermitCrabPal"/>
+   </p:Events>
+  </AnimTreeBranch>
+ </AnimTree>
+
+</d:SnipeFile>

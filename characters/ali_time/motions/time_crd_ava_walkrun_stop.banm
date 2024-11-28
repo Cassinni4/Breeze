@@ -1,0 +1,31 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Speed" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Speed"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/class_herosmall/motions/herosm_crd_ava_walkstop.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/class_herosmall/motions/herosm_crd_ava_runstop.oct"
+			}
+		}
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Filename = "characters/ali_time/motions/time_crd_add.oct"
+	}
+}

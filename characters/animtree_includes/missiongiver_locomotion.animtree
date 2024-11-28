@@ -1,0 +1,446 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="2.0.70 x64" branch="in3" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="0">
+  <p:Interface value="Main"/>
+  <p:StartState value="MissionGiver_Move"/>
+  <AnimTreeStateGroup name="MissionGiver_Move" expanded="1" pos="2 1.8">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.325367 0.647383 0.7"/>
+   <p:StartState value="Walk"/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <p:EventsFired>
+    <p:Event class="AnimTreeStateEventProperty" value="MG_TALK_STOP">
+     <p:When value="EnteringGroup"/>
+    </p:Event>
+   </p:EventsFired>
+   <p:EventsIgnored>
+    <p:Event class="AnimTreeEventPointerProperty" value="MG_IDLE_MISSION_1"/>
+    <p:Event2 class="AnimTreeEventPointerProperty" value="MG_IDLE_MISSION_2"/>
+    <p:Event3 class="AnimTreeEventPointerProperty" value="MG_IDLE_MISSION_3"/>
+   </p:EventsIgnored>
+   <AnimTreeState name="Walk" pos="0 0.4">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.0897436 0.0897436"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="MG_WALK"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <p:EaseDuration value="5"/>
+    <p:AISync value="FALSE"/>
+   </AnimTreeState>
+   <AnimTreeState name="WalkStop" pos="-6.55651e-007 -1.8">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.0897436 0.0897436"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="MG_WALKSTOP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:EaseDuration value="8"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeState name="Run" pos="-2.38419e-007 -0.6">
+    <p:Color value="0.7 0.0897436 0.0897436"/>
+    <p:Clip value="MG_BM_RUNF"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <p:EaseDuration value="3"/>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch1">
+   <p:BranchTo value="MissionGiver_Move"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MG_MOVE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch2">
+   <p:BranchTo value="WalkStop"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MG_WALKSTOP"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="MissionGiver_ShuffleTurns" expanded="1" pos="5 1.8">
+   <p:Color value="0.262073 0.7 0.278099"/>
+   <p:EventsFired>
+    <p:Event class="AnimTreeStateEventProperty" value="MG_TALK_STOP">
+     <p:When value="EnteringGroup"/>
+    </p:Event>
+   </p:EventsFired>
+   <AnimTreeState name="ShuffleLeft" pos="0.8 0.2">
+    <p:Color value="0.7 0.166026 0.166026"/>
+    <p:Clip value="MG_SHUFFLE_LEFT"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="3"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeState name="ShuffleRight" pos="3.8 0.2">
+    <p:Color value="0.7 0.166026 0.166026"/>
+    <p:Clip value="MG_SHUFFLE_RIGHT"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="3"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeState name="HopTurn" pos="0.9 -1">
+    <p:Color value="0.7 0.166026 0.166026"/>
+    <p:Clip value="MG_HOPTURN"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeState name="HopTurn_Idle" pos="2.3 -2.2">
+    <p:Color value="0.7 0.166026 0.166026"/>
+    <p:Clip value="MG_HOPTURN_IDLE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:EaseDuration value="3"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeState name="HopTurnLeft" pos="3.7 -1.1">
+    <p:Color value="0.7 0.166026 0.166026"/>
+    <p:Clip value="MG_HOPTURN_LEFT"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch4">
+   <p:BranchTo value="ShuffleRight"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MG_SHUFFLE_RIGHT"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch3">
+   <p:BranchTo value="ShuffleLeft"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MG_SHUFFLE_LEFT"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="MissionGiver_JetPacking" expanded="1" pos="-5.00002 -13">
+   <p:Color value="0.7 0.288943 0.196628"/>
+   <p:StartState value="JetPack_Launch"/>
+   <AnimTreeState name="JetPack_Launch" pos="-1 1">
+    <p:Clip value="JETPACK_LAUNCH"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Stop"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="LAUNCH_TO_POINT">
+      <p:When value="ExitingState"/>
+     </p:Event>
+    </p:EventsFired>
+    <AnimTreeBranch name="Branch3">
+     <p:BranchTo value="JetPack_Land"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="ONGROUND"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch2">
+     <p:BranchTo value="FLy1"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="JetPack_Land" pos="1.8 0.999999">
+    <p:Clip value="JETPACK_LAND"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeState name="FLy1" pos="-0.9 -0.4">
+    <p:Clip value="JETPACK_AIR"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="JetPack_Land"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="ONGROUND"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="IDLEBREAK_START" pos="7.57002 1.76">
+    <p:Clip value="JETPACK_LAUNCH2"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="IDLEBREAK_IDLE"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="IDLEBREAK_IDLE" pos="7.60004 0.8">
+    <p:Clip value="JETPACK_AIR_IDLE2"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+   </AnimTreeState>
+   <AnimTreeState name="AIR_DOWN" pos="4.80002 -0.4">
+    <p:Clip value="JETPACK_AIRDOWN"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Air_Down_Land"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Air_Down_Land" pos="4.83003 -1.38">
+    <p:Clip value="JETPACK_LAND"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeState name="AIRDOWNLAND" pos="7.60002 -1.39">
+    <p:Clip value="JETPACK_LAND"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+   </AnimTreeState>
+   <AnimTreeState name="JetPack_LandQuick" pos="1.80002 -0.600001">
+    <p:Clip value="JETPACK_LAND2"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeState name="INTRO_START" pos="4.80002 1.6">
+    <p:Clip value="JETPACK_LAUNCH"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="INTRO_IDLE"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="INTRO_IDLE" pos="4.80002 0.800001">
+    <p:Clip value="JETPACK_AIR_IDLE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+   </AnimTreeState>
+   <AnimTreeState name="IDLEBREAK_DOWN" pos="7.60002 -0.399999">
+    <p:Clip value="JETPACK_AIRDOWN2"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="AIRDOWNLAND"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch6">
+   <p:BranchTo value="JetPack_Land"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="LAUNCH_TO_POINT_LAND"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch7">
+   <p:BranchTo value="IDLEBREAK_START"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="LAUNCH_IDLE_BREAK"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch8">
+   <p:BranchTo value="AIR_DOWN"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="AIR_DOWN"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch10">
+   <p:BranchTo value="INTRO_START"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="LAUNCH_AIR_IDLE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch11">
+   <p:BranchTo value="IDLEBREAK_DOWN"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="IDLEBREAK_DOWN"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch9">
+   <p:BranchTo value="HopTurn"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MG_HOPTURN"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch12">
+   <p:BranchTo value="JetPack_LandQuick"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="LAUNCH_TO_POINT_LAND_QUICK"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch5">
+   <p:BranchTo value="JetPack_Launch"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="LAUNCH_TO_POINT_PRE_LAUNCH"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch13">
+   <p:BranchTo value="HopTurnLeft"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MG_HOPTURN_LEFT"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch14">
+   <p:BranchTo value="Run"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MG_RUN"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Pirates_GibbPoints" expanded="1" pos="15 -7.80001">
+   <p:Color value="0.588913 0.588913 0.346154"/>
+   <p:StartState value="BaseIdle"/>
+   <AnimTreeState name="Break1" pos="8 0.8">
+    <p:Color value="0.423077 0.314596 0"/>
+    <p:Clip value="GIBB_SHIP_IDLE_BREAK1"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="BaseIdle"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Break2" pos="10.4 -0.2">
+    <p:Color value="0.423077 0.314596 0"/>
+    <p:Clip value="GIBB_SHIP_IDLE_BREAK2"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <AnimTreeBranch name="Branch2">
+     <p:BranchTo value="BaseIdle"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Break3" pos="12.8 0.8">
+    <p:Color value="0.423077 0.314596 0"/>
+    <p:Clip value="GIBB_SHIP_IDLE_BREAK3"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="BaseIdle"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="BaseIdle" pos="10.4 1.8">
+    <p:Color value="0.423077 0.314596 0"/>
+    <p:Clip value="GIBB_SHIP_IDLE_PASSIVE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:EaseDuration value="10"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty"/>
+    </p:EventsFired>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Break1"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch2">
+     <p:BranchTo value="Break2"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch3">
+     <p:BranchTo value="Break3"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Ship_React" pos="14 1.8">
+    <p:Color value="0.423077 0.314596 0"/>
+    <p:Clip value="GIBB_SHIP_RCT_IMPACT"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:EaseDuration value="6"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="BaseIdle"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeStateGroup name="Point_Group" expanded="1" pos="1.60933e-006 -0.4">
+    <AnimTreeState name="PointL" pos="8.2 -1.8">
+     <p:Color value="0.423077 0.314596 0"/>
+     <p:Clip value="GIBB_SHIP_POINTLEFT"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:EaseDuration value="6"/>
+    </AnimTreeState>
+    <AnimTreeState name="PointC" pos="10.4 -1.8">
+     <p:Color value="0.423077 0.314596 0"/>
+     <p:Clip value="GIBB_SHIP_POINTCENTER"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+    </AnimTreeState>
+    <AnimTreeState name="PointR" pos="12.6 -1.8">
+     <p:Color value="0.423077 0.314596 0"/>
+     <p:Clip value="GIBB_SHIP_POINTRIGHT"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:EaseDuration value="6"/>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch16">
+     <p:BranchTo value="BaseIdle"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeStateGroup>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch15">
+   <p:BranchTo value="Pirates_GibbPoints"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Gibbs_ShipStart"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch17">
+   <p:BranchTo value="PointL"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Gibbs_Ship_PointL"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch18">
+   <p:BranchTo value="PointC"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Gibbs_Ship_PointC"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch19">
+   <p:BranchTo value="PointR"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Gibbs_Ship_PointR"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch20">
+   <p:BranchTo value="Ship_React"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Gibbs_Ship_React"/>
+   </p:Events>
+  </AnimTreeBranch>
+ </AnimTree>
+
+</d:SnipeFile>

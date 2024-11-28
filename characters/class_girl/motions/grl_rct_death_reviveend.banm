@@ -1,0 +1,14 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/inc_helen/motions/els_rct_death_reviveend.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Filename = "characters/class_girl/motions/grl_rct_death_reviveend_add.oct"
+	}
+}

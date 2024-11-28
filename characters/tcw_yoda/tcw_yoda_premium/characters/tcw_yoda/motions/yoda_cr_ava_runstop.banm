@@ -1,0 +1,30 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Weight" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Weight"
+		Keys =
+		[
+			0.0 0.0 
+		]
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/tcw_yoda/motions/yoda_cr_ava_runstop.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/tcw_yoda/motions/yoda_cr_ava_runstop_sm.oct"
+			}
+		}
+	}
+}

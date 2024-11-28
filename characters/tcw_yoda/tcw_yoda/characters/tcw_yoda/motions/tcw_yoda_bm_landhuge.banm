@@ -1,0 +1,21 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Lightsaber" =
+	{
+		DefaultPhase = 1.0
+	}
+}
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/tcw_yoda/motions/yoda_bm_landhuge.oct"
+	}
+	ReferencedTrack =
+	{
+		Weight = "Lightsaber"
+		Filename = "characters/tcw_yoda/motions/yoda_bm_landhuge_saber.oct"
+	}
+}
