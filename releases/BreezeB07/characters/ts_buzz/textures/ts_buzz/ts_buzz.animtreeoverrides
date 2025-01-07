@@ -1,0 +1,17 @@
+Reaction:FrontGetup:EventsFired:SET_INTERRUPTIBLE:Offset:16;
+Reaction:BackGetup:EventsFired:SET_INTERRUPTIBLE:Offset:15;
+Reaction:ComplexCombo01:EventsFired:SET_INTERRUPTIBLE:Offset:40;
+Reaction:ComplexCombo02:EventsFired:SET_INTERRUPTIBLE:Offset:45;
+Reaction:ComplexCombo03:EventsFired:SET_INTERRUPTIBLE:Offset:35;
+Reaction:ComplexCombo04:EventsFired:SET_INTERRUPTIBLE:Offset:40;
+Reaction:ComplexLauncher:EventsFired:FALL_HARD:Offset:27;
+Reaction:ComplexComboPause01A:EventsFired:SET_INTERRUPTIBLE:Offset:35;
+Reaction:ComplexComboPause01B:EventsFired:SET_INTERRUPTIBLE:Offset:40;
+Reaction:ComplexComboPause02A:EventsFired:SET_INTERRUPTIBLE:Offset:35;
+Reaction:ComplexComboPause02B:EventsFired:SET_INTERRUPTIBLE:Offset:45;
+Reaction:ComplexAirCombo01:EventsFired:FALL_HARD:Offset:31;
+Reaction:ComplexAirCombo02:EventsFired:FALL_HARD:Offset:27;
+Reaction:ComplexAirCombo03:EventsFired:FALL_HARD:Offset:30;
+Reaction:ComplexAirComboPause:EventsFired:FALL_HARD:Offset:32;
+Reaction:Complex_HelmbreakerLand:EventsFired:SET_INTERRUPTIBLE:Offset:15;
+

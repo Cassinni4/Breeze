@@ -1,0 +1,528 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="2.0.81 x64" branch="in3" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="0">
+  <p:Interface value="Main"/>
+  <p:StartState value="KillInterface"/>
+  <AnimTreeStateGroup name="Mission_Available" expanded="1" pos="-12 0.399998">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.7 0.13575 0.175106"/>
+   <p:StartState value="Beckon"/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <p:EventsFired>
+    <p:Event class="AnimTreeStateEventProperty" value="MG_TALK_STOP">
+     <p:When value="EnteringGroup"/>
+    </p:Event>
+   </p:EventsFired>
+   <AnimTreeState name="Idle_Break_Spec_Mission" pos="5 -3.2">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="MG_IDLE_BREAK_SPEC_MISSION"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:Speed value="0.99"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="5"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Active_Idle_Finish"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Idle_Break_Gen_Mission" pos="7.4 -3.2">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       "Should be a larger Beckon"
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="MG_IDLE_BREAK_GEN_MISSION"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:Speed value="0.99"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="5"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Active_Idle_Finish"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Beckon" pos="2.2 -3.2">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       "Should be a smaller Beckon"
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Clip value="MG_MISSION_AVAILABLE_BECKON"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:Speed value="0.99"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="5"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Active_Idle_Finish"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Active_Idle_Finish" pos="4.9 -4.31">
+    <p:Clip value="MG_IDLE_ACTIVE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:Speed value="0.99"/>
+    <p:PostBehavior value="Stop"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeStateGroup name="Pending_Mission_Completion" expanded="1" pos="-8 3">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.973564 1 0.245671"/>
+   <p:StartState value="Pending_Idle_Gen"/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <p:EventsFired>
+    <p:Event class="AnimTreeStateEventProperty" value="MG_TALK_STOP">
+     <p:When value="EnteringGroup"/>
+    </p:Event>
+   </p:EventsFired>
+   <AnimTreeState name="Pending_Idle_Gen" pos="3.4 -2.4">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="MG_IDLE_BREAK_GEN_PENDING"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:Speed value="0.99"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="5"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Pending_Idle_Finisher"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Pending_Idle" pos="-1.8 -2.4">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="MG_IDLE_WAIT"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:Speed value="0.99"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="5"/>
+    <p:AISync value="FALSE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="PASSIVE_DIALOG">
+      <p:When value="EnteringState"/>
+     </p:Event>
+    </p:EventsFired>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Pending_Idle_Finisher"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Pending_Idle_Spec" pos="0.8 -2.4">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="MG_IDLE_BREAK_SPEC_PENDING"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:Speed value="0.99"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="5"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Pending_Idle_Finisher"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Pending_Idle_Finisher" pos="0.8 -3.51">
+    <p:Clip value="MG_IDLE_WAIT"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:Speed value="0.99"/>
+    <p:PostBehavior value="Stop"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch1">
+   <p:BranchTo value="Idle"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MG_IDLE_1"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch2">
+   <p:BranchTo value="Idle_Break_Specific"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MG_IDLE_2"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch3">
+   <p:BranchTo value="Idle_Break_Generic"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MG_IDLE_3"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch5">
+   <p:BranchTo value="Pending_Idle_Gen"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MG_IDLE_PENDING_3"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch6">
+   <p:BranchTo value="Pending_Idle_Spec"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MG_IDLE_PENDING_2"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch7">
+   <p:BranchTo value="Pending_Idle"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MG_IDLE_PENDING_1"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch10">
+   <p:BranchTo value="Beckon"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MG_IDLE_MISSION_1"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch11">
+   <p:BranchTo value="Idle_Break_Gen_Mission"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MG_IDLE_MISSION_3"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch12">
+   <p:BranchTo value="Idle_Break_Spec_Mission"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MG_IDLE_MISSION_2"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch13">
+   <p:BranchTo value="No_Mission_Passive_Idles"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MG_IDLE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch14">
+   <p:BranchTo value="Pending_Mission_Completion"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MG_PENDING"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch15">
+   <p:BranchTo value="Mission_Available"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MG_MISSION"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch17">
+   <p:BranchTo value="State"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="CHAT_LISTEN"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeState name="KillInterface" pos="-2 4">
+   <p:Color value="0 0 0"/>
+  </AnimTreeState>
+  <AnimTreeBranch name="Branch18">
+   <p:BranchTo value="KillInterface"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MG_KILLINTERFACE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch8">
+   <p:BranchTo value="Talk_Group"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MG_TALK"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Talk_Group" expanded="1" pos="0.399999 -0.199996">
+   <p:Color value="1 1 1"/>
+   <p:StartState value="Talk_State"/>
+   <AnimTreeState name="Talk_State" pos="-1.4 -2.4">
+    <p:Clip value="MG_IDLE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <p:EventsIgnored>
+     <p:Event class="AnimTreeEventPointerProperty" value="MG_IDLE_MISSION_3"/>
+     <p:Event2 class="AnimTreeEventPointerProperty" value="MG_IDLE_MISSION_2"/>
+     <p:Event3 class="AnimTreeEventPointerProperty" value="MG_IDLE_MISSION_1"/>
+     <p:Event4 class="AnimTreeEventPointerProperty" value="MG_IDLE_PENDING_3"/>
+     <p:Event5 class="AnimTreeEventPointerProperty" value="MG_IDLE_PENDING_2"/>
+     <p:Event6 class="AnimTreeEventPointerProperty" value="MG_IDLE_PENDING_1"/>
+     <p:Event7 class="AnimTreeEventPointerProperty" value="CHAT_LISTEN"/>
+     <p:Event8 class="AnimTreeEventPointerProperty" value="MG_IDLE"/>
+     <p:Event9 class="AnimTreeEventPointerProperty" value="MG_IDLE_1"/>
+     <p:Event10 class="AnimTreeEventPointerProperty" value="MG_IDLE_2"/>
+     <p:Event11 class="AnimTreeEventPointerProperty" value="MG_IDLE_3"/>
+     <p:Event13 class="AnimTreeEventPointerProperty" value="MG_ACKNOWLEDGE"/>
+    </p:EventsIgnored>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeStateGroup name="No_Mission_Passive_Idles" expanded="1" pos="-9.2 5.2">
+   <p:Color value="0.33043 0.338614 0.7"/>
+   <p:StartState value="Idle"/>
+   <p:EventsFired>
+    <p:Event class="AnimTreeStateEventProperty" value="MG_TALK_STOP">
+     <p:When value="EnteringGroup"/>
+    </p:Event>
+   </p:EventsFired>
+   <AnimTreeState name="Idle_Break_Generic" pos="4.6 -1.6">
+    <p:Clip value="MG_IDLE_BREAK_GEN"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:Speed value="0.99"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="5"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Idle_finisher"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Idle_Break_Specific" pos="1.8 -1.6">
+    <p:Clip value="MG_IDLE_BREAK_SPEC"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:Speed value="0.99"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="5"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Idle_finisher"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Idle" pos="-0.614997 -1.6">
+    <p:Clip value="MG_IDLE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:Speed value="0.99"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="5"/>
+    <p:AISync value="FALSE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="PASSIVE_DIALOG">
+      <p:When value="EnteringState"/>
+     </p:Event>
+    </p:EventsFired>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Idle_finisher"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Idle_finisher" pos="1.7925 -3.01">
+    <p:Clip value="MG_IDLE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeState name="State" pos="-1.415 -2.8">
+    <p:Clip value="MG_IDLE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Idle_finisher"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeStateGroup name="Alternate_Idles" expanded="1" pos="-23.8 -2">
+   <p:Color value="0.156152 0.607768 0.7"/>
+   <AnimTreeState name="Alt_Idle1" pos="-0.800004 -0.4">
+    <p:Clip value="MG_IDLE_CWR"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Alt_Idle_Finisher"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Alt_Idle2" pos="1.8 -0.4">
+    <p:Clip value="MG_IDLE_BREAK_GEN_CWR"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Alt_Idle_Finisher"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Alt_Idle3" pos="4.4 -0.4">
+    <p:Clip value="MG_MISSION_AVAILABLE_BECKON_CWR"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Alt_Idle_Finisher"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Alt_Idle_Finisher" pos="1.8 -2.4">
+    <p:Clip value="MG_IDLE_CWR"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch4">
+   <p:BranchTo value="Alt_Idle1"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MG_IDLE_1_ALT"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch9">
+   <p:BranchTo value="Alt_Idle2"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MG_IDLE_2_ALT"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch16">
+   <p:BranchTo value="Alt_Idle3"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MG_IDLE_3_ALT"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="MissionSuccess_Group" expanded="1" pos="0.399999 -0.4">
+   <p:Color value="0.457317 0.328659 0.328659"/>
+   <AnimTreeStateGroup name="Success_Group" expanded="1" pos="0 0">
+    <p:Color value="0.591463 0.544579 0.544579"/>
+    <AnimTreeState name="MissionSuccess5" pos="-18.4 1">
+     <p:Color value="0.597561 0.291493 0.291493"/>
+     <p:Clip value="TWNLA_MSN_SUCCESS_NOD"/>
+     <p:AISync value="TRUE"/>
+    </AnimTreeState>
+    <AnimTreeState name="MissionSuccess4" pos="-18.4 2">
+     <p:Color value="0.597561 0.291493 0.291493"/>
+     <p:Clip value="TWNLA_MSN_SUCCESS_GODFATHER"/>
+     <p:AISync value="TRUE"/>
+    </AnimTreeState>
+    <AnimTreeState name="MissionSuccess3" pos="-18.4 3">
+     <p:Color value="0.597561 0.291493 0.291493"/>
+     <p:Clip value="TWNLA_MSN_SUCCESS_FATMAN"/>
+     <p:AISync value="TRUE"/>
+    </AnimTreeState>
+    <AnimTreeState name="MissionSuccess2" pos="-18.4 4">
+     <p:Color value="0.597561 0.291493 0.291493"/>
+     <p:Clip value="TWNLA_MSN_SUCCESS_CLAPFISTPUMP"/>
+     <p:AISync value="TRUE"/>
+    </AnimTreeState>
+    <AnimTreeState name="MissionSuccess1" pos="-18.4 5">
+     <p:Color value="0.597561 0.291493 0.291493"/>
+     <p:Clip value="TWNLA_MSN_SUCCESS_BOW"/>
+     <p:AISync value="TRUE"/>
+    </AnimTreeState>
+   </AnimTreeStateGroup>
+   <AnimTreeState name="MissionSuccess_Picker" pos="-21.8 3.6">
+    <p:Color value="0.27439 0.27439 0.27439"/>
+    <AnimTreeBranch name="Branch2">
+     <p:BranchTo value="MissionSuccess1"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch3">
+     <p:BranchTo value="MissionSuccess2"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch4">
+     <p:BranchTo value="MissionSuccess3"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch5">
+     <p:BranchTo value="MissionSuccess4"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch6">
+     <p:BranchTo value="MissionSuccess5"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch19">
+   <p:BranchTo value="MissionSuccess_Picker"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Mission_Success"/>
+   </p:Events>
+  </AnimTreeBranch>
+ </AnimTree>
+
+</d:SnipeFile>

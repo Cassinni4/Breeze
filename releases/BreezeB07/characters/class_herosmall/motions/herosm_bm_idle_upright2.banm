@@ -1,0 +1,21 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/class_herosmall/motions/herosm_bm_idle_upright_pose.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Weight = 0.3
+		Filename = "characters/class_herosmall/motions/herosm_bm_idle_active_add.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Weight = 0.66
+		Filename = "characters/class_herosmall/motions/herosm_bm_idle_active_eyes.oct"
+	}
+}

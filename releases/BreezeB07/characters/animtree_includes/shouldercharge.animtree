@@ -1,0 +1,165 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="3.01.137 x64" branch="in3" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="0">
+  <p:Interface value="FullBody"/>
+  <p:StartState value=""/>
+  <AnimTreeStateGroup name="ShoulderCharge_Group" expanded="1" pos="-135.2 83.8">
+   <p:Color value="0.5 1 1"/>
+   <p:StartState value="ShoulderChargeStart"/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <p:EventsFired>
+    <p:Event class="AnimTreeStateEventProperty" value="Face_Intense_Start"/>
+   </p:EventsFired>
+   <AnimTreeState name="ShoulderChargeStart" pos="114.6 -60">
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="SHOULDERCHARGE_START"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="Face_BlinkHold">
+      <p:When value="EnteringState"/>
+     </p:Event>
+    </p:EventsFired>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="ShoulderChargeDash"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="ShoulderChargeDash" pos="117.2 -60">
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="SHOULDERCHARGE_DASH"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeState name="ShoulderChargeWallHit" pos="117.2 -61.4">
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="SHOULDERCHARGE_WALLHIT"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="19"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="ShoulderChargeFinish" pos="119.8 -60">
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="SHOULDERCHARGE_FINISH"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="Face_Start_Eyes">
+      <p:When value="EnteringState"/>
+     </p:Event>
+     <p:Event2 class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="19"/>
+     </p:Event2>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeBranch name="Branch23">
+    <p:BranchTo value="ShoulderChargeWallHit"/>
+    <p:DefaultBranch value="FALSE"/>
+    <p:CropStart value="0"/>
+    <p:InitialTime value="0"/>
+    <p:Speed value="1"/>
+    <p:PostBehavior value="Pause"/>
+    <p:EaseDuration value="0"/>
+    <p:CurveSlope value="1"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="SHOULDERCHARGE_WALLHIT"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeBranch name="Branch3">
+    <p:BranchTo value="ShoulderChargeDash"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="SHOULDERCHARGE_DASH"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeBranch name="Branch4">
+    <p:BranchTo value="ShoulderChargeFinish"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="SHOULDERCHARGE_FINISH"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeState name="ShoulderCharge_ChargeUp" pos="114.6 -61.4">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       "IS THIS EVEN BEING USED...ANYWHERE?"
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Clip value="SHOULDERCHARGE_CHARGEUP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeBranch name="Branch5">
+    <p:BranchTo value="ShoulderCharge_ChargeUp"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="SHOULDERCHARGE_POWERUP"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeState name="ShoulderChargeFinish_Miss" pos="119.8 -61.3">
+    <p:Clip value="SHOULDERCHARGE_FINISH_MISS"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="Face_Start_Eyes">
+      <p:When value="EnteringState"/>
+     </p:Event>
+     <p:Event2 class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="10"/>
+     </p:Event2>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeBranch name="Branch6">
+    <p:BranchTo value="ShoulderChargeFinish_Miss"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="SHOULDERCHARGE_FINISH_MISS"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch1">
+   <p:BranchTo value="ShoulderCharge_Group"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="SHOULDERCHARGE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="AirAttack_Group" expanded="1" pos="-11.4 24.6">
+   <p:StartState value="AirAttackStart"/>
+   <AnimTreeState name="AirAttackStart" pos="1.66893e-006 -2.2">
+    <p:Clip value="AIRATTACK_START"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="AirAttackLoop"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:CurveSlope value="5"/>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="AirAttackLoop" pos="9.53674e-007 -3.2">
+    <p:Clip value="AIRATTACK_DASH"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch2">
+   <p:BranchTo value="AirAttack_Group"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="AIRATTACK"/>
+   </p:Events>
+  </AnimTreeBranch>
+ </AnimTree>
+
+</d:SnipeFile>

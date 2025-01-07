@@ -1,0 +1,1315 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="2.0.77 x64" branch="in3" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="0">
+  <p:Interface value="FullBody"/>
+  <AnimTreeStateGroup name="Fly_Group" expanded="1" pos="4.79999 -1.00004">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0 0.5 1"/>
+   <p:StartState value="Fly_Strafe_Group"/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <p:EventsFired>
+    <p:Event class="AnimTreeStateEventProperty" value="Mandalorian_Add_On">
+     <p:When value="EnteringGroup"/>
+    </p:Event>
+    <p:Event2 class="AnimTreeStateEventProperty" value="Mandalorian_Add_Off"/>
+   </p:EventsFired>
+   <AnimTreeState name="Fly_AttackTaunt1" pos="13.05 0.25001">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0 0.5 1"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="MANDALORIAN_ALERT_IDLE_TAUNT_HOVER"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:EaseDuration value="3"/>
+    <p:AISync value="TRUE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Fly_Idle"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Fly_AttackTaunt2" pos="13.05 -0.94999">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0 0.5 1"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="MANDALORIAN_ALERT_IDLE_TAUNT_HOVER2"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:EaseDuration value="3"/>
+    <p:AISync value="TRUE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Fly_Idle"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Fly_AttackTauntHover3" pos="13.05 -2.14999">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0 0.5 1"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="MANDALORIAN_ALERT_IDLE_TAUNT_HOVER3"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:EaseDuration value="3"/>
+    <p:AISync value="TRUE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Fly_Idle"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Fly_AttackTaunt4" pos="13.05 -3.34999">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0 0.50641 1"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="MANDALORIAN_ALERT_IDLE_TAUNT_HOVER4"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:EaseDuration value="3"/>
+    <p:AISync value="TRUE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Fly_Idle"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeBranch name="Branch10">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:BranchTo value="Fly_AttackTaunt1"/>
+    <p:DefaultBranch value="FALSE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="ATTACK_TAUNT"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeBranch name="Branch2">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:BranchTo value="Fly_AttackTaunt2"/>
+    <p:DefaultBranch value="FALSE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="ATTACK_TAUNT2"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeBranch name="Branch3">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:BranchTo value="Fly_AttackTauntHover3"/>
+    <p:DefaultBranch value="FALSE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="ATTACK_TAUNT3"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeBranch name="Branch4">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:BranchTo value="Fly_AttackTaunt4"/>
+    <p:DefaultBranch value="FALSE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="ATTACK_TAUNT4"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeBranch name="Branch6">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:BranchTo value="Fly_CelebrateTaunt1"/>
+    <p:DefaultBranch value="FALSE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="ATTACK_TAUNT_CELEBRATE"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeState name="Fly_CelebrateTaunt1" pos="10.15 -5.25">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0 0.5 1"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="MANDALORIAN_ALERT_IDLE_CELEBRATE_HOVER"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:EaseDuration value="3"/>
+    <p:AISync value="TRUE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Fly_Idle"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Fly_CelebrateTaunt2" pos="10.35 -6.45">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0 0.5 1"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="MANDALORIAN_ALERT_IDLE_CELEBRATE_HOVER2"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Fly_Idle"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeStateGroup name="Fly_Strafe_Group" expanded="1" pos="-23.6 -13.6">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0 0.5 1"/>
+    <p:StartState value="Fly_Strafe_Start"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <AnimTreeState name="Fly_Strafe_Loop" pos="29.6 15.6">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0 0.5 1"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="MANDALORIAN_STRAFE_LOOP"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:PostBehavior value="Loop"/>
+     <p:EaseDuration value="6"/>
+     <p:AISync value="FALSE"/>
+     <AnimTreeBranch name="Branch4">
+      <p:BranchTo value="Fly_Strafe_Stop"/>
+      <p:DefaultBranch value="FALSE"/>
+      <p:EaseDuration value="6"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="STOP"/>
+       <p:Event2 class="AnimTreeEventPointerProperty" value="STOP_ACTIVITY_IDLE"/>
+       <p:Event3 class="AnimTreeEventPointerProperty" value="IDLE"/>
+       <p:Event4 class="AnimTreeEventPointerProperty" value="ACTIVITY_IDLE"/>
+      </p:Events>
+     </AnimTreeBranch>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="Fly_Strafe_Loop2"/>
+      <p:EaseDuration value="8"/>
+      <p:CurveSlope value="1"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="MOVE_DIRECTION_CHANGE"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="Fly_Strafe_Stop" pos="32 15.6">
+     <p:Color value="0 0.5 1"/>
+     <p:Clip value="MANDALORIAN_STRAFE_END"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:EaseDuration value="8"/>
+     <p:AISync value="TRUE"/>
+     <p:EventsIgnored>
+      <p:Event class="AnimTreeEventPointerProperty" value="STOP"/>
+      <p:Event2 class="AnimTreeEventPointerProperty" value="STOP_ACTIVITY_IDLE"/>
+      <p:Event3 class="AnimTreeEventPointerProperty" value="ACTIVITY_IDLE"/>
+      <p:Event4 class="AnimTreeEventPointerProperty" value="IDLE"/>
+      <p:Event5 class="AnimTreeEventPointerProperty" value="TURN45L"/>
+      <p:Event6 class="AnimTreeEventPointerProperty" value="TURN90L"/>
+      <p:Event7 class="AnimTreeEventPointerProperty" value="TURN180L"/>
+      <p:Event8 class="AnimTreeEventPointerProperty" value="TURN45R"/>
+      <p:Event9 class="AnimTreeEventPointerProperty" value="TURN90R"/>
+      <p:Event10 class="AnimTreeEventPointerProperty" value="TURN180R"/>
+     </p:EventsIgnored>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="Fly_Idle"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:EaseDuration value="6"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="Fly_Strafe_Start" pos="27 16.8">
+     <p:Color value="0 0.5 1"/>
+     <p:Clip value="MANDALORIAN_STRAFE_START"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:EaseDuration value="4"/>
+     <p:AISync value="TRUE"/>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="Fly_Strafe_Loop"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:EaseDuration value="6"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch8">
+     <p:BranchTo value="Fly_Strafe_Start"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="MOVE"/>
+      <p:Event2 class="AnimTreeEventPointerProperty" value="PATROL_MOVE"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch17">
+     <p:BranchTo value="Fly_Strafe_Stop"/>
+     <p:EaseDuration value="6"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="STOP"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeState name="Fly_Strafe_Loop2" pos="29.6 16.6">
+     <p:Clip value="MANDALORIAN_STRAFE_LOOP"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:PostBehavior value="Loop"/>
+     <p:EaseDuration value="6"/>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="Fly_Strafe_Stop"/>
+      <p:EaseDuration value="6"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="STOP"/>
+       <p:Event2 class="AnimTreeEventPointerProperty" value="STOP_ACTIVITY_IDLE"/>
+       <p:Event3 class="AnimTreeEventPointerProperty" value="IDLE"/>
+       <p:Event4 class="AnimTreeEventPointerProperty" value="ACTIVITY_IDLE"/>
+      </p:Events>
+     </AnimTreeBranch>
+     <AnimTreeBranch name="Branch2">
+      <p:BranchTo value="Fly_Strafe_Loop"/>
+      <p:EaseDuration value="8"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="MOVE_DIRECTION_CHANGE"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch29">
+     <p:BranchTo value="Fly_Strafe_Loop2"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="MANDALORIAN_STRAFE"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeStateGroup>
+   <AnimTreeState name="Fly_Idle" pos="6.4 0.59999">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0 0.5 1"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="MANDALORIAN_IDLE_ACTIVE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <p:EaseDuration value="4"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch6">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        "This really REALLY shouldn't be needed!!!"
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="Fly_Strafe_Start"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:EaseDuration value="6"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="MOVE"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Fly_Turn_Right" pos="6.8 -2.80001">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0 0.5 1"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="MANDALORIAN_TURN_RIGHT"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="Fly_Idle"/>
+     <p:DefaultBranch value="TRUE"/>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeBranch name="Branch5">
+    <p:BranchTo value="Fly_CelebrateTaunt2"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="ATTACK_TAUNT_CELEBRATE2"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeBranch name="Branch7">
+    <p:BranchTo value="Fly_LoseAwareness"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="LOSE_AWARENESS"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeBranch name="Branch11">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       "Also handle STOP - if outside Hover_Strafe_Group."
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:BranchTo value="Fly_Idle"/>
+    <p:EaseDuration value="4"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="ACTIVITY_IDLE"/>
+     <p:Event3 class="AnimTreeEventPointerProperty" value="STOP_ACTIVITY_IDLE"/>
+     <p:Event4 class="AnimTreeEventPointerProperty" value="IDLE"/>
+     <p:Event5 class="AnimTreeEventPointerProperty" value="ACTIVE_STANCE"/>
+     <p:Event6 class="AnimTreeEventPointerProperty" value="STANCE"/>
+     <p:Event7 class="AnimTreeEventPointerProperty" value="PATROL_IDLE"/>
+     <p:Event2 class="AnimTreeEventPointerProperty" value="STOP"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeBranch name="Branch13">
+    <p:BranchTo value="Fly_Turn_Left"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="TURN45L"/>
+     <p:Event2 class="AnimTreeEventPointerProperty" value="TURN90L"/>
+     <p:Event3 class="AnimTreeEventPointerProperty" value="TURN180L"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeBranch name="Branch14">
+    <p:BranchTo value="Fly_Turn_Right"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="TURN45R"/>
+     <p:Event2 class="AnimTreeEventPointerProperty" value="TURN90L"/>
+     <p:Event3 class="AnimTreeEventPointerProperty" value="TURN180R"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeState name="Fly_LoseAwareness" pos="2 0.200089">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       "Currently we are just letting the actor return to ground via gravity so it won't recieve a movement event."
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0 0.5 1"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="MANDALORIAN_ALERT_HOVER_TO_PATROL"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:EaseDuration value="5"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeStateGroup name="Fly_React_Group" expanded="1" pos="-0.999988 11.2">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.2"/>
+    <p:StartState value="React_Default_State"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <AnimTreeState name="Fly_React_Small" pos="0.400004 -17.2">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="MANDALORIAN_RCT_HITSMALL"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:AISync value="TRUE"/>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="Fly_React_Done"/>
+      <p:DefaultBranch value="TRUE"/>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="Fly_React_KnockDown_Start" pos="6.20001 -17.2">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="MANDALORIAN_RCT_KNOCK_DOWN_START"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:AISync value="FALSE"/>
+     <p:EventsFired>
+      <p:Event class="AnimTreeStateEventProperty" value="Hover_Add_Off">
+       <p:When value="EnteringState"/>
+      </p:Event>
+     </p:EventsFired>
+     <AnimTreeBranch name="Branch1">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:BranchTo value="Fly_React_KnockDown_Loop"/>
+      <p:DefaultBranch value="TRUE"/>
+     </AnimTreeBranch>
+     <AnimTreeBranch name="Branch2">
+      <p:BranchTo value="Fly_React_KnockDown_End_In"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="ONGROUND"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="Fly_React_KnockDown_Loop" pos="4.80001 -18.2">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="MANDALORIAN_RCT_KNOCK_DOWN_LOOP"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:PostBehavior value="Loop"/>
+     <p:AISync value="FALSE"/>
+     <AnimTreeBranch name="Branch1">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:BranchTo value="Fly_React_KnockDown_End_In"/>
+      <p:DefaultBranch value="FALSE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="ONGROUND"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="Fly_React_Stumble" pos="3.4 -17.3">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="MANDALORIAN_RCT_STUMBLER"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:AISync value="TRUE"/>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="Fly_React_Done"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="Fly_React_KnockDown_End_In" pos="6.20001 -19.2">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="MANDALORIAN_RCT_KNOCK_DOWN_END_IN"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:AISync value="FALSE"/>
+     <AnimTreeBranch name="Branch1">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:BranchTo value="Fly_React_KnockDown_End_Out"/>
+      <p:DefaultBranch value="TRUE"/>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="Fly_React_KnockDown_End_Out" pos="6.20001 -20.2">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        "Fires event - The get-up is outside of this so will take us out of this tree to play ground anims again."
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="MANDALORIAN_RCT_KNOCK_DOWN_END_OUT"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:PostBehavior value="Stop"/>
+     <p:AISync value="FALSE"/>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="FrontGetup"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Fly_React_Small"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="HITSMALL"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch15">
+     <p:BranchTo value="Fly_React_Stumble"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="HITSTUMBLE"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch16">
+     <p:BranchTo value="Fly_React_KnockDown_Start"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="HITKNOCKDOWN"/>
+      <p:Event2 class="AnimTreeEventPointerProperty" value="HITTUMBLE"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeState name="React_Default_State" pos="1.79999 -19.206">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value=""/>
+     <p:AISync value="FALSE"/>
+    </AnimTreeState>
+    <AnimTreeState name="Fly_React_Done" pos="0.399999 -18.2">
+     <p:Clip value="MANDALORIAN_IDLE_ACTIVE"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:PostBehavior value="Loop"/>
+    </AnimTreeState>
+    <AnimTreeState name="HitStumbleSpin" pos="-2.59999 -17.106">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        "TEMP - I have croped the clip here so the legs line up better."
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="MANDALORIAN_REACT_HIT_STUMBLE_SPIN_HOVER"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:AISync value="TRUE"/>
+     <p:EventsFired>
+      <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+       <p:When value="ClipEnds"/>
+       <p:Offset value="0"/>
+      </p:Event>
+     </p:EventsFired>
+     <AnimTreeBranch name="Branch1">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:BranchTo value="Fly_React_Done"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:EaseDuration value="4"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value=""/>
+      </p:Events>
+     </AnimTreeBranch>
+     <AnimTreeBranch name="Branch2">
+      <p:BranchTo value="Fly_HitSpinLoop"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="HITSTUMBLE_SPINSTART"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="Fly_HitSpinLoop" pos="-2.59999 -18.4">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="MANDALORIAN_REACT_HIT_SPIN_LOOP_HOVER"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:PostBehavior value="Loop"/>
+     <p:AISync value="FALSE"/>
+     <p:EventsFired>
+      <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE"/>
+     </p:EventsFired>
+     <AnimTreeBranch name="Branch1">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:BranchTo value="Fly_HitSpinFinish"/>
+      <p:DefaultBranch value="FALSE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="HITSTUMBLE_SPINFINISH"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="Fly_HitSpinFinish" pos="-2.40001 -19.8">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="MANDALORIAN_REACT_HIT_SPIN_FINISH_HOVER"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:PostBehavior value="Stop"/>
+     <p:AISync value="TRUE"/>
+     <p:EventsFired>
+      <p:Event class="AnimTreeStateEventProperty" value="">
+       <p:When value="ExitingState"/>
+      </p:Event>
+     </p:EventsFired>
+     <AnimTreeBranch name="Branch1">
+      <p:Notes>
+       <p:Notes>
+        <d:Value>
+         ""
+        </d:Value>
+       </p:Notes>
+      </p:Notes>
+      <p:BranchTo value="Fly_React_Done"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:EaseDuration value="6"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="Anim_Crop"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch21">
+     <p:BranchTo value="HitStumbleSpin"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="HITSTUMBLESPIN"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeState name="HitForcePull" pos="-0.800006 -21.4">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="REACT_FORCE_PULL_START"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:PostBehavior value="Pause"/>
+     <p:AISync value="TRUE"/>
+     <p:EventsFired>
+      <p:Event class="AnimTreeStateEventProperty" value="Face_React_Start">
+       <p:When value="ExitingState"/>
+      </p:Event>
+      <p:Event2 class="AnimTreeStateEventProperty" value="LIGHTSABER_HOLD_OFF">
+       <p:When value="ExitingState"/>
+      </p:Event2>
+      <p:Event3 class="AnimTreeStateEventProperty" value="STOP_HEADTURN">
+       <p:When value="ExitingState"/>
+      </p:Event3>
+      <p:Event4 class="AnimTreeStateEventProperty" value="STOP_UPPERBODY2">
+       <p:When value="ExitingState"/>
+      </p:Event4>
+     </p:EventsFired>
+    </AnimTreeState>
+    <AnimTreeState name="HitForcePull_Reel" pos="-2.20001 -22.2">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="REACT_FORCE_PULL_AERIAL_PULLED"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:AISync value="TRUE"/>
+     <p:EventsFired>
+      <p:Event class="AnimTreeStateEventProperty" value="Face_React_Start">
+       <p:When value="ExitingState"/>
+      </p:Event>
+      <p:Event2 class="AnimTreeStateEventProperty" value="LIGHTSABER_HOLD_OFF">
+       <p:When value="ExitingState"/>
+      </p:Event2>
+     </p:EventsFired>
+    </AnimTreeState>
+    <AnimTreeState name="HitForcePull_Air_Reel" pos="0.400001 -22.2">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:Color value="0.7 0.7 0.7"/>
+     <p:AutoBranchSequence value="Sequential"/>
+     <p:Clip value="REACT_FORCE_PULL_AERIAL_PULLED"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:AISync value="TRUE"/>
+     <p:EventsFired>
+      <p:Event class="AnimTreeStateEventProperty" value="Face_React_Start">
+       <p:When value="ExitingState"/>
+      </p:Event>
+      <p:Event2 class="AnimTreeStateEventProperty" value="LIGHTSABER_HOLD_OFF">
+       <p:When value="ExitingState"/>
+      </p:Event2>
+     </p:EventsFired>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch26">
+     <p:BranchTo value="HitForcePull"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="HIT_FORCEPULL"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch27">
+     <p:BranchTo value="HitForcePull_Reel"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="HIT_FORCEPULL_REEL"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch28">
+     <p:BranchTo value="HitForcePull_Air_Reel"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="HIT_FORCEPULL_AIR_REEL"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeStateGroup>
+   <AnimTreeBranch name="Branch18">
+    <p:BranchTo value="Fly_Strafe_Group"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="MANDALORIAN_MOVE"/>
+     <p:Event2 class="AnimTreeEventPointerProperty" value="MOVE"/>
+     <p:Event3 class="AnimTreeEventPointerProperty" value="PATROL_MOVE"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeStateGroup name="Fly_Attack_Group" expanded="1" pos="0.399997 -2.38419e-007">
+    <p:StartState value="RocketFire_Start"/>
+    <AnimTreeState name="RocketFire_Start" pos="-2.79999 -1.19996">
+     <p:Clip value="TCW_MAND_AM_ATK_ROCKET_FIRE_START"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:PostBehavior value="Stop"/>
+     <p:AISync value="TRUE"/>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="RocketFire_Loop"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="RocketFire_End" pos="0.500011 -4.19996">
+     <p:Clip value="TCW_MAND_AM_ATK_ROCKET_FIRE_END"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:EaseDuration value="3"/>
+     <p:AISync value="TRUE"/>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="Fly_Idle"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="RocketFire_Loop" pos="-0.199988 -2.39996">
+     <p:Clip value="TCW_MAND_AM_ATK_ROCKET_FIRE_LOOP"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:PostBehavior value="Pause"/>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="RocketFire_End"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="MAND_ROCKET_FIRE_DONE"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch24">
+     <p:BranchTo value="RocketFire_Loop"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="MAND_ROCKET_FIRE"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeStateGroup>
+   <AnimTreeState name="State" pos="13 -4.59996">
+    <p:Color value="0 0.50641 1"/>
+    <p:Clip value="MANDALORIAN_ALERT_IDLE_TAUNT_HOVER4"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Fly_Idle"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="State2" pos="13 -5.79996">
+    <p:Color value="0 0.50641 1"/>
+    <p:Clip value="MANDALORIAN_ALERT_IDLE_TAUNT_HOVER4"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Fly_Idle"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeBranch name="Branch20">
+    <p:BranchTo value="State"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="ATTACK_TAUNT5"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeBranch name="Branch22">
+    <p:BranchTo value="State2"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="ATTACK_TAUNT6"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeState name="Fly_Land_Intro" pos="-5 1.20009">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       "TODO: Move and add seperate event to get to this. Not everyone wants return to Ground."
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0 0.5 1"/>
+    <p:Clip value="MANDALORIAN_VERTICAL_LAND_START"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Stop"/>
+    <p:AISync value="TRUE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Fly_Land_Loop"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:EaseDuration value="0"/>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Fly_Land_Loop" pos="-5 -0.19991">
+    <p:Color value="0 0.5 1"/>
+    <p:Clip value="MANDALORIAN_VERTICAL_LAND_LOOP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+   </AnimTreeState>
+   <AnimTreeState name="Fly_Turn_Left" pos="4.50001 -2.80001">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0 0.5 1"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="MANDALORIAN_TURN_LEFT"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="Fly_Idle"/>
+     <p:DefaultBranch value="TRUE"/>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeBranch name="Branch23">
+    <p:BranchTo value="Fly_Attack_Group"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="MAND_ROCKET_FIRE_START"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeStateGroup name="Fly_Dash" expanded="1" pos="10.6 -9.99996">
+    <p:StartState value="Fly_Dash_Right"/>
+    <AnimTreeState name="Fly_Dash_Right" pos="0 0.799998">
+     <p:Clip value="TCW_MAND_AM_DASH_R"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:AISync value="TRUE"/>
+    </AnimTreeState>
+    <AnimTreeState name="Fly_Dash_Back" pos="4.99999 0.799998">
+     <p:Clip value="TCW_MAND_AM_DASH_BKWD"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:AISync value="TRUE"/>
+    </AnimTreeState>
+    <AnimTreeState name="Fly_Dash_Left" pos="2.6 0.900001">
+     <p:Clip value="TCW_MAND_AM_DASH_L"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:AISync value="TRUE"/>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch30">
+     <p:BranchTo value="Fly_Dash_Right"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="MANDALORIAN_DASH_RIGHT"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch32">
+     <p:BranchTo value="Fly_Dash_Left"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="MANDALORIAN_DASH_LEFT"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch33">
+     <p:BranchTo value="Fly_Dash_Back"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="MANDALORIAN_DASH_BACK"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeStateGroup>
+   <AnimTreeBranch name="Branch34">
+    <p:BranchTo value="Fly_Dash"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="MANDALORIAN_DASH"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch31">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:BranchTo value="Fly_Take_Off"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:EaseDuration value="6"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MANDALORIAN_TAKE_OFF"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch25">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:BranchTo value="Fly_Land"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:EaseDuration value="2"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MANDALORIAN_LAND"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch12">
+   <p:BranchTo value="Fly_Group"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MANDALORIAN_MOVE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch9">
+   <p:BranchTo value="Fly_Land_Intro"/>
+   <p:EaseDuration value="6"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MANDALORIAN_DESCEND"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeState name="Fly_Landed_Waiting" pos="-2.55001 -5.90004">
+   <p:Color value="0 0.5 1"/>
+   <p:Clip value="STANCE"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:PostBehavior value="Loop"/>
+  </AnimTreeState>
+  <AnimTreeState name="FrontGetup" pos="17.4 -12.2061">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.7 0.7 0.7"/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <p:Clip value="REACT_GETUP_FRONT"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:CropStart value="0"/>
+   <p:AISync value="FALSE"/>
+   <p:EventsFired>
+    <p:Event class="AnimTreeStateEventProperty" value="">
+     <p:When value="ClipStarts"/>
+     <p:Offset value="20"/>
+    </p:Event>
+    <p:Event2 class="AnimTreeStateEventProperty" value="">
+     <p:When value="ClipStarts"/>
+     <p:Offset value="0"/>
+    </p:Event2>
+    <p:Event3 class="AnimTreeStateEventProperty" value="">
+     <p:When value="EnteringState"/>
+     <p:Offset value="0"/>
+    </p:Event3>
+   </p:EventsFired>
+   <AnimTreeBranch name="Branch1">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:BranchTo value="GetupLand"/>
+    <p:DefaultBranch value="TRUE"/>
+    <p:Speed value="1"/>
+    <p:PostBehavior value="Pause"/>
+    <p:CurveSlope value="1"/>
+   </AnimTreeBranch>
+  </AnimTreeState>
+  <AnimTreeState name="ShakeOff" pos="17.4 -14.3064">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.7 0.7 0.7"/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <p:Clip value="REACT_SHAKEOFF"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:PostBehavior value="Stop"/>
+   <p:EaseDuration value="0"/>
+   <p:CurveSlope value="3"/>
+   <p:AISync value="TRUE"/>
+   <p:EventsFired>
+    <p:Event class="AnimTreeStateEventProperty" value="">
+     <p:When value="EnteringState"/>
+     <p:Offset value="0"/>
+    </p:Event>
+    <p:Event2 class="AnimTreeStateEventProperty" value="">
+     <p:When value="ExitingState"/>
+    </p:Event2>
+    <p:Event3 class="AnimTreeStateEventProperty" value="">
+     <p:When value="EnteringState"/>
+     <p:Offset value="0"/>
+    </p:Event3>
+   </p:EventsFired>
+   <AnimTreeBranch name="Branch1">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:BranchTo value="ReactIdle"/>
+    <p:DefaultBranch value="TRUE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value=""/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeState>
+  <AnimTreeState name="GetupLand" pos="17.4 -13.2061">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.7 0.7 0.7"/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <p:Clip value="LAND_SHAKEOFF"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:Speed value="1"/>
+   <p:PostBehavior value="Stop"/>
+   <p:EaseDuration value="0"/>
+   <p:CurveSlope value="1"/>
+   <p:AISync value="FALSE"/>
+   <p:EventsFired>
+    <p:Event class="AnimTreeStateEventProperty" value="">
+     <p:When value="ClipStarts"/>
+     <p:Offset value="0"/>
+    </p:Event>
+    <p:Event2 class="AnimTreeStateEventProperty" value="">
+     <p:When value="EnteringState"/>
+     <p:Offset value="14"/>
+    </p:Event2>
+   </p:EventsFired>
+   <AnimTreeBranch name="Branch1">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:BranchTo value="ShakeOff"/>
+    <p:DefaultBranch value="TRUE"/>
+    <p:Speed value="1"/>
+    <p:PostBehavior value="Pause"/>
+    <p:CurveSlope value="1"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="Anim_Crop"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeState>
+  <AnimTreeState name="ReactIdle" pos="17.45 -15.256">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.7 0.7 0.7"/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <p:Clip value="STANCE_SELECTWAIT"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:PostBehavior value="Loop"/>
+   <p:AISync value="FALSE"/>
+  </AnimTreeState>
+  <AnimTreeState name="Fly_Take_Off" pos="-2.50001 2.09995">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0 0.5 1"/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <p:Clip value="TCW_MAND_AM_TAKEOFF_START"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:AISync value="TRUE"/>
+   <AnimTreeBranch name="Branch2">
+    <p:BranchTo value="Fly_Strafe_Loop"/>
+    <p:DefaultBranch value="TRUE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeState>
+  <AnimTreeState name="Fly_Land" pos="-2.55001 -4.70004">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      "This is outside the Hover_Group so it begins playing on ground animations again."
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0 0.5 1"/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <p:Clip value="MANDALORIAN_VERTICAL_LAND_END"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:PostBehavior value="Stop"/>
+   <p:EaseDuration value="8"/>
+   <p:AISync value="TRUE"/>
+   <AnimTreeBranch name="Branch1">
+    <p:BranchTo value="Fly_Landed_Waiting"/>
+    <p:DefaultBranch value="TRUE"/>
+   </AnimTreeBranch>
+  </AnimTreeState>
+  <AnimTreeBranch name="Branch19">
+   <p:BranchTo value="Fly_Strafe_Loop"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MANDALORIAN_FLY"/>
+   </p:Events>
+  </AnimTreeBranch>
+ </AnimTree>
+
+</d:SnipeFile>

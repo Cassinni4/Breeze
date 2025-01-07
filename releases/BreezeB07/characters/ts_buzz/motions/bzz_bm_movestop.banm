@@ -1,0 +1,26 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Speed" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "MoveStop" =
+	{
+		Value = "Speed"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/ts_buzz/motions/bzz_bm_turn0landstop_small.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/ts_buzz/motions/bzz_bm_turn0landstop.oct"
+			}
+		}
+	}
+}

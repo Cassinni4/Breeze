@@ -1,0 +1,35 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Speed" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Speed"
+		Keys =
+		[
+			0.0 0.8 
+		]
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/biped/motions/biped_bm_jump_air.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/biped/motions/biped_bm_jump_airforward.oct"
+			}
+		}
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Filename = "characters/biped/motions/biped_bm_jump_mount_add.oct"
+	}
+}

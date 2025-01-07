@@ -1,0 +1,42 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Small" =
+	{
+	}
+	FloatParameter "Big" =
+	{
+	}
+}
+Tracks =
+{
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Filename = "characters/ali_alice/motions/alice_bm_idle_passive_into.oct"
+	}
+	GroupTrack "Small" =
+	{
+		Weight = "Small"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				BlendMethod = 1
+				Filename = "characters/ali_alice/motions/alice_bm_idle_small_passive_into.oct"
+			}
+		}
+	}
+	GroupTrack "Big" =
+	{
+		Weight = "Big"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/ali_alice/motions/alice_bm_grown_idle_passive_into.oct"
+			}
+		}
+	}
+}

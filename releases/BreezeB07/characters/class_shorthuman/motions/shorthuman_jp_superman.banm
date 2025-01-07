@@ -1,0 +1,42 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Roll" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Roll"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/biped/motions/biped_jp_bankl.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/biped/motions/biped_jp_fly.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/biped/motions/biped_jp_bankr.oct"
+			}
+		}
+	}
+	KeyBlendTrack "offset feet and arms" =
+	{
+		BlendMethod = 1
+		Weight = 0.34
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/class_shorthuman/motions/shorthuman_jp_add.oct"
+			}
+		}
+	}
+}

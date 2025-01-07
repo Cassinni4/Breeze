@@ -1,0 +1,118 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="3.01.141 x64" branch="in3" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="0">
+  <p:Interface value="FullBody"/>
+  <p:StartState value=""/>
+  <AnimTreeBranch name="Branch1">
+   <p:BranchTo value="PushButton"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="PRESS_BUTTON"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch2">
+   <p:BranchTo value="PushButtonLarge"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="PRESS_BUTTON_LARGE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="PushButton_Group" expanded="1" pos="-2.4 2">
+   <AnimTreeState name="PushButton" pos="-8.34465e-007 0">
+    <p:Clip value="PUSH_BUTTON"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:EaseDuration value="3"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="18"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="PushButtonLarge" pos="0.0474387 -1.4">
+    <p:Clip value="PUSH_BUTTON_LARGE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:EaseDuration value="3"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="22"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="PullPlug" pos="2.6 -1.4">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="PLUG_PULL"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:EaseDuration value="3"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="40"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="PlantExplosive" pos="2.6 3.57628e-007">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="PLANT_EXPLOSIVE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:CropStart value="0"/>
+    <p:CropEnd value="30"/>
+    <p:InitialTime value="0"/>
+    <p:Speed value="1"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="3"/>
+    <p:CurveSlope value="1"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="18"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeState name="AttackButton" pos="2.8 2">
+   <p:Clip value="PUSH_BUTTON"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:EaseDuration value="3"/>
+   <p:AISync value="TRUE"/>
+  </AnimTreeState>
+  <AnimTreeBranch name="Branch3">
+   <p:BranchTo value="AttackButton"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="ATTACK_BUTTON"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch4">
+   <p:BranchTo value="PullPlug"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Pull_Plug"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch5">
+   <p:BranchTo value="PlantExplosive"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="PLANT_EXPLOSIVE"/>
+   </p:Events>
+  </AnimTreeBranch>
+ </AnimTree>
+
+</d:SnipeFile>

@@ -1,0 +1,54 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Speed" =
+	{
+	}
+	FloatParameter "Lightsaber" =
+	{
+		DefaultPhase = 1.0
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "MoveStop" =
+	{
+		Value = "Speed"
+		Tracks =
+		{
+			GroupTrack "Small" =
+			{
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/tcw_yoda/motions/yoda_bm_turn0landstop_small.oct"
+					}
+					ReferencedTrack =
+					{
+						BlendMethod = 1
+						Weight = "Lightsaber"
+						Filename = "characters/tcw_yoda/motions/yoda_bm_turn0landstop_small_saber.oct"
+					}
+				}
+			}
+			GroupTrack "Normal" =
+			{
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/tcw_yoda/motions/yoda_bm_turn0landstop.oct"
+					}
+					ReferencedTrack =
+					{
+						BlendMethod = 1
+						Weight = "Lightsaber"
+						Filename = "characters/tcw_yoda/motions/yoda_bm_turn0landstop_saber.oct"
+					}
+				}
+			}
+		}
+	}
+}

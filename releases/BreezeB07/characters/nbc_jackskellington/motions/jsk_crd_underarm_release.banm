@@ -1,0 +1,15 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/nbc_jackskellington/motions/jsk_crd_underarm_pose.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Weight = 0.7
+		Filename = "characters/biped/motions/biped_crd_underarm_release_add.oct"
+	}
+}

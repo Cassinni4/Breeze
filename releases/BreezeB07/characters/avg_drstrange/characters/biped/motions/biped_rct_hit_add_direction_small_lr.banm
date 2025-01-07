@@ -1,0 +1,51 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Direction" =
+	{
+		RangeSize = 360.0
+	}
+	FloatParameter "Magnitude" =
+	{
+	}
+}
+BlendMethod = 1
+Tracks =
+{
+	KeyBlendTrack "Key Blend2" =
+	{
+		BlendMethod = 1
+		Weight = "Magnitude"
+		Tracks =
+		{
+			KeyBlendTrack "Key Blend" =
+			{
+				Value = "Direction"
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/biped/motions/biped_rct_hit_add_0.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/biped/motions/biped_rct_hit_add_left_small.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/biped/motions/biped_rct_hit_add_0.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/biped/motions/biped_rct_hit_add_right_small.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/biped/motions/biped_rct_hit_add_0.oct"
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/class_herosmall/motions/herosm_rs_jumpl.oct"
+	}
+	ReferencedTrack =
+	{
+		Filename = "characters/class_herosmall/motions/herosm_rs_jumpl_saber.oct"
+	}
+	ReferencedTrack =
+	{
+		Filename = "characters/emp_darthvader/motions/darthvader_rs_hand.oct"
+	}
+}

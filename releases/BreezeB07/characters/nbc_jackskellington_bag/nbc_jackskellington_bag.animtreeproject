@@ -1,0 +1,24 @@
+<d:SnipeFile type="AnimTreeProject" fileVersion="7" productVersion="2.0.340 x64" branch="in2" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <Project>
+  <p:FPS value="30"/>
+  <AnimTreeProject name="%FILENAME%">
+   <p:Params class="UserPropertyContainer"/>
+   <AnimTreeContainer>
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <d:IncludeFile file="NBC_JackSkellington_Bag_clips.animtree"/>
+   </AnimTreeContainer>
+   <AnimTreeEventContainer>
+    <AnimTreeEvent name="LightsaberLauncher"/>
+    <AnimTreeEvent name="LightsaberAirCombo1"/>
+   </AnimTreeEventContainer>
+  </AnimTreeProject>
+ </Project>
+
+</d:SnipeFile>

@@ -1,0 +1,219 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="3.01.138 x64" branch="in3" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%">
+  <AnimTreeState name="KillInterface" pos="0.8 -1.19209e-007">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0 0 0"/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <p:Clip value=""/>
+   <p:AISync value="FALSE"/>
+  </AnimTreeState>
+  <AnimTreeBranch name="Branch1">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:BranchTo value="KillInterface"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:CropStart value="0"/>
+   <p:InitialTime value="0"/>
+   <p:Speed value="1"/>
+   <p:PostBehavior value="Pause"/>
+   <p:EaseDuration value="0"/>
+   <p:CurveSlope value="1"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="STOP_ADDITIVEFULLBODY"/>
+    <p:Event2 class="AnimTreeEventPointerProperty" value="CHARGE_CANCEL"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Swim_Bubble_Attack" expanded="1" pos="3.8 3.2">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.932927 0.545605 0.103659"/>
+   <p:StartState value="Atk_Bubble_Start"/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <p:EventsFired>
+    <p:Event class="AnimTreeStateEventProperty" value="Face_Kill">
+     <p:When value="EnteringGroup"/>
+     <p:Offset value="0"/>
+    </p:Event>
+   </p:EventsFired>
+   <AnimTreeState name="Atk_Bubble_Start" pos="0 -8.9407e-008">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="SWIM_ATK_BUBBLE_START"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="Atk_Bubble_ChargeUp"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value=""/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Atk_Bubble_Fire" pos="1.60933e-006 -2.2">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="SWIM_ATK_BUBBLE_FIRE"/>
+    <p:AISync value="FALSE"/>
+   </AnimTreeState>
+   <AnimTreeBranch name="Branch12">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:BranchTo value="Atk_Bubble_Fire"/>
+    <p:DefaultBranch value="FALSE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="BubbleShoot"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeState name="Atk_Bubble_ChargeUp" pos="-1.37091e-006 -1">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="SWIM_ATK_BUBBLE_CHARGEUP"/>
+    <p:AISync value="FALSE"/>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch13">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:BranchTo value="Swim_Bubble_Attack"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:Events>
+    <p:Event2 class="AnimTreeEventPointerProperty" value="BubbleShootStart"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Swim_Idle_Adjust_Group" expanded="1" pos="-9.2 -5">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.93 0.54 0.1"/>
+   <p:StartState value=""/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <AnimTreeState name="Swim_Idle_Adjust_Down" pos="7.6 8">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="SWIM_LEVELOUT_DOWN"/>
+    <p:AISync value="FALSE"/>
+   </AnimTreeState>
+   <AnimTreeState name="Swim_Idle_Adjust_Up" pos="7.6 6.8">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="SWIM_LEVELOUT_UP"/>
+    <p:AISync value="FALSE"/>
+   </AnimTreeState>
+   <AnimTreeBranch name="Branch7">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:BranchTo value="KillInterface"/>
+    <p:DefaultBranch value="TRUE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value=""/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch37">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:BranchTo value="Swim_Idle_Adjust_Down"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="SWIM_LEVELOUT_DOWN"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch44">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:BranchTo value="Swim_Idle_Adjust_Up"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="SWIM_LEVELOUT_UP"/>
+   </p:Events>
+  </AnimTreeBranch>
+ </AnimTree>
+
+</d:SnipeFile>

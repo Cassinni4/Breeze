@@ -1,0 +1,180 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="2.0.28 x64" branch="in3" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="0">
+  <p:Interface value="FullBody"/>
+  <p:StartState value="WallCrawl"/>
+  <AnimTreeStateGroup name="WallCrawl_Group" expanded="1" pos="0 0">
+   <p:Color value="0 0.7 0.166319"/>
+   <p:StartState value="WallCrawl_Stop"/>
+   <p:EventsFired>
+    <p:Event class="AnimTreeStateEventProperty" value="LedgeCameraOn">
+     <p:When value="EnteringGroup"/>
+    </p:Event>
+    <p:Event2 class="AnimTreeStateEventProperty" value="LedgeCameraOff">
+     <p:When value="ExitingGroup"/>
+    </p:Event2>
+    <p:Event3 class="AnimTreeStateEventProperty" value="WALLCRAWL_EXIT">
+     <p:When value="ExitingGroup"/>
+    </p:Event3>
+   </p:EventsFired>
+   <AnimTreeState name="WallCrawl" pos="0.4 0.6">
+    <p:Clip value="WALLCRAWL_CRAWL"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <p:EaseDuration value="5"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="WallCrawl_RunUp"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="WALLCRAWL_RUNUP"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="WallCrawl_Stop" pos="0.2 -1.8">
+    <p:Clip value="WALLCRAWL_STOP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Pause"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="WALLCRAWL_IDLE">
+      <p:When value="EnteringState"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeBranch name="Branch2">
+    <p:BranchTo value="WallCrawl"/>
+    <p:CurveSlope value="1"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="CRAWL"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeState name="WallCrawl_SlideDown" pos="3 -1.8">
+    <p:Clip value="WALLCRAWL_SLIDEDOWN"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="3"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="WallCrawl_SlideDownLoop"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch2">
+     <p:BranchTo value="WallCrawl_Stop"/>
+     <p:EaseDuration value="3"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="STOP"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeBranch name="Branch4">
+    <p:BranchTo value="WallCrawl_SlideDown"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="SLIDE"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeState name="WallCrawl_SlideDownLoop" pos="3 -2.8">
+    <p:Clip value="WALLCRAWL_SLIDEDOWN_LOOP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <AnimTreeBranch name="Branch2">
+     <p:BranchTo value="WallCrawl_SlideDownStop"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="STOP"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="WallCrawl_SlideDownStop" pos="3 -3.8">
+    <p:Clip value="WALLCRAWL_SLIDEDOWN_LOOP_2_IDLE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:EaseDuration value="3"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="WallCrawl_Stop"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="WallCrawl_PullUpStart" pos="-2.2 -1.8">
+    <p:Clip value="JUMPAIR_BLEND"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Stop"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="WallCrawl_FallHard"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeBranch name="Branch6">
+    <p:BranchTo value="WallCrawl_PullUpStart"/>
+    <p:CropEnd value="60"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="PULLUP"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeBranch name="Branch7">
+    <p:BranchTo value="WallCrawl_Jump"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="JUMPOUT"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeBranch name="Branch3">
+    <p:BranchTo value="WallCrawl_Fall"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="RELEASE"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeState name="WallCrawl_RunUp" pos="3 0.6">
+    <p:Clip value="WALLCRAWL_RUNUP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="WallCrawl"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="CRAWL"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch1">
+   <p:BranchTo value="WallCrawl_Group"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="WALLCRAWL"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeState name="WallCrawl_Jump" pos="0 -5.2">
+   <p:Clip value="WALLCRAWL_JUMPOUT"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:PostBehavior value="Stop"/>
+   <AnimTreeBranch name="Branch1">
+    <p:BranchTo value="WallCrawl_FallHard"/>
+    <p:DefaultBranch value="TRUE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeState>
+  <AnimTreeState name="WallCrawl_Fall" pos="-5.2 -3.2">
+   <p:Clip value="FALL"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:PostBehavior value="Stop"/>
+   <p:EaseDuration value="3"/>
+   <AnimTreeBranch name="Branch1">
+    <p:BranchTo value="WallCrawl_FallHard"/>
+    <p:DefaultBranch value="TRUE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeState>
+  <AnimTreeState name="WallCrawl_FallHard" pos="3 -5.2">
+   <p:Clip value="FALL_FAST"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:PostBehavior value="Loop"/>
+   <p:EaseDuration value="0"/>
+  </AnimTreeState>
+ </AnimTree>
+
+</d:SnipeFile>

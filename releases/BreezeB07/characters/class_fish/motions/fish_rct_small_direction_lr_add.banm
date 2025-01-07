@@ -1,0 +1,51 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Direction" =
+	{
+		RangeSize = 360.0
+	}
+	FloatParameter "Magnitude" =
+	{
+	}
+}
+BlendMethod = 1
+Tracks =
+{
+	KeyBlendTrack "Key Blend2" =
+	{
+		BlendMethod = 1
+		Weight = "Magnitude"
+		Tracks =
+		{
+			KeyBlendTrack "Key Blend" =
+			{
+				Value = "Direction"
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/class_fish/motions/fish_swim_idle_pose.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/class_fish/motions/fish_rct_small_lft_add.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/class_fish/motions/fish_swim_idle_pose.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/class_fish/motions/fish_rct_small_rht_add.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/class_fish/motions/fish_swim_idle_pose.oct"
+					}
+				}
+			}
+		}
+	}
+}
