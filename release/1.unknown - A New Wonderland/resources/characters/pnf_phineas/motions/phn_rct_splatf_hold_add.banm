@@ -1,0 +1,14 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/inc_dash/motions/dsh_rct_splatf_hold.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Filename = "characters/pnf_phineas/motions/phn_rct_splatf_hold_add.oct"
+	}
+}

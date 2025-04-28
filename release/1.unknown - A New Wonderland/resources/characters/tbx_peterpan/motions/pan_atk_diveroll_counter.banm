@@ -1,0 +1,38 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Direction" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Direction"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/tbx_peterpan/motions/pan_atk_diveroll_counter_f.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/tbx_peterpan/motions/pan_atk_diveroll_counter_r.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/tbx_peterpan/motions/pan_atk_diveroll_counter_b.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/tbx_peterpan/motions/pan_atk_diveroll_counter_l.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/tbx_peterpan/motions/pan_atk_diveroll_counter_f.oct"
+			}
+		}
+	}
+}

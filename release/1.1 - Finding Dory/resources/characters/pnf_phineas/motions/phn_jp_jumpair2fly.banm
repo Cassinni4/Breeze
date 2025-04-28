@@ -1,0 +1,14 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/biped/motions/biped_jp_jumpair2fly.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Filename = "characters/pnf_phineas/motions/phn_jp_add.oct"
+	}
+}

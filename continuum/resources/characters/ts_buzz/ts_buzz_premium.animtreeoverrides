@@ -1,4 +1,0 @@
-GroundPound:GroundPoundFinish:EventsFired:SET_INTERRUPTIBLE:Offset:0;
-GroundPound:GroundPoundHit:EventsFired:SET_INTERRUPTIBLE:Offset:13;
-Reaction:FrontGetup:EventsFired:SET_INTERRUPTIBLE:Offset:16;
-Reaction:BackGetup:EventsFired:SET_INTERRUPTIBLE:Offset:15;

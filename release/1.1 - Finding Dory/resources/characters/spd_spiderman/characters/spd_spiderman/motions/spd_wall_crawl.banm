@@ -1,0 +1,109 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Speed" =
+	{
+	}
+	FloatParameter "Direction" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "WallCrawl" =
+	{
+		Value = "Speed"
+		Tracks =
+		{
+			KeyBlendTrack "Walk" =
+			{
+				Value = "Direction"
+				Keys =
+				[
+					0.0 0.12 0.25 0.5
+					0.5 0.75 0.87 1.0
+				]
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/spd_spiderman/motions/spd_wall_crawl_up.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/spd_spiderman/motions/spd_wall_crawl_up.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/spd_spiderman/motions/spd_wall_crawl_up.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/spd_spiderman/motions/spd_wall_crawl_up.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/spd_spiderman/motions/spd_wall_crawl_up.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/spd_spiderman/motions/spd_wall_crawl_up.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/spd_spiderman/motions/spd_wall_crawl_up.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/spd_spiderman/motions/spd_wall_crawl_up.oct"
+					}
+				}
+			}
+			KeyBlendTrack "Run" =
+			{
+				Value = "Direction"
+				Keys =
+				[
+					0.0 0.12 0.25 0.5
+					0.5 0.75 0.87 1.0
+				]
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/spd_spiderman/motions/spd_wall_crawl_up_fast.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/spd_spiderman/motions/spd_wall_crawl_up_fast.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/spd_spiderman/motions/spd_wall_crawl_up_fast.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/spd_spiderman/motions/spd_wall_crawl_up_fast.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/spd_spiderman/motions/spd_wall_crawl_up_fast.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/spd_spiderman/motions/spd_wall_crawl_up_fast.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/spd_spiderman/motions/spd_wall_crawl_up_fast.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/spd_spiderman/motions/spd_wall_crawl_up_fast.oct"
+					}
+				}
+			}
+		}
+	}
+}

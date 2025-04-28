@@ -1,0 +1,13 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/class_hero/motions/hero_atk_saber_combo_yy.oct"
+	}
+	ReferencedTrack =
+	{
+		Filename = "characters/avg_captainamerica/motions/cap_atk_saber_combo_yy.oct"
+	}
+}

@@ -1,0 +1,20 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	GroupTrack "Group1" =
+	{
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/tcw_yoda/motions/yoda_mnt_mtrcyc_norm_cntr_pose.oct"
+			}
+			ReferencedTrack =
+			{
+				BlendMethod = 1
+				Filename = "characters/class_hero/motions/hero_mnt_mtrcyc_norm_fail_add.oct"
+			}
+		}
+	}
+}

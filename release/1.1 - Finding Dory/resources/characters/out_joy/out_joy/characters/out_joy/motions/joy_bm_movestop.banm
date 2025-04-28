@@ -1,0 +1,45 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Speed" =
+	{
+	}
+	FloatParameter "Emotion" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Emotion"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/out_joy/motions/joy_bm_idle_active_pose.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/out_joy/motions/joy_bm_idle_joyful_pose.oct"
+			}
+		}
+	}
+	KeyBlendTrack "MoveStop" =
+	{
+		BlendMethod = 1
+		Value = "Speed"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/class_herofemale/motions/herofml_bm_turn0landstop_small_add.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/class_herofemale/motions/herofml_bm_turn0landstop_add.oct"
+			}
+		}
+	}
+}

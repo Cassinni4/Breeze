@@ -1,0 +1,401 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="2.0.61 x64" branch="in3" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="17">
+  <p:Notes>
+   <p:Notes>
+    <d:Value>
+     "[dhart] I've arranged this in rows "
+     "that match the order display in "
+     "PhnToVisTool"
+    </d:Value>
+   </p:Notes>
+  </p:Notes>
+  <p:Interface value="Lipsync"/>
+  <p:StartState value="KillInterface"/>
+  <AnimTreeBranch name="Branch1">
+   <p:BranchTo value="State"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Face_Kill_lipsync"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeState name="KillInterface" pos="-2.6 -3">
+   <p:Color value="0.192308 0.192308 0.192308"/>
+   <p:Clip value=""/>
+  </AnimTreeState>
+  <AnimTreeState name="Vsm_AA" pos="-5.2 5.2">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      "[dhart] I've arranged this in rows "
+      "that match the order display in "
+      "PhnToVisTool"
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0 1 1"/>
+   <p:AutoBranchSequence value="Random"/>
+   <p:Clip value="VSM_AA"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:InitialTime value="7"/>
+   <p:Speed value="0"/>
+   <p:PostBehavior value="Pause"/>
+   <p:EaseDuration value="1"/>
+  </AnimTreeState>
+  <AnimTreeState name="Vsm_AO" pos="-2 5.2">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      "[dhart] I've arranged this in rows "
+      "that match the order display in "
+      "PhnToVisTool"
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0 1 1"/>
+   <p:AutoBranchSequence value="Random"/>
+   <p:Clip value="VSM_AO"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:InitialTime value="7"/>
+   <p:Speed value="0"/>
+   <p:PostBehavior value="Pause"/>
+   <p:EaseDuration value="2"/>
+  </AnimTreeState>
+  <AnimTreeState name="Vsm_CH" pos="0.4 1.6">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      "[dhart] I've arranged this in rows "
+      "that match the order display in "
+      "PhnToVisTool"
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0 0.961538 1"/>
+   <p:AutoBranchSequence value="Random"/>
+   <p:Clip value="VSM_CH"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:InitialTime value="7"/>
+   <p:Speed value="0"/>
+   <p:PostBehavior value="Pause"/>
+   <p:EaseDuration value="1"/>
+  </AnimTreeState>
+  <AnimTreeState name="Vsm_EH" pos="1 5.2">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      "[dhart] I've arranged this in rows "
+      "that match the order display in "
+      "PhnToVisTool"
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0 0.961538 1"/>
+   <p:AutoBranchSequence value="Random"/>
+   <p:Clip value="VSM_EH"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:InitialTime value="7"/>
+   <p:Speed value="0"/>
+   <p:PostBehavior value="Pause"/>
+   <p:EaseDuration value="1"/>
+  </AnimTreeState>
+  <AnimTreeState name="Vsm_F" pos="-2.6 -0.399999">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      "[dhart] I've arranged this in rows "
+      "that match the order display in "
+      "PhnToVisTool"
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0 0.961538 1"/>
+   <p:AutoBranchSequence value="Random"/>
+   <p:Clip value="VSM_F"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:InitialTime value="7"/>
+   <p:Speed value="0"/>
+   <p:PostBehavior value="Pause"/>
+   <p:EaseDuration value="1"/>
+  </AnimTreeState>
+  <AnimTreeState name="Vsm_IH" pos="4 5.2">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      "[dhart] I've arranged this in rows "
+      "that match the order display in "
+      "PhnToVisTool"
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0 1 1"/>
+   <p:AutoBranchSequence value="Random"/>
+   <p:Clip value="VSM_IH"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:InitialTime value="7"/>
+   <p:Speed value="0"/>
+   <p:PostBehavior value="Pause"/>
+   <p:EaseDuration value="1"/>
+  </AnimTreeState>
+  <AnimTreeState name="Vsm_L" pos="-7.4 3.4">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      "[dhart] I've arranged this in rows "
+      "that match the order display in "
+      "PhnToVisTool"
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0 0.961538 1"/>
+   <p:AutoBranchSequence value="Random"/>
+   <p:Clip value="VSM_L"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:InitialTime value="7"/>
+   <p:Speed value="0"/>
+   <p:PostBehavior value="Pause"/>
+   <p:EaseDuration value="1"/>
+  </AnimTreeState>
+  <AnimTreeState name="Vsm_M" pos="-6 1.6">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      "[dhart] I've arranged this in rows "
+      "that match the order display in "
+      "PhnToVisTool"
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0 0.961538 1"/>
+   <p:AutoBranchSequence value="Random"/>
+   <p:Clip value="VSM_M"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:InitialTime value="7"/>
+   <p:Speed value="0"/>
+   <p:PostBehavior value="Pause"/>
+   <p:EaseDuration value="1"/>
+  </AnimTreeState>
+  <AnimTreeState name="Vsm_N" pos="-2.8 1.6">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      "[dhart] I've arranged this in rows "
+      "that match the order display in "
+      "PhnToVisTool"
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0 0.961538 1"/>
+   <p:AutoBranchSequence value="Random"/>
+   <p:Clip value="VSM_N"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:InitialTime value="7"/>
+   <p:Speed value="0"/>
+   <p:PostBehavior value="Pause"/>
+   <p:EaseDuration value="1"/>
+  </AnimTreeState>
+  <AnimTreeState name="Vsm_R" pos="-4.2 3.4">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      "[dhart] I've arranged this in rows "
+      "that match the order display in "
+      "PhnToVisTool"
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0 0.961538 1"/>
+   <p:AutoBranchSequence value="Random"/>
+   <p:Clip value="VSM_R"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:InitialTime value="7"/>
+   <p:Speed value="0"/>
+   <p:PostBehavior value="Pause"/>
+   <p:EaseDuration value="1"/>
+  </AnimTreeState>
+  <AnimTreeState name="Vsm_W" pos="2.6 3.4">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      "[dhart] I've arranged this in rows "
+      "that match the order display in "
+      "PhnToVisTool"
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0 1 1"/>
+   <p:AutoBranchSequence value="Random"/>
+   <p:Clip value="VSM_W"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:InitialTime value="7"/>
+   <p:Speed value="0"/>
+   <p:PostBehavior value="Pause"/>
+   <p:EaseDuration value="2"/>
+  </AnimTreeState>
+  <AnimTreeState name="Vsm_Y" pos="-0.8 3.4">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      "[dhart] I've arranged this in rows "
+      "that match the order display in "
+      "PhnToVisTool"
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0 1 1"/>
+   <p:AutoBranchSequence value="Random"/>
+   <p:Clip value="VSM_Y"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:InitialTime value="7"/>
+   <p:Speed value="0"/>
+   <p:PostBehavior value="Pause"/>
+   <p:EaseDuration value="1"/>
+  </AnimTreeState>
+  <AnimTreeBranch name="Branch3">
+   <p:BranchTo value="Vsm_AA"/>
+   <p:Events>
+    <p:Event1 class="AnimTreeEventPointerProperty" value="phone_AA"/>
+    <p:Event2 class="AnimTreeEventPointerProperty" value="phone_AH"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch4">
+   <p:BranchTo value="Vsm_AO"/>
+   <p:Events>
+    <p:Event1 class="AnimTreeEventPointerProperty" value="phone_AO"/>
+    <p:Event2 class="AnimTreeEventPointerProperty" value="phone_UH"/>
+    <p:Event class="AnimTreeEventPointerProperty" value="phone_H"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch7">
+   <p:BranchTo value="Vsm_CH"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="phone_CH"/>
+    <p:Event2 class="AnimTreeEventPointerProperty" value="phone_J"/>
+    <p:Event3 class="AnimTreeEventPointerProperty" value="phone_SH"/>
+    <p:Event4 class="AnimTreeEventPointerProperty" value="phone_ZH"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch2">
+   <p:BranchTo value="Vsm_EH"/>
+   <p:Events>
+    <p:Event2 class="AnimTreeEventPointerProperty" value="phone_AE"/>
+    <p:Event class="AnimTreeEventPointerProperty" value="phone_EH"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch8">
+   <p:BranchTo value="Vsm_F"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="phone_F"/>
+    <p:Event2 class="AnimTreeEventPointerProperty" value="phone_V"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch9">
+   <p:BranchTo value="Vsm_IH"/>
+   <p:PostBehavior value="Pause"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="phone_IH"/>
+    <p:Event2 class="AnimTreeEventPointerProperty" value="phone_AY"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch10">
+   <p:BranchTo value="Vsm_L"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="phone_L"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch11">
+   <p:BranchTo value="Vsm_M"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="phone_M"/>
+    <p:Event2 class="AnimTreeEventPointerProperty" value="phone_B"/>
+    <p:Event3 class="AnimTreeEventPointerProperty" value="phone_P"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch13">
+   <p:BranchTo value="Vsm_N"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="phone_N"/>
+    <p:Event2 class="AnimTreeEventPointerProperty" value="phone_NG"/>
+    <p:Event4 class="AnimTreeEventPointerProperty" value="phone_D"/>
+    <p:Event5 class="AnimTreeEventPointerProperty" value="phone_DH"/>
+    <p:Event6 class="AnimTreeEventPointerProperty" value="phone_G"/>
+    <p:Event7 class="AnimTreeEventPointerProperty" value="phone_T"/>
+    <p:Event8 class="AnimTreeEventPointerProperty" value="phone_Z"/>
+    <p:Event9 class="AnimTreeEventPointerProperty" value="phone_S"/>
+    <p:Event10 class="AnimTreeEventPointerProperty" value="phone_TH"/>
+    <p:Event11 class="AnimTreeEventPointerProperty" value="phone_K"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch12">
+   <p:BranchTo value="Vsm_R"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="phone_R"/>
+    <p:Event2 class="AnimTreeEventPointerProperty" value="phone_ER"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch6">
+   <p:BranchTo value="Vsm_W"/>
+   <p:Events>
+    <p:Event1 class="AnimTreeEventPointerProperty" value="phone_W"/>
+    <p:Event class="AnimTreeEventPointerProperty" value="phone_AW"/>
+    <p:Event2 class="AnimTreeEventPointerProperty" value="phone_OW"/>
+    <p:Event3 class="AnimTreeEventPointerProperty" value="phone_OY"/>
+    <p:Event4 class="AnimTreeEventPointerProperty" value="phone_UW"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch5">
+   <p:BranchTo value="Vsm_Y"/>
+   <p:Events>
+    <p:Event1 class="AnimTreeEventPointerProperty" value="phone_EY"/>
+    <p:Event2 class="AnimTreeEventPointerProperty" value="phone_IY"/>
+    <p:Event class="AnimTreeEventPointerProperty" value="phone_Y"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeState name="Vsm_Zero" pos="-8.2 5.2">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      "[dhart] I've arranged this in rows "
+      "that match the order display in "
+      "PhnToVisTool"
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.0192308 0.961538 1"/>
+   <p:Clip value="VSM_ZERO"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:PostBehavior value="Pause"/>
+   <p:EaseDuration value="1"/>
+  </AnimTreeState>
+  <AnimTreeBranch name="Branch14">
+   <p:BranchTo value="Vsm_Zero"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="phone_X"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeState name="REKILL" pos="-2.6 -5.6">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      "[dhart] This forces KillInterface to repeat "
+      "once a second indefinitely."
+      "Theory is maybe KillInterface doesn't"
+      "work properly on startup."
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.7 0 0"/>
+  </AnimTreeState>
+  <AnimTreeState name="State" pos="-2.6 -2">
+   <p:Clip value="VSM_ZERO"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <AnimTreeBranch name="Branch1">
+    <p:BranchTo value="KillInterface"/>
+    <p:DefaultBranch value="TRUE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeState>
+ </AnimTree>
+
+</d:SnipeFile>

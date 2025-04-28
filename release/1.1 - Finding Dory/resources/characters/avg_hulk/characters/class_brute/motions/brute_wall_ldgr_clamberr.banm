@@ -1,0 +1,30 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Speed" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Speed"
+		Keys =
+		[
+			0.0 0.5 
+		]
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/class_brute/motions/brute_wall_ldgr_clamber_slow.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/class_brute/motions/brute_wall_ldgr_clamber_fast.oct"
+			}
+		}
+	}
+}

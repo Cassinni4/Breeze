@@ -1,0 +1,15 @@
+--**********************************************************************************************************************************************************************************************************--
+--                                                                                                                                                                                                          --
+-- Breeze Release 1.0.4                                                                                                                                                                                     --
+-- Build by Cassinni4                                                                                                                                                                                       -- -- --
+-- Special thanks to: Bread, LiontHD, Jumanji Alan, JohnLogostini, BeyondCarL, satoru-kun, JiroTheOne, Dasorik, mrc, C.M.M., TheSithEternal, Chronis, and maximilian for help and support on this massive project!   --
+--                                                                                                                                                                                                          -- -- --
+--**********************************************************************************************************************************************************************************************************--
+
+Changelog:
+
+-Fixed Iron Man crashes
+-Should have fixed Black Widow and other Continuum mods conflicting.
+
+Much love <3
+Cassinni4

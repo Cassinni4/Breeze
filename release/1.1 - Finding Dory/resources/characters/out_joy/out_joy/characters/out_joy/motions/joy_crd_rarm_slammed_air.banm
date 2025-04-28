@@ -1,0 +1,14 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/out_joy/motions/joy_crd_rarm_slammed_air.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Filename = "characters/biped/motions/biped_crd_rarm_slammed_air_add.oct"
+	}
+}

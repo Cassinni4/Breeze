@@ -1,3 +1,0 @@
-Reaction:LightsaberAirCombo2:EventsFired:FALL_HARD:Offset:42;
-Reaction:LightsaberLauncher:EventsFired:SET_INTERRUPTIBLE:Offset:30;
-Reaction:LightsaberLauncher:EventsFired:FALL_HARD:Offset:27;

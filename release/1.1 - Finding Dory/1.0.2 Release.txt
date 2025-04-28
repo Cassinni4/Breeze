@@ -1,0 +1,18 @@
+--**********************************************************************************************************************************************************************************************************--
+--                                                                                                                                                                                                          --
+-- Breeze Release 1.0.2                                                                                                                                                                                     --
+-- Build by Cassinni4                                                                                                                                                                                       -- -- --
+-- Special thanks to: Bread, LiontHD, Jumanji Alan, JohnLogostini, BeyondCarL, satoru-kun, JiroTheOne, Dasorik, mrc, C.M.M., TheSithEternal, Chronis, and maximilian for help and support on this massive project!   --
+--                                                                                                                                                                                                          -- -- --
+--**********************************************************************************************************************************************************************************************************--
+
+Changelog:
+
+-Exorcised Rey.
+-Fixed the icons in racing mode.
+-Maui figure graphics. (CURTOSY OF CHRONIS! THANK YOU!)
+-Captain Marvel description graphics. (CURTOSY OF CHRONIS! THANK YOU!)
+-Added official descriptions for most of the characters in the character info menu. (CURTOSY OF CHRONIS! THANK YOU!)
+
+Much love <3
+Cassinni4

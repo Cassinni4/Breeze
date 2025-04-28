@@ -1,0 +1,2824 @@
+<?xml version="1.0" ?>
+<root_node>
+   <Version type="string">4.1f</Version>
+   <Model>
+      <Filename type="string">characters/moa_maui/moa_maui.oct</Filename>
+      <Channels>
+         <Channel type="reference_string">
+            FullBody
+            <PriorityOrder type="float">5.0</PriorityOrder>
+            <ChannelIndex type="int8">0</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            FullBodyBlends
+            <PriorityOrder type="float">4.0</PriorityOrder>
+            <Weight type="float">0.0</Weight>
+            <ChannelIndex type="int8">4</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            UpperBody1
+            <PriorityOrder type="float">5.0</PriorityOrder>
+            <ChannelIndex type="int8">1</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            UpperBody2
+            <PriorityOrder type="float">3.0</PriorityOrder>
+            <ChannelIndex type="int8">2</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            Additive_UpperBody2
+            <PriorityOrder type="float">3.0</PriorityOrder>
+            <ChannelIndex type="int8">12</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            Additive_UpperBodyLeftArm
+            <PriorityOrder type="float">3.0</PriorityOrder>
+         </Channel>
+         <Channel type="reference_string">
+            Ride_Additive2
+            <PriorityOrder type="float">5.0</PriorityOrder>
+            <ChannelIndex type="int8">13</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            Additive_FullBody
+            <PriorityOrder type="float">5.0</PriorityOrder>
+            <ChannelIndex type="int8">10</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            Additive_FullBody2
+            <PriorityOrder type="float">5.0</PriorityOrder>
+            <ChannelIndex type="int8">15</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            Additive_Leans
+            <PriorityOrder type="float">5.0</PriorityOrder>
+            <ChannelIndex type="int8">11</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            Choreography
+            <PriorityOrder type="float">-1.0</PriorityOrder>
+         </Channel>
+         <Channel type="reference_string">
+            Facial
+            <PriorityOrder type="float">1.0</PriorityOrder>
+            <ChannelIndex type="int8">6</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            GooGrowShrink
+            <PriorityOrder type="float">-1.0</PriorityOrder>
+            <ChannelIndex type="int8">7</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            Misc_OverRide
+            <PriorityOrder type="float">1.5</PriorityOrder>
+            <ChannelIndex type="int8">14</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            RiderMount_ArmLeft
+            <PriorityOrder type="float">1.0</PriorityOrder>
+         </Channel>
+         <Channel type="reference_string">
+            RiderMount_ArmRight
+            <PriorityOrder type="float">1.0</PriorityOrder>
+         </Channel>
+         <Channel type="reference_string">
+            RiderMount_LegLeft
+            <PriorityOrder type="float">1.0</PriorityOrder>
+         </Channel>
+         <Channel type="reference_string">
+            RiderMount_LegRight
+            <PriorityOrder type="float">1.0</PriorityOrder>
+         </Channel>
+         <Channel type="reference_string">
+            RiderMount_Seat
+            <PriorityOrder type="float">1.0</PriorityOrder>
+         </Channel>
+         <Channel type="reference_string">
+            Lipsync
+            <PriorityOrder type="float">0.5</PriorityOrder>
+            <ChannelIndex type="int8">17</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            One_Offs
+            <PriorityOrder type="float">0.75</PriorityOrder>
+            <ChannelIndex type="int8">16</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            AdditiveChar_Reactions
+            <PriorityOrder type="float">3.75</PriorityOrder>
+            <ChannelIndex type="int8">19</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            Head
+            <PriorityOrder type="float">0.4000000059604645</PriorityOrder>
+            <ChannelIndex type="int8">21</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            Playset_NPCs
+            <PriorityOrder type="float">0.10000000149011612</PriorityOrder>
+            <ChannelIndex type="int8">22</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            Facial_Lids
+            <PriorityOrder type="float">0.30000001192092896</PriorityOrder>
+            <ChannelIndex type="int8">23</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            Facial_Eyes
+            <PriorityOrder type="float">1.0</PriorityOrder>
+            <ChannelIndex type="int8">24</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            UpperBody3
+            <PriorityOrder type="float">3.5</PriorityOrder>
+            <ChannelIndex type="int8">25</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            Additive_UpperBody3
+            <PriorityOrder type="float">3.5</PriorityOrder>
+            <ChannelIndex type="int8">26</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            Cloth
+            <PriorityOrder type="float">0.6000000238418579</PriorityOrder>
+         </Channel>
+         <Channel type="reference_string">
+            Additive2_UpperBody2
+            <PriorityOrder type="float">3.0</PriorityOrder>
+            <ChannelIndex type="int8">9</ChannelIndex>
+         </Channel>
+      </Channels>
+   </Model>
+   <Files>
+      <File type="reference_string">
+         ADD_CHARGE_FIRE_GUN
+         <Filename type="string">characters/gog_rocketraccoon/motions/rck_atk_gun_chargeup_fire_add.oct</Filename>
+      </File>
+      <File type="reference_string">
+         ADD_CHARGE_HOLD_GUN
+         <Filename type="string">characters/biped/motions/biped_atk_gun_chargeup_hold_add.oct</Filename>
+      </File>
+      <File type="reference_string">
+         ADD_CHARGE_HOLD_GUN_START
+         <Filename type="string">characters/biped/motions/biped_atk_gun_chargeup_hold_add_start.oct</Filename>
+      </File>
+      <File type="reference_string">
+         ADD_FIRE_BOW_EASEOUT
+         <Filename type="string">characters/avg_hawkeye/motions/hawk_atk_bow_pullback_sideways_add.oct</Filename>
+      </File>
+      <File type="reference_string">
+         ADD_FIRE_GUN
+         <Filename type="string">characters/class_brute/motions/brute_atk_gun_fire_add_rhand.oct</Filename>
+      </File>
+      <File type="reference_string">
+         ADD_FIRE_GUN_AUTOMATIC
+         <Filename type="string">characters/biped/motions/biped_atk_gun_fire_auto_add.oct</Filename>
+      </File>
+      <File type="reference_string">
+         ADD_FIRE_GUN_AUTOMATIC_L
+         <Filename type="string">characters/biped/motions/biped_atk_gun_fire_auto_add_lhand.oct</Filename>
+      </File>
+      <File type="reference_string">
+         ADD_FIRE_GUN_L
+         <Filename type="string">characters/biped/motions/biped_atk_gun_fire_add_lhand.oct</Filename>
+      </File>
+      <File type="reference_string">
+         ADD_LANDRUN
+         <Filename type="string">characters/class_brute/motions/brute_bm_runland_add.oct</Filename>
+         <MetaData>
+            <CameraShake1 type="string">x 0.5 0.4 20.0 2.0 20.0 t f t</CameraShake1>
+            <Impact1 type="string">0.05555548 land t t Cntrl_Main none</Impact1>
+            <PlayChoOnGround1 type="string">x AVG_HulkFootStepCrack Cntrl_Foot_Right</PlayChoOnGround1>
+            <PlayChoOnGround2 type="string">x AVG_HulkFootStepCrack Cntrl_Foot_Left</PlayChoOnGround2>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         ADD_RELOAD_BOW
+         <Filename type="string">characters/avg_hawkeye/motions/hawk_atk_bow_reload_add.oct</Filename>
+      </File>
+      <File type="reference_string">
+         ADD_RELOAD_GUN
+         <Filename type="string">characters/class_brute/motions/brute_atk_gun_reload_add_rhand.oct</Filename>
+      </File>
+      <File type="reference_string">
+         ADD_RELOAD_GUN_JETPACK
+         <Filename type="string">characters/class_brute/motions/brute_atk_gun_reload_add_rhand.oct</Filename>
+      </File>
+      <File type="reference_string">
+         ADD_RELOAD_GUN_L
+         <Filename type="string">characters/biped/motions/biped_atk_gun_reload_add_lhand.oct</Filename>
+      </File>
+      <File type="reference_string">
+         AIM_GUN
+         <Filename type="string">characters/class_brute/motions/brute_atk_gun_turn_aim_dual.banm</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">WeaponFireRightArm_Marvel</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         Appendage_Carry
+         <Filename type="string">characters/biped/motions/biped_bm_0.oct</Filename>
+      </File>
+      <File type="reference_string">
+         Appendage_Hide
+         <Filename type="string">characters/biped/motions/biped_bm_0.oct</Filename>
+      </File>
+      <File type="reference_string">
+         Appendage_IdleA
+         <Filename type="string">characters/biped/motions/biped_bm_0.oct</Filename>
+      </File>
+      <File type="reference_string">
+         Appendage_IdleB
+         <Filename type="string">characters/biped/motions/biped_bm_0.oct</Filename>
+      </File>
+      <File type="reference_string">
+         Appendage_IdleC
+         <Filename type="string">characters/biped/motions/biped_bm_0.oct</Filename>
+      </File>
+      <File type="reference_string">
+         Appendage_React
+         <Filename type="string">characters/biped/motions/biped_bm_0.oct</Filename>
+      </File>
+      <File type="reference_string">
+         Appendage_Static
+         <Filename type="string">characters/biped/motions/biped_bm_0.oct</Filename>
+      </File>
+      <File type="reference_string">
+         Appendage_Weapon
+         <Filename type="string">characters/biped/motions/biped_bm_0.oct</Filename>
+      </File>
+      <File type="reference_string">
+         Appendage_ZeroPointEnergy
+         <Filename type="string">characters/biped/motions/biped_bm_0.oct</Filename>
+      </File>
+      <File type="reference_string">
+         BIPED_BM_IDLE_ACTIVE_EYES
+         <Filename type="string">characters/class_brute/motions/brute_bm_idle_active_eyes.oct</Filename>
+      </File>
+      <File type="reference_string">
+         BLOCK_HOLD
+         <Filename type="string">characters/biped/motions/biped_atk_block_loop.oct</Filename>
+      </File>
+      <File type="reference_string">
+         BLOCK_HOLD_SIMPLIFIED
+         <Filename type="string">characters/biped/motions/biped_atk_block_loop.oct</Filename>
+      </File>
+      <File type="reference_string">
+         BLOCK_RELEASE
+         <Filename type="string">characters/class_brute/motions/brute_bm_land.banm</Filename>
+         <MetaData>
+            <Impact1 type="string">x walkrun t t Cntrl_Main none</Impact1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         BLOCK_RELEASE_SIMPLIFIED
+         <Filename type="string">characters/biped/motions/biped_atk_block_end.oct</Filename>
+      </File>
+      <File type="reference_string">
+         BLOCK_START
+         <Filename type="string">characters/biped/motions/biped_atk_block_start.oct</Filename>
+      </File>
+      <File type="reference_string">
+         BLOCK_START_SIMPLIFIED
+         <Filename type="string">characters/biped/motions/biped_atk_block_start.oct</Filename>
+      </File>
+      <File type="reference_string">
+         CARRIED
+         <Filename type="string">characters/class_brute/motions/brute_crd_ava_walkrun.banm</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">x balance_carried_effort f -1</PlayDlg1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         CARRIED_AVATAR_OVERHEAD
+         <Filename type="string">characters/class_brute/motions/brute_crd_ava_walkrun.banm</Filename>
+      </File>
+      <File type="reference_string">
+         CARRIED_AVATAR_OVERHEAD_STOP
+         <Filename type="string">characters/class_brute/motions/brute_crd_ava_walkrun_stop.banm</Filename>
+      </File>
+      <File type="reference_string">
+         CARRIED_AVATAR_OVERHEAD_WALKRUN
+         <Filename type="string">characters/class_brute/motions/brute_crd_ava_walkrun.banm</Filename>
+      </File>
+      <File type="reference_string">
+         CARRIED_CARBONITE
+         <Filename type="string">characters/biped/motions/biped_rct_hansolo_carbonite_crd.oct</Filename>
+      </File>
+      <File type="reference_string">
+         CARRIED_MEDIUM_BOTH
+         <Filename type="string">characters/biped/motions/biped_crd_rarm_walkrun.banm</Filename>
+      </File>
+      <File type="reference_string">
+         CARRIED_MEDIUM_BOTH_STOP
+         <Filename type="string">characters/biped/motions/biped_crd_rarm_walkrun_stop.banm</Filename>
+      </File>
+      <File type="reference_string">
+         CARRIED_MEDIUM_BOTH_WALKRUN
+         <Filename type="string">characters/biped/motions/biped_crd_rarm_walkrun.banm</Filename>
+      </File>
+      <File type="reference_string">
+         CARRIED_OVERHEAD_WALKRUN
+         <Filename type="string">characters/biped/motions/biped_crd_waist_walkrun.banm</Filename>
+      </File>
+      <File type="reference_string">
+         CARRIED_SPECIAL
+         <Filename type="string">characters/gog_rocketraccoon/motions/rck_crd_special_walkrun.banm</Filename>
+      </File>
+      <File type="reference_string">
+         CARRIED_SPECIAL_STOP
+         <Filename type="string">characters/gog_rocketraccoon/motions/rck_crd_special_walkrun_stop.banm</Filename>
+      </File>
+      <File type="reference_string">
+         CARRIED_SPECIAL_WALKRUN
+         <Filename type="string">characters/gog_rocketraccoon/motions/rck_crd_special_walkrun.banm</Filename>
+      </File>
+      <File type="reference_string">
+         CARRIED_STOP
+         <Filename type="string">characters/class_brute/motions/brute_crd_ava_walkrun_stop.banm</Filename>
+      </File>
+      <File type="reference_string">
+         CARRIED_UNDERARM_RELEASE
+         <Filename type="string">characters/class_brute/motions/brute_crd_underarm_release.banm</Filename>
+      </File>
+      <File type="reference_string">
+         CARRIED_UNDERARM_STOP
+         <Filename type="string">characters/class_brute/motions/brute_crd_underarm_stop.banm</Filename>
+      </File>
+      <File type="reference_string">
+         CARRIED_UNDERARM_SWING
+         <Filename type="string">characters/class_brute/motions/brute_crd_underarm_swing.banm</Filename>
+      </File>
+      <File type="reference_string">
+         CARRYHEAVY
+         <Filename type="string">characters/biped/motions/biped_cr_over_heavy_add.oct</Filename>
+      </File>
+      <File type="reference_string">
+         CARRY_AVATAR_OVERHEAD
+         <Filename type="string">characters/class_brute/motions/brute_cr_ava.banm</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">HeavyOverhead_Run</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         CARRY_AVATAR_OVERHEAD_RUN
+         <Filename type="string">characters/class_brute/motions/brute_cr_ava.banm</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">HeavyOverhead_Run</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         CARRY_AVATAR_OVERHEAD_STOP
+         <Filename type="string">characters/class_brute/motions/brute_cr_ava_runstop.banm</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">HeavyOverhead_Run</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         CARRY_MEDIUMBOTH_STOP
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_runstop.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryRArm</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         CARRY_MEDIUM_BOTH
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryRArm</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         CARRY_MEDIUM_BOTH_RUN
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryRArm_Run</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         CARRY_OVERHEAD
+         <Filename type="string">characters/class_brute/motions/brute_cr_over.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">HeavyOverhead</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         CARRY_OVERHEAD_RUN
+         <Filename type="string">characters/class_brute/motions/brute_cr_over.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">HeavyOverhead</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         CARRY_OVERHEAD_STOP
+         <Filename type="string">characters/class_brute/motions/brute_cr_over_runstop.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">HeavyOverhead</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         CARRY_RARM_OVERHEAD
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_over.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">Carry_DinnerPlate</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         CARRY_RARM_OVERHEAD_RUN
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_over.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">Carry_DinnerPlate</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         CARRY_RARM_OVERHEAD_STOP
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_over_runstop.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">Carry_DinnerPlate</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         CARRY_SPECIAL
+         <Filename type="string">characters/gog_groot/motions/groot_cr_special.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarrySpecial_Groot</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         CARRY_SPECIAL_RUN
+         <Filename type="string">characters/gog_groot/motions/groot_cr_special.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarrySpecial_Groot</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         CARRY_SPECIAL_STOP
+         <Filename type="string">characters/gog_groot/motions/groot_cr_special.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarrySpecial_Groot</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         CARRY_UNDERARM
+         <Filename type="string">characters/class_brute/motions/brute_cr_underarm.banm</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryUnderArm</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         CARRY_UNDERARM_STOP
+         <Filename type="string">characters/class_brute/motions/brute_cr_underarm.banm</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryUnderArm</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         CARRY_UNDERARM_SWING
+         <Filename type="string">characters/class_brute/motions/brute_cr_underarm.banm</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryUnderArm</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         CATCH_BALL
+         <Filename type="string">characters/avg_thor/motions/thor_atk_hmr_catch.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">WeaponFireRightArm</Filter>
+            </Layer>
+         </Layers>
+         <MetaData>
+            <SelectToolByName1 type="string">x ABILITY_HAMMER ABILITY_NONE</SelectToolByName1>
+            <releaseFrame type="int8">6</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         CHARGE_BALL
+         <Filename type="string">characters/spd_greengoblin/motions/gob_cr_rarm_target_charged_upbody.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">HeavyOverhead</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         CHARGE_SIDEITEM
+         <Filename type="string">characters/avg_captainamerica/motions/cap_atk_shield_throw_chargeloop_upbdy.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">ChargeRun</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         CHUCK_BALL
+         <Filename type="string">characters/class_brute/motions/brute_crd_rarm_throw_ball.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">WeaponFireRightArm_Marvel</Filter>
+            </Layer>
+         </Layers>
+         <MetaData>
+            <PlayDlg1 type="string">0.1 throw_effort_small f -1</PlayDlg1>
+            <PlaySfx1 type="string">0.2 throw_ball</PlaySfx1>
+            <releaseFrame type="int8">6</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         CHUCK_BALL_LOB
+         <Filename type="string">characters/class_brute/motions/brute_crd_rarm_throw_ball.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">WeaponFireRightArm_Marvel</Filter>
+            </Layer>
+         </Layers>
+         <MetaData>
+            <PlayDlg1 type="string">0.15 throw_effort_small f -1</PlayDlg1>
+            <PlaySfx1 type="string">0.2 throw_ball</PlaySfx1>
+            <releaseFrame type="int8">4</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         CHUCK_SIDEITEM
+         <Filename type="string">characters/class_brute/motions/brute_crd_rarm_throw_side.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">WeaponFireRightArm_Marvel</Filter>
+            </Layer>
+         </Layers>
+         <MetaData>
+            <PlayDlg1 type="string">0.142857 throw_effort_small f -1</PlayDlg1>
+            <PlaySfx1 type="string">0.238095 throw_ball</PlaySfx1>
+            <releaseFrame type="int8">6</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         LIGHTSABER_COMBO_01
+         <Filename type="string">characters/moa_maui/motions/maui_combo1.oct</Filename>
+      </File>
+      <File type="reference_string">
+         LIGHTSABER_COMBO_02
+         <Filename type="string">characters/moa_maui/motions/maui_combo2.oct</Filename>
+      </File>
+      <File type="reference_string">
+         LIGHTSABER_COMBO_03
+         <Filename type="string">characters/moa_maui/motions/maui_combo3.oct</Filename>
+         <MetaData>
+            <CameraShake1 type="string">0.1666667 0.5 0.6 20.0 2.0 30.0 t f t</CameraShake1>
+            <PlayChoOnGround2 type="string">0.01388889 Hulk_Prem_Footstep_SM Cntrl_Foot_Right</PlayChoOnGround2>
+            <PlayChoOnGround3 type="string">0.1666667 Hulk_Prem_Footstep_MED Cntrl_Foot_Right</PlayChoOnGround3>
+            <PlayChoOnGround4 type="string">0.5138889 Hulk_Prem_Footstep_SM Cntrl_Foot_Left</PlayChoOnGround4>
+            <PlayChoOnGround5 type="string">0.1666667 Hulk_Prem_Footstep_MED Cntrl_Foot_Left</PlayChoOnGround5>
+            <PlayChoOnGround6 type="string">0 Hulk_Prem_Footstep_SM Cntrl_Foot_Right</PlayChoOnGround6>
+            <PlayChoOnGround9 type="string">0.1666667 Hlk_GroundPound_Combo</PlayChoOnGround9>
+            <PlayNewCho1 type="string">0 Hulk_Prem_Atk_Combo_Y Cntrl_Main f t</PlayNewCho1>
+            <PlaySfx1 type="string">0 Hulk_Combo_01</PlaySfx1>
+            <SetChoOffset9 type="string">0.1666667 0.0 0.0 0.9</SetChoOffset9>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         COMBO_1
+         <Filename type="string">characters/moa_maui/motions/maui_combo1.oct</Filename>
+      </File>
+      <File type="reference_string">
+         COMBO_2
+         <Filename type="string">characters/moa_maui/motions/maui_combo2.oct</Filename>
+      </File>
+      <File type="reference_string">
+         COMBO_3
+         <Filename type="string">characters/moa_maui/motions/maui_combo3.oct</Filename>
+         <MetaData>
+            <CameraShake1 type="string">0.1666667 0.5 0.6 20.0 2.0 30.0 t f t</CameraShake1>
+            <PlayChoOnGround2 type="string">0.01388889 Hulk_Prem_Footstep_SM Cntrl_Foot_Right</PlayChoOnGround2>
+            <PlayChoOnGround3 type="string">0.1666667 Hulk_Prem_Footstep_MED Cntrl_Foot_Right</PlayChoOnGround3>
+            <PlayChoOnGround4 type="string">0.5138889 Hulk_Prem_Footstep_SM Cntrl_Foot_Left</PlayChoOnGround4>
+            <PlayChoOnGround5 type="string">0.1666667 Hulk_Prem_Footstep_MED Cntrl_Foot_Left</PlayChoOnGround5>
+            <PlayChoOnGround6 type="string">0 Hulk_Prem_Footstep_SM Cntrl_Foot_Right</PlayChoOnGround6>
+            <PlayChoOnGround9 type="string">0.1666667 Hlk_GroundPound_Combo</PlayChoOnGround9>
+            <PlayNewCho1 type="string">0 Hulk_Prem_Atk_Combo_Y Cntrl_Main f t</PlayNewCho1>
+            <PlaySfx1 type="string">0 Hulk_Combo_01</PlaySfx1>
+            <SetChoOffset9 type="string">0.1666667 0.0 0.0 0.9</SetChoOffset9>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         LIGHTSABER_HELMBREAKER
+         <Filename type="string">characters/moa_maui/motions/maui_helmbreaker_drop.oct</Filename>
+      </File>
+      <File type="reference_string">
+         LIGHTSABER_HELMBREAKER_FINISH
+         <Filename type="string">characters/moa_maui/motions/maui_helmbreaker_land.oct</Filename>
+      </File>
+      <File type="reference_string">
+         LIGHTSABER_HELMBREAKER_LAND
+         <Filename type="string">characters/moa_maui/motions/maui_helmbreaker_land2.oct</Filename>
+      </File>
+      <File type="reference_string">
+         PRESSANDHOLD_COMBO1
+         <Filename type="string">characters/moa_maui/motions/maui_uppercut.oct</Filename>
+      </File>
+      <File type="reference_string">
+         PRESSANDHOLD_COMBO2
+         <Filename type="string">characters/moa_maui/motions/maui_uppercut2.oct</Filename>
+      </File>
+      <File type="reference_string">
+         PRESSANDHOLD_COMBO3
+         <Filename type="string">characters/moa_maui/motions/maui_uppercut3.oct</Filename>
+      </File>
+      <File type="reference_string">
+         LIGHTSABER_AIR_COMBO_01
+         <Filename type="string">characters/moa_maui/motions/maui_air_combo1.oct</Filename>
+      </File>
+      <File type="reference_string">
+         LIGHTSABER_AIR_COMBO_02
+         <Filename type="string">characters/moa_maui/motions/maui_air_combo2.oct</Filename>
+      </File>
+      <File type="reference_string">
+         LIGHTSABER_AIR_COMBO_03
+         <Filename type="string">characters/moa_maui/motions/maui_air_combo3.oct</Filename>
+      </File>
+      <File type="reference_string">
+         COMBO_SEND
+         <Filename type="string">characters/moa_maui/motions/maui_uppercut.oct</Filename>
+      </File>
+      <File type="reference_string">
+         COMBO_END
+         <Filename type="string">characters/biped/motions/biped_atk_genswing_end.banm</Filename>
+         <MetaData>
+            <PlayToolSfx1 type="string">x end Props t</PlayToolSfx1>
+            <SendMessageToTool1 type="string">x Props BringWeaponOut PutWeaponAway</SendMessageToTool1>
+            <SendMessageToTool2 type="string">0.26 Props StartToPutWeaponAway</SendMessageToTool2>
+            <SendMessageToTool3 type="string">0.43 Props PutWeaponAway</SendMessageToTool3>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         COMBO_SETTLE
+         <Filename type="string">characters/biped/motions/biped_bm_gensettle.banm</Filename>
+         <MetaData>
+            <PlayToolSfx1 type="string">x settle Props t</PlayToolSfx1>
+            <SendMessageToTool1 type="string">x Props BringWeaponOut PutWeaponAway</SendMessageToTool1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         COMBO_WAIT
+         <Filename type="string">characters/biped/motions/biped_bm_genwait.banm</Filename>
+         <MetaData>
+            <PlayToolSfx1 type="string">x wait Props t</PlayToolSfx1>
+            <SendMessageToTool1 type="string">x Props BringWeaponOut PutWeaponAway</SendMessageToTool1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         DIVEROLL
+         <Filename type="string">characters/biped/motions/biped_atk_diveroll.banm</Filename>
+         <MetaData>
+            <PlaySfx2 type="string">0.159091 dive_tumble</PlaySfx2>
+            <comboFrameAttack type="int8">18</comboFrameAttack>
+            <comboFrameDoubleDodge type="int8">17</comboFrameDoubleDodge>
+            <comboFrameJump type="int8">20</comboFrameJump>
+            <comboFrameUseItem type="int8">18</comboFrameUseItem>
+            <diveRollDistance type="float">8.5</diveRollDistance>
+            <endFrame type="int8">19</endFrame>
+            <releaseFrame type="int8">18</releaseFrame>
+            <rotateToTargetFrame type="int8">11</rotateToTargetFrame>
+            <rotateToTargetFrames type="int8">8</rotateToTargetFrames>
+            <setInterruptible2nd type="int8">30</setInterruptible2nd>
+            <setInterruptibleFrame type="int8">25</setInterruptibleFrame>
+            <startCheckGroundFrame type="int8">15</startCheckGroundFrame>
+            <weaponAppearFrame type="int8">18</weaponAppearFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         DROPKICKED_AIR
+         <Filename type="string">characters/class_brute/motions/brute_rct_tumbleairb.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">x flying f -1</PlayDlg1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         DROPKICKED_AVATAR_OVERHEAD
+         <Filename type="string">characters/class_brute/motions/brute_crd_rarm_dropkicked.oct</Filename>
+      </File>
+      <File type="reference_string">
+         DROPKICKED_GETUP
+         <Filename type="string">characters/class_brute/motions/brute_rct_getupf.oct</Filename>
+      </File>
+      <File type="reference_string">
+         DROPKICKED_MEDIUM_BOTH
+         <Filename type="string">characters/biped/motions/biped_crd_rarm_dropkicked.oct</Filename>
+      </File>
+      <File type="reference_string">
+         DROPKICKED_OVERHEAD
+         <Filename type="string">characters/class_brute/motions/brute_crd_rarm_dropkicked.oct</Filename>
+      </File>
+      <File type="reference_string">
+         DROPKICKED_SPECIAL
+         <Filename type="string">characters/class_brute/motions/brute_crd_rarm_dropkicked.oct</Filename>
+      </File>
+      <File type="reference_string">
+         DROPKICKED_SPLAT
+         <Filename type="string">characters/class_brute/motions/brute_rct_splatf.oct</Filename>
+         <MetaData>
+            <AddState1 type="string">x Prone</AddState1>
+            <PlayDlg1 type="string">x hurt_effort_splat f -1</PlayDlg1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         DROPKICKED_STUN
+         <Filename type="string">characters/class_brute/motions/brute_rct_splatf_hold.oct</Filename>
+         <MetaData>
+            <InterruptFrame type="int8">1</InterruptFrame>
+            <PlayDlg1 type="string">0.111111 dazed f -1</PlayDlg1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         DROPKICK_AVATAR_OVERHEAD
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_dropkick.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">0.208333 throw_effort_large f -1</PlayDlg1>
+            <PlaySfx1 type="string">0.368417 biped_kick_whoosh</PlaySfx1>
+            <PlaySfx2 type="string">0.416667 biped_kick_impact</PlaySfx2>
+            <releaseFrame type="int8">12</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         DROPKICK_MEDIUM_BOTH
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_dropkick.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">0.291667 throw_effort_large f -1</PlayDlg1>
+            <PlaySfx1 type="string">0.368417 biped_kick_whoosh</PlaySfx1>
+            <PlaySfx2 type="string">0.578944 biped_kick_impact</PlaySfx2>
+            <releaseFrame type="int8">12</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         DROPKICK_OVERHEAD
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_dropkick.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">0.25 throw_effort_large f -1</PlayDlg1>
+            <PlaySfx1 type="string">0.368417 biped_kick_whoosh</PlaySfx1>
+            <PlaySfx2 type="string">0.5 biped_kick_impact</PlaySfx2>
+            <releaseFrame type="int8">12</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         DROPKICK_RARM_OVERHEAD
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_dropkick.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">0.291667 throw_effort_large f -1</PlayDlg1>
+            <PlaySfx1 type="string">0.368417 biped_kick_whoosh</PlaySfx1>
+            <PlaySfx2 type="string">0.578944 biped_kick_impact</PlaySfx2>
+            <releaseFrame type="int8">12</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         DROPKICK_SPECIAL
+         <Filename type="string">characters/class_herosmall/motions/herosm_cr_rarm_dropkick.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">0.291667 throw_effort_large f -1</PlayDlg1>
+            <PlaySfx1 type="string">0.368417 biped_kick_whoosh</PlaySfx1>
+            <PlaySfx2 type="string">0.578944 biped_kick_impact</PlaySfx2>
+            <releaseFrame type="int8">12</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         DROPKICK_UNDERARM
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_dropkick.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">0.291667 throw_effort_large f -1</PlayDlg1>
+            <PlaySfx1 type="string">0.368417 biped_kick_whoosh</PlaySfx1>
+            <PlaySfx2 type="string">0.578944 biped_kick_impact</PlaySfx2>
+            <releaseFrame type="int8">12</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         DROPPED_AIR
+         <Filename type="string">characters/biped/motions/biped_bm_jump_air.oct</Filename>
+      </File>
+      <File type="reference_string">
+         DROPPED_AVATAR_OVERHEAD
+         <Filename type="string">characters/class_brute/motions/brute_crd_ava_dropped.oct</Filename>
+      </File>
+      <File type="reference_string">
+         DROPPED_MEDIUM_BOTH
+         <Filename type="string">characters/biped/motions/biped_crd_rarm_dropped.oct</Filename>
+      </File>
+      <File type="reference_string">
+         DROPPED_OVERHEAD
+         <Filename type="string">characters/class_brute/motions/brute_crd_ava_dropped.oct</Filename>
+      </File>
+      <File type="reference_string">
+         DROPPED_SPECIAL
+         <Filename type="string">characters/gog_rocketraccoon/motions/rck_crd_ava_dropped.oct</Filename>
+      </File>
+      <File type="reference_string">
+         DROP_AVATAR_OVERHEAD_UPPER
+         <Filename type="string">characters/class_brute/motions/brute_cr_ava_drop.banm</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">HeavyOverhead</Filter>
+            </Layer>
+         </Layers>
+         <MetaData>
+            <releaseFrame type="int8">9</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         DROP_MEDIUM_BOTH_UPPER
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_drop.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryRArm_Run</Filter>
+            </Layer>
+         </Layers>
+         <MetaData>
+            <releaseFrame type="int8">9</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         DROP_OVERHEAD_UPPER
+         <Filename type="string">characters/class_brute/motions/brute_cr_over_drop.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">HeavyOverhead</Filter>
+            </Layer>
+         </Layers>
+         <MetaData>
+            <releaseFrame type="int8">9</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         DROP_RARM_OVERHEAD_UPPER
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_over_drop.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryRArm</Filter>
+            </Layer>
+         </Layers>
+         <MetaData>
+            <releaseFrame type="int8">9</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         DROP_SPECIAL_UPPER
+         <Filename type="string">characters/gog_groot/motions/groot_cr_rarm_drop.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryRArm</Filter>
+            </Layer>
+         </Layers>
+         <MetaData>
+            <releaseFrame type="int8">9</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         DROP_UNDERARM_UPPER
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_drop.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryUnderArm</Filter>
+            </Layer>
+         </Layers>
+         <MetaData>
+            <releaseFrame type="int8">9</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         DUAL_ADD_CHARGE_FIRE_GUN
+         <Filename type="string">characters/biped/motions/biped_atk_gun_chargeup_fire_add_dual.oct</Filename>
+      </File>
+      <File type="reference_string">
+         DUAL_ADD_CHARGE_HOLD_GUN
+         <Filename type="string">characters/biped/motions/biped_atk_gun_chargeup_hold_add_dual.oct</Filename>
+      </File>
+      <File type="reference_string">
+         DUAL_ADD_CHARGE_HOLD_GUN_START
+         <Filename type="string">characters/biped/motions/biped_atk_gun_chargeup_hold_add_dual_start.oct</Filename>
+      </File>
+      <File type="reference_string">
+         DUAL_ADD_FIRE_GUN
+         <Filename type="string">characters/class_brute/motions/brute_atk_gun_fire_add_dual.oct</Filename>
+      </File>
+      <File type="reference_string">
+         DUAL_ADD_FIRE_GUN_AUTOMATIC
+         <Filename type="string">characters/biped/motions/biped_atk_gun_fire_auto_add_dual.oct</Filename>
+      </File>
+      <File type="reference_string">
+         DUAL_ADD_FIRE_PULSE
+         <Filename type="string">characters/avg_ironman/motions/irmn_atk_pulse_fire_both_add.oct</Filename>
+      </File>
+      <File type="reference_string">
+         DUAL_ADD_RELOAD_GUN
+         <Filename type="string">characters/class_brute/motions/brute_atk_gun_reload_add_dual.oct</Filename>
+      </File>
+      <File type="reference_string">
+         DUAL_AIM_GUN
+         <Filename type="string">characters/avg_hulk/motions/hulk_atk_gun_turn_aim_dual.banm</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">WeaponFireBothArms_Marvel</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         DUAL_HOLD_GUN
+         <Filename type="string">characters/class_brute/motions/brute_atk_gun_hold_dual.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">WeaponBothArms_Marvel</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         DUAL_HOLD_GUN_HANDONLY
+         <Filename type="string">characters/class_brute/motions/brute_atk_gun_hold_dual.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">WeaponBothHands_Marvel</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         DUAL_WEAPONS_START
+         <Filename type="string">characters/class_brute/motions/brute_atk_weapon_start_dual.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">WeaponBothArms_Marvel</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         EQUIP_NONE
+         <Filename type="string">characters/class_brute/motions/brute_atk_weapon_start.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">WeaponRightArm_EquipNone</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         FACE_BLINKDOUBLE
+         <Filename type="string">characters/biped/motions/biped_face_blinkdouble.oct</Filename>
+      </File>
+      <File type="reference_string">
+         FACE_BLINKSINGLE
+         <Filename type="string">characters/biped/motions/biped_face_blinksingle_smalleye.oct</Filename>
+      </File>
+      <File type="reference_string">
+         FACE_EYEBASE
+         <Filename type="string">characters/biped/motions/biped_face_eyebase.oct</Filename>
+      </File>
+      <File type="reference_string">
+         FACE_EYEDART1
+         <Filename type="string">characters/biped/motions/biped_face_eyedart1_smalleye.oct</Filename>
+      </File>
+      <File type="reference_string">
+         FACE_EYEDART2
+         <Filename type="string">characters/biped/motions/biped_face_eyedart2_smalleye.oct</Filename>
+      </File>
+      <File type="reference_string">
+         FACE_EYEDART3
+         <Filename type="string">characters/biped/motions/biped_face_eyedart3_smalleye.oct</Filename>
+      </File>
+      <File type="reference_string">
+         FACE_HAPPY1
+         <Filename type="string">characters/biped/motions/biped_face_happy1.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">Face</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         FACE_HAPPY2
+         <Filename type="string">characters/biped/motions/biped_face_happy1.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">Face</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         FACE_INTENSE1
+         <Filename type="string">characters/biped/motions/biped_face_intense1.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">Face</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         FACE_INTENSE2
+         <Filename type="string">characters/biped/motions/biped_face_intense2.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">Face</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         FACE_LID_BASE
+         <Filename type="string">characters/biped/motions/biped_face_lid_base.oct</Filename>
+      </File>
+      <File type="reference_string">
+         FACE_REACT1
+         <Filename type="string">characters/biped/motions/biped_face_react1.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">Face</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         FACE_REACT2
+         <Filename type="string">characters/biped/motions/biped_face_react2.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">Face</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         FALL
+         <Filename type="string">characters/class_hero/motions/hero_bm_fall.oct</Filename>
+      </File>
+      <File type="reference_string">
+         FALL_FAST
+         <Filename type="string">characters/class_hero/motions/hero_bm_fallfast.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">0.9 falling_yell_long t -1</PlayDlg1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         FILTER_EASEOUT_UPPER
+         <Filename type="string">characters/biped/motions/biped_crd_waist.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">Upperbody</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         GROUNDPOUND_AIR
+         <Filename type="string">characters/biped/motions/biped_atk_gpound_air.oct</Filename>
+         <MetaData>
+            <PlayCho1 type="string">x MrI_SwooshE Cntrl_Main t t</PlayCho1>
+            <PlayNewCho1 type="string">x Generic_GroundPound_Air Cntrl_Main t t</PlayNewCho1>
+            <PlaySfx1 type="string">x ground_pound_whoosh</PlaySfx1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         GROUNDPOUND_AIR_LOOP
+         <Filename type="string">characters/biped/motions/biped_atk_gpound_air_loop.oct</Filename>
+         <MetaData>
+            <CameraShakeLoop1 type="string">x 0.13 20.0 2.0 1.0 t</CameraShakeLoop1>
+            <PlayNewCho1 type="string">x Generic_GroundPound_Air_Loop Cntrl_Main t t</PlayNewCho1>
+            <PlaySfx1 type="string">x ground_pound_whoosh</PlaySfx1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         GROUNDPOUND_FINISH
+         <Filename type="string">characters/biped/motions/biped_atk_gpound_finish.oct</Filename>
+      </File>
+      <File type="reference_string">
+         GROUNDPOUND_HIT
+         <Filename type="string">characters/biped/motions/biped_atk_gpound_hit.oct</Filename>
+         <MetaData>
+            <comboFrameDoubleDodge type="int8">17</comboFrameDoubleDodge>
+            <comboFrameJump type="int8">17</comboFrameJump>
+            <gpControl type="string">Cntrl_Hand_Right</gpControl>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         GROUNDPOUND_START
+         <Filename type="string">characters/biped/motions/biped_atk_gpound_start.oct</Filename>
+      </File>
+      <File type="reference_string">
+         HIT_SPIN_END
+         <Filename type="string">characters/biped/motions/biped_rct_stumble_spin_finish.oct</Filename>
+      </File>
+      <File type="reference_string">
+         HIT_SPIN_END_AIR
+         <Filename type="string">characters/biped/motions/biped_rct_stumble_spin_finish_air.oct</Filename>
+      </File>
+      <File type="reference_string">
+         HIT_SPIN_GEN
+         <Filename type="string">characters/class_brute/motions/brute_rct_stumble_spin.oct</Filename>
+      </File>
+      <File type="reference_string">
+         HIT_SPIN_LOOP
+         <Filename type="string">characters/biped/motions/biped_rct_stumble_spin_loop.oct</Filename>
+      </File>
+      <File type="reference_string">
+         HIT_SPIN_START
+         <Filename type="string">characters/biped/motions/biped_rct_stumble_spin_start.oct</Filename>
+      </File>
+      <File type="reference_string">
+         HOISTED_OVERHEAD
+         <Filename type="string">characters/biped/motions/biped_crd_over_thrown.oct</Filename>
+      </File>
+      <File type="reference_string">
+         HOIST_OVERHEAD
+         <Filename type="string">characters/biped/motions/biped_cr_over_throw.oct</Filename>
+         <MetaData>
+            <PlaySfx1 type="string">0.5 object_throw_heavy</PlaySfx1>
+            <releaseFrame type="int8">15</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         HOLD_BALL
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_ball.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">WeaponRightArm_Marvel</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         HOLD_BALL_HANDONLY
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_ball.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">RightHandOnly_Marvel</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         HOLD_BOW_HANDONLY
+         <Filename type="string">characters/avg_hawkeye/motions/hawk_atk_bow_hold.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">WeaponRightHand</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         HOLD_GUN
+         <Filename type="string">characters/biped/motions/biped_atk_gun_hold.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">WeaponRightArm_Marvel</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         HOLD_GUN_HANDONLY
+         <Filename type="string">characters/class_brute/motions/brute_atk_gun_hold.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">WeaponRightHand_Marvel</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         HOLD_SIDEITEM
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_wand.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryRHand_Marvel</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         HOLD_SIDEITEM_HANDONLY
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_wand.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">RightHandOnly_Marvel</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         HOLD_STICKY_STRING
+         <Filename type="string">characters/class_brute/motions/brute_atk_sticky_turn.banm</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">Sticky_Marvel</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         IDLE_BREAKA
+         <Filename type="string">characters/class_brute/motions/brute_bm_idle_active.banm</Filename>
+      </File>
+      <File type="reference_string">
+         IDLE_BREAKB
+         <Filename type="string">characters/class_brute/motions/brute_bm_idle_active.banm</Filename>
+      </File>
+      <File type="reference_string">
+         IDLE_BREAKC
+         <Filename type="string">characters/class_brute/motions/brute_bm_idle_active.banm</Filename>
+      </File>
+      <File type="reference_string">
+         IGP_COIN
+         <Filename type="string">characters/biped/motions/biped_igp_coin.oct</Filename>
+      </File>
+      <File type="reference_string">
+         IGP_END
+         <Filename type="string">characters/class_brute/motions/brute_bm_land.banm</Filename>
+      </File>
+      <File type="reference_string">
+         IGP_LOOP
+         <Filename type="string">characters/class_brute/motions/brute_igp_loop.banm</Filename>
+      </File>
+      <File type="reference_string">
+         IGP_START
+         <Filename type="string">characters/class_brute/motions/brute_igp_start.banm</Filename>
+      </File>
+      <File type="reference_string">
+         JUG_RCT_ADD
+         <Filename type="string">characters/biped/motions/biped_rct_hit_add.oct</Filename>
+      </File>
+      <File type="reference_string">
+         JUMPAIR_BLEND
+         <Filename type="string">characters/class_brute/motions/brute_bm_jump.banm</Filename>
+         <MetaData>
+            <PlaySfx1 type="string">0 diveroll_swoosh</PlaySfx1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         JUMPAIR_BLEND_MBA
+         <Filename type="string">characters/avg_hulk/motions/hulk_bm_jump_air_mba.oct</Filename>
+      </File>
+      <File type="reference_string">
+         JUMPDOUBLE_AIR_BLEND
+         <Filename type="string">characters/class_brute/motions/brute_bm_jumpdoub.banm</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">x jump_effort f -1</PlayDlg1>
+            <PlaySfx1 type="string">x diveroll_swoosh</PlaySfx1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         JUMP_INTO_MBA
+         <Filename type="string">characters/class_brute/motions/brute_bm_jump_into_add_mba.oct</Filename>
+      </File>
+      <File type="reference_string">
+         LAND
+         <Filename type="string">characters/class_brute/motions/brute_bm_land.banm</Filename>
+         <MetaData>
+            <CameraShake1 type="string">x 0.5 0.4 20.0 2.0 20.0 t f t</CameraShake1>
+            <Impact1 type="string">x land t t none none</Impact1>
+            <PlayChoOnGround1 type="string">x AVG_HulkFootStepCrack Cntrl_Foot_Right</PlayChoOnGround1>
+            <PlayChoOnGround2 type="string">x AVG_HulkFootStepCrack Cntrl_Foot_Left</PlayChoOnGround2>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         LANDRUN
+         <Filename type="string">characters/biped/motions/biped_bm_jump_land.oct</Filename>
+         <MetaData>
+            <Impact2 type="string">0 land f t none none</Impact2>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         LAND_HARD
+         <Filename type="string">characters/avg_hulk/motions/hulk_bm_landhuge.oct</Filename>
+         <MetaData>
+            <Impact1 type="string">x splat f t none none</Impact1>
+            <PlayChoOnGround1 type="string">x Generic_GroundPound_Large</PlayChoOnGround1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         LAND_SHAKEOFF
+         <Filename type="string">characters/biped/motions/biped_bm_land.banm</Filename>
+         <MetaData>
+            <Impact1 type="string">x land f t none none</Impact1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         LIGHTSABER_BLOCK_PARRY_REACT
+         <Filename type="string">characters/tcw_anakin/motions/tcw_anakin_block_parry_react.oct</Filename>
+      </File>
+      <File type="reference_string">
+         MBA_GRAB_ATTEMPT
+         <Filename type="string">characters/class_brute/motions/brute_atk_mba_grab_attempt_fwd.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">0.2647059 attack_effort_large f -1</PlayDlg1>
+            <PlaySfx1 type="string">0.05882356 venom_combo_swipe</PlaySfx1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         MBA_GRAB_ATTEMPT_AIR
+         <Filename type="string">characters/class_brute/motions/brute_atk_mba_grab_attempt_fwd_air.oct</Filename>
+      </File>
+      <File type="reference_string">
+         MBA_RANGED_ATK
+         <Filename type="string">characters/class_hero/motions/hero_atk_gun_mba_fire.banm</Filename>
+      </File>
+      <File type="reference_string">
+         MBA_REACT_WALLBOUNCE
+         <Filename type="string">characters/biped/motions/biped_rct_wallbounce.oct</Filename>
+         <MetaData>
+            <PlaySfx1 type="string">0.4285715 wall_impact</PlaySfx1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         MBA_REACT_WALLBOUNCE_F
+         <Filename type="string">characters/biped/motions/biped_rct_wallbounce_f.oct</Filename>
+         <MetaData>
+            <PlaySfx1 type="string">0.2857143 wall_impact</PlaySfx1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         MOVESTOP
+         <Filename type="string">characters/class_brute/motions/brute_bm_movestop.banm</Filename>
+      </File>
+      <File type="reference_string">
+         MRINC_SPECIALMOVE_FINISH
+         <Filename type="string">characters/biped/motions/biped_bm_0.oct</Filename>
+      </File>
+      <File type="reference_string">
+         MRINC_SPECIALMOVE_HIT
+         <Filename type="string">characters/biped/motions/biped_bm_0.oct</Filename>
+      </File>
+      <File type="reference_string">
+         MRINC_SPECIALMOVE_START
+         <Filename type="string">characters/biped/motions/biped_bm_0.oct</Filename>
+      </File>
+      <File type="reference_string">
+         PICKUP_AVATAR_OVERHEAD_START_UPPER
+         <Filename type="string">characters/class_brute/motions/brute_cr_ava_pickup_start.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">HeavyOverhead_Run</Filter>
+            </Layer>
+         </Layers>
+         <MetaData>
+            <PlayDlg1 type="string">x throw_effort_small f -1</PlayDlg1>
+            <PlaySfx1 type="string">x default_grab_ledge</PlaySfx1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         PICKUP_AVATAR_OVERHEAD_UPPER
+         <Filename type="string">characters/class_brute/motions/brute_cr_ava_pickup.banm</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">HeavyOverhead_Run</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         PICKUP_MEDIUM_BOTH_START_UPPER
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_pickup_start.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryRArm</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         PICKUP_MEDIUM_BOTH_UPPER
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_pickup.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryRArm</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         PICKUP_OVERHEAD_START_UPPER
+         <Filename type="string">characters/class_brute/motions/brute_cr_over_pickup_start.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">HeavyOverhead</Filter>
+            </Layer>
+         </Layers>
+         <MetaData>
+            <PlayDlg1 type="string">x throw_effort_small f -1</PlayDlg1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         PICKUP_OVERHEAD_UPPER
+         <Filename type="string">characters/class_brute/motions/brute_cr_over_pickup.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">HeavyOverhead</Filter>
+            </Layer>
+         </Layers>
+         <MetaData>
+            <PlaySfx1 type="string">x default_grab_ledge</PlaySfx1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         PICKUP_RARM_OVERHEAD_UPPER
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_over_pickup.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">Carry_DinnerPlate</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         PICKUP_RARM_OVERHEAD_UPPER_START
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_pickup_start.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">Carry_DinnerPlate</Filter>
+            </Layer>
+         </Layers>
+         <MetaData>
+            <PlayDlg1 type="string">x throw_effort_small f -1</PlayDlg1>
+            <PlaySfx1 type="string">x default_grab_ledge</PlaySfx1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         PICKUP_SPECIAL_UPPER
+         <Filename type="string">characters/gog_groot/motions/groot_cr_special_pickup.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarrySpecial_Groot</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         PICKUP_SPECIAL_UPPER_START
+         <Filename type="string">characters/gog_groot/motions/groot_cr_rarm_pickup_start.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryRArm</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         PICKUP_UNDERARM_START_UPPER
+         <Filename type="string">characters/biped/motions/biped_bm_0.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryUnderArm</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         PICKUP_UNDERARM_UPPER
+         <Filename type="string">characters/class_herosmall/motions/herosm_cr_underarm.banm</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryUnderArm</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         PROC_TURN_TORSO
+         <Filename type="string">characters/biped/motions/biped_bm_headturn_proc.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">HeadTurn</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         PSX_STRMTRP_BM_SHIELD_POSE_WALK
+         <Filename type="string">characters/psx_enemies/motions/psx_strmtrp_shd_bm_shield_pose_walk.oct</Filename>
+      </File>
+      <File type="reference_string">
+         PSX_Strmtrp_BM_SHIELD_POSE
+         <Filename type="string">characters/psx_enemies/motions/psx_strmtrp_shd_bm_shield_pose.oct</Filename>
+      </File>
+      <File type="reference_string">
+         PUSH_BUTTON
+         <Filename type="string">characters/class_brute/motions/brute_btn_press.oct</Filename>
+         <MetaData>
+            <distFromButton type="float">1.399999976158142</distFromButton>
+            <distFromButtonSmall type="float">0.800000011920929</distFromButtonSmall>
+            <releaseFrame type="int8">8</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         PUSH_BUTTON_LARGE
+         <Filename type="string">characters/class_brute/motions/brute_btn_press_grown.oct</Filename>
+         <MetaData>
+            <Impact1 type="string">0.621622 scuff t t Cntrl_Foot_Right none</Impact1>
+            <Impact2 type="string">0.8378378 scuff t t Cntrl_Foot_Left none</Impact2>
+            <distFromButtonLarge type="float">1.25</distFromButtonLarge>
+            <releaseFrame type="int8">5</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         RCT_ENDER_TUMBLEF
+         <Filename type="string">characters/class_brute/motions/brute_rct_tumbleairb.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_AIR_SMALL
+         <Filename type="string">characters/biped/motions/biped_rct_air_small.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_BLOCKED
+         <Filename type="string">characters/biped/motions/biped_atk_block_hit.oct</Filename>
+         <MetaData>
+            <PlaySfx1 type="string">x punch_blocked_bob</PlaySfx1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_BLOCKED_SIMPLIFIED
+         <Filename type="string">characters/biped/motions/biped_atk_block_hit.oct</Filename>
+         <MetaData>
+            <PlaySfx1 type="string">x punch_blocked_bob</PlaySfx1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_CELEBRATE
+         <Filename type="string">characters/biped/motions/biped_rct_celebrate.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">0 win f 1</PlayDlg1>
+            <rotateToCamEnd type="int8">5</rotateToCamEnd>
+            <rotateToCamStart type="int8">0</rotateToCamStart>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_CELEBRATE2
+         <Filename type="string">characters/biped/motions/biped_rct_celebrate.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">0 win f 1</PlayDlg1>
+            <rotateToCamEnd type="int8">5</rotateToCamEnd>
+            <rotateToCamStart type="int8">0</rotateToCamStart>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_CELEBRATE_SMALL
+         <Filename type="string">characters/biped/motions/biped_rct_celebrate_small.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">0 win f -1</PlayDlg1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_ELECTRIFIED_1
+         <Filename type="string">characters/biped/motions/biped_rct_electrocuted1.oct</Filename>
+         <MetaData>
+            <Emitter2 type="string">0 UNI_Electrified Cntrl_Body t</Emitter2>
+            <PlaySfx1 type="string">0 Enemy_electrified</PlaySfx1>
+            <PlaySfx2 type="string">0.5 Enemy_electrified</PlaySfx2>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_ELECTRIFIED_2
+         <Filename type="string">characters/biped/motions/biped_rct_electrocuted2.oct</Filename>
+         <MetaData>
+            <Emitter2 type="string">0 UNI_Electrified Cntrl_Body t</Emitter2>
+            <PlaySfx1 type="string">0 Enemy_electrified</PlaySfx1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_ELECTRIFIED_3
+         <Filename type="string">characters/biped/motions/biped_rct_electrocuted3.oct</Filename>
+         <MetaData>
+            <Emitter2 type="string">0 UNI_Electrified Cntrl_Body t</Emitter2>
+            <PlaySfx1 type="string">0 Enemy_electrified</PlaySfx1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_EWOK_ATTACK
+         <Filename type="string">characters/biped/motions/biped_rct_ewok_attack.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_FAIL
+         <Filename type="string">characters/biped/motions/biped_rct_fail.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">0 lose f 1</PlayDlg1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_FORCE_CHOKE
+         <Filename type="string">characters/biped/motions/biped_rct_vader_choke_in.oct</Filename>
+         <MetaData>
+            <Emitter1 type="string">x EMP_ForceChoke_Enemy Cntrl_Body</Emitter1>
+            <PlaySfxLoop1 type="string">0 DarthVader_force_grip_start</PlaySfxLoop1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_FORCE_CHOKE_LOOP
+         <Filename type="string">characters/biped/motions/biped_rct_vader_choke_loop.oct</Filename>
+         <MetaData>
+            <Emitter1 type="string">x EMP_ForceChoke_Enemy Cntrl_Body</Emitter1>
+            <PlaySfxLoop1 type="string">0 DarthVader_force_grip_start</PlaySfxLoop1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_FORCE_CHOKE_OUT
+         <Filename type="string">characters/biped/motions/biped_rct_vader_choke_out.oct</Filename>
+         <MetaData>
+            <Emitter1 type="string">x EMP_ForceChoke_Enemy Cntrl_Body</Emitter1>
+            <PlaySfx1 type="string">0 DarthVader_force_grip_stop</PlaySfx1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_FORCE_CHOKE_THROW_DOWN
+         <Filename type="string">characters/biped/motions/biped_rct_vader_choke_down.oct</Filename>
+         <MetaData>
+            <Effect2 type="string">0.6818182o TCW_Yoda_Tornado_Blast Cntrl_Body</Effect2>
+            <PlaySfx1 type="string">0 DarthVader_force_grip_stop</PlaySfx1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_FORCE_CHOKE_THROW_LEFT
+         <Filename type="string">characters/biped/motions/biped_rct_vader_choke_left.oct</Filename>
+         <MetaData>
+            <Effect2 type="string">0.65o TCW_Yoda_Tornado_Blast Cntrl_Body</Effect2>
+            <PlaySfx1 type="string">0 DarthVader_force_grip_stop</PlaySfx1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_FORCE_CHOKE_THROW_RIGHT
+         <Filename type="string">characters/biped/motions/biped_rct_vader_choke_right.oct</Filename>
+         <MetaData>
+            <Effect2 type="string">0.7o TCW_Yoda_Tornado_Blast Cntrl_Body</Effect2>
+            <PlaySfx1 type="string">0 DarthVader_force_grip_stop</PlaySfx1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_FORCE_PULL_AERIAL_PULLED
+         <Filename type="string">characters/emp_enemies/motions/emp_enemy_rct_aerial_force_pull_pulled.oct</Filename>
+         <MetaData>
+            <Emitter1 type="string">0.15 TCW_ForcePossess Cntrl_Body</Emitter1>
+            <PlayDlg1 type="string">0.04 react_force_pulled f -1</PlayDlg1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_FORCE_PULL_LEAP
+         <Filename type="string">characters/emp_enemies/motions/emp_enemy_rct_force_pull_leap.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_FORCE_PULL_PULLED
+         <Filename type="string">characters/emp_enemies/motions/emp_enemy_rct_force_pull_pulled.oct</Filename>
+         <MetaData>
+            <Emitter1 type="string">0 TCW_ForcePossess Cntrl_Body</Emitter1>
+            <PlayDlg1 type="string">0.03389831 react_force_pulled f -1</PlayDlg1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_FORCE_PULL_SLASH
+         <Filename type="string">characters/emp_enemies/motions/emp_enemy_rct_force_pull_slash.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_FORCE_PULL_START
+         <Filename type="string">characters/emp_enemies/motions/emp_enemy_rct_force_pull_start.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_FPULL_STAGGER
+         <Filename type="string">characters/biped/motions/biped_rct_stumblef.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_FPUSH_STAGGER
+         <Filename type="string">characters/biped/motions/biped_rct_stumbleb.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_FROZENMBA_1
+         <Filename type="string">characters/biped/motions/biped_rct_frozenmba_1.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_FROZEN_1
+         <Filename type="string">characters/biped/motions/biped_rct_frozen1.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_FROZEN_2
+         <Filename type="string">characters/biped/motions/biped_rct_frozen2.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_FROZEN_3
+         <Filename type="string">characters/biped/motions/biped_rct_frozen3.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_FROZEN_4
+         <Filename type="string">characters/biped/motions/biped_rct_frozen4.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_FROZEN_5
+         <Filename type="string">characters/biped/motions/biped_rct_frozen5.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_FROZEN_CARBONITE
+         <Filename type="string">characters/biped/motions/biped_rct_hansolo_carbonite.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_FROZEN_CARBONITE_TUMBLE_BACK
+         <Filename type="string">characters/biped/motions/biped_rct_hansolo_carb_tumbleb.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_FROZEN_CARBONITE_TUMBLE_FRONT
+         <Filename type="string">characters/biped/motions/biped_rct_hansolo_carb_tumblef.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_FROZEN_CARBONITE_WOBBLE_BACK
+         <Filename type="string">characters/biped/motions/biped_rct_carbonite_wobble.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_FROZEN_CARBONITE_WOBBLE_FRONT
+         <Filename type="string">characters/biped/motions/biped_rct_carbonite_wobble.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_FROZEN_CARBONITE_WOBBLE_LEFT
+         <Filename type="string">characters/biped/motions/biped_rct_carbonite_wobblel.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_FROZEN_CARBONITE_WOBBLE_RIGHT
+         <Filename type="string">characters/biped/motions/biped_rct_carbonite_wobbler.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_GETUP_BACK
+         <Filename type="string">characters/class_brute/motions/brute_rct_getupb.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_GETUP_FRONT
+         <Filename type="string">characters/class_brute/motions/brute_rct_getupf.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_HITCH
+         <Filename type="string">characters/biped/motions/biped_rct_hitch_directional_add.banm</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_HITCH_SHAKEOFF
+         <Filename type="string">characters/biped/motions/biped_rct_hit_add_shakeoff.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_HITCH_SMALL
+         <Filename type="string">characters/biped/motions/biped_rct_hitch_directional_add_small.banm</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_HITCH_SPLAT
+         <Filename type="string">characters/biped/motions/biped_rct_hitch_add_splat.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_ADD_DIRECTION
+         <Filename type="string">characters/biped/motions/biped_rct_hit_add_direction.banm</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_ADD_DIRECTION_LR
+         <Filename type="string">characters/biped/motions/biped_rct_hit_add_direction_lr.banm</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_ADD_DIRECTION_SMALL_LR
+         <Filename type="string">characters/biped/motions/biped_rct_hit_add_direction_small_lr.banm</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_ADD_DIRECTION_SPIN
+         <Filename type="string">characters/biped/motions/biped_rct_hit_add_direction_spin.banm</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_BACK
+         <Filename type="string">characters/class_brute/motions/brute_rct_smallb.banm</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">x hurt_effort_small f -1</PlayDlg1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_FRONT
+         <Filename type="string">characters/class_brute/motions/brute_rct_smallf.banm</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">x hurt_effort_small f -1</PlayDlg1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_KNOCK_BACK
+         <Filename type="string">characters/class_brute/motions/brute_rct_knockdownb.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">x hurt_effort_large f -1</PlayDlg1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_KNOCK_FRONT
+         <Filename type="string">characters/class_brute/motions/brute_rct_knockdownf.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">x hurt_effort_large f -1</PlayDlg1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_SMALL_LOWER_B
+         <Filename type="string">characters/class_brute/motions/brute_rct_small_lower_b.banm</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_SMALL_LOWER_F
+         <Filename type="string">characters/class_brute/motions/brute_rct_small_lower_f.banm</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_SMALL_LOWER_L
+         <Filename type="string">characters/class_brute/motions/brute_rct_small_lower_l.banm</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_SMALL_LOWER_R
+         <Filename type="string">characters/class_brute/motions/brute_rct_small_lower_r.banm</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_SMALL_UPPER_1
+         <Filename type="string">characters/class_brute/motions/brute_rct_small_upper_archback.banm</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_SMALL_UPPER_2
+         <Filename type="string">characters/class_brute/motions/brute_rct_small_upper_bendforward.banm</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_SMALL_UPPER_3
+         <Filename type="string">characters/class_brute/motions/brute_rct_small_upper_gut_hit.banm</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_SMALL_UPPER_4
+         <Filename type="string">characters/class_brute/motions/brute_rct_small_upper_lhandtohead.banm</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_STUMBLE_BACK
+         <Filename type="string">characters/class_brute/motions/brute_rct_stumbleb.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">x hurt_effort_large f -1</PlayDlg1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_STUMBLE_FRONT
+         <Filename type="string">characters/class_brute/motions/brute_rct_stumblef.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">x hurt_effort_large f -1</PlayDlg1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_STUMBLE_LOWER_B
+         <Filename type="string">characters/class_brute/motions/brute_rct_stmb_lower_b.banm</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_STUMBLE_LOWER_F
+         <Filename type="string">characters/class_brute/motions/brute_rct_stmb_lower_f.banm</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_STUMBLE_LOWER_L
+         <Filename type="string">characters/class_brute/motions/brute_rct_stmb_lower_l.banm</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_STUMBLE_LOWER_R
+         <Filename type="string">characters/class_brute/motions/brute_rct_stmb_lower_r.banm</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_STUMBLE_SPIN
+         <Filename type="string">characters/class_brute/motions/brute_rct_stumble_spin.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">x hurt_effort_large f -1</PlayDlg1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_STUMBLE_UPPER_1
+         <Filename type="string">characters/class_herosmall/motions/herosm_rct_stmb_up_b.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_STUMBLE_UPPER_2
+         <Filename type="string">characters/class_herosmall/motions/herosm_rct_stmb_up_b2.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_STUMBLE_UPPER_3
+         <Filename type="string">characters/class_herosmall/motions/herosm_rct_stmb_up_f.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_STUMBLE_UPPER_4
+         <Filename type="string">characters/class_herosmall/motions/herosm_rct_stmb_up_f2.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_STUMBLE_UPPER_5
+         <Filename type="string">characters/class_herosmall/motions/herosm_rct_stmb_up_btwist.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_STUMBLE_UPPER_6
+         <Filename type="string">characters/class_herosmall/motions/herosm_rct_stmb_up_split.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_TUMBLE_BACK
+         <Filename type="string">characters/class_brute/motions/brute_rct_tumbleairb.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">x hurt_effort_large f -1</PlayDlg1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_TUMBLE_FRONT
+         <Filename type="string">characters/class_brute/motions/brute_rct_tumbleairf.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">x hurt_effort_large f -1</PlayDlg1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_UPPER3_SPIN_BASE
+         <Filename type="string">characters/biped/motions/biped_bm_0_crotchkeyed.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_LAND_BACKIDLE
+         <Filename type="string">characters/class_brute/motions/brute_rct_splatb_hold.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Control>
+                  <PostBehavior type="int8">2</PostBehavior>
+               </Control>
+            </Layer>
+         </Layers>
+         <MetaData>
+            <AddState1 type="string">x Prone</AddState1>
+            <PlayDlg1 type="string">0.434783 dazed f -1</PlayDlg1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_LAND_BACKSPLAT
+         <Filename type="string">characters/class_brute/motions/brute_rct_splatb.oct</Filename>
+         <MetaData>
+            <AddState1 type="string">x Prone</AddState1>
+            <Impact1 type="string">x splat f t none none</Impact1>
+            <PlayDlg1 type="string">x hurt_effort_splat f -1</PlayDlg1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_LAND_FRONTIDLE
+         <Filename type="string">characters/class_brute/motions/brute_rct_splatf_hold.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">0.277778 dazed f -1</PlayDlg1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_LAND_FRONTSPLAT
+         <Filename type="string">characters/class_brute/motions/brute_rct_splatf.oct</Filename>
+         <MetaData>
+            <Impact1 type="string">x splat f t none none</Impact1>
+            <PlayDlg1 type="string">x hurt_effort_splat f -1</PlayDlg1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_RECOVER_BACK
+         <Filename type="string">characters/class_brute/motions/brute_rct_recoverb.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">x dodge_effort f -1</PlayDlg1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_RECOVER_FRONT
+         <Filename type="string">characters/class_brute/motions/brute_rct_recoverf.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">x dodge_effort f -1</PlayDlg1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_REVIVE
+         <Filename type="string">characters/class_brute/motions/brute_rct_death_reviveloop.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_REVIVE_RECOVER
+         <Filename type="string">characters/bhs_baymax/motions/bmax_rct_death_reviveend.oct</Filename>
+         <MetaData>
+            <PlayEffect1 type="string">x AvatarCreation01 Cntrl_Hips</PlayEffect1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_SHAKEOFF
+         <Filename type="string">characters/class_brute/motions/brute_rct_shakeoff.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">0.0277778 venom_roar f -1</PlayDlg1>
+            <PlayDlg2 type="string">0.142856 disappointed_grunt f -1</PlayDlg2>
+            <SendAnimTreeEvent1 type="string">0.1 Face_Kill</SendAnimTreeEvent1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_SHAKEOFF_SMALL
+         <Filename type="string">characters/class_brute/motions/brute_rct_shakeoff_small.banm</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Transition>
+                  <FrameDuration type="int8">7</FrameDuration>
+               </Transition>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         REACT_SHOCKED
+         <Filename type="string">characters/biped/motions/biped_rct_shocked_add.oct</Filename>
+         <MetaData>
+            <CameraShake1 type="string">1 1.0 0.5 20.0 2.0 1.0 t f t</CameraShake1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_SPIDEYWEBBED_01
+         <Filename type="string">characters/class_hero/motions/hero_rct_spideywebbed_01.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_SPIDEYWEBBED_02
+         <Filename type="string">characters/class_hero/motions/hero_rct_spideywebbed_02.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_SPIDEYWEBBED_03
+         <Filename type="string">characters/class_hero/motions/hero_rct_spideywebbed_03.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_SPIDEYWEBBED_ENTER
+         <Filename type="string">characters/class_hero/motions/hero_rct_spideywebbedenter.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_SPIN_FINISH
+         <Filename type="string">characters/class_brute/motions/brute_rct_stumble_spin_finish.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_SPIN_FINISH_AIR
+         <Filename type="string">characters/biped/motions/biped_rct_stumble_spin_finish_air.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_SPIN_LOOP
+         <Filename type="string">characters/class_brute/motions/brute_rct_stumble_spin_loop.oct</Filename>
+         <MetaData>
+            <Emitter1 type="string">x JAS_SandTornado_Reaction Cntrl_Main</Emitter1>
+            <PlaySfx1 type="string">0.166667 Jasmine_Vortex_Reaction_Sustain</PlaySfx1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_SPIN_START
+         <Filename type="string">characters/class_brute/motions/brute_rct_stumble_spin_start.oct</Filename>
+         <MetaData>
+            <PlaySfx2 type="string">0 Enemy_stun_spin</PlaySfx2>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_SPLAT_ADD_DIRECTION
+         <Filename type="string">characters/biped/motions/biped_rct_splat_add_direction.banm</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_SPLAT_ADD_L
+         <Filename type="string">characters/biped/motions/biped_rct_splat_add_l.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_SPLAT_ADD_R
+         <Filename type="string">characters/biped/motions/biped_rct_splat_add_r.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_SPLAT_ADD_SPINL
+         <Filename type="string">characters/biped/motions/biped_rct_hit_add_spinl.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_SPLAT_ADD_SPINR
+         <Filename type="string">characters/biped/motions/biped_rct_hit_add_spinr.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_STUMBLE_DEATH
+         <Filename type="string">characters/class_brute/motions/brute_rct_death.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">x hurt_effort_splat f -1</PlayDlg1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_STUNNED_ADD
+         <Filename type="string">characters/biped/motions/biped_rct_stunned_add.oct</Filename>
+         <MetaData>
+            <PlayChoLoop1 type="string">x STATUS_Dizzy Cntrl_Head f t f f t</PlayChoLoop1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_STUNNED_GETUP_B_MBA
+         <Filename type="string">characters/class_brute/motions/brute_rct_stunnedgetupb_mba.oct</Filename>
+         <MetaData>
+            <PlayNewCho1 type="string">0 MBA_STATUS_Dizzy Cntrl_Head f t</PlayNewCho1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_STUNNED_GETUP_F_MBA
+         <Filename type="string">characters/class_brute/motions/brute_rct_stunnedgetupf_mba.oct</Filename>
+         <MetaData>
+            <PlayNewCho1 type="string">0 MBA_STATUS_Dizzy Cntrl_Head f t</PlayNewCho1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_STUNNED_HITCH_ADD
+         <Filename type="string">characters/biped/motions/biped_rct_stunned_hitch_add.banm</Filename>
+         <MetaData>
+            <PlayChoLoop1 type="string">x STATUS_Dizzy Cntrl_Head f t f f t</PlayChoLoop1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_STUNNED_LAND_ADD
+         <Filename type="string">characters/biped/motions/biped_rct_stunned_land_add.oct</Filename>
+         <MetaData>
+            <PlayChoLoop1 type="string">x STATUS_Dizzy Cntrl_Head f t f f t</PlayChoLoop1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_STUNNED_POSE_1
+         <Filename type="string">characters/class_brute/motions/brute_rct_stunned_pose1.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_STUNNED_POSE_2
+         <Filename type="string">characters/class_brute/motions/brute_rct_stunned_pose2.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_STUNNED_POSE_3
+         <Filename type="string">characters/class_brute/motions/brute_rct_stunned_pose3.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_STUNNED_POSE_4
+         <Filename type="string">characters/class_brute/motions/brute_rct_stunned_pose4.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_STUNNED_POSE_5
+         <Filename type="string">characters/class_brute/motions/brute_rct_stunned_pose5.oct</Filename>
+      </File>
+      <File type="reference_string">
+         READY_BALL
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_target.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">WeaponFireRightArm_Marvel</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         READY_SIDEITEM
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_target_side.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">WeaponRightArm_Marvel</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         REVIVE_CHARACTER
+         <Filename type="string">characters/class_brute/motions/brute_bm_revive_add.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REVIVE_CHARACTER_LOOP
+         <Filename type="string">characters/class_brute/motions/brute_bm_revive_loop_add.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REVIVE_POSE
+         <Filename type="string">characters/class_brute/motions/brute_bm_idle_active_pose.oct</Filename>
+      </File>
+      <File type="reference_string">
+         RUN_LOOK_ADD_LONG
+         <Filename type="string">characters/biped/motions/biped_bm_run_look_add_long.oct</Filename>
+      </File>
+      <File type="reference_string">
+         RUN_LOOK_ADD_LONG_EYES
+         <Filename type="string">characters/class_brute/motions/brute_bm_run_look_add_long_eyes.oct</Filename>
+      </File>
+      <File type="reference_string">
+         SCAN_LOOP
+         <Filename type="string">characters/biped/motions/biped_bm_scan_loop_add.oct</Filename>
+         <MetaData>
+            <SelectToolByName1 type="string">x ABILITY_LOOTSCANNER ABILITY_NONE</SelectToolByName1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         SCAN_START
+         <Filename type="string">characters/biped/motions/biped_bm_scan_start_add.oct</Filename>
+         <MetaData>
+            <SelectToolByName1 type="string">0.25 ABILITY_LOOTSCANNER ABILITY_NONE</SelectToolByName1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         SHOCKED_ADD
+         <Filename type="string">characters/biped/motions/biped_rct_shocked_add.oct</Filename>
+         <MetaData>
+            <CameraShake1 type="string">1 1.0 0.5 20.0 2.0 1.0 t f t</CameraShake1>
+            <Emitter1 type="string">0 UNI_Electrified Cntrl_Body</Emitter1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         SHOULDERCHARGE_DASH
+         <Filename type="string">characters/biped/motions/biped_atk_scharge.oct</Filename>
+      </File>
+      <File type="reference_string">
+         SHOULDERCHARGE_FINISH
+         <Filename type="string">characters/biped/motions/biped_atk_scharge_finish.oct</Filename>
+         <MetaData>
+            <HitHeavyFinishSpeed type="float">-1.0</HitHeavyFinishSpeed>
+            <InterruptFrame1 type="int8">2</InterruptFrame1>
+            <InterruptFrame2 type="int8">14</InterruptFrame2>
+            <MissFinishSpeed type="float">-0.25</MissFinishSpeed>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         SHOULDERCHARGE_START
+         <Filename type="string">characters/biped/motions/biped_atk_scharge_start.oct</Filename>
+      </File>
+      <File type="reference_string">
+         SHOULDERCHARGE_WALLHIT
+         <Filename type="string">characters/biped/motions/biped_bm_land_normal.oct</Filename>
+         <MetaData>
+            <CameraShake1 type="string">1 0.15 0.25 20.0 2.0 3.0 t f t</CameraShake1>
+            <PlaySfx1 type="string">0.0357143 body_hit</PlaySfx1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         SIDEITEM_START
+         <Filename type="string">characters/class_brute/motions/brute_atk_sideitem_start.banm</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">WeaponRightArm_Marvel</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         SLAMMED_AIR
+         <Filename type="string">characters/class_brute/motions/brute_crd_ava_slammed_air.banm</Filename>
+      </File>
+      <File type="reference_string">
+         SLAMMED_AVATAR_OVERHEAD
+         <Filename type="string">characters/class_brute/motions/brute_crd_ava_slammed.oct</Filename>
+      </File>
+      <File type="reference_string">
+         SLAMMED_GETUP
+         <Filename type="string">characters/class_brute/motions/brute_rct_getupf.oct</Filename>
+      </File>
+      <File type="reference_string">
+         SLAMMED_MEDIUM_BOTH
+         <Filename type="string">characters/biped/motions/biped_crd_rarm_slammed.oct</Filename>
+      </File>
+      <File type="reference_string">
+         SLAMMED_OVERHEAD
+         <Filename type="string">characters/class_brute/motions/brute_crd_ava_slammed.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">x hurt_effort_splat f -1</PlayDlg1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         SLAMMED_SPECIAL
+         <Filename type="string">characters/class_brute/motions/brute_crd_ava_slammed.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">x hurt_effort_splat f -1</PlayDlg1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         SLAMMED_SPLAT_B
+         <Filename type="string">characters/class_brute/motions/brute_rct_splatb.oct</Filename>
+         <MetaData>
+            <AddState1 type="string">x Prone</AddState1>
+            <Effect1 type="string">x GrndPnd_Buzz Spine1</Effect1>
+            <Impact1 type="string">x splat f t none none</Impact1>
+            <PlayDlg1 type="string">x hurt_effort_splat f -1</PlayDlg1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         SLAMMED_SPLAT_F
+         <Filename type="string">characters/class_brute/motions/brute_rct_splatf.oct</Filename>
+         <MetaData>
+            <AddState1 type="string">x Prone</AddState1>
+            <Effect1 type="string">x GrndPnd_Buzz Spine1</Effect1>
+            <Impact1 type="string">x splat f t none none</Impact1>
+            <PlayDlg1 type="string">x hurt_effort_splat f -1</PlayDlg1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         SLAMMED_STUN
+         <Filename type="string">characters/class_brute/motions/brute_rct_splatf_hold.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">0.111111 dazed f -1</PlayDlg1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         SLAM_AVATAR_OVERHEAD
+         <Filename type="string">characters/class_brute/motions/brute_cr_ava_slam.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">0.25 throw_effort_large f -1</PlayDlg1>
+            <PlaySfx1 type="string">0.5 biped_spike_whoosh</PlaySfx1>
+            <releaseFrame type="int8">14</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         SLAM_MEDIUM_BOTH
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_slam.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">0.416667 throw_effort_small f -1</PlayDlg1>
+            <PlaySfx1 type="string">0.5 biped_spike_whoosh</PlaySfx1>
+            <releaseFrame type="int8">14</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         SLAM_OVERHEAD
+         <Filename type="string">characters/class_brute/motions/brute_cr_over_slam.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">0.458333 throw_effort_small f -1</PlayDlg1>
+            <PlaySfx1 type="string">0.541667 biped_spike_whoosh</PlaySfx1>
+            <releaseFrame type="int8">14</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         SLAM_RARM_OVERHEAD
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_slam.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">0.458333 throw_effort_small f -1</PlayDlg1>
+            <PlaySfx1 type="string">0.533333 biped_spike_whoosh</PlaySfx1>
+            <releaseFrame type="int8">14</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         SLAM_SPECIAL
+         <Filename type="string">characters/gog_groot/motions/groot_cr_rarm_slam.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">0.392857 throw_effort_small f -1</PlayDlg1>
+            <PlaySfx1 type="string">0.464286 biped_spike_whoosh</PlaySfx1>
+            <releaseFrame type="int8">14</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         SPAWN_SPIRIT
+         <Filename type="string">characters/biped/motions/biped_rct_death_reviveend.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">x jump_effort f -1</PlayDlg1>
+            <releaseFrame type="int8">15</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         SPRINT_END
+         <Filename type="string">characters/biped/motions/biped_bm_0.oct</Filename>
+      </File>
+      <File type="reference_string">
+         SPRINT_START
+         <Filename type="string">characters/biped/motions/biped_bm_0.oct</Filename>
+      </File>
+      <File type="reference_string">
+         STANCE
+         <Filename type="string">characters/class_brute/motions/brute_bm_idle_stance.banm</Filename>
+      </File>
+      <File type="reference_string">
+         STANCE_ACTIVE2PASSIVE
+         <Filename type="string">characters/class_brute/motions/brute_bm_idle_active.banm</Filename>
+      </File>
+      <File type="reference_string">
+         STANCE_LISTEN
+         <Filename type="string">characters/class_brute/motions/brute_bm_idle_listen.banm</Filename>
+      </File>
+      <File type="reference_string">
+         STANCE_PASSIVE
+         <Filename type="string">characters/class_brute/motions/brute_bm_idle_active.banm</Filename>
+      </File>
+      <File type="reference_string">
+         STANCE_SELECTWAIT
+         <Filename type="string">characters/class_brute/motions/brute_bm_idle_stance.banm</Filename>
+      </File>
+      <File type="reference_string">
+         STANCE_TOOLSELECT
+         <Filename type="string">characters/class_brute/motions/brute_bm_idle_stance.banm</Filename>
+      </File>
+      <File type="reference_string">
+         SUPERJUMP_LAND
+         <Filename type="string">characters/biped/motions/biped_bm_landhuge.oct</Filename>
+         <MetaData>
+            <Impact2 type="string">0 land f t none none</Impact2>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         TELEPORT
+         <Filename type="string">characters/biped/motions/biped_bm_landhuge.oct</Filename>
+      </File>
+      <File type="reference_string">
+         THROWN_AVATAR_OVERHEAD
+         <Filename type="string">characters/class_brute/motions/brute_crd_ava_thrown.oct</Filename>
+      </File>
+      <File type="reference_string">
+         THROWN_LAND
+         <Filename type="string">characters/class_brute/motions/brute_rct_splatf.oct</Filename>
+         <MetaData>
+            <AddState1 type="string">x Prone</AddState1>
+            <Impact1 type="string">x splat f t none none</Impact1>
+            <InterruptFrame type="int8">1</InterruptFrame>
+            <PlayDlg1 type="string">x hurt_effort_splat f -1</PlayDlg1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         THROWN_LAND_ENEMY
+         <Filename type="string">characters/biped/motions/biped_rct_splatf.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">x hurt_effort_splat f -1</PlayDlg1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         THROWN_MEDIUM_BOTH
+         <Filename type="string">characters/biped/motions/biped_crd_over_thrown.oct</Filename>
+      </File>
+      <File type="reference_string">
+         THROWN_OVERHEAD
+         <Filename type="string">characters/class_brute/motions/brute_crd_ava_thrown.oct</Filename>
+      </File>
+      <File type="reference_string">
+         THROWN_OVER_AIR
+         <Filename type="string">characters/class_brute/motions/brute_rct_tumbleairf.oct</Filename>
+      </File>
+      <File type="reference_string">
+         THROWN_SPECIAL
+         <Filename type="string">characters/biped/motions/biped_crd_over_thrown.oct</Filename>
+      </File>
+      <File type="reference_string">
+         THROW_AVATAR_OVERHEAD
+         <Filename type="string">characters/class_brute/motions/brute_cr_ava_throw.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">0.428571 throw_effort_large f -1</PlayDlg1>
+            <PlaySfx1 type="string">0.5 object_throw_heavy</PlaySfx1>
+            <releaseFrame type="int8">14</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         THROW_AVATAR_OVERHEAD_UPPER
+         <Filename type="string">characters/class_brute/motions/brute_cr_ava_throw.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">HeavyOverhead</Filter>
+            </Layer>
+         </Layers>
+         <MetaData>
+            <PlayDlg1 type="string">0.321429 throw_effort_large f -1</PlayDlg1>
+            <releaseFrame type="int8">14</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         THROW_BALL
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_throw_ball.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">0.0909091 throw_effort_small f -1</PlayDlg1>
+            <PlaySfx1 type="string">0.11 throw_ball</PlaySfx1>
+            <releaseFrame type="int8">6</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         THROW_BALL_LOB
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_throw_ball.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">0.0909091 throw_effort_small f -1</PlayDlg1>
+            <PlaySfx1 type="string">0.11 throw_ball</PlaySfx1>
+            <releaseFrame type="int8">4</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         THROW_MEDIUM_BOTH
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_throw.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">0.181776 throw_effort_small f -1</PlayDlg1>
+            <PlaySfx1 type="string">0.22722 object_throw_heavy</PlaySfx1>
+            <releaseFrame type="int8">6</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         THROW_MEDIUM_BOTH_UPPER
+         <Filename type="string">characters/class_brute/motions/brute_crd_rarm_throw.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">HeavyOverhead</Filter>
+            </Layer>
+         </Layers>
+         <MetaData>
+            <PlayDlg1 type="string">0.0526316 throw_effort_small f -1</PlayDlg1>
+            <PlaySfx1 type="string">0.11 throw_ball</PlaySfx1>
+            <releaseFrame type="int8">6</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         THROW_OVERHEAD
+         <Filename type="string">characters/class_brute/motions/brute_cr_over_throw.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">0.428571 throw_effort_large f -1</PlayDlg1>
+            <PlaySfx1 type="string">0.500008 object_throw_heavy</PlaySfx1>
+            <releaseFrame type="int8">14</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         THROW_OVERHEAD_UPPER
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_over_throw.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">Carry_DinnerPlate</Filter>
+            </Layer>
+         </Layers>
+         <MetaData>
+            <PlayDlg1 type="string">0.099983 throw_effort_small f -1</PlayDlg1>
+            <releaseFrame type="int8">14</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         THROW_RARM_OVERHEAD
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_over_throw.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">0.43326 throw_effort_small f -1</PlayDlg1>
+            <PlaySfx1 type="string">0.500004 object_throw_heavy</PlaySfx1>
+            <releaseFrame type="int8">14</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         THROW_RARM_OVERHEAD_UPPER
+         <Filename type="string">characters/class_brute/motions/brute_crd_rarm_over_throw.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">0.407407 throw_effort_small f -1</PlayDlg1>
+            <PlaySfx1 type="string">0.5 object_throw_heavy</PlaySfx1>
+            <releaseFrame type="int8">14</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         THROW_SIDEITEM
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_throw_side.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">0.0526316 throw_effort_small f -1</PlayDlg1>
+            <PlaySfx1 type="string">0.11 throw_ball</PlaySfx1>
+            <releaseFrame type="int8">6</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         THROW_SPECIAL
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_over_throw.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">0.43326 throw_effort_small f -1</PlayDlg1>
+            <PlaySfx1 type="string">0.500004 object_throw_heavy</PlaySfx1>
+            <releaseFrame type="int8">14</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         THROW_SPECIAL_UPPER
+         <Filename type="string">characters/class_brute/motions/brute_crd_rarm_over_throw.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">0.444444 throw_effort_small f -1</PlayDlg1>
+            <PlaySfx1 type="string">0.5 object_throw_heavy</PlaySfx1>
+            <releaseFrame type="int8">14</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         THROW_UNDERARM
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_over_throw.oct</Filename>
+         <MetaData>
+            <PlayDlg1 type="string">0.43326 throw_effort_small f -1</PlayDlg1>
+            <PlaySfx1 type="string">0.500004 object_throw_heavy</PlaySfx1>
+            <releaseFrame type="int8">14</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         THROW_UNDERARM_UPPER
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_drop.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryUnderArm</Filter>
+            </Layer>
+         </Layers>
+         <MetaData>
+            <PlayDlg1 type="string">x throw_effort_small f -1</PlayDlg1>
+            <releaseFrame type="int8">9</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         THROW_ZEROPOINTENERGY_UPPER
+         <Filename type="string">characters/biped/motions/biped_crd_zero_throw.banm</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">HeavyOverhead</Filter>
+            </Layer>
+         </Layers>
+         <MetaData>
+            <PlayDlg1 type="string">0.210526 throw_effort_small f -1</PlayDlg1>
+            <PlaySfx1 type="string">0.315789 object_throw_light</PlaySfx1>
+            <releaseFrame type="int8">6</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         TURN180L
+         <Filename type="string">characters/class_brute/motions/brute_bm_turn180l.banm</Filename>
+      </File>
+      <File type="reference_string">
+         TURN180R
+         <Filename type="string">characters/class_brute/motions/brute_bm_turn180r.banm</Filename>
+      </File>
+      <File type="reference_string">
+         TURN45L
+         <Filename type="string">characters/class_brute/motions/brute_bm_turn45l.banm</Filename>
+      </File>
+      <File type="reference_string">
+         TURN45R
+         <Filename type="string">characters/class_brute/motions/brute_bm_turn45r.banm</Filename>
+      </File>
+      <File type="reference_string">
+         TURN90L
+         <Filename type="string">characters/class_brute/motions/brute_bm_turn90l.banm</Filename>
+      </File>
+      <File type="reference_string">
+         TURN90R
+         <Filename type="string">characters/class_brute/motions/brute_bm_turn90r.banm</Filename>
+      </File>
+      <File type="reference_string">
+         TURNINVISIBLE_UPPER
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_wand_delete.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">WandFire_Marvel</Filter>
+            </Layer>
+         </Layers>
+         <MetaData>
+            <PlayCho1 type="string">x WpnFX_Invisibility_Off Cntrl_Main t</PlayCho1>
+            <PlaySfx1 type="string">0.11 throw_ball</PlaySfx1>
+            <releaseFrame type="int8">6</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         VIOLET_SPECIALMOVE_TURNINVISIBLE
+         <Filename type="string">characters/biped/motions/biped_atk_turninvisible.oct</Filename>
+         <MetaData>
+            <PlayCho1 type="string">0 WpnFX_Invisibility_Off Cntrl_Main t</PlayCho1>
+            <releaseFrame type="int8">6</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         VSM_AA
+         <Filename type="string">characters/biped/motions/biped_vsm_aa.oct</Filename>
+      </File>
+      <File type="reference_string">
+         VSM_AO
+         <Filename type="string">characters/biped/motions/biped_vsm_ao.oct</Filename>
+      </File>
+      <File type="reference_string">
+         VSM_CH
+         <Filename type="string">characters/biped/motions/biped_vsm_ch.oct</Filename>
+      </File>
+      <File type="reference_string">
+         VSM_EH
+         <Filename type="string">characters/biped/motions/biped_vsm_eh.oct</Filename>
+      </File>
+      <File type="reference_string">
+         VSM_F
+         <Filename type="string">characters/biped/motions/biped_vsm_f.oct</Filename>
+      </File>
+      <File type="reference_string">
+         VSM_HEADDOWN
+         <Filename type="string">characters/biped/motions/biped_vsm_headdown.oct</Filename>
+      </File>
+      <File type="reference_string">
+         VSM_HEADUP
+         <Filename type="string">characters/biped/motions/biped_vsm_headup.oct</Filename>
+      </File>
+      <File type="reference_string">
+         VSM_IH
+         <Filename type="string">characters/biped/motions/biped_vsm_ih.oct</Filename>
+      </File>
+      <File type="reference_string">
+         VSM_L
+         <Filename type="string">characters/biped/motions/biped_vsm_l.oct</Filename>
+      </File>
+      <File type="reference_string">
+         VSM_M
+         <Filename type="string">characters/biped/motions/biped_vsm_m.oct</Filename>
+      </File>
+      <File type="reference_string">
+         VSM_N
+         <Filename type="string">characters/biped/motions/biped_vsm_n.oct</Filename>
+      </File>
+      <File type="reference_string">
+         VSM_R
+         <Filename type="string">characters/biped/motions/biped_vsm_r.oct</Filename>
+      </File>
+      <File type="reference_string">
+         VSM_W
+         <Filename type="string">characters/biped/motions/biped_vsm_w.oct</Filename>
+      </File>
+      <File type="reference_string">
+         VSM_Y
+         <Filename type="string">characters/biped/motions/biped_vsm_y.oct</Filename>
+      </File>
+      <File type="reference_string">
+         VSM_ZERO
+         <Filename type="string">characters/biped/motions/biped_vsm_zero.oct</Filename>
+      </File>
+      <File type="reference_string">
+         WALKRUN
+         <Filename type="string">characters/class_brute/motions/brute_bm_walkrun.banm</Filename>
+         <MetaData>
+            <Impact1 type="string">0.391306 walkrun t t Cntrl_Foot_Right none</Impact1>
+            <Impact2 type="string">0.869563 walkrun t t Cntrl_Foot_Left none</Impact2>
+            <PlayChoOnGround1 type="string">0.3913039 AVG_HulkFootStepCrack Cntrl_FootCenter_Right</PlayChoOnGround1>
+            <PlayChoOnGround2 type="string">0.869565 AVG_HulkFootStepCrack Cntrl_FootCenter_Left</PlayChoOnGround2>
+            <RunMaxTurnSpeed type="float">360.0</RunMaxTurnSpeed>
+            <RunMotionRate type="float">11.0</RunMotionRate>
+            <RunStartTurnSpeed type="float">90.0</RunStartTurnSpeed>
+            <RunTurnAcc type="float">540.0</RunTurnAcc>
+            <RunWaitToTurn type="float">0.0</RunWaitToTurn>
+            <RunWaitToTurnAgain type="float">0.03999999910593033</RunWaitToTurnAgain>
+            <WalkMaxTurnSpeed type="float">360.0</WalkMaxTurnSpeed>
+            <WalkMotionRate type="float">1.5</WalkMotionRate>
+            <WalkStartTurnSpeed type="float">0.0</WalkStartTurnSpeed>
+            <WalkTurnAcc type="float">90.0</WalkTurnAcc>
+            <WalkWaitToTurn type="float">0.20000000298023224</WalkWaitToTurn>
+            <WalkWaitToTurnAgain type="float">0.20000000298023224</WalkWaitToTurnAgain>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         WAND_DELETE
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_wand_delete.oct</Filename>
+         <MetaData>
+            <PlaySfx1 type="string">0.11 throw_ball</PlaySfx1>
+            <PlaySfx2 type="string">x wand_create</PlaySfx2>
+            <releaseFrame type="int8">6</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         WAND_SELECT
+         <Filename type="string">characters/class_brute/motions/brute_cr_rarm_wand_select.oct</Filename>
+         <MetaData>
+            <PlaySfx1 type="string">0.11 throw_ball</PlaySfx1>
+            <PlaySfx2 type="string">x wand_create</PlaySfx2>
+            <releaseFrame type="int8">6</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         WEAPON_START
+         <Filename type="string">characters/class_brute/motions/brute_atk_weapon_start.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">WeaponRightArm_Marvel</Filter>
+            </Layer>
+         </Layers>
+      </File>
+   </Files>
+</root_node>

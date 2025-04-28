@@ -1,0 +1,652 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="2.0.85 x64" branch="in3" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="3">
+  <p:Interface value="Face"/>
+  <p:StartState value="Face_Idle"/>
+  <AnimTreeState name="Face_Idle" pos="0 5.96046e-008">
+   <p:Color value="0.941498 1 0.239477"/>
+   <p:Clip value="FACE_IDLE"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:PostBehavior value="Loop"/>
+   <p:EaseDuration value="5"/>
+   <AnimTreeBranch name="Branch2">
+    <p:BranchTo value="Face_Drive"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="Accelerate"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeState>
+  <AnimTreeState name="Face_Drive" pos="0 -1.6">
+   <p:Color value="0.941498 1 0.239477"/>
+   <p:Clip value="FACE_DRIVE"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:PostBehavior value="Loop"/>
+   <p:EaseDuration value="3"/>
+   <AnimTreeBranch name="Branch1">
+    <p:BranchTo value="Face_Idle"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="CarIdle"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeState>
+  <AnimTreeState name="KillInterface" pos="1.6 1.6">
+   <p:Color value="0 0 0"/>
+   <p:Clip value="BM_IDLE"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:EaseDuration value="5"/>
+   <AnimTreeBranch name="Branch1">
+    <p:BranchTo value="Face_Idle"/>
+    <p:DefaultBranch value="FALSE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="BaseEyes_End"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeState>
+  <AnimTreeBranch name="Branch1">
+   <p:BranchTo value="KillInterface"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Celebrate"/>
+    <p:Event2 class="AnimTreeEventPointerProperty" value="Face_Intense_End"/>
+    <p:Event3 class="AnimTreeEventPointerProperty" value="Face_Happy_End"/>
+    <p:Event4 class="AnimTreeEventPointerProperty" value="FaceKill"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch2">
+   <p:BranchTo value="Face_Idle"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Face_Idle"/>
+    <p:Event2 class="AnimTreeEventPointerProperty" value="Face_Happy_End"/>
+    <p:Event3 class="AnimTreeEventPointerProperty" value="Face_Intense_End"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeState name="Face_Eyes_Left" pos="0.2 -5.6">
+   <p:Color value="0.941498 1 0.239477"/>
+   <p:Clip value="FACE_EYES_L_BWD"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:PostBehavior value="Loop"/>
+   <p:EaseDuration value="3"/>
+   <AnimTreeBranch name="Branch1">
+    <p:BranchTo value="Face_Drive"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="Idle"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeBranch name="Branch2">
+    <p:BranchTo value="Face_Eyes_Right"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="DriftRightStart"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeState>
+  <AnimTreeState name="Face_Eyes_Right" pos="2.6 -5.6">
+   <p:Color value="0.941498 1 0.239477"/>
+   <p:Clip value="FACE_EYES_R_BWD"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:PostBehavior value="Loop"/>
+   <p:EaseDuration value="3"/>
+   <AnimTreeBranch name="Branch1">
+    <p:BranchTo value="Face_Drive"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="Idle"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeBranch name="Branch2">
+    <p:BranchTo value="Face_Eyes_Left"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="DriftLeftStart"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeState>
+  <AnimTreeBranch name="Branch3">
+   <p:BranchTo value="Face_Eyes_Right"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="DriftLeftStart"/>
+    <p:Event2 class="AnimTreeEventPointerProperty" value="Face_LookR"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch4">
+   <p:BranchTo value="Face_Eyes_Left"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="DriftRightStart"/>
+    <p:Event2 class="AnimTreeEventPointerProperty" value="Face_LookL"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeState name="JumpFace" pos="-2.6 -5.6">
+   <p:Color value="0.941498 1 0.239477"/>
+   <p:Clip value="FACE_BUNNYHOP"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:PostBehavior value="Pause"/>
+   <p:EaseDuration value="4"/>
+   <AnimTreeBranch name="Branch1">
+    <p:BranchTo value="Face_Drive"/>
+    <p:DefaultBranch value="FALSE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="LandSm"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeState>
+  <AnimTreeBranch name="Branch5">
+   <p:BranchTo value="JumpFace"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Jump"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Happy_Group" expanded="1" pos="12.7 -0.989996">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.82734 0.852564 0.524656"/>
+   <p:StartState value="HappyPicker2"/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <AnimTreeState name="Happy_2" pos="-1.8 3">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.941498 1 0.239477"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="FACE_EMO_HAPPY_02"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="5"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="HappyPicker2"/>
+     <p:DefaultBranch value="TRUE"/>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Happy_1" pos="-1.8 4">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.941498 1 0.239477"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="FACE_EMO_HAPPY_01"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="5"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="HappyPicker2"/>
+     <p:DefaultBranch value="TRUE"/>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="HappyPicker2" pos="-4.7 3.59">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.365385 0.333322 0.0875015"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value=""/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="Happy_1"/>
+     <p:DefaultBranch value="TRUE"/>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch2">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="Happy_2"/>
+     <p:DefaultBranch value="TRUE"/>
+    </AnimTreeBranch>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeStateGroup name="React_Group" expanded="1" pos="11.5 -9.585">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.455128 0.280079 0.280079"/>
+   <p:StartState value="ReactPicker"/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <AnimTreeState name="React_2" pos="-0.799992 2">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.941498 1 0.239477"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="FACE_EMO_REACT_02"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:CropStart value="0"/>
+    <p:CropEnd value="30"/>
+    <p:InitialTime value="0"/>
+    <p:Speed value="1"/>
+    <p:PostBehavior value="Pause"/>
+    <p:EaseDuration value="3"/>
+    <p:CurveSlope value="1"/>
+    <p:AISync value="FALSE"/>
+   </AnimTreeState>
+   <AnimTreeState name="React_1" pos="-0.799991 3.2">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.941498 1 0.239477"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="FACE_EMO_REACT_01"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:CropStart value="0"/>
+    <p:CropEnd value="30"/>
+    <p:InitialTime value="0"/>
+    <p:Speed value="1"/>
+    <p:PostBehavior value="Pause"/>
+    <p:EaseDuration value="3"/>
+    <p:CurveSlope value="1"/>
+    <p:AISync value="FALSE"/>
+   </AnimTreeState>
+   <AnimTreeState name="ReactPicker" pos="-3.89999 2.585">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.455128 0.280079 0.280079"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value=""/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="React_1"/>
+     <p:DefaultBranch value="TRUE"/>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch2">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="React_2"/>
+     <p:DefaultBranch value="TRUE"/>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeBranch name="Branch9">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:BranchTo value="Face_Idle"/>
+    <p:DefaultBranch value="TRUE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="Face_React_End"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeStateGroup>
+  <AnimTreeStateGroup name="Intense_Group" expanded="1" pos="14.5001 -5.79">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.323965 0.287969 0.467949"/>
+   <p:StartState value="IntensePicker"/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <AnimTreeState name="Intense_2" pos="-1.8 3">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.941498 1 0.239477"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="FACE_EMO_INTENSE_01"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:CropStart value="0"/>
+    <p:InitialTime value="0"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="10"/>
+    <p:CurveSlope value="1"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="IntensePicker"/>
+     <p:DefaultBranch value="TRUE"/>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Intense_1" pos="-1.8 4">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.941498 1 0.239477"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="FACE_EMO_HAPPY_01"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:CropStart value="0"/>
+    <p:InitialTime value="0"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="10"/>
+    <p:CurveSlope value="1"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="IntensePicker"/>
+     <p:DefaultBranch value="TRUE"/>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="IntensePicker" pos="-4.7 3.59">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.151669 0.0875015 0.365385"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value=""/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="Intense_1"/>
+     <p:DefaultBranch value="TRUE"/>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch2">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="Intense_2"/>
+     <p:DefaultBranch value="TRUE"/>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch3">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="Intense_2b"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value=""/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch4">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="Intense_1b"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value=""/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Intense_1b" pos="-2.665 4.99">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.941498 1 0.239477"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="FACE_EMO_INTENSE_02"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:CropEnd value="0"/>
+    <p:EaseDuration value="10"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="IntensePicker"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value=""/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Intense_2b" pos="-2.7975 1.9">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.941498 1 0.239477"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="FACE_EMO_INTENSE_02"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:EaseDuration value="10"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="IntensePicker"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value=""/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch6">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:BranchTo value="React_Group"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Face_React_Start"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch7">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:BranchTo value="Intense_Group"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Face_Intense_Start"/>
+    <p:Event2 class="AnimTreeEventPointerProperty" value="FALL_HARD"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch11">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:BranchTo value="Happy_Group"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Face_Happy_Start"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Facial_Idle_Group" expanded="1" pos="-0.400001 0">
+   <p:Color value="0.261506 0.261506 0.551282"/>
+   <AnimTreeState name="LookLeft" pos="-5.6 1.8">
+    <p:Color value="0.941498 1 0.239477"/>
+    <p:Clip value="BM_IDLE_LOOKLEFT"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <p:EaseDuration value="2"/>
+   </AnimTreeState>
+   <AnimTreeState name="Lookdown" pos="-8 1.8">
+    <p:Color value="0.941498 1 0.239477"/>
+    <p:Clip value="BM_IDLE_LOOKDOWN"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <p:EaseDuration value="2"/>
+   </AnimTreeState>
+   <AnimTreeState name="LookUp" pos="-8 0.5">
+    <p:Color value="0.941498 1 0.239477"/>
+    <p:Clip value="BM_IDLE_LOOKUP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <p:EaseDuration value="2"/>
+   </AnimTreeState>
+   <AnimTreeState name="Idle_Mph02" pos="-3.2 0.55">
+    <p:Color value="0.941498 1 0.239477"/>
+    <p:Clip value="IDLE_ZEROMPH_02"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <p:EaseDuration value="2"/>
+   </AnimTreeState>
+   <AnimTreeState name="LookRight" pos="-3.2 1.775">
+    <p:Color value="0.941498 1 0.239477"/>
+    <p:Clip value="BM_IDLE_LOOKRIGHT"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <p:EaseDuration value="2"/>
+   </AnimTreeState>
+   <AnimTreeState name="Idle_Mph01" pos="-5.6 0.55">
+    <p:Color value="0.941498 1 0.239477"/>
+    <p:Clip value="IDLE_ZEROMPH_01"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <p:EaseDuration value="2"/>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch8">
+   <p:BranchTo value="Lookdown"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Face_LookDown"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch10">
+   <p:BranchTo value="LookLeft"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Face_LookLeft"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch12">
+   <p:BranchTo value="LookRight"/>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch13">
+   <p:BranchTo value="Idle_Mph02"/>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch14">
+   <p:BranchTo value="Idle_Mph01"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Face_MPH01"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch15">
+   <p:BranchTo value="LookUp"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Face_LookUp"/>
+   </p:Events>
+  </AnimTreeBranch>
+ </AnimTree>
+
+</d:SnipeFile>

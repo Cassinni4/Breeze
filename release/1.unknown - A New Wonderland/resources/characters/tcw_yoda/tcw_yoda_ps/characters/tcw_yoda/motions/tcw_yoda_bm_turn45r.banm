@@ -1,0 +1,20 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Lightsaber" =
+	{
+	}
+}
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/tcw_yoda/motions/yoda_bm_turn45r.oct"
+	}
+	ReferencedTrack =
+	{
+		Weight = "Lightsaber"
+		Filename = "characters/tcw_yoda/motions/yoda_bm_turn45r_saber.oct"
+	}
+}

@@ -1,0 +1,55 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "UpDown" =
+	{
+	}
+	FloatParameter "LeftRight" =
+	{
+	}
+	FloatParameter "Speed" =
+	{
+	}
+}
+Tracks =
+{
+	GroupTrack "Group1" =
+	{
+		Tracks =
+		{
+			KeyBlendTrack "LeftRight" =
+			{
+				Value = "UpDown"
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/class_fish/motions/fish_swim_proc_center_lr.oct"
+						Phase = "LeftRight"
+					}
+				}
+			}
+			KeyBlendTrack "SwimSpeed" =
+			{
+				BlendMethod = 1
+				Value = "Speed"
+				Keys =
+				[
+					0.0 0.8 
+				]
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/class_fish/motions/fish_swim_burst_slow_add.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/class_fish/motions/fish_swim_burst_fast_add.oct"
+					}
+				}
+			}
+		}
+	}
+}

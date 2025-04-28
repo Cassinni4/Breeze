@@ -1,0 +1,47 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "SpecialTrans" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "SpecialTrans"
+		Keys =
+		[
+			0.0 0.15 0.3
+			0.45 0.6 0.75
+		]
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/emp_hansolo/motions/hansolo_atk_special_transition_ab.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/emp_hansolo/motions/hansolo_atk_special_transition_ac.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/emp_hansolo/motions/hansolo_atk_special_transition_ba.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/emp_hansolo/motions/hansolo_atk_special_transition_bc.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/emp_hansolo/motions/hansolo_atk_special_transition_ca.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/emp_hansolo/motions/hansolo_atk_special_transition_cb.oct"
+			}
+		}
+	}
+}

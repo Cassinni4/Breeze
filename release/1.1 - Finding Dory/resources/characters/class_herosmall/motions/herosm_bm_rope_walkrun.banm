@@ -1,0 +1,78 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Speed" =
+	{
+	}
+	FloatParameter "Direction" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "WalkRun" =
+	{
+		Value = "Speed"
+		Keys =
+		[
+			0.25 0.5 
+		]
+		Tracks =
+		{
+			KeyBlendTrack "Walk" =
+			{
+				Value = "Direction"
+				Tracks =
+				{
+					GroupTrack "Walk Forward" =
+					{
+						Tracks =
+						{
+							ReferencedTrack =
+							{
+								Filename = "characters/class_herosmall/motions/herosm_bm_rope_walkf.oct"
+							}
+							ReferencedTrack =
+							{
+								Filename = "characters/class_herosmall/motions/herosm_bm_rope_walk_upbody_add.oct"
+							}
+							ReferencedTrack =
+							{
+								BlendMethod = 1
+								Weight = 0.5
+								Filename = "characters/class_herosmall/motions/herosm_bm_runf_lean_add.oct"
+							}
+						}
+					}
+				}
+			}
+			KeyBlendTrack "Run" =
+			{
+				Value = "Direction"
+				Tracks =
+				{
+					GroupTrack "Run Forward" =
+					{
+						Tracks =
+						{
+							ReferencedTrack =
+							{
+								Filename = "characters/class_herosmall/motions/herosm_bm_rope_runf.oct"
+							}
+							ReferencedTrack =
+							{
+								Filename = "characters/class_herosmall/motions/herosm_bm_rope_run_upbody_add.oct"
+							}
+							ReferencedTrack =
+							{
+								BlendMethod = 1
+								Filename = "characters/class_herosmall/motions/herosm_bm_runf_lean_add.oct"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

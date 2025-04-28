@@ -1,0 +1,57 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Turn" =
+	{
+	}
+	FloatParameter "Pitch" =
+	{
+	}
+}
+Tracks =
+{
+	GroupTrack "Group1" =
+	{
+		Tracks =
+		{
+			KeyBlendTrack "Key Blend" =
+			{
+				Value = "Pitch"
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/biped/motions/biped_atk_sticky_turn_down90.oct"
+						Phase = "Turn"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/biped/motions/biped_atk_sticky_turn_down45.oct"
+						Phase = "Turn"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/biped/motions/biped_atk_sticky_turn.oct"
+						Phase = "Turn"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/biped/motions/biped_atk_sticky_turn_up45.oct"
+						Phase = "Turn"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/biped/motions/biped_atk_sticky_turn_up90.oct"
+						Phase = "Turn"
+					}
+				}
+			}
+			ReferencedTrack =
+			{
+				BlendMethod = 1
+				Filename = "characters/dor_fishhuman/motions/fishhuman_atk_turn_aim_clavicle_add.oct"
+			}
+		}
+	}
+}

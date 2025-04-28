@@ -1,0 +1,35 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "MoveSpeed" =
+	{
+		DefaultPhase = 0.0
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "WalkRun" =
+	{
+		Value = "MoveSpeed"
+		Keys =
+		[
+			0.0 0.72 1.0
+		]
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/out_joy/motions/joy_mnt_saddle_bls_ridepose.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/out_joy/motions/joy_mnt_saddle_bls_ridepose.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/out_joy/motions/joy_mnt_saddle_bls_sprintpose.oct"
+			}
+		}
+	}
+}

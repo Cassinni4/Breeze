@@ -1,0 +1,15 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/class_fish/motions/fish_swim_idle_pose.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Weight = 0.55
+		Filename = "characters/class_fish/motions/fish_rct_smallf_add.oct"
+	}
+}

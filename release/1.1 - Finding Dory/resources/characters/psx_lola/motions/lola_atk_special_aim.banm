@@ -1,0 +1,130 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Pitch" =
+	{
+	}
+	FloatParameter "Turn" =
+	{
+	}
+}
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/psx_lola/motions/lola_force_ender_multitarget_finisher.oct"
+	}
+	KeyBlendTrack "Key Blend" =
+	{
+		BlendMethod = 1
+		Value = "Pitch"
+		Keys =
+		[
+			0.06 0.52 0.84
+		]
+		Tracks =
+		{
+			GroupTrack "Down" =
+			{
+				Tracks =
+				{
+					KeyBlendTrack "Key Blend" =
+					{
+						Value = "Turn"
+						Keys =
+						[
+							0.25 0.5 0.75
+						]
+						Tracks =
+						{
+							ReferencedTrack =
+							{
+								Filename = "characters/psx_lola/motions/lola_force_ender_multitarget_finisher_pd45_r90.oct"
+							}
+							ReferencedTrack =
+							{
+								Filename = "characters/psx_lola/motions/lola_force_ender_multitarget_finisher_pd45_0.oct"
+							}
+							ReferencedTrack =
+							{
+								Filename = "characters/psx_lola/motions/lola_force_ender_multitarget_finisher_pd45_l90.oct"
+							}
+						}
+					}
+				}
+			}
+			GroupTrack "Mid" =
+			{
+				Tracks =
+				{
+					KeyBlendTrack "Key Blend" =
+					{
+						BlendMethod = 1
+						Value = "Turn"
+						Keys =
+						[
+							0.25 0.5 0.75
+						]
+						Tracks =
+						{
+							ReferencedTrack =
+							{
+								Filename = "characters/psx_lola/motions/lola_force_ender_multitarget_finisher_p00_r90.oct"
+							}
+							ReferencedTrack =
+							{
+								Filename = "characters/psx_lola/motions/lola_force_ender_multitarget_finisher_p00_0.oct"
+							}
+							ReferencedTrack =
+							{
+								Filename = "characters/psx_lola/motions/lola_force_ender_multitarget_finisher_p00_l90.oct"
+							}
+						}
+					}
+				}
+			}
+			GroupTrack "Top" =
+			{
+				Tracks =
+				{
+					KeyBlendTrack "Key Blend" =
+					{
+						BlendMethod = 1
+						Value = "Turn"
+						Keys =
+						[
+							0.25 0.5 0.75
+						]
+						Tracks =
+						{
+							ReferencedTrack =
+							{
+								Filename = "characters/psx_lola/motions/lola_force_ender_multitarget_finisher_p45_r90.oct"
+							}
+							ReferencedTrack =
+							{
+								Filename = "characters/psx_lola/motions/lola_force_ender_multitarget_finisher_p45_0.oct"
+							}
+							ReferencedTrack =
+							{
+								Filename = "characters/psx_lola/motions/lola_force_ender_multitarget_finisher_p45_l90.oct"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Weight = 0.65
+		Filename = "characters/psx_lola/motions/lola_atk_special_idle_add.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Filename = "characters/psx_lola/motions/lola_atk_special_recoil_add.oct"
+	}
+}

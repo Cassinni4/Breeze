@@ -1,0 +1,838 @@
+<?xml version="1.0" ?>
+<root_node>
+   <Version type="string">4.1f</Version>
+   <Model>
+      <Filename type="string">characters/dor_dory/dor_dory.oct</Filename>
+      <Channels>
+         <Channel type="reference_string">
+            FullBody
+            <PriorityOrder type="float">5.0</PriorityOrder>
+            <ChannelIndex type="int8">0</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            FullBodyBlends
+            <PriorityOrder type="float">4.0</PriorityOrder>
+            <Weight type="float">0.0</Weight>
+            <ChannelIndex type="int8">4</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            UpperBody1
+            <PriorityOrder type="float">5.0</PriorityOrder>
+            <ChannelIndex type="int8">1</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            UpperBody2
+            <PriorityOrder type="float">3.0</PriorityOrder>
+            <ChannelIndex type="int8">2</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            Additive_UpperBody2
+            <PriorityOrder type="float">3.0</PriorityOrder>
+            <ChannelIndex type="int8">12</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            Additive_UpperBodyLeftArm
+            <PriorityOrder type="float">3.0</PriorityOrder>
+         </Channel>
+         <Channel type="reference_string">
+            Ride_Additive2
+            <PriorityOrder type="float">5.0</PriorityOrder>
+            <ChannelIndex type="int8">13</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            Additive_FullBody
+            <PriorityOrder type="float">5.0</PriorityOrder>
+            <ChannelIndex type="int8">10</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            Additive_FullBody2
+            <PriorityOrder type="float">5.0</PriorityOrder>
+            <ChannelIndex type="int8">15</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            Additive_Leans
+            <PriorityOrder type="float">5.0</PriorityOrder>
+            <ChannelIndex type="int8">11</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            Choreography
+            <PriorityOrder type="float">-1.0</PriorityOrder>
+         </Channel>
+         <Channel type="reference_string">
+            Facial
+            <PriorityOrder type="float">1.0</PriorityOrder>
+            <ChannelIndex type="int8">6</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            GooGrowShrink
+            <PriorityOrder type="float">-1.0</PriorityOrder>
+            <ChannelIndex type="int8">7</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            Misc_OverRide
+            <PriorityOrder type="float">1.5</PriorityOrder>
+            <ChannelIndex type="int8">14</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            RiderMount_ArmLeft
+            <PriorityOrder type="float">1.0</PriorityOrder>
+         </Channel>
+         <Channel type="reference_string">
+            RiderMount_ArmRight
+            <PriorityOrder type="float">1.0</PriorityOrder>
+         </Channel>
+         <Channel type="reference_string">
+            RiderMount_LegLeft
+            <PriorityOrder type="float">1.0</PriorityOrder>
+         </Channel>
+         <Channel type="reference_string">
+            RiderMount_LegRight
+            <PriorityOrder type="float">1.0</PriorityOrder>
+         </Channel>
+         <Channel type="reference_string">
+            RiderMount_Seat
+            <PriorityOrder type="float">1.0</PriorityOrder>
+         </Channel>
+         <Channel type="reference_string">
+            Lipsync
+            <PriorityOrder type="float">0.5</PriorityOrder>
+            <ChannelIndex type="int8">17</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            One_Offs
+            <PriorityOrder type="float">0.75</PriorityOrder>
+            <ChannelIndex type="int8">16</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            AdditiveChar_Reactions
+            <PriorityOrder type="float">3.75</PriorityOrder>
+            <ChannelIndex type="int8">19</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            Head
+            <PriorityOrder type="float">0.4000000059604645</PriorityOrder>
+            <ChannelIndex type="int8">21</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            Playset_NPCs
+            <PriorityOrder type="float">0.10000000149011612</PriorityOrder>
+            <ChannelIndex type="int8">22</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            Facial_Lids
+            <PriorityOrder type="float">0.30000001192092896</PriorityOrder>
+            <ChannelIndex type="int8">23</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            Facial_Eyes
+            <PriorityOrder type="float">1.0</PriorityOrder>
+            <ChannelIndex type="int8">24</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            UpperBody3
+            <PriorityOrder type="float">3.5</PriorityOrder>
+            <ChannelIndex type="int8">25</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            Additive_UpperBody3
+            <PriorityOrder type="float">3.5</PriorityOrder>
+            <ChannelIndex type="int8">26</ChannelIndex>
+         </Channel>
+         <Channel type="reference_string">
+            Cloth
+            <PriorityOrder type="float">0.6000000238418579</PriorityOrder>
+         </Channel>
+         <Channel type="reference_string">
+            Additive2_UpperBody2
+            <PriorityOrder type="float">3.0</PriorityOrder>
+            <ChannelIndex type="int8">9</ChannelIndex>
+         </Channel>
+      </Channels>
+   </Model>
+   <Files>
+      <File type="reference_string">
+         BLOCK_HOLD
+         <Filename type="string">characters/dor_dory/motions/dory_atk_block_loop.banm</Filename>
+      </File>
+      <File type="reference_string">
+         BLOCK_START
+         <Filename type="string">characters/dor_dory/motions/dory_atk_block_start.oct</Filename>
+      </File>
+      <File type="reference_string">
+         CARRIED
+         <Filename type="string">characters/class_fish/motions/fish_swim_idle.oct</Filename>
+      </File>
+      <File type="reference_string">
+         CARRIED_AVATAR_OVERHEAD
+         <Filename type="string">characters/class_fish/motions/fish_swim_idle.oct</Filename>
+      </File>
+      <File type="reference_string">
+         CARRIED_AVATAR_OVERHEAD_STOP
+         <Filename type="string">characters/class_fish/motions/fish_swim_idle.oct</Filename>
+      </File>
+      <File type="reference_string">
+         CARRIED_AVATAR_OVERHEAD_WALKRUN
+         <Filename type="string">characters/class_fish/motions/fish_swim_idle.oct</Filename>
+      </File>
+      <File type="reference_string">
+         CARRIED_STOP
+         <Filename type="string">characters/class_fish/motions/fish_swim_idle.oct</Filename>
+      </File>
+      <File type="reference_string">
+         CARRIED_UNDERARM_RELEASE
+         <Filename type="string">characters/class_fish/motions/fish_swim_idle.oct</Filename>
+      </File>
+      <File type="reference_string">
+         CARRIED_UNDERARM_STOP
+         <Filename type="string">characters/class_fish/motions/fish_swim_idle.oct</Filename>
+      </File>
+      <File type="reference_string">
+         CARRIED_UNDERARM_SWING
+         <Filename type="string">characters/class_fish/motions/fish_swim_idle.oct</Filename>
+      </File>
+      <File type="reference_string">
+         CARRY_AVATAR_OVERHEAD
+         <Filename type="string">characters/class_fish/motions/fish_cr_ava.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryRHand</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         CARRY_AVATAR_OVERHEAD_RUN
+         <Filename type="string">characters/class_fish/motions/fish_cr_ava.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryRHand</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         CARRY_AVATAR_OVERHEAD_STOP
+         <Filename type="string">characters/class_fish/motions/fish_cr_ava.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryRHand</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         CARRY_MEDIUMBOTH_STOP
+         <Filename type="string">characters/class_fish/motions/fish_cr_rarm.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryRHand</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         CARRY_MEDIUM_BOTH
+         <Filename type="string">characters/class_fish/motions/fish_cr_rarm.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryRHand</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         CARRY_MEDIUM_BOTH_RUN
+         <Filename type="string">characters/class_fish/motions/fish_cr_rarm.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryRHand</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         CARRY_OVERHEAD
+         <Filename type="string">characters/class_fish/motions/fish_cr_ava.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryRHand</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         CARRY_OVERHEAD_RUN
+         <Filename type="string">characters/class_fish/motions/fish_cr_ava.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryRHand</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         CARRY_OVERHEAD_STOP
+         <Filename type="string">characters/class_fish/motions/fish_cr_ava.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryRHand</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         CHUCK_BALL
+         <Filename type="string">characters/class_fish/motions/fish_cr_rarm_throw.oct</Filename>
+         <MetaData>
+            <releaseFrame type="int8">5</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         CHUCK_BALL_LOB
+         <Filename type="string">characters/class_fish/motions/fish_cr_rarm_throw.oct</Filename>
+         <MetaData>
+            <releaseFrame type="int8">4</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">CHUCK_ITEM_JETPACK</File>
+      <File type="reference_string">
+         CHUCK_SIDEITEM
+         <Filename type="string">characters/class_fish/motions/fish_cr_rarm_throw.oct</Filename>
+         <MetaData>
+            <releaseFrame type="int8">5</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">CHUCK_SIDEITEM_JETPACK</File>
+      <File type="reference_string">
+         COMBO_1
+         <Filename type="string">characters/class_fish/motions/fish_atk_combo_y.oct</Filename>
+      </File>
+      <File type="reference_string">
+         COMBO_2
+         <Filename type="string">characters/class_fish/motions/fish_atk_combo_y.oct</Filename>
+      </File>
+      <File type="reference_string">ComplexAirComboPause_02A</File>
+      <File type="reference_string">ComplexAirCombo_01</File>
+      <File type="reference_string">ComplexAirCombo_02</File>
+      <File type="reference_string">ComplexAirCombo_03</File>
+      <File type="reference_string">ComplexComboPause_01A</File>
+      <File type="reference_string">ComplexComboPause_01B</File>
+      <File type="reference_string">ComplexComboPause_02A</File>
+      <File type="reference_string">ComplexComboPause_02B</File>
+      <File type="reference_string">ComplexCombo_01</File>
+      <File type="reference_string">ComplexCombo_02</File>
+      <File type="reference_string">ComplexCombo_03</File>
+      <File type="reference_string">ComplexCombo_04</File>
+      <File type="reference_string">ComplexCombo_ToolAway</File>
+      <File type="reference_string">ComplexHelmbreaker</File>
+      <File type="reference_string">ComplexHelmbreaker_Drop</File>
+      <File type="reference_string">ComplexHelmbreaker_Land</File>
+      <File type="reference_string">ComplexHelmbreaker_Loop</File>
+      <File type="reference_string">ComplexLauncher</File>
+      <File type="reference_string">
+         DRIVE_NORMAL_CHEER
+         <Filename type="string">characters/dor_dory/motions/dory_mnt_seat_cntr_pose.oct</Filename>
+      </File>
+      <File type="reference_string">
+         DRIVE_NORMAL_DRIVE
+         <Filename type="string">characters/dor_dory/motions/dory_mnt_seat_drive.banm</Filename>
+      </File>
+      <File type="reference_string">
+         DRIVE_NORMAL_HOP
+         <Filename type="string">characters/dor_dory/motions/dory_mnt_seat_cntr_pose.oct</Filename>
+      </File>
+      <File type="reference_string">
+         DRIVE_NORMAL_IMPACT
+         <Filename type="string">characters/dor_dory/motions/dory_mnt_seat_cntr_pose.oct</Filename>
+      </File>
+      <File type="reference_string">
+         DRIVE_NORMAL_LAND
+         <Filename type="string">characters/dor_dory/motions/dory_mnt_seat_cntr_pose.oct</Filename>
+      </File>
+      <File type="reference_string">DROPKICKED_SPLAT</File>
+      <File type="reference_string">DROPKICKED_STUN</File>
+      <File type="reference_string">
+         DROPKICK_AVATAR_OVERHEAD
+         <Filename type="string">characters/class_fish/motions/fish_cr_ava_dropkick.oct</Filename>
+         <MetaData>
+            <releaseFrame type="int8">13</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         DROPKICK_MEDIUM_BOTH
+         <Filename type="string">characters/class_fish/motions/fish_cr_ava_dropkick.oct</Filename>
+         <MetaData>
+            <releaseFrame type="int8">13</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         DROPKICK_OVERHEAD
+         <Filename type="string">characters/class_fish/motions/fish_cr_ava_dropkick.oct</Filename>
+         <MetaData>
+            <releaseFrame type="int8">13</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         DROP_AVATAR_OVERHEAD_UPPER
+         <Filename type="string">characters/class_fish/motions/fish_swim_stop_big_down.oct</Filename>
+         <MetaData>
+            <releaseFrame type="int8">1</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         DROP_MEDIUM_BOTH_UPPER
+         <Filename type="string">characters/class_fish/motions/fish_swim_stop_big_down.oct</Filename>
+         <MetaData>
+            <releaseFrame type="int8">1</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         DROP_OVERHEAD_UPPER
+         <Filename type="string">characters/class_fish/motions/fish_swim_stop_big_down.oct</Filename>
+         <MetaData>
+            <releaseFrame type="int8">1</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">DROP_ZEROPOINTENERGY</File>
+      <File type="reference_string">GENERIC_COMBO_1</File>
+      <File type="reference_string">GENERIC_COMBO_2</File>
+      <File type="reference_string">GENERIC_COMBO_3</File>
+      <File type="reference_string">GENERIC_COMBO_END</File>
+      <File type="reference_string">GENERIC_COMBO_SETTLE</File>
+      <File type="reference_string">GENERIC_COMBO_WAIT</File>
+      <File type="reference_string">GENERIC_SUPER_COMBO_1</File>
+      <File type="reference_string">
+         HOLD_BALL
+         <Filename type="string">characters/class_fish/motions/fish_cr_rarm.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryRHand</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         HOLD_BALL_HANDONLY
+         <Filename type="string">characters/class_fish/motions/fish_cr_rarm.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryRHand</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         HOLD_GUN
+         <Filename type="string">characters/class_fish/motions/fish_cr_rarm.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryRHand</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         HOLD_SIDEITEM
+         <Filename type="string">characters/class_fish/motions/fish_cr_rarm.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryRHand</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         HOLD_SIDEITEM_HANDONLY
+         <Filename type="string">characters/class_fish/motions/fish_cr_rarm.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryRHand</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         HOVERBOARD_DISMOUNT
+         <Filename type="string">characters/class_fish/motions/fish_swim_idle_pose.oct</Filename>
+      </File>
+      <File type="reference_string">
+         HOVERBOARD_FALL
+         <Filename type="string">characters/class_fish/motions/fish_swim_idle_pose.oct</Filename>
+      </File>
+      <File type="reference_string">
+         HOVERBOARD_HIT_ADD
+         <Filename type="string">characters/class_fish/motions/fish_swim_idle_pose.oct</Filename>
+      </File>
+      <File type="reference_string">
+         HOVERBOARD_JUMP
+         <Filename type="string">characters/class_fish/motions/fish_swim_idle_pose.oct</Filename>
+      </File>
+      <File type="reference_string">
+         HOVERBOARD_LEAN
+         <Filename type="string">characters/class_fish/motions/fish_swim_idle_pose.oct</Filename>
+      </File>
+      <File type="reference_string">
+         HOVERBOARD_MOUNT
+         <Filename type="string">characters/class_fish/motions/fish_swim_idle_pose.oct</Filename>
+      </File>
+      <File type="reference_string">
+         HOVERBOARD_MOUNTLAND
+         <Filename type="string">characters/class_fish/motions/fish_swim_idle_pose.oct</Filename>
+      </File>
+      <File type="reference_string">JETPACK_BLASTOFF</File>
+      <File type="reference_string">LEDGE_HANG_SIDLE_L</File>
+      <File type="reference_string">LEDGE_HANG_SIDLE_R</File>
+      <File type="reference_string">LEDGE_L_CLAMBER_LEFT</File>
+      <File type="reference_string">LEDGE_R_CLAMBER_RIGHT</File>
+      <File type="reference_string">LIGHTSABER_BLOCK_LOOP</File>
+      <File type="reference_string">LIGHTSABER_BLOCK_RELEASE</File>
+      <File type="reference_string">LIGHTSABER_BLOCK_START</File>
+      <File type="reference_string">
+         MNT_SADDLE_REACT_SHAKEOFF
+         <Filename type="string">characters/class_fish/motions/fish_mnt_saddle_bls_ridepose.oct</Filename>
+      </File>
+      <File type="reference_string">
+         MNT_SADDLE_REACT_SMALLB
+         <Filename type="string">characters/class_fish/motions/fish_mnt_saddle_bls_ridepose.oct</Filename>
+      </File>
+      <File type="reference_string">
+         MNT_SADDLE_REACT_SMALLF
+         <Filename type="string">characters/class_fish/motions/fish_mnt_saddle_bls_ridepose.oct</Filename>
+      </File>
+      <File type="reference_string">
+         MNT_SEAT_FAIL
+         <Filename type="string">characters/dor_dory/motions/dory_mnt_seat_cntr_pose.oct</Filename>
+      </File>
+      <File type="reference_string">
+         MNT_SEAT_IDLE_LOOK
+         <Filename type="string">characters/dor_dory/motions/dory_mnt_seat_cntr_pose.oct</Filename>
+      </File>
+      <File type="reference_string">
+         MNT_SEAT_IDLE_PASSIVE
+         <Filename type="string">characters/dor_dory/motions/dory_mnt_seat_cntr_pose.oct</Filename>
+      </File>
+      <File type="reference_string">
+         PICKUP_AVATAR_OVERHEAD_START_UPPER
+         <Filename type="string">characters/class_fish/motions/fish_cr_ava.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryRHand</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         PICKUP_AVATAR_OVERHEAD_UPPER
+         <Filename type="string">characters/class_fish/motions/fish_cr_ava.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryRHand</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         PICKUP_MEDIUM_BOTH_START_UPPER
+         <Filename type="string">characters/class_fish/motions/fish_cr_rarm.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryRHand</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         PICKUP_MEDIUM_BOTH_UPPER
+         <Filename type="string">characters/class_fish/motions/fish_cr_rarm.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryRHand</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         PICKUP_OVERHEAD_START_UPPER
+         <Filename type="string">characters/class_fish/motions/fish_cr_ava.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryRHand</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         PICKUP_OVERHEAD_UPPER
+         <Filename type="string">characters/class_fish/motions/fish_cr_ava.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryRHand</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">PIPECLIMB_CLIMB</File>
+      <File type="reference_string">PUSH_BUTTON</File>
+      <File type="reference_string">PUSH_BUTTON_LARGE</File>
+      <File type="reference_string">
+         REACT_BLOCKED
+         <Filename type="string">characters/dor_dory/motions/dory_atk_block_hit.banm</Filename>
+      </File>
+      <File type="reference_string">REACT_CELEBRATE</File>
+      <File type="reference_string">REACT_CELEBRATE2</File>
+      <File type="reference_string">
+         REACT_GETUP_BACK
+         <Filename type="string">characters/class_fish/motions/fish_rct_getupb.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_GETUP_FRONT
+         <Filename type="string">characters/class_fish/motions/fish_rct_getupf.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_ADD_DIRECTION
+         <Filename type="string">characters/class_fish/motions/fish_rct_small_direction_lr_add.banm</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_BACK
+         <Filename type="string">characters/class_fish/motions/fish_rct_smallb.banm</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_FRONT
+         <Filename type="string">characters/class_fish/motions/fish_rct_smallf.banm</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_KNOCK_BACK
+         <Filename type="string">characters/class_fish/motions/fish_rct_knockdownb.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_HIT_KNOCK_FRONT
+         <Filename type="string">characters/class_fish/motions/fish_rct_knockdownf.oct</Filename>
+      </File>
+      <File type="reference_string">
+         REACT_LAND_BACKIDLE
+         <Filename type="string">characters/class_fish/motions/fish_rct_splatb_hold.oct</Filename>
+         <MetaData>
+            <AddState1 type="string">x Prone</AddState1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_LAND_BACKSPLAT
+         <Filename type="string">characters/class_fish/motions/fish_rct_splatb.oct</Filename>
+         <MetaData>
+            <AddState1 type="string">x Prone</AddState1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_LAND_FRONTIDLE
+         <Filename type="string">characters/class_fish/motions/fish_rct_splatf_hold.oct</Filename>
+         <MetaData>
+            <AddState1 type="string">x Prone</AddState1>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         REACT_LAND_FRONTSPLAT
+         <Filename type="string">characters/class_fish/motions/fish_rct_splatf.oct</Filename>
+         <MetaData>
+            <AddState1 type="string">x Prone</AddState1>
+         </MetaData>
+      </File>
+      <File type="reference_string">REACT_REVIVE_RECOVER</File>
+      <File type="reference_string">
+         READY_BALL
+         <Filename type="string">characters/class_fish/motions/fish_cr_rarm.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryRHand</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         READY_SIDEITEM
+         <Filename type="string">characters/class_fish/motions/fish_cr_rarm.oct</Filename>
+         <Layers>
+            <Layer type="reference_string">
+               Main
+               <Filter type="string">CarryRHand</Filter>
+            </Layer>
+         </Layers>
+      </File>
+      <File type="reference_string">
+         RIDEELEPHANT_MOUNT
+         <Filename type="string">characters/class_fish/motions/fish_mnt_saddle_bls_ridepose.oct</Filename>
+      </File>
+      <File type="reference_string">
+         RIDEELEPHANT_POSE
+         <Filename type="string">characters/class_fish/motions/fish_mnt_saddle_bls_ridepose.oct</Filename>
+      </File>
+      <File type="reference_string">
+         RIDEELEPHANT_REARUP
+         <Filename type="string">characters/class_fish/motions/fish_mnt_saddle_bls_ridepose.oct</Filename>
+      </File>
+      <File type="reference_string">
+         RIDEHORSE_MOUNT
+         <Filename type="string">characters/class_fish/motions/fish_mnt_saddle_bls_ridepose.oct</Filename>
+      </File>
+      <File type="reference_string">
+         RIDEHORSE_POSE
+         <Filename type="string">characters/class_fish/motions/fish_mnt_saddle_bls_ridepose.oct</Filename>
+      </File>
+      <File type="reference_string">
+         RIDEHORSE_REARUP
+         <Filename type="string">characters/class_fish/motions/fish_mnt_saddle_bls_ridepose.oct</Filename>
+      </File>
+      <File type="reference_string">
+         RIDE_MOUNT
+         <Filename type="string">characters/class_fish/motions/fish_atk_scharge_start.oct</Filename>
+      </File>
+      <File type="reference_string">
+         RIDE_POSE
+         <Filename type="string">characters/class_fish/motions/fish_mnt_saddle_bls_ridepose.oct</Filename>
+      </File>
+      <File type="reference_string">
+         RIDE_REARUP
+         <Filename type="string">characters/class_fish/motions/fish_mnt_saddle_bls_ridepose.oct</Filename>
+      </File>
+      <File type="reference_string">
+         RIDE_SPRINTSTART
+         <Filename type="string">characters/class_fish/motions/fish_mnt_saddle_bls_ridepose.oct</Filename>
+      </File>
+      <File type="reference_string">SCAN_LOOP</File>
+      <File type="reference_string">SCAN_START</File>
+      <File type="reference_string">
+         SHOULDERCHARGE_START
+         <Filename type="string">characters/class_fish/motions/fish_atk_scharge_start.oct</Filename>
+      </File>
+      <File type="reference_string">
+         SHOULDERCHARGE_WALLHIT
+         <Filename type="string">characters/class_fish/motions/fish_atk_scharge_wallhit.oct</Filename>
+      </File>
+      <File type="reference_string">SLAMMED_SPLAT_B</File>
+      <File type="reference_string">SLAMMED_SPLAT_F</File>
+      <File type="reference_string">SLAMMED_STUN</File>
+      <File type="reference_string">
+         SLAM_AVATAR_OVERHEAD
+         <Filename type="string">characters/class_fish/motions/fish_cr_ava_throw.oct</Filename>
+         <MetaData>
+            <releaseFrame type="int8">7</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         SLAM_MEDIUM_BOTH
+         <Filename type="string">characters/class_fish/motions/fish_cr_ava_throw.oct</Filename>
+         <MetaData>
+            <releaseFrame type="int8">7</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         SLAM_OVERHEAD
+         <Filename type="string">characters/class_fish/motions/fish_cr_ava_throw.oct</Filename>
+         <MetaData>
+            <releaseFrame type="int8">7</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">SPAWN_SPIRIT</File>
+      <File type="reference_string">
+         SWIM
+         <Filename type="string">characters/class_fish/motions/fish_swim_blend.banm</Filename>
+      </File>
+      <File type="reference_string">
+         SWIM_BACK
+         <Filename type="string">characters/class_fish/motions/fish_swim_back_blend.banm</Filename>
+      </File>
+      <File type="reference_string">
+         SWIM_BURST
+         <Filename type="string">characters/class_fish/motions/fish_swim_burst.banm</Filename>
+      </File>
+      <File type="reference_string">
+         SWIM_IDLE
+         <Filename type="string">characters/class_fish/motions/fish_swim_idle.banm</Filename>
+      </File>
+      <File type="reference_string">
+         SWIM_LEAN
+         <Filename type="string">characters/class_fish/motions/fish_swim_lean.banm</Filename>
+      </File>
+      <File type="reference_string">
+         SWIM_STILL
+         <Filename type="string">characters/class_fish/motions/fish_swim_blend_still.banm</Filename>
+      </File>
+      <File type="reference_string">
+         SWIM_STOP
+         <Filename type="string">characters/class_fish/motions/fish_swim_movestop.banm</Filename>
+      </File>
+      <File type="reference_string">
+         SWIM_UPDOWN_ADD
+         <Filename type="string">characters/class_fish/motions/fish_swim_blend_updown_add.banm</Filename>
+      </File>
+      <File type="reference_string">THROWN_LAND</File>
+      <File type="reference_string">
+         THROW_AVATAR_OVERHEAD
+         <Filename type="string">characters/class_fish/motions/fish_cr_ava_throw.oct</Filename>
+         <MetaData>
+            <releaseFrame type="int8">15</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         THROW_AVATAR_OVERHEAD_UPPER
+         <Filename type="string">characters/class_fish/motions/fish_cr_ava_throw.oct</Filename>
+         <MetaData>
+            <releaseFrame type="int8">14</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         THROW_BALL
+         <Filename type="string">characters/class_fish/motions/fish_cr_rarm_throw.oct</Filename>
+         <MetaData>
+            <releaseFrame type="int8">6</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         THROW_BALL_LOB
+         <Filename type="string">characters/class_fish/motions/fish_cr_rarm_throw.oct</Filename>
+         <MetaData>
+            <releaseFrame type="int8">4</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         THROW_MEDIUM_BOTH
+         <Filename type="string">characters/class_fish/motions/fish_cr_rarm_throw.oct</Filename>
+         <MetaData>
+            <releaseFrame type="int8">5</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         THROW_MEDIUM_BOTH_UPPER
+         <Filename type="string">characters/class_fish/motions/fish_cr_rarm_throw.oct</Filename>
+         <MetaData>
+            <releaseFrame type="int8">5</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         THROW_OVERHEAD
+         <Filename type="string">characters/class_fish/motions/fish_cr_ava_throw.oct</Filename>
+         <MetaData>
+            <releaseFrame type="int8">5</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         THROW_OVERHEAD_UPPER
+         <Filename type="string">characters/class_fish/motions/fish_cr_ava_throw.oct</Filename>
+         <MetaData>
+            <releaseFrame type="int8">5</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">
+         THROW_SIDEITEM
+         <Filename type="string">characters/class_fish/motions/fish_cr_rarm_throw.oct</Filename>
+         <MetaData>
+            <releaseFrame type="int8">5</releaseFrame>
+         </MetaData>
+      </File>
+      <File type="reference_string">THROW_ZEROPOINTENERGY</File>
+      <File type="reference_string">TURNINVISIBLE_UPPER</File>
+      <File type="reference_string">WAND_DELETE</File>
+      <File type="reference_string">WAND_DELETE_UPPER</File>
+      <File type="reference_string">WAND_SELECT</File>
+      <File type="reference_string">WAND_SELECT_UPPER</File>
+   </Files>
+</root_node>

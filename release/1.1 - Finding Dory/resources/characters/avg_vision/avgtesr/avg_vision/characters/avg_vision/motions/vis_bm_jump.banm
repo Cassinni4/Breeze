@@ -1,0 +1,27 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Speed" =
+	{
+		DefaultPhase = 0.0
+	}
+}
+Tracks =
+{
+	KeyBlendTrack =
+	{
+		Value = "Speed"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/avg_vision/motions/vis_bm_jump_air.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/avg_vision/motions/vis_bm_jump_airforward.oct"
+			}
+		}
+	}
+}

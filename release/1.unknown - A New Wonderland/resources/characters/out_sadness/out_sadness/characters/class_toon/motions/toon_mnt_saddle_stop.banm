@@ -1,0 +1,37 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Speed" =
+	{
+		DefaultPhase = 0.0
+	}
+}
+BlendMethod = 1
+Tracks =
+{
+	KeyBlendTrack "Stop" =
+	{
+		BlendMethod = 1
+		Value = "Speed"
+		Keys =
+		[
+			0.0 0.72 1.0
+		]
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/class_toon/motions/toon_mnt_saddle_walkstop.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/class_toon/motions/toon_mnt_saddle_runstop.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/class_toon/motions/toon_mnt_saddle_sprintstop.oct"
+			}
+		}
+	}
+}

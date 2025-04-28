@@ -1,0 +1,82 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Velocity" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Velocity"
+		Keys =
+		[
+			0.0 0.85 0.85 1.0
+		]
+		Tracks =
+		{
+			GroupTrack "Small" =
+			{
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/class_herofemale/motions/herofml_bm_idle_active_pose.oct"
+					}
+					ReferencedTrack =
+					{
+						BlendMethod = 1
+						Filename = "characters/class_herofemale/motions/herofml_rct_stmb_lower_f_sml_add.oct"
+					}
+				}
+			}
+			GroupTrack "Small2" =
+			{
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/class_herofemale/motions/herofml_bm_idle_active_pose.oct"
+					}
+					ReferencedTrack =
+					{
+						BlendMethod = 1
+						Filename = "characters/class_herofemale/motions/herofml_rct_stmb_lower_f_sml_add.oct"
+					}
+				}
+			}
+			GroupTrack "Big" =
+			{
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/class_herofemale/motions/herofml_bm_idle_active_pose.oct"
+					}
+					ReferencedTrack =
+					{
+						BlendMethod = 1
+						Filename = "characters/class_herofemale/motions/herofml_rct_stmb_lower_f_big_add.oct"
+					}
+				}
+			}
+			GroupTrack "Big2" =
+			{
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/class_herofemale/motions/herofml_bm_idle_active_pose.oct"
+					}
+					ReferencedTrack =
+					{
+						BlendMethod = 1
+						Filename = "characters/class_herofemale/motions/herofml_rct_stmb_lower_f_big_add.oct"
+					}
+				}
+			}
+		}
+	}
+}

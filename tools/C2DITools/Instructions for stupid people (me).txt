@@ -1,0 +1,2 @@
+Decoding: python -m c2ditools scene_dec <avg_drstrange.bent> <avg_drstrange_decrypted.bent> -t textures
+Encoding: python -m c2ditools scene_enc <avg_drstrange_decrypted.bent> <avg_drstrange.bent> -t textures

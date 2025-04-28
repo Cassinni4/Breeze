@@ -1,0 +1,253 @@
+--**********************************************************************************************************************************************************************************************************--
+--                                                                                                                                                                                                          --
+-- Breeze Release 1.0: "Gateway"                                                                                                                                                                            --
+-- Build by Cassinni4                                                                                                                                                                                       --
+-- Special thanks to: Bread, LiontHD, Jumanji Alan, JohnLogostini, BeyondCarL, satoru-kun, JiroTheOne, Dasorik, mrc, C.M.M., TheSithEternal, and maximilian for help and support on this massive project!  --
+--                                                                                                                                                                                                          --
+--**********************************************************************************************************************************************************************************************************--
+
+Changelog:
+
+_____________________________
+|                           |
+|                           |
+|           MARVEL          |
+|                           |
+|___________________________|
+
+________________________
+Black Suit Spider-Man:
+
+-Added final jump and slam, some effects missing
+-Added force pull
+-Added web charge (not visible but works)
+-Added counter
+-Added groundwork for finisher
+-Added dodge attack
+-Fixed skilltree
+-Added dodge attack
+
+________________________
+Premium Hulk:
+
+-Added Premium Hulk :)
+-Throw objects (no textures for charge) charge works
+-Pause combo 1 (now includes damage!)
+-Special (spam punch into ground)
+-Launch and aerial assault
+-Skill tree
+________________________
+Premium HulkBuster:
+
+-Jackhammer works now!
+-Finally loads
+-Special in a bit better state
+-Still have the weird loading pattern. Load him after you load another character.
+________________________
+Captain America - The First Avenger:
+
+-Skilltree fix
+
+________________________
+Black Panther:
+
+-Skilltree fix
+
+________________________
+Ant-Man:
+
+-Skilltree fix
+-Forcepush FX (no ants still)
+
+________________________
+Vision:
+
+-Added Beam wide GFX
+-Skilltree repaired :O
+-Groundwork for future
+-Ground pound :D
+-Force push
+
+________________________
+Spider-Gwen:
+
+-Added Spider-Gwen :D
+-Legs super jank need to change anims
+
+________________________
+Dr. Strange:
+
+-Added Dr. Strange :D
+-Using old temp anims from PS4
+-Other stuff ripped from Nova
+
+_____________________________
+|                           |
+|                           |
+|           DISNEY          |
+|                           |
+|___________________________|
+
+________________________
+Clu:
+
+-He in there now, nothing else
+
+________________________
+Alice:
+
+-Added Alice :D
+-Can jump now!
+-Fixed skilltree
+-Superjump too.
+-On ranged, hedgehog appears but can't hit anything.
+-Hooray, textures!
+
+________________________
+Mad Hatter:
+
+-Added Mad Hatter :D
+-Fixed skilltree
+-Groundwork for special
+-He can throw now!
+-Force pull works
+-He can charge throw hat and tornadoes, but in a very early stage
+-All of the random objects are present yay!
+
+________________________
+Time:
+
+-Added Time :D
+-Fixed skilltree
+-Fixed the garbage movement bug from the beta
+-Attacks still slow as a turtle, IDK how to fix.
+-Force push works
+-Can throw and charge
+
+________________________
+Premium Lightning McQueen:
+
+-Added Premium Lightning McQueen
+-Carbon copy of orig
+
+________________________
+Baloo:
+
+-Added the most forgettable character in all of Infinity
+-Tbh I don't even really remember anything notable I did with him and I'm not booting up the game to look. Boot it up yourself and look.
+
+________________________
+Peter Pan:
+
+-Added Peter Pan!
+-Fixed the skill tree so combo 1 and special are now unlockable (they were previously unobtainable)
+-Pretty much done except punch 2 and special
+-Textures repaired
+
+________________________
+Premium Elsa:
+
+-Added Premium Elsa!
+-She can hit stuff with her missing particles now
+-Ice shoot and charge works again
+	Marshmallow:
+	-Loads, no AI
+-Ice shoot is now snowball (which is correct), yay!
+________________________
+Premium Jack Skellington:
+
+-Added Premium Jack Skellington!
+-Present throw works now (including charge GFX with ghosts now! Yay!)
+-Groundwork for special
+-Combo 1 now includes damage!
+
+________________________
+Zurg:
+
+-Added Zurg
+-He got an icon
+-Mostly Mr. Incredible but with Zurg's model
+
+________________________
+Premium Buzz Lightyear:
+
+-Added Premium Buzz Lightyear
+-Got the jetpack now!
+-Shoot GFX
+-Still have the weird loading pattern. Load him after you load another character.
+
+________________________
+Maui:
+
+-Added Maui
+-Can move and dodge. That's it.
+
+_____________________________
+|                           |
+|                           |
+|         STAR WARS         |
+|                           |
+|___________________________|
+
+________________________
+Premium Yoda:
+
+-Added Premium Yoda
+-Can move and dodge, everything else removed (seemingly in preparation for the new stuff by devs)
+
+________________________
+Premium Darth Vader:
+
+-Added Premium Darth Vader
+-Throws Lightsaber now!
+-Does damage too!
+-Charge works not visible
+-Groundwork for special
+
+_____________________________
+|                           |
+|                           |
+|       MISCELLANEOUS       |
+|                           |
+|___________________________|
+
+________________________
+Marvel Battlegrounds:
+
+-Added MBA to the menu
+-Still needs controller 
+
+________________________
+Power Discs:
+
+-Added Scrooge McDuck's Lucky Dime
+-Added Pieces of Eight
+-Added Dr. Doofenshmirtz Damage-inator!
+-Added Emperor Zurg's Wrath
+-Added Light Jet
+-Added C.H.R.O.M.E.'s Armor Shield
+-Added C.H.R.O.M.E. Damage Increaser
+-Added Star Command Shield
+-Added Violet's Force Field
+-Added Rapunzel's Healing
+-Added User Control
+-Added Dark Hawk Blast
+-Added Cosmic Cube Blast
+-Removed Nova Corps Strike. What, did you want to stare at a power disc that crashes your game?
+
+________________________
+Other:
+
+-Added Reset Figure
+-Groundwork for MBA and Dory toys
+-Added Add More Sparks Option in the pause menu
+-Added Online/Multiplayer option in the pause menu, does nothing currently
+-Added option to enable Premium Elsa textures by BeyondCarL in Continuum
+-Added option to enable the Light FX characters. They all have UI/Icons.
+
+________________________
+
+There's probably more I forgot, but this is what I thought was notable.
+
+Much love <3
+Cassinni4

@@ -1,0 +1,19 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/pnf_phineas/motions/phn_bm_idle_active_pose.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Filename = "characters/biped/motions/biped_bm_idle_stance_add.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Filename = "characters/pnf_phineas/motions/phn_bm_gensettle_adjust_add.oct"
+	}
+}

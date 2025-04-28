@@ -1,0 +1,36 @@
+Version = "1.0g"
+Parameters =
+{
+	FloatParameter "Turn" =
+	{
+		DefaultPhase = 1.0
+	}
+	FloatParameter "Pitch" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Pitch"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/avg_falcon/motions/falcon_atk_pulse_aim_both_down.oct"
+				Phase = "Turn"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/avg_falcon/motions/falcon_atk_pulse_aim_both.oct"
+				Phase = "Turn"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/avg_falcon/motions/falcon_atk_pulse_aim_both_up.oct"
+				Phase = "Turn"
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Lightsaber" =
+	{
+		DefaultPhase = 1.0
+	}
+}
+Tracks =
+{
+	GroupTrack "Group1" =
+	{
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/tcw_yoda/motions/yoda_bm_idle_passive_pose.oct"
+			}
+			ReferencedTrack =
+			{
+				Weight = "Lightsaber"
+				Filename = "characters/tcw_yoda/motions/yoda_bm_idle_active_pose.oct"
+			}
+		}
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Filename = "characters/tcw_yoda/motions/yoda_bm_idle_active_add.oct"
+	}
+}

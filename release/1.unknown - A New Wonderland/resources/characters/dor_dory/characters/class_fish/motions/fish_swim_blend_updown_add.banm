@@ -1,0 +1,32 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "UpDown" =
+	{
+	}
+}
+BlendMethod = 1
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		BlendMethod = 1
+		Value = "UpDown"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/class_fish/motions/fish_swim_proc_center_headdown_add.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/class_fish/motions/fish_swim_proc_center_headlevel_add.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/class_fish/motions/fish_swim_proc_center_headup_add.oct"
+			}
+		}
+	}
+}

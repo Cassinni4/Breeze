@@ -1,0 +1,221 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="2.0.247 x64" branch="M2" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="2">
+  <p:Interface value="React"/>
+  <p:StartState value="React_Idle"/>
+  <AnimTreeStateGroup name="React" expanded="1" pos="-2 0.8">
+   <p:Color value="0.7 0.103205 0.103205"/>
+   <p:StartState value="React_Idle"/>
+   <AnimTreeState name="Weapon_Hit" pos="1.4 3.6">
+    <p:Clip value="RCT_WPN_JITTER"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="Face_React_Start">
+      <p:When value="EnteringState"/>
+     </p:Event>
+     <p:Event2 class="AnimTreeStateEventProperty" value="Face_React_End"/>
+    </p:EventsFired>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="React_Idle"/>
+     <p:DefaultBranch value="TRUE"/>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="React_Idle" pos="1.4 2.4">
+    <p:Color value="1 0 0"/>
+    <p:Clip value="RCT_IDLE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:EventsIgnored>
+     <p:Event class="AnimTreeEventPointerProperty" value="LandBg"/>
+     <p:Event2 class="AnimTreeEventPointerProperty" value="LandSm"/>
+     <p:Event3 class="AnimTreeEventPointerProperty" value="LandMed"/>
+    </p:EventsIgnored>
+   </AnimTreeState>
+   <AnimTreeStateGroup name="State Group" expanded="1" pos="0.4 0.2">
+    <p:Color value="0.857906 0.935897 0.917899"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="Face_React_Start">
+      <p:When value="EnteringGroup"/>
+     </p:Event>
+     <p:Event2 class="AnimTreeStateEventProperty" value="Face_React_End"/>
+     <p:Event3 class="AnimTreeStateEventProperty" value="AnimControlsON">
+      <p:When value="ExitingGroup"/>
+     </p:Event3>
+    </p:EventsFired>
+    <AnimTreeState name="SpinOut_Picker" pos="-4 2.4">
+     <p:Color value="0.307692 0.307692 0.307692"/>
+     <p:AutoBranchSequence value="Random"/>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="SpinOut_R"/>
+      <p:DefaultBranch value="TRUE"/>
+     </AnimTreeBranch>
+     <AnimTreeBranch name="Branch2">
+      <p:BranchTo value="SpinOut_L"/>
+      <p:DefaultBranch value="TRUE"/>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="SpinOut_R" pos="-2.4 0.8">
+     <p:Color value="0.7 0.7 0.653846"/>
+     <p:Clip value="RCT_WPN_SPINOUT_R"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:EventsFired>
+      <p:Event class="AnimTreeStateEventProperty" value="AnimControlsOFF">
+       <p:When value="EnteringState"/>
+      </p:Event>
+      <p:Event2 class="AnimTreeStateEventProperty" value="AnimControlsON">
+       <p:When value="ClipStarts"/>
+       <p:Offset value="50"/>
+      </p:Event2>
+     </p:EventsFired>
+     <p:EventsIgnored>
+      <p:Event class="AnimTreeEventPointerProperty" value="React_Spinout_Left"/>
+      <p:Event2 class="AnimTreeEventPointerProperty" value="React_Spinout_Right"/>
+     </p:EventsIgnored>
+    </AnimTreeState>
+    <AnimTreeState name="SpinOut_L" pos="-5.2 0.8">
+     <p:Color value="0.7 0.7 0.653846"/>
+     <p:Clip value="RCT_WPN_SPINOUT_L"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:EventsFired>
+      <p:Event class="AnimTreeStateEventProperty" value="AnimControlsOFF">
+       <p:When value="EnteringState"/>
+      </p:Event>
+      <p:Event2 class="AnimTreeStateEventProperty" value="AnimControlsON">
+       <p:When value="ClipStarts"/>
+       <p:Offset value="50"/>
+      </p:Event2>
+     </p:EventsFired>
+     <p:EventsIgnored>
+      <p:Event class="AnimTreeEventPointerProperty" value="React_Spinout_Left"/>
+      <p:Event2 class="AnimTreeEventPointerProperty" value="React_Spinout_Right"/>
+     </p:EventsIgnored>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch3">
+     <p:BranchTo value="React_Idle"/>
+     <p:DefaultBranch value="TRUE"/>
+    </AnimTreeBranch>
+   </AnimTreeStateGroup>
+   <AnimTreeStateGroup name="Bash_Group" expanded="1" pos="-4.6 -0.6">
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="Face_React_Start">
+      <p:When value="EnteringGroup"/>
+     </p:Event>
+     <p:Event2 class="AnimTreeStateEventProperty" value="Face_React_End"/>
+    </p:EventsFired>
+    <AnimTreeState name="React_BashedL" pos="-0.199998 -5.66244e-007">
+     <p:Clip value="RCT_BASH_L_TIP"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:EventsIgnored>
+      <p:Event class="AnimTreeEventPointerProperty" value="LandSm"/>
+      <p:Event2 class="AnimTreeEventPointerProperty" value="LandBg"/>
+      <p:Event3 class="AnimTreeEventPointerProperty" value="LandMed"/>
+     </p:EventsIgnored>
+    </AnimTreeState>
+    <AnimTreeState name="React_BashedR" pos="2.6 7.15256e-007">
+     <p:Clip value="RCT_BASH_R_TIP"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:EventsIgnored>
+      <p:Event class="AnimTreeEventPointerProperty" value="LandSm"/>
+      <p:Event2 class="AnimTreeEventPointerProperty" value="LandMed"/>
+      <p:Event3 class="AnimTreeEventPointerProperty" value="LandBg"/>
+     </p:EventsIgnored>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch8">
+     <p:BranchTo value="React_Idle"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeStateGroup>
+   <AnimTreeState name="Killinterface" pos="1.2 0.8">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       "I created this so we can see the eyes on"
+       "Baselayer animations    Gav-"
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0 0 0"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="React_Idle"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="BaseEyes_End"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="React_Bike_Wobble" pos="4 1.59">
+    <p:Color value="0.148409 0.788462 0.224646"/>
+    <p:Clip value="RCT_BIKE_WOBBLE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="React_Idle"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch1">
+   <p:BranchTo value="SpinOut_Picker"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="React_SpinOut"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch2">
+   <p:BranchTo value="Weapon_Hit"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="React_JitterStart"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch4">
+   <p:BranchTo value="SpinOut_R"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="React_Spinout_Right"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch5">
+   <p:BranchTo value="SpinOut_L"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="React_Spinout_Left"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch6">
+   <p:BranchTo value="React_BashedL"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="React_Bash_L"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch7">
+   <p:BranchTo value="React_BashedR"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="React_Bash_R"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeState name="ShakeOff" pos="-0.8 0.2">
+   <p:Clip value="RCT_SHAKEOFF"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <AnimTreeBranch name="Branch1">
+    <p:BranchTo value="React_Idle"/>
+    <p:DefaultBranch value="TRUE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeState>
+  <AnimTreeBranch name="Branch9">
+   <p:BranchTo value="ShakeOff"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="ShakeOff"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch10">
+   <p:BranchTo value="React_Bike_Wobble"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="BikeWobble"/>
+   </p:Events>
+  </AnimTreeBranch>
+ </AnimTree>
+
+</d:SnipeFile>

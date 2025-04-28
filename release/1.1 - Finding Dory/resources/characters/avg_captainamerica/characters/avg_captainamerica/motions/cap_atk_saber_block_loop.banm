@@ -1,0 +1,14 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/avg_captainamerica/motions/cap_atk_saber_block_pose.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Filename = "characters/class_herosmall/motions/herosm_atk_block_loop_add.oct"
+	}
+}

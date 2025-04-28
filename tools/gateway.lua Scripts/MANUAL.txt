@@ -1,0 +1,4 @@
+You need to have installed Node,js and JavaScript. Crypto-JS and fs are pre-installed in this zip. Put it all in the same folder
+Run in by right clicking in the folder > Open in terminal > node gatewayCrypto.js
+
+More info is in gatewayCrypto.js. Rename it to a .txt or something to go look.

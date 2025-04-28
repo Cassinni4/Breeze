@@ -1,0 +1,71 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="2.0.270 x64" branch="M2" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="1">
+  <p:Interface value="Lean"/>
+  <p:StartState value="Lean_Group"/>
+  <AnimTreeStateGroup name="Lean_Group" expanded="1" pos="-3 2">
+   <p:StartState value="Lean"/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <AnimTreeState name="Lean" pos="-2 0.6">
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="BM_LEAN_PROC"/>
+    <p:ClipTimeSource value=".Params.LeanPercent"/>
+    <p:InitialTime value="50"/>
+    <p:PostBehavior value="Loop"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="DriftLean"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="DriftRightStart"/>
+      <p:Event2 class="AnimTreeEventPointerProperty" value="DriftLeftStart"/>
+      <p:Event3 class="AnimTreeEventPointerProperty" value="DriftStart"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="DriftLean" pos="0.399999 0.599999">
+    <p:Clip value="BM_DRIFT_LEAN_ADD"/>
+    <p:ClipTimeSource value=".Params.LeanPercent"/>
+    <p:InitialTime value="50"/>
+    <p:PostBehavior value="Loop"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Lean"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="Drift_Stop"/>
+      <p:Event2 class="AnimTreeEventPointerProperty" value="Idle"/>
+      <p:Event3 class="AnimTreeEventPointerProperty" value="DriftLeftStop"/>
+      <p:Event4 class="AnimTreeEventPointerProperty" value="DriftRightStop"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="KillInterface" pos="-0.799999 -1">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0 0 0"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value=""/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Lean"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="JumpLand"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch1">
+   <p:BranchTo value="KillInterface"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="BikeStart"/>
+    <p:Event2 class="AnimTreeEventPointerProperty" value="Jump"/>
+    <p:Event3 class="AnimTreeEventPointerProperty" value="DriftLeftJump"/>
+    <p:Event4 class="AnimTreeEventPointerProperty" value="DriftRightJump"/>
+   </p:Events>
+  </AnimTreeBranch>
+ </AnimTree>
+
+</d:SnipeFile>

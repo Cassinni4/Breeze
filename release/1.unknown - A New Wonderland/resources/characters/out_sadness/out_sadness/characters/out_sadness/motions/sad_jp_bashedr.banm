@@ -1,0 +1,10 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Mirror = "FullBody"
+		Filename = "characters/out_sadness/motions/sad_jp_bashedl.oct"
+	}
+}

@@ -1,0 +1,197 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="2.0.267 x64" branch="M2" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="0">
+  <p:Interface value="FullBody"/>
+  <p:StartState value=""/>
+  <AnimTreeStateGroup name="HoverBoard_Group" expanded="1" pos="-2 1.8">
+   <p:StartState value="Hover_Ride_Group"/>
+   <p:EventsFired>
+    <p:Event class="AnimTreeStateEventProperty" value="Face_Kill">
+     <p:When value="ExitingGroup"/>
+    </p:Event>
+   </p:EventsFired>
+   <AnimTreeStateGroup name="Hover_Ride_Group" expanded="1" pos="0.2 -0.4">
+    <p:StartState value="Hover_Start"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="Face_Intense_Start">
+      <p:When value="EnteringGroup"/>
+     </p:Event>
+    </p:EventsFired>
+    <AnimTreeState name="Hover_Ride" pos="-1.6 -2.2">
+     <p:Clip value="HOVERBOARD_LEAN"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:PostBehavior value="Loop"/>
+     <p:EaseDuration value="14"/>
+     <p:AISync value="FALSE"/>
+     <p:EventsFired>
+      <p:Event class="AnimTreeStateEventProperty" value="RAILSLIDE_ADD_START">
+       <p:When value="EnteringState"/>
+      </p:Event>
+      <p:Event2 class="AnimTreeStateEventProperty" value="RAILSLIDE_ADD_STOP"/>
+     </p:EventsFired>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="Hover_Fall"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="HOVERBOARDFALL"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="Hover_Start" pos="-2.6 -0.8">
+     <p:Clip value="HOVERBOARD_MOUNT"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:EventsFired>
+      <p:Event class="AnimTreeStateEventProperty" value="HOVERBOARDHIDE">
+       <p:When value="ClipStarts"/>
+       <p:Offset value="6"/>
+      </p:Event>
+      <p:Event2 class="AnimTreeStateEventProperty" value="HOVERBOARDSHOW">
+       <p:When value="ClipStarts"/>
+       <p:Offset value="12"/>
+      </p:Event2>
+     </p:EventsFired>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="Hover_Fall"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="Hover_Land" pos="0.200001 -0.8">
+     <p:Clip value="HOVERBOARD_MOUNTLAND"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:AISync value="TRUE"/>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="Hover_Ride"/>
+      <p:DefaultBranch value="TRUE"/>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeState name="Hover_Jump" pos="-2.2 -3.6">
+     <p:Clip value="HOVERBOARD_JUMP"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:AISync value="TRUE"/>
+     <AnimTreeBranch name="Branch2">
+      <p:BranchTo value="Hover_Fall"/>
+      <p:DefaultBranch value="FALSE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="HOVERBOARDFALL"/>
+      </p:Events>
+     </AnimTreeBranch>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="Hover_Fall"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch3">
+     <p:BranchTo value="Hover_Jump"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="JUMP"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeState name="Hover_Dismount" pos="0.6 -3.6">
+     <p:Clip value="HOVERBOARD_DISMOUNT"/>
+     <p:ClipTimeSource value=".Global.Time"/>
+     <p:AISync value="TRUE"/>
+     <p:EventsFired>
+      <p:Event class="AnimTreeStateEventProperty" value="HOVERBOARDATTACHSLAVE">
+       <p:When value="ClipStarts"/>
+       <p:Offset value="3"/>
+      </p:Event>
+      <p:Event2 class="AnimTreeStateEventProperty" value="HOVERBOARDBACKSLAVE">
+       <p:When value="ClipStarts"/>
+       <p:Offset value="15"/>
+      </p:Event2>
+     </p:EventsFired>
+     <AnimTreeBranch name="Branch1">
+      <p:BranchTo value="Hover_Fall"/>
+      <p:DefaultBranch value="TRUE"/>
+      <p:EaseDuration value="20"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty"/>
+      </p:Events>
+     </AnimTreeBranch>
+     <AnimTreeBranch name="Branch2">
+      <p:BranchTo value="Hover_Fall"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="HOVERBOARDFALL"/>
+      </p:Events>
+     </AnimTreeBranch>
+     <AnimTreeBranch name="Branch3">
+      <p:BranchTo value="Hover_Dismount_Land"/>
+      <p:Events>
+       <p:Event class="AnimTreeEventPointerProperty" value="LAND"/>
+      </p:Events>
+     </AnimTreeBranch>
+    </AnimTreeState>
+    <AnimTreeBranch name="Branch5">
+     <p:BranchTo value="Hover_Dismount"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="DISMOUNT"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeStateGroup>
+   <AnimTreeBranch name="Branch2">
+    <p:BranchTo value="Hover_Ride_Group"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty" value="JETPACK_SUPERMAN"/>
+    </p:Events>
+   </AnimTreeBranch>
+   <AnimTreeState name="Hover_Fall" pos="-1.4 -5.4">
+    <p:Clip value="HOVERBOARD_FALL"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <p:EaseDuration value="10"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Hover_Dismount_Land"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="LAND"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Hover_Dismount_Land" pos="-1.4 -6.4">
+    <p:Clip value="LAND_HARD"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="2"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="LAND"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="LAND" pos="1 -6.4">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="LAND"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch1">
+   <p:BranchTo value="HoverBoard_Group"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="HOVERBOARD"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch4">
+   <p:BranchTo value="Hover_Land"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="HOVERBOARDLAND"/>
+   </p:Events>
+  </AnimTreeBranch>
+ </AnimTree>
+
+</d:SnipeFile>

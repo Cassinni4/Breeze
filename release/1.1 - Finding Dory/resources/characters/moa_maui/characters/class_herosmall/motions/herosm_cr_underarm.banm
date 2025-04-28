@@ -1,0 +1,26 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Weight" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Weight"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/class_herosmall/motions/herosm_cr_underarm.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/class_herosmall/motions/herosm_cr_underarm_sm.oct"
+			}
+		}
+	}
+}

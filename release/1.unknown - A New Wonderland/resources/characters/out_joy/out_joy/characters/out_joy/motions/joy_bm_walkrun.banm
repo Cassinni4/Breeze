@@ -1,0 +1,675 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Speed" =
+	{
+	}
+	FloatParameter "Direction" =
+	{
+	}
+	FloatParameter "Emotion" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "WalkRun" =
+	{
+		Value = "Speed"
+		Keys =
+		[
+			0.25 0.5 
+		]
+		Tracks =
+		{
+			KeyBlendTrack "Walk" =
+			{
+				Value = "Direction"
+				Keys =
+				[
+					0.0 0.12 0.25
+					0.38 0.5 0.63
+					0.75 0.88 1.0
+				]
+				Tracks =
+				{
+					GroupTrack "Walk Forward" =
+					{
+						Tracks =
+						{
+							ReferencedTrack =
+							{
+								Filename = "characters/out_joy/motions/joy_bm_walkf.oct"
+							}
+							KeyBlendTrack "Key Blend" =
+							{
+								Value = "Emotion"
+								Keys =
+								[
+									0.0 0.5 
+								]
+								Tracks =
+								{
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_walk_upbody.oct"
+									}
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_walk_upbody_joyful.oct"
+									}
+								}
+							}
+							ReferencedTrack =
+							{
+								BlendMethod = 1
+								Weight = 0.5
+								Filename = "characters/class_herosmall/motions/herosm_bm_runf_lean_add.oct"
+							}
+						}
+					}
+					GroupTrack "Walk Right Forward" =
+					{
+						Tracks =
+						{
+							ReferencedTrack =
+							{
+								Filename = "characters/class_herofemale/motions/herofml_bm_walkrf.oct"
+							}
+							KeyBlendTrack "Key Blend" =
+							{
+								Value = "Emotion"
+								Keys =
+								[
+									0.0 0.5 
+								]
+								Tracks =
+								{
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_walk_upbody.oct"
+									}
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_walk_upbody_joyful.oct"
+									}
+								}
+							}
+							ReferencedTrack =
+							{
+								BlendMethod = 1
+								Weight = 0.5
+								Filename = "characters/class_herosmall/motions/herosm_bm_runrf_lean_add.oct"
+							}
+						}
+					}
+					GroupTrack "Walk Right" =
+					{
+						Tracks =
+						{
+							ReferencedTrack =
+							{
+								Filename = "characters/class_herofemale/motions/herofml_bm_walkr.oct"
+							}
+							KeyBlendTrack "Key Blend" =
+							{
+								Value = "Emotion"
+								Keys =
+								[
+									0.0 0.5 
+								]
+								Tracks =
+								{
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_walk_upbody.oct"
+									}
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_walk_upbody_joyful.oct"
+									}
+								}
+							}
+							ReferencedTrack =
+							{
+								BlendMethod = 1
+								Weight = 0.5
+								Filename = "characters/class_herosmall/motions/herosm_bm_runr_lean_add.oct"
+							}
+						}
+					}
+					GroupTrack "Walk Right Back" =
+					{
+						Tracks =
+						{
+							ReferencedTrack =
+							{
+								Filename = "characters/class_herofemale/motions/herofml_bm_walkrb.oct"
+							}
+							KeyBlendTrack "Key Blend" =
+							{
+								Value = "Emotion"
+								Keys =
+								[
+									0.0 0.5 
+								]
+								Tracks =
+								{
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_walk_upbody.oct"
+									}
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_walk_upbody_joyful.oct"
+									}
+								}
+							}
+							ReferencedTrack =
+							{
+								BlendMethod = 1
+								Weight = 0.5
+								Filename = "characters/class_herosmall/motions/herosm_bm_runrb_lean_add.oct"
+							}
+						}
+					}
+					GroupTrack "Walk Back" =
+					{
+						Tracks =
+						{
+							ReferencedTrack =
+							{
+								Filename = "characters/class_herofemale/motions/herofml_bm_walkb.oct"
+							}
+							KeyBlendTrack "Key Blend" =
+							{
+								Value = "Emotion"
+								Keys =
+								[
+									0.0 0.5 
+								]
+								Tracks =
+								{
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_walk_upbody.oct"
+									}
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_walk_upbody_joyful.oct"
+									}
+								}
+							}
+							ReferencedTrack =
+							{
+								BlendMethod = 1
+								Weight = 0.5
+								Filename = "characters/class_herosmall/motions/herosm_bm_runb_lean_add.oct"
+							}
+						}
+					}
+					GroupTrack "Walk Left Back" =
+					{
+						Tracks =
+						{
+							ReferencedTrack =
+							{
+								Filename = "characters/class_herofemale/motions/herofml_bm_walklb.oct"
+							}
+							KeyBlendTrack "Key Blend" =
+							{
+								Value = "Emotion"
+								Keys =
+								[
+									0.0 0.5 
+								]
+								Tracks =
+								{
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_walk_upbody.oct"
+									}
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_walk_upbody_joyful.oct"
+									}
+								}
+							}
+							ReferencedTrack =
+							{
+								BlendMethod = 1
+								Weight = 0.5
+								Filename = "characters/class_herosmall/motions/herosm_bm_runlb_lean_add.oct"
+							}
+						}
+					}
+					GroupTrack "Walk Left" =
+					{
+						Tracks =
+						{
+							ReferencedTrack =
+							{
+								Filename = "characters/class_herofemale/motions/herofml_bm_walkl.oct"
+							}
+							KeyBlendTrack "Key Blend" =
+							{
+								Value = "Emotion"
+								Keys =
+								[
+									0.0 0.5 
+								]
+								Tracks =
+								{
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_walk_upbody.oct"
+									}
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_walk_upbody_joyful.oct"
+									}
+								}
+							}
+							ReferencedTrack =
+							{
+								BlendMethod = 1
+								Weight = 0.5
+								Filename = "characters/class_herosmall/motions/herosm_bm_runl_lean_add.oct"
+							}
+						}
+					}
+					GroupTrack "Walk Left Front" =
+					{
+						Tracks =
+						{
+							ReferencedTrack =
+							{
+								Filename = "characters/class_herofemale/motions/herofml_bm_walklf.oct"
+							}
+							KeyBlendTrack "Key Blend" =
+							{
+								Value = "Emotion"
+								Keys =
+								[
+									0.0 0.5 
+								]
+								Tracks =
+								{
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_walk_upbody.oct"
+									}
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_walk_upbody_joyful.oct"
+									}
+								}
+							}
+							ReferencedTrack =
+							{
+								BlendMethod = 1
+								Weight = 0.5
+								Filename = "characters/class_herosmall/motions/herosm_bm_runlf_lean_add.oct"
+							}
+						}
+					}
+					GroupTrack "Walk Forward2" =
+					{
+						Tracks =
+						{
+							ReferencedTrack =
+							{
+								Filename = "characters/out_joy/motions/joy_bm_walkf.oct"
+							}
+							KeyBlendTrack "Key Blend" =
+							{
+								Value = "Emotion"
+								Keys =
+								[
+									0.0 0.5 
+								]
+								Tracks =
+								{
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_walk_upbody.oct"
+									}
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_walk_upbody_joyful.oct"
+									}
+								}
+							}
+							ReferencedTrack =
+							{
+								BlendMethod = 1
+								Weight = 0.5
+								Filename = "characters/class_herosmall/motions/herosm_bm_runf_lean_add.oct"
+							}
+						}
+					}
+				}
+			}
+			KeyBlendTrack "Run" =
+			{
+				Value = "Direction"
+				Keys =
+				[
+					0.0 0.12 0.25
+					0.38 0.5 0.63
+					0.75 0.88 1.0
+				]
+				Tracks =
+				{
+					GroupTrack "Run Forward" =
+					{
+						Tracks =
+						{
+							ReferencedTrack =
+							{
+								Filename = "characters/out_joy/motions/joy_bm_runf.oct"
+							}
+							KeyBlendTrack "Key Blend" =
+							{
+								Value = "Emotion"
+								Keys =
+								[
+									0.0 0.5 
+								]
+								Tracks =
+								{
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_run_upbody.oct"
+									}
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_run_upbody_joyful.oct"
+									}
+								}
+							}
+							ReferencedTrack =
+							{
+								BlendMethod = 1
+								Filename = "characters/class_herosmall/motions/herosm_bm_runf_lean_add.oct"
+							}
+						}
+					}
+					GroupTrack "Run Right Forward" =
+					{
+						Tracks =
+						{
+							ReferencedTrack =
+							{
+								Filename = "characters/class_herofemale/motions/herofml_bm_runrf.oct"
+							}
+							KeyBlendTrack "Key Blend" =
+							{
+								Value = "Emotion"
+								Keys =
+								[
+									0.0 0.5 
+								]
+								Tracks =
+								{
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_run_upbody.oct"
+									}
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_run_upbody_joyful.oct"
+									}
+								}
+							}
+							ReferencedTrack =
+							{
+								BlendMethod = 1
+								Filename = "characters/class_herosmall/motions/herosm_bm_runrf_lean_add.oct"
+							}
+						}
+					}
+					GroupTrack "Run Right" =
+					{
+						Tracks =
+						{
+							ReferencedTrack =
+							{
+								Filename = "characters/class_herofemale/motions/herofml_bm_runr.oct"
+							}
+							KeyBlendTrack "Key Blend" =
+							{
+								Value = "Emotion"
+								Keys =
+								[
+									0.0 0.5 
+								]
+								Tracks =
+								{
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_run_upbody.oct"
+									}
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_run_upbody_joyful.oct"
+									}
+								}
+							}
+							ReferencedTrack =
+							{
+								BlendMethod = 1
+								Filename = "characters/class_herosmall/motions/herosm_bm_runr_lean_add.oct"
+							}
+						}
+					}
+					GroupTrack "Run Right Back" =
+					{
+						Tracks =
+						{
+							ReferencedTrack =
+							{
+								Filename = "characters/class_herofemale/motions/herofml_bm_runrb.oct"
+							}
+							KeyBlendTrack "Key Blend" =
+							{
+								Value = "Emotion"
+								Keys =
+								[
+									0.0 0.5 
+								]
+								Tracks =
+								{
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_run_upbody.oct"
+									}
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_run_upbody_joyful.oct"
+									}
+								}
+							}
+							ReferencedTrack =
+							{
+								BlendMethod = 1
+								Filename = "characters/class_herosmall/motions/herosm_bm_runrb_lean_add.oct"
+							}
+						}
+					}
+					GroupTrack "Run Back" =
+					{
+						Tracks =
+						{
+							ReferencedTrack =
+							{
+								Filename = "characters/class_herofemale/motions/herofml_bm_runb.oct"
+							}
+							KeyBlendTrack "Key Blend" =
+							{
+								Value = "Emotion"
+								Keys =
+								[
+									0.0 0.5 
+								]
+								Tracks =
+								{
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_run_upbody.oct"
+									}
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_run_upbody_joyful.oct"
+									}
+								}
+							}
+							ReferencedTrack =
+							{
+								BlendMethod = 1
+								Filename = "characters/class_herosmall/motions/herosm_bm_runb_lean_add.oct"
+							}
+						}
+					}
+					GroupTrack "Run Left Back" =
+					{
+						Tracks =
+						{
+							ReferencedTrack =
+							{
+								Filename = "characters/class_herofemale/motions/herofml_bm_runlb.oct"
+							}
+							KeyBlendTrack "Key Blend" =
+							{
+								Value = "Emotion"
+								Keys =
+								[
+									0.0 0.5 
+								]
+								Tracks =
+								{
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_run_upbody.oct"
+									}
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_run_upbody_joyful.oct"
+									}
+								}
+							}
+							ReferencedTrack =
+							{
+								BlendMethod = 1
+								Filename = "characters/class_herosmall/motions/herosm_bm_runlb_lean_add.oct"
+							}
+						}
+					}
+					GroupTrack "Run Left" =
+					{
+						Tracks =
+						{
+							ReferencedTrack =
+							{
+								Filename = "characters/class_herofemale/motions/herofml_bm_runl.oct"
+							}
+							KeyBlendTrack "Key Blend" =
+							{
+								Value = "Emotion"
+								Keys =
+								[
+									0.0 0.5 
+								]
+								Tracks =
+								{
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_run_upbody.oct"
+									}
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_run_upbody_joyful.oct"
+									}
+								}
+							}
+							ReferencedTrack =
+							{
+								BlendMethod = 1
+								Filename = "characters/class_herosmall/motions/herosm_bm_runl_lean_add.oct"
+							}
+						}
+					}
+					GroupTrack "Run Left Front" =
+					{
+						Tracks =
+						{
+							ReferencedTrack =
+							{
+								Filename = "characters/class_herofemale/motions/herofml_bm_runlf.oct"
+							}
+							KeyBlendTrack "Key Blend" =
+							{
+								Value = "Emotion"
+								Keys =
+								[
+									0.0 0.5 
+								]
+								Tracks =
+								{
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_run_upbody.oct"
+									}
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_run_upbody_joyful.oct"
+									}
+								}
+							}
+							ReferencedTrack =
+							{
+								BlendMethod = 1
+								Filename = "characters/class_herosmall/motions/herosm_bm_runlf_lean_add.oct"
+							}
+						}
+					}
+					GroupTrack "Run Forward2" =
+					{
+						Tracks =
+						{
+							ReferencedTrack =
+							{
+								Filename = "characters/out_joy/motions/joy_bm_runf.oct"
+							}
+							KeyBlendTrack "Key Blend" =
+							{
+								Value = "Emotion"
+								Keys =
+								[
+									0.0 0.5 
+								]
+								Tracks =
+								{
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_run_upbody.oct"
+									}
+									ReferencedTrack =
+									{
+										Filename = "characters/out_joy/motions/joy_bm_run_upbody_joyful.oct"
+									}
+								}
+							}
+							ReferencedTrack =
+							{
+								BlendMethod = 1
+								Filename = "characters/class_herosmall/motions/herosm_bm_runf_lean_add.oct"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

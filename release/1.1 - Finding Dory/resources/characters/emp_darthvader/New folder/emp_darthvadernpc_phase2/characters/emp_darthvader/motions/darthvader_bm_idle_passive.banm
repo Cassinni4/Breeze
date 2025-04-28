@@ -1,0 +1,32 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Lightsaber" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Lightsaber"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/emp_darthvader/motions/darthvader_bm_idle_passive.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/emp_darthvader/motions/darthvader_bm_idle_saber.oct"
+			}
+		}
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Weight = 0.11
+		Filename = "characters/tcw_anakin/motions/anakin_bm_idle_active_add.oct"
+	}
+}

@@ -1,0 +1,31 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Lightsaber" =
+	{
+	}
+}
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/tcw_anakin/motions/tcw_anakin_force_jump.oct"
+	}
+	KeyBlendTrack "Key Blend" =
+	{
+		BlendMethod = 1
+		Value = "Lightsaber"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/tcw_anakin/motions/tcw_anakin_force_jump_nosaber_add.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/tcw_anakin/motions/tcw_anakin_force_jump_saber_add.oct"
+			}
+		}
+	}
+}

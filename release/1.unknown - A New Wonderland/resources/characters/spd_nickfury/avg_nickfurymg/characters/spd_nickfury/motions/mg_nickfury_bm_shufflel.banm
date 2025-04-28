@@ -1,0 +1,14 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/spd_nickfury/motions/mg_nickfury_bm_idle_passive_pose.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Filename = "characters/missiongiver/motions/mg_bm_shufflel_hipbotharms_add.oct"
+	}
+}

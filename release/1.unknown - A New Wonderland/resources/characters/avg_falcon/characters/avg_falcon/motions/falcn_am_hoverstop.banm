@@ -1,0 +1,56 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "LeanFB" =
+	{
+	}
+}
+Tracks =
+{
+	GroupTrack "Stop" =
+	{
+		Tracks =
+		{
+			KeyBlendTrack "Key Blend" =
+			{
+				Value = "LeanFB"
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/avg_falcon/motions/falcon_am_hvr_stop_front.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/avg_falcon/motions/falcon_am_hvr_stop_right.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/avg_falcon/motions/falcon_am_hvr_stop_back.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/avg_falcon/motions/falcon_am_hvr_stop_left.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/avg_falcon/motions/falcon_am_hvr_stop_front.oct"
+					}
+				}
+			}
+			KeyBlendTrack "Key Blend2" =
+			{
+				BlendMethod = 1
+				Value = "LeanFB"
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/avg_falcon/motions/falcon_am_hvr_add.oct"
+					}
+				}
+			}
+		}
+	}
+}

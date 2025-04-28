@@ -1,0 +1,32 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Speed" =
+	{
+		DefaultPhase = 0.0
+	}
+}
+Tracks =
+{
+	KeyBlendTrack =
+	{
+		Value = "Speed"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/class_vio/motions/class_vio_crd_rarm_walkstop.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/class_vio/motions/class_vio_crd_rarm_runstop.oct"
+			}
+		}
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Filename = "characters/pnf_phineas/motions/phn_crd_rarm_crotch_adjust.oct"
+	}
+}

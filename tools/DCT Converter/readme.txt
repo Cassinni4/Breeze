@@ -1,0 +1,2 @@
+The code contains both dct to xml and xml to dct. At the very end of the code you can activate and deactivate by placing the ''' at the start and end of what you want to deactivate.
+The "def" should explain which is which.

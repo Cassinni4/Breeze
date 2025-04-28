@@ -1,0 +1,52 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Direction" =
+	{
+	}
+	FloatParameter "Stick" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Stick"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/class_herofemale/motions/herofml_hover.oct"
+			}
+			KeyBlendTrack "Key Blend" =
+			{
+				Value = "Direction"
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/class_herofemale/motions/herofml_hoverf.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/class_herofemale/motions/herofml_hoverr.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/class_herofemale/motions/herofml_hoverb.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/class_herofemale/motions/herofml_hoverl.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/class_herofemale/motions/herofml_hoverf.oct"
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/al_jasmine/motions/jasmine_bm_idle_active_pose.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Weight = 0.06
+		Filename = "characters/biped/motions/biped_bm_idle_active_add.oct"
+	}
+}

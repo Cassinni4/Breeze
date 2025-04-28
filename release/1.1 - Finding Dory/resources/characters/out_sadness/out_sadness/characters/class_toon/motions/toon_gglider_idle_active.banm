@@ -1,0 +1,21 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	GroupTrack "Group1" =
+	{
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/class_toon/motions/toon_gglider_proc_cntr_pose.oct"
+			}
+			ReferencedTrack =
+			{
+				BlendMethod = 1
+				Weight = 0.55
+				Filename = "characters/class_toon/motions/toon_bm_idle_active_add.oct"
+			}
+		}
+	}
+}

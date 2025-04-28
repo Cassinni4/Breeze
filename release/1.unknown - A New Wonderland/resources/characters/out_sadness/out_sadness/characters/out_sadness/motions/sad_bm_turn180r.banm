@@ -1,0 +1,31 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Emotion" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Emotion"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/out_sadness/motions/sad_bm_idle_active_pose.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/out_sadness/motions/sad_bm_idle_sadder_pose.oct"
+			}
+		}
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Filename = "characters/class_toon/motions/toon_bm_turn180r_add.oct"
+	}
+}

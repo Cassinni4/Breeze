@@ -1,0 +1,2 @@
+ShoulderCharge:ShoulderChargeFinish:EventsFired:SET_INTERRUPTIBLE:Offset:13;
+ShoulderCharge:ShoulderChargeWallHit:EventsFired:SET_INTERRUPTIBLE:Offset:19;

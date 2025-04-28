@@ -1,0 +1,68 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "UpDown" =
+	{
+	}
+	FloatParameter "LeftRight" =
+	{
+	}
+	FloatParameter "Speed" =
+	{
+	}
+}
+Tracks =
+{
+	GroupTrack "Group1" =
+	{
+		Tracks =
+		{
+			KeyBlendTrack "LeftRight" =
+			{
+				Value = "UpDown"
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/dor_nemo/motions/nemo_swim_proc_center_lr.oct"
+						Phase = "LeftRight"
+					}
+				}
+			}
+			KeyBlendTrack "SwimSpeed" =
+			{
+				BlendMethod = 1
+				Value = "Speed"
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/dor_nemo/motions/nemo_swim_start_add.oct"
+					}
+				}
+			}
+			KeyBlendTrack "Key Blend" =
+			{
+				BlendMethod = 1
+				Weight = 0.6
+				Value = "UpDown"
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/dor_nemo/motions/nemo_swim_proc_center_headup_add.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/dor_nemo/motions/nemo_swim_proc_center_headlevel_add.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/dor_nemo/motions/nemo_swim_proc_center_headdown_add.oct"
+					}
+				}
+			}
+		}
+	}
+}

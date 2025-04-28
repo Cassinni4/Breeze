@@ -1,0 +1,21 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/class_hero/motions/hero_bm_idle_active_pose.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Weight = 0.45
+		Filename = "characters/avg_hulk/motions/hulk_bm_idle_active_add.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Weight = 0.89
+		Filename = "characters/avg_blackpanther/motions/panth_bm_idle_active_eyes.oct"
+	}
+}

@@ -1,0 +1,33 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "JumpSpeed" =
+	{
+		DefaultPhase = 0.0
+	}
+}
+BlendMethod = 1
+Tracks =
+{
+	KeyBlendTrack "Jump" =
+	{
+		BlendMethod = 1
+		Value = "JumpSpeed"
+		Keys =
+		[
+			0.28 1.0 
+		]
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/biped/motions/biped_mnt_saddle_jumpstand.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/biped/motions/biped_mnt_saddle_jumpair.oct"
+			}
+		}
+	}
+}

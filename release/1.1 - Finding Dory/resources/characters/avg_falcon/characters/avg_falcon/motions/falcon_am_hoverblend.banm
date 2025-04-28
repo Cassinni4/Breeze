@@ -1,0 +1,54 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "LeanFB" =
+	{
+	}
+	FloatParameter "LeftRight" =
+	{
+	}
+}
+Tracks =
+{
+	GroupTrack "Hover_Grp" =
+	{
+		Tracks =
+		{
+			KeyBlendTrack "Hover_movement " =
+			{
+				Value = "LeanFB"
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/avg_falcon/motions/falcon_am_hvr_frwd_lr.oct"
+						Phase = "LeftRight"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/avg_falcon/motions/falcon_am_hvr_center_lr.oct"
+						Phase = "LeftRight"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/avg_falcon/motions/falcon_am_hvr_back_lr.oct"
+						Phase = "LeftRight"
+					}
+				}
+			}
+			KeyBlendTrack "Hover_Add" =
+			{
+				BlendMethod = 1
+				Value = "LeanFB"
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/avg_falcon/motions/falcon_am_hvr_add.oct"
+					}
+				}
+			}
+		}
+	}
+}

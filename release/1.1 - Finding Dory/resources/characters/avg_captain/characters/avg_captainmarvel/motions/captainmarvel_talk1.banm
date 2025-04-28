@@ -1,0 +1,14 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/avg_captainmarvel/motions/captainmarvel_bm_idle_talk_pose.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Filename = "characters/missiongiver/motions/mg_talk1_add.oct"
+	}
+}

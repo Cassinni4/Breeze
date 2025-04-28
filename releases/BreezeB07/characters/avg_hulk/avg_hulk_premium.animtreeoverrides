@@ -1,3 +1,0 @@
-Reaction:FrontGetup:EventsFired:SET_INTERRUPTIBLE:Offset:22;
-Reaction:BackGetup:EventsFired:SET_INTERRUPTIBLE:Offset:25;
-Biped_UpperBody2:Chuck_BespokeBall:EventsFired:SEND_ANIMTREESYNC2:Offset:14;

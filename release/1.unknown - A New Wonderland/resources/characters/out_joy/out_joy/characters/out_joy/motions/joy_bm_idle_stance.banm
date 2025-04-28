@@ -1,0 +1,48 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Emotion" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Emotion"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/out_joy/motions/joy_bm_idle_active_pose.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/out_joy/motions/joy_bm_idle_joyful_pose.oct"
+			}
+		}
+	}
+	KeyBlendTrack "Key Blend2" =
+	{
+		BlendMethod = 1
+		Value = "Emotion"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/out_joy/motions/joy_bm_idle_active_add.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/out_joy/motions/joy_bm_idle_active_add.oct"
+			}
+		}
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Weight = 0.71
+		Filename = "characters/class_herofemale/motions/herofml_bm_idle_active_eyes.oct"
+	}
+}

@@ -1,0 +1,42 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Emotion" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Emotion"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/out_sadness/motions/sad_bm_idle_active_pose.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/out_sadness/motions/sad_bm_idle_sadder_pose.oct"
+			}
+		}
+	}
+	KeyBlendTrack "Key Blend2" =
+	{
+		BlendMethod = 1
+		Value = "Emotion"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/out_sadness/motions/sad_bm_idle_active_add.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/out_sadness/motions/sad_bm_idle_sadder_add.oct"
+			}
+		}
+	}
+}

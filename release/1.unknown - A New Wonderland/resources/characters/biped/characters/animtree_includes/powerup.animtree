@@ -1,0 +1,2625 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="3.0.104 x64" branch="in3" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="0">
+  <p:Interface value="FullBody"/>
+  <AnimTreeStateGroup name="WebStorm_Group" expanded="1" pos="0.8 0">
+   <p:Color value="0.376067 0.410535 0.7"/>
+   <AnimTreeState name="WebStormStart" pos="-1.4 1">
+    <p:Clip value="POWERUP_WEBSTORM_START"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Stop"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SEND_ANIMTREESYNC">
+      <p:When value="EnteringState"/>
+      <p:Offset value="23"/>
+     </p:Event>
+    </p:EventsFired>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="WebStormShoot"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="WEBSTORM_SHOOT"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="WebStormShoot" pos="-1.4 -0.8">
+    <p:Clip value="POWERUP_WEBSTORM_SHOOT"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="WebStormLand"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="WEBSTORM_HANG"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="WebStormLand" pos="1 -0.7">
+    <p:Clip value="POWERUP_WEBSTORM_LAND"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Pause"/>
+    <p:AISync value="FALSE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SEND_ANIMTREESYNC">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="67"/>
+     </p:Event>
+     <p:Event2 class="AnimTreeStateEventProperty" value="SEND_ANIMTREESYNC">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="9"/>
+     </p:Event2>
+     <p:Event3 class="AnimTreeStateEventProperty" value="SEND_ANIMTREESYNC">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="55"/>
+     </p:Event3>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="WebStormStartMBA" pos="1 1">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="POWERUP_WEBSTORM_START"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Stop"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SEND_ANIMTREESYNC">
+      <p:When value="EnteringState"/>
+      <p:Offset value="23"/>
+     </p:Event>
+    </p:EventsFired>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="WebStormLand"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="WEBSTORM_SHOOT"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch2">
+     <p:BranchTo value="WebStormLand"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="WEBSTORM_HANG"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch1">
+   <p:BranchTo value="WebStormStart"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="WEBSTORM_START"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Lightning_Group" expanded="1" pos="0 0">
+   <AnimTreeState name="LightningStrike" pos="-5 1">
+    <p:Clip value="POWERUP_LIGHTNING_START"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SEND_ANIMTREESYNC">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="40"/>
+     </p:Event>
+    </p:EventsFired>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="LightningStrike_Land"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_LIGHTNING_LAND"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="LightningStrike_Land" pos="-5 1.19209e-007">
+    <p:Clip value="POWERUP_LIGHTNING_LAND"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="45"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch2">
+   <p:BranchTo value="LightningStrike"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_LIGHTNING"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Rage_Group" expanded="1" pos="-1.6 -0.799999">
+   <AnimTreeState name="PowerUpAttack" pos="-0.999998 5.2">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0 0"/>
+    <p:Clip value="POWERUP_RAGE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="195"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch3">
+   <p:BranchTo value="PowerUpAttack"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_RAGE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="DeployProjectiles_Powerup_Group" expanded="1" pos="-0.6 -0.599999">
+   <p:Color value="0.7 0.210347 0.183974"/>
+   <p:StartState value="DeployProjectiles_Start"/>
+   <AnimTreeState name="DeployProjectiles_Stop" pos="8.6 -0.2">
+    <p:Clip value="POWERUP_DEPLOY_PROJECTILES_STOP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="13"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="DeployProjectiles_Cycle" pos="5.8 -0.2">
+    <p:Clip value="POWERUP_DEPLOY_PROJECTILES_CYCLE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="DeployProjectiles_Stop"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_DEPLOYPROJECTILE_FINISH"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="DeployProjectiles_Start" pos="5.8 1.2">
+    <p:Clip value="POWERUP_DEPLOY_PROJECTILES_START"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="DeployProjectiles_Cycle"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch4">
+   <p:BranchTo value="DeployProjectiles_Start"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_DEPLOYPROJECTILE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch5">
+   <p:BranchTo value="SummonVines"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_SUMMONVINES"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Throw_Powerup_Group" expanded="1" pos="-9.79999 4.4">
+   <AnimTreeState name="PowerUpThrow" pos="0.4 -0.600001">
+    <p:Color value="0.5023 0.0405 0.7"/>
+    <p:Clip value="POWERUP_THROW"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeState name="PowerUpThrowAir" pos="0.4 -1.8">
+    <p:Color value="0.50226 0.0405 0.7"/>
+    <p:Clip value="POWERUP_THROW_AIR"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch6">
+   <p:BranchTo value="PowerUpThrow"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_THROW"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Circular_Shield_Throw_Powerup_Group" expanded="1" pos="0 0">
+   <p:Color value="0.7 0.285179 0"/>
+   <AnimTreeState name="Circular_Shield_Throw_Powerup" pos="12.6 0.8">
+    <p:Clip value="POWERUP_CIRCULAR_SHIELD"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch7">
+   <p:BranchTo value="Circular_Shield_Throw_Powerup"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_CIRCULAR_SHIELD"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="ChiDragon_Group" expanded="1" pos="1 0.4">
+   <p:Color value="1 1 0"/>
+   <AnimTreeState name="ChiDragon" pos="5.4 4">
+    <p:Color value="0 0.7 0.063199"/>
+    <p:Clip value="POWERUP_CHI_DRAGON"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="102"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch8">
+   <p:BranchTo value="ChiDragon"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_CHIDRAGON"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="DraxRage_Group" expanded="1" pos="1.2 -1.4">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="1 0.660256 0"/>
+   <p:StartState value=""/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <AnimTreeState name="DraxRage" pos="5.4 4">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.0807692 0"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="POWERUP_DRAX"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch9">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:BranchTo value="DraxRage"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_DRAXRAGE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Invisibility_Group" expanded="1" pos="0 0">
+   <AnimTreeState name="InvisibilityStart" pos="-3.6 -3.4">
+    <p:Clip value="POWERUP_TURNINVISIBLE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SEND_ANIMTREESYNC">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="22"/>
+     </p:Event>
+     <p:Event2 class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="23"/>
+     </p:Event2>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch10">
+   <p:BranchTo value="InvisibilityStart"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="INVISIBILITY_START"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Tele_Group" expanded="1" pos="-0.600001 1.19209e-007">
+   <p:Color value="0.871795 0.871795 0.264477"/>
+   <AnimTreeState name="Tele_Start" pos="10.4 4.2">
+    <p:Color value="0 0 0"/>
+    <p:Clip value="POWERUP_TELE_START"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Tele_Loop"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_TELE_LOOP"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Tele_Loop" pos="10.4 3">
+    <p:Color value="0 0 0"/>
+    <p:Clip value="POWERUP_TELE_LOOP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Tele_End"/>
+     <p:DefaultBranch value="FALSE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_TELE_SEND"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Tele_End" pos="13 3.3">
+    <p:Color value="0 0 0"/>
+    <p:Clip value="POWERUP_TELE_END"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="30"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch11">
+   <p:BranchTo value="Tele_Start"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_TELE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="TendrilAttack_Powerup_Group" expanded="1" pos="3.8 -2.6">
+   <p:StartState value="TendrilAttack"/>
+   <AnimTreeState name="TendrilAttack" pos="1.19209e-006 -1.04308e-006">
+    <p:Clip value="POWERUP_TENDRIL_ATTACK"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="51"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch12">
+   <p:BranchTo value="TendrilAttack"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_TENDRIL_ATTACK_START"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="RunStart_Powerup_Group" expanded="1" pos="-0.2 -0.6">
+   <AnimTreeState name="RunStart" pos="-0.4 -2.8">
+    <p:Color value="0.46 0.589744 0.46"/>
+    <p:Clip value="POWERUP_SPEEDSTART"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="66"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch13">
+   <p:BranchTo value="RunStart"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_RUNSTART"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="BlasterGun_Powerup_Group" expanded="1" pos="10.8 -2.6">
+   <p:StartState value="BlasterGun"/>
+   <p:EventsFired>
+    <p:Event class="AnimTreeStateEventProperty" value="BlasterGunCameraOn">
+     <p:When value="EnteringGroup"/>
+     <p:Offset value="27"/>
+    </p:Event>
+    <p:Event2 class="AnimTreeStateEventProperty" value="BlasterGunCameraOff">
+     <p:When value="EnteringGroup"/>
+     <p:Offset value="143"/>
+    </p:Event2>
+   </p:EventsFired>
+   <AnimTreeState name="BlasterGun" pos="0 -8.9407e-008">
+    <p:Clip value="POWERUP_BLASTERGUN"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="159"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch14">
+   <p:BranchTo value="BlasterGun"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_BLASTERGUN"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="TinkerBell_PowerUp_Group" expanded="1" pos="5 -5.4">
+   <p:Color value="0.820513 1 0.416667"/>
+   <p:StartState value="TinkerBell_Start"/>
+   <AnimTreeState name="TinkerBell_Start" pos="-0.2 -0.200001">
+    <p:Clip value="POWERUP_DEPLOY_PROJECTILES_START"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="TinkerBell_Cycle"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="TinkerBell_Cycle" pos="-0.199999 -1.4">
+    <p:Clip value="POWERUP_DEPLOY_PROJECTILES_CYCLE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="TInkerBell_Stop"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_TINKERBELL_FINISH"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="TInkerBell_Stop" pos="3 -1.4">
+    <p:Clip value="POWERUP_DEPLOY_PROJECTILES_STOP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="50"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch15">
+   <p:BranchTo value="TinkerBell_Start"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_TINKERBELL"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="ArrowSpray_Group" expanded="1" pos="-5.96046e-007 1.6">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.7 0.7 0.7"/>
+   <p:StartState value=""/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <AnimTreeState name="ArrowSprayStart" pos="-3.6 -3.4">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="POWERUP_ARROWSPRAY"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SEND_ANIMTREESYNC">
+      <p:When value="ClipEnds"/>
+     </p:Event>
+     <p:Event2 class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="30"/>
+     </p:Event2>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch16">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:BranchTo value="ArrowSprayStart"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_ARROWSPRAY_START"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Hawkeye_Arrow_Super_Group" expanded="1" pos="-7.15256e-007 -0.6">
+   <AnimTreeState name="Hawkeye_Arrow_Super" pos="12.2 -0.4">
+    <p:Clip value="POWERUP_HAWKEYE_ARROWS"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="35"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch17">
+   <p:BranchTo value="Hawkeye_Arrow_Super"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_HAWKEYE_SUPER"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Enraged" expanded="1" pos="-3.2 -5.2">
+   <p:Color value="0.7 0.417538 0"/>
+   <AnimTreeState name="EnragedIdle" pos="0 -0.200001">
+    <p:Clip value="POWERUP_IDLE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+   </AnimTreeState>
+   <AnimTreeState name="EnragedRun" pos="3.2 0.2">
+    <p:Clip value="SPRINT"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch18">
+   <p:BranchTo value="EnragedIdle"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="ENRAGED_IDLE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch19">
+   <p:BranchTo value="EnragedRun"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="ENRAGED_RUN"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Merida_Arrow_Super_Group" expanded="1" pos="4.4 -0.6">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.7 0.7 0.7"/>
+   <p:StartState value=""/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <AnimTreeState name="Merida_Arrow_Super" pos="12.2 -0.4">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="POWERUP_MERIDA_ARROWS"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="109"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch20">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:BranchTo value="Merida_Arrow_Super"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_MERIDA_SUPER"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Lamp_Powerup_Group" expanded="1" pos="10.8 -4.60001">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.7 0.7 0.7"/>
+   <p:StartState value=""/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <AnimTreeState name="Lamp_Start" pos="0 -8.9407e-008">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="POWERUP_LAMP_START"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Lamp_Loop"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Lamp_Loop" pos="2.4 -3.78489e-006">
+    <p:Clip value="POWERUP_LAMP_LOOP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <p:AISync value="FALSE"/>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch21">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:BranchTo value="Lamp_Start"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_LAMP"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Hiro_Powerup_Group" expanded="1" pos="14.2 -2.8">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.7 0.7 0.7"/>
+   <p:StartState value=""/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <AnimTreeState name="Powerup_Hiro" pos="0 -8.9407e-008">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="POWERUP_HIRO"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="123"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch22">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:BranchTo value="Powerup_Hiro"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_HIRO"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="React_Deploy" expanded="1" pos="11.4 -6.6">
+   <p:Color value="0.411448 0.807692 0.792565"/>
+   <p:EventsFired>
+    <p:Event class="AnimTreeStateEventProperty" value="RocketFistsCameraOff">
+     <p:When value="ExitingGroup"/>
+    </p:Event>
+   </p:EventsFired>
+   <AnimTreeState name="React_Deploy_Start" pos="0 -8.9407e-008">
+    <p:Clip value="POWERUP_REACT_DEPLOY_START"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="RocketFistsCameraOn">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="0"/>
+     </p:Event>
+    </p:EventsFired>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="React_Deploy_Loop"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="React_Deploy_Loop" pos="-0.5 -1">
+    <p:Clip value="POWERUP_REACT_DEPLOY_CYCLE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="React_Deploy_End"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_REACT_DEPLOY_END"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch23">
+   <p:BranchTo value="React_Deploy_Start"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_REACT_DEPLOY"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="FeatherStorm_Group" expanded="1" pos="2.4 4.4">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.376067 0.410535 0.7"/>
+   <p:StartState value=""/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <AnimTreeState name="FeatherStormStart" pos="-0.6 1">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="POWERUP_FEATHERSTORM_START"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Stop"/>
+    <p:AISync value="TRUE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="FeatherStormJumpLoop"/>
+     <p:DefaultBranch value="TRUE"/>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="FeatherStormShoot" pos="-0.8 -0.8">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="POWERUP_FEATHERSTORM_SHOOT"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeState name="FeatherStormJumpLoop" pos="-1.8 5.96046e-008">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="POWERUP_FEATHERSTORM_JUMP_LOOP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="FeatherStormShoot"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="FEATHERSTORM_SHOOT"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch24">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:BranchTo value="FeatherStormStart"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="FEATHERSTORM_START"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Deplot_Turret_Group" expanded="1" pos="-2.6 6.39999">
+   <p:Color value="0.833333 0.793781 0.542411"/>
+   <AnimTreeState name="Deploy_Turret" pos="0 1.49012e-007">
+    <p:Color value="0.0667982 0.7 0"/>
+    <p:Clip value="POWERUP_TURRET"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:EaseDuration value="3"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="17"/>
+     </p:Event>
+     <p:Event2 class="AnimTreeStateEventProperty" value="SEND_ANIMTREESYNC">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="8"/>
+     </p:Event2>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch25">
+   <p:BranchTo value="Deploy_Turret"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="DEPLOY_TURRET"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeState name="React_Deploy_End" pos="11.4 -8.6">
+   <p:Clip value="POWERUP_REACT_DEPLOY_END"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:AISync value="TRUE"/>
+   <p:EventsFired>
+    <p:Event2 class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+     <p:When value="ClipStarts"/>
+     <p:Offset value="22"/>
+    </p:Event2>
+   </p:EventsFired>
+  </AnimTreeState>
+  <AnimTreeStateGroup name="SuumonVines_Group" expanded="1" pos="4.20003 0.999971">
+   <AnimTreeState name="SummonVines" pos="2.19998 5.40003">
+    <p:Clip value="POWERUP_SUMMONVINES"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="167"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeStateGroup name="PaintBomb_Group" expanded="1" pos="2.00001 -12.8">
+   <p:Color value="1 0.24 1"/>
+   <AnimTreeState name="PaintBomb_Air" pos="2.2 -0.200001">
+    <p:Color value="1 0.24 1"/>
+    <p:Clip value="POWERUP_PAINTBOMB_AIR"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="23"/>
+     </p:Event>
+     <p:Event2 class="AnimTreeStateEventProperty" value="FALL_HARD">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="27"/>
+     </p:Event2>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="PaintBomb_Ground" pos="1.19209e-007 -0.800002">
+    <p:Color value="1 0.24 1"/>
+    <p:Clip value="POWERUP_PAINTBOMB_GROUND"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="40"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch26">
+   <p:BranchTo value="PaintBomb_Air"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_PAINTBOMB_AIR"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch27">
+   <p:BranchTo value="PaintBomb_Ground"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_PAINTBOMB_GROUND"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="RapidFireTurret_Group" expanded="1" pos="7 -9.4">
+   <AnimTreeState name="RapidFireTurret_Fire" pos="0.199997 -1.2">
+    <p:Clip value="POWERUP_RAPID_FIRE_TURRET_SHOOT"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+   </AnimTreeState>
+   <AnimTreeState name="RapidFireTurret_Fire_B" pos="0.2 -2.6">
+    <p:Clip value="POWERUP_RAPID_FIRE_TURRET_SHOOT_B"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+   </AnimTreeState>
+   <AnimTreeState name="RapidFireTurret_Fire_C" pos="2.8 -2.6">
+    <p:Clip value="POWERUP_RAPID_FIRE_TURRET_SHOOT_C"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+   </AnimTreeState>
+   <AnimTreeState name="RapidFireTurret_Transition" pos="2.79999 -0.799999">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="POWERUP_RAPID_FIRE_TURRET_TRANSITION"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Stop"/>
+    <p:AISync value="FALSE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SEND_ANIMTREESYNC">
+      <p:When value="ClipEnds"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch28">
+   <p:BranchTo value="RapidFireTurret_Fire"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_RAPID_FIRE_TURRET_SHOOT_A"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Emotion_Wave_Group" expanded="1" pos="5.4 1.4">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.7 0.7 0.7"/>
+   <p:StartState value=""/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <AnimTreeState name="Emotion_Wave" pos="12.2 -0.4">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="POWERUP_EMOTION_WAVE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipEnds"/>
+      <p:Offset value="0"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch29">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:BranchTo value="Emotion_Wave"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_EMOTION_WAVE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Leia_Decoy" expanded="1" pos="11.6 8.4">
+   <p:Color value="1 1 1"/>
+   <AnimTreeState name="Leia_Decoy_Summon" pos="-1.8 -1.2">
+    <p:Color value="1 1 1"/>
+    <p:Clip value="POWERUP_DECOY_HOLO_CALL"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeState name="Leia_Holo_Loop" pos="0.299999 -0.699999">
+    <p:Color value="1 1 1"/>
+    <p:Clip value="POWERUP_DECOY_HOLO_LOOP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+   </AnimTreeState>
+   <AnimTreeState name="Leia_Decoy_Summon_Air" pos="-1.8 -2.6">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="1 1 1"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="POWERUP_DECOY_HOLO_CALL_AIR"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="36"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch31">
+   <p:BranchTo value="Leia_Decoy_Summon"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_DECOY_HOLO_SUMMON"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch30">
+   <p:BranchTo value="Leia_Holo_Loop"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_DECOY_HOLO_LOOP"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Vader_Choke_Throw" expanded="1" pos="17.2 8.6">
+   <p:Color value="0.243902 0.243902 0.243902"/>
+   <AnimTreeState name="Vader_Choke_Throw_Right" pos="4.2 -2.6">
+    <p:Clip value="POWERUP_VADER_THROW_RIGHT"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeState name="Vader_Choke_Throw_Left" pos="1.6 -2.6">
+    <p:Clip value="POWERUP_VADER_THROW_LEFT"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeState name="Vader_Choke_In" pos="1.6 -0.400001">
+    <p:Clip value="POWERUP_VADER_CHOKE_IN"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Vader_Choke_Loop"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Vader_Choke_Loop" pos="1.6 -1.2">
+    <p:Clip value="POWERUP_VADER_CHOKE_LOOP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+   </AnimTreeState>
+   <AnimTreeState name="Vader_Choke_Air_In" pos="6.5 -0.299999">
+    <p:Clip value="POWERUP_VADER_CHOKE_AIR_IN"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Vader_Choke_Air_loop"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Vader_Choke_Air_loop" pos="6.45001 -1.1">
+    <p:Clip value="POWERUP_VADER_CHOKE_AIR_LOOP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+   </AnimTreeState>
+   <AnimTreeState name="Vader_Choke_Out" pos="2.85001 -1.9">
+    <p:Clip value="POWERUP_VADER_CHOKE_OUT"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+   </AnimTreeState>
+   <AnimTreeState name="Vader_Choke_Air_Out" pos="8.05 -1.7">
+    <p:Clip value="POWERUP_VADER_CHOKE_AIR_OUT"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Pause"/>
+   </AnimTreeState>
+   <AnimTreeState name="Vader_Choke_Air_Throw_Left" pos="6.85 -2.55">
+    <p:Clip value="POWERUP_VADER_CHOKE_AIR_THROW_LEFT"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+   </AnimTreeState>
+   <AnimTreeState name="Vader_Choke_Air_Throw_Right" pos="9.25 -2.55">
+    <p:Clip value="POWERUP_VADER_CHOKE_AIR_THROW_RIGHT"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch32">
+   <p:BranchTo value="Vader_Choke_Throw_Right"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Vader_Throw_Right"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch33">
+   <p:BranchTo value="Vader_Choke_Throw_Left"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Vader_Throw_Left"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch34">
+   <p:BranchTo value="Leia_Decoy_Summon_Air"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_DECOY_HOLO_SUMMON_AIR"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Zeb_BoStaff" expanded="1" pos="15.8 5.2">
+   <AnimTreeState name="BoStaff_Equip" pos="0 -8.9407e-008">
+    <p:Clip value="POWERUP_BOSTAFF_EQUIP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="30"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="BoStaff_Equip_Air" pos="-1.19209e-006 -1.4">
+    <p:Clip value="POWERUP_BOSTAFF_EQUIP_AIR"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="25"/>
+     </p:Event>
+     <p:Event2 class="AnimTreeStateEventProperty" value="FALL_HARD">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="41"/>
+     </p:Event2>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch35">
+   <p:BranchTo value="BoStaff_Equip"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_BOSTAFF_EQUIP"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Clu_Tele_Group" expanded="1" pos="16.4 -3.8">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.371131 0.7 0.0684783"/>
+   <p:StartState value=""/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <AnimTreeState name="Clu_Tele_Start" pos="-0.2 -0.8">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="POWERUP_CLU_TELE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:CropStart value="0"/>
+    <p:InitialTime value="0"/>
+    <p:Speed value="1"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="0"/>
+    <p:CurveSlope value="1"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="50"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeStateGroup name="Sam_AOE_Super_Group" expanded="1" pos="19.2 -4.6">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.7 0.676603 0.083116"/>
+   <p:StartState value=""/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <AnimTreeState name="Sam_AOE_Super" pos="0 -5.66244e-007">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="POWERUP_SAM_STOMP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:CropStart value="0"/>
+    <p:InitialTime value="0"/>
+    <p:Speed value="1"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="0"/>
+    <p:CurveSlope value="1"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="100"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch36">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:BranchTo value="Sam_AOE_Super"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_SAM_AOE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Quorra_Rage_Group" expanded="1" pos="17.6 -6.4">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.20493 0.337966 0.7"/>
+   <p:StartState value=""/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <AnimTreeState name="Quorra_Rage_Powerup" pos="0 -8.9407e-008">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.7 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="POWERUP_QUORRA_RAGE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:CropStart value="0"/>
+    <p:InitialTime value="0"/>
+    <p:Speed value="1"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="0"/>
+    <p:CurveSlope value="1"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="100"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch37">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:BranchTo value="Quorra_Rage_Powerup"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_QUORRA_RAGE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch38">
+   <p:BranchTo value="BoStaff_Equip_Air"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_BOSTAFF_EQUIP_AIR"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Minnie_Powerup_Group" expanded="1" pos="19.2 -2.4">
+   <p:Color value="1 0.544714 0.859756"/>
+   <AnimTreeState name="Minnie_Powerup" pos="0 -8.9407e-008">
+    <p:Clip value="POWERUP_MINNIE_TAP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch39">
+   <p:BranchTo value="Minnie_Powerup"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_MINNIE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch40">
+   <p:BranchTo value="Vader_Choke_In"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Vader_Choke_In"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch41">
+   <p:BranchTo value="Vader_Choke_Air_In"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Vader_Choke_Air_In"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch42">
+   <p:BranchTo value="Vader_Choke_Out"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Vader_Choke_Out"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch43">
+   <p:BranchTo value="Vader_Choke_Air_Out"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Vader_Choke_Air_Out"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch44">
+   <p:BranchTo value="Vader_Choke_Air_Throw_Left"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Vader_Choke_Air_Throw_Left"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch45">
+   <p:BranchTo value="Vader_Choke_Air_Throw_Right"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="Vader_Choke_Air_Throw_Right"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Lola_Sandstorm_Group" expanded="1" pos="16.2 -9.8">
+   <AnimTreeState name="Lola_SandStorm" pos="0 3.8743e-007">
+    <p:Clip value="POWERUP_SANDSTORM"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="100"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch46">
+   <p:BranchTo value="Lola_SandStorm"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_LOLA_SANDSTORM"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch47">
+   <p:BranchTo value="RapidFireTurret_Transition"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_RAPID_FIRE_TURRET_TRANSITION"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Classic_Mickey_Powerup_Group" expanded="1" pos="-0.200001 -0.2">
+   <p:Color value="0.7 0 0.0831254"/>
+   <AnimTreeState name="Classic_Mickey_Powerup" pos="22.8 -2.2">
+    <p:Clip value="POWERUP_CLASSIC_MICKEY"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeStateGroup name="Olaf_Powerup_Group" expanded="1" pos="-0.200001 -0.2">
+   <p:Color value="0.123366 0.686892 0.7"/>
+   <AnimTreeState name="Olaf_Powerup" pos="26 -2.2">
+    <p:Clip value="POWERUP_OLAF"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch48">
+   <p:BranchTo value="Classic_Mickey_Powerup"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_CLASSIC_MICKEY"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch49">
+   <p:BranchTo value="Olaf_Powerup"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_OLAF"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Deploy_Blockhead_PowerUp_Group" expanded="1" pos="1.4 -0.6">
+   <p:Color value="0 0.7 0.0695394"/>
+   <AnimTreeState name="Deploy_Blockhead_Powerup" pos="21.2 -0.2">
+    <p:Clip value="POWERUP_DEPLOY_BLOCKHEAD"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="100"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch50">
+   <p:BranchTo value="Deploy_Blockhead_Powerup"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="DEPLOY_BLOCKHEAD"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="BobaFett_Super_Group" expanded="1" pos="16.2 -12.2">
+   <p:Color value="0.146785 0.451219 0.270904"/>
+   <AnimTreeState name="BF_Super_Start" pos="0 3.57628e-007">
+    <p:Color value="1 0.25 0.25"/>
+    <p:Clip value="SPECIALMOVE_BOBAFETT_GROUND"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="40"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="BF_Super_Deploy" pos="0 -1">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="1 0.25 0.25"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="SPECIALMOVE_BOBAFETT_GROUND"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:CropStart value="10"/>
+    <p:CropEnd value="35"/>
+    <p:InitialTime value="0"/>
+    <p:Speed value="1"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="0"/>
+    <p:CurveSlope value="1"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="40"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="BF_Air_Super_Start" pos="2.6 3.57628e-007">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="1 0.25 0.25"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="SPECIALMOVE_BOBAFETT_CHARGE_Air"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:CropStart value="0"/>
+    <p:CropEnd value="35"/>
+    <p:InitialTime value="0"/>
+    <p:Speed value="1"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="0"/>
+    <p:CurveSlope value="1"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="FALL_HARD">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="40"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="BF_Air_Super_Deploy" pos="2.6 -1">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="1 0.25 0.25"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="SPECIALMOVE_BOBAFETT_CHARGE_Air"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:CropStart value="10"/>
+    <p:CropEnd value="35"/>
+    <p:InitialTime value="0"/>
+    <p:Speed value="1"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="0"/>
+    <p:CurveSlope value="1"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="FALL_HARD">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="40"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch55">
+   <p:BranchTo value="BF_Air_Super_Start"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_BOBAFETT_AIR_START"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch51">
+   <p:BranchTo value="BF_Super_Start"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_BOBAFETT_START"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch52">
+   <p:BranchTo value="BF_Super_Deploy"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_BOBAFETT_DEPLOY"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch53">
+   <p:BranchTo value="BF_Air_Super_Deploy"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_BOBAFETT_AIR_DEPLOY"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Chewbacca_Detonator_Group" expanded="1" pos="20 -9.4">
+   <p:Color value="0.573171 0.376089 0.0897785"/>
+   <AnimTreeState name="Chewbacca_Throw_Detonator" pos="0 3.8743e-007">
+    <p:Color value="1 1 1"/>
+    <p:Clip value="POWERUP_THROW_DETONATOR"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="30"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="Chewbacca_Air_Throw_Detonator" pos="2.3 3.8743e-007">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="1 1 1"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="POWERUP_THROW_DETONATOR_AIR"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="28"/>
+     </p:Event>
+     <p:Event2 class="AnimTreeStateEventProperty" value="FALL_HARD">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="25"/>
+     </p:Event2>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch54">
+   <p:BranchTo value="Chewbacca_Throw_Detonator"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_CHEWBACCA_DETONATOR"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Powerup_TimeDilate_Group" expanded="1" pos="0 0">
+   <p:StartState value="TimeDilate_Ground"/>
+   <AnimTreeState name="TimeDilate_Ground" pos="25.6 -9.4">
+    <p:Clip value="GRIMM_TIMEDILATE_POWERUP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SEND_ANIMTREESYNC">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="8"/>
+     </p:Event>
+     <p:Event2 class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="19"/>
+     </p:Event2>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch56">
+   <p:BranchTo value="Powerup_TimeDilate_Group"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_TIMEDILATION"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Ezra_Ricochet_Group" expanded="1" pos="18.2 4.6">
+   <AnimTreeState name="Ezra_Ricochet" pos="5 -0.199998">
+    <p:Clip value="EZRA_ATK_RICOCHET"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SEND_ANIMTREESYNC">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="2"/>
+     </p:Event>
+     <p:Event2 class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="15"/>
+     </p:Event2>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="Ezra_Ricochet_Air" pos="5 -2.4">
+    <p:Clip value="EZRA_ATK_RICOCHET_AIR"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SEND_ANIMTREESYNC">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="2"/>
+     </p:Event>
+     <p:Event2 class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="15"/>
+     </p:Event2>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="Ezra_Ricochet_Charge_In" pos="2.3 -0.0999998">
+    <p:Clip value="EZRA_ATK_RICOCHET_IN"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Ezra_Ricochet_Charge_Loop"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch2">
+     <p:BranchTo value="Ezra_Ricochet_Charge_Fire"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_RICOCHET_CHARGE_FIRE"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Ezra_Ricochet_Charge_Loop" pos="2.35 -1.25">
+    <p:Clip value="EZRA_SPECIAL_RICOCHET_LOOP"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Ezra_Ricochet_Charge_Fire"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_RICOCHET_CHARGE_FIRE"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Ezra_Ricochet_Charge_Loop_Air" pos="2.35 -3.65">
+    <p:Clip value="EZRA_SPECIAL_RICOCHET_LOOP_AIR"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Ezra_Ricochet_Charge_Fire_Air"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_RICOCHET_CHARGE_FIRE_AIR"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Ezra_Ricochet_Charge_In_Air" pos="2.35 -2.45">
+    <p:Clip value="EZRA_ATK_RICOCHET_IN_AIR"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="Ezra_Ricochet_Charge_Loop_Air"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch2">
+     <p:BranchTo value="Ezra_Ricochet_Charge_Fire_Air"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_RICOCHET_CHARGE_FIRE_AIR"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="Ezra_Ricochet_Charge_Fire" pos="5.175 -1.275">
+    <p:Clip value="EZRA_ATK_RICOCHET_FIRE_CHARGED"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SEND_ANIMTREESYNC">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="2"/>
+     </p:Event>
+     <p:Event2 class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="19"/>
+     </p:Event2>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="Ezra_Ricochet_Charge_Fire_Air" pos="5.0875 -3.675">
+    <p:Clip value="EZRA_ATK_RICOCHET_FIRE_CHARGED_AIR"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SEND_ANIMTREESYNC">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="2"/>
+     </p:Event>
+     <p:Event2 class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="18"/>
+     </p:Event2>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch57">
+   <p:BranchTo value="Ezra_Ricochet"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_RICOCHET"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch58">
+   <p:BranchTo value="Ezra_Ricochet_Air"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_RICOCHET_AIR"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch59">
+   <p:BranchTo value="Chewbacca_Air_Throw_Detonator"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_AIR_CHEWBACCA_DETONATOR"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch60">
+   <p:BranchTo value="Clu_Tele_Start"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_TELE_CLU"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch63">
+   <p:BranchTo value="RapidFireTurret_Fire_B"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_RAPID_FIRE_TURRET_SHOOT_B"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch64">
+   <p:BranchTo value="RapidFireTurret_Fire_C"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_RAPID_FIRE_TURRET_SHOOT_C"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Shield_Power_Group" expanded="1" pos="0 0">
+   <p:Color value="0.609658 0.7 0.36045"/>
+   <p:StartState value="Shield_Powerup"/>
+   <AnimTreeState name="Shield_Powerup" pos="29.4 -12.4">
+    <p:Clip value="MBA_SUPERMOVE_SHIELDTHROW"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="54"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch65">
+   <p:BranchTo value="Shield_Power_Group"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MBA_SUPERMOVE_SHIELDTHROW"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Repeating_Super_Group" expanded="1" pos="21.6 -12.2">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.911243 0.939336 1"/>
+   <p:StartState value=""/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <AnimTreeState name="Super_Start" pos="0 3.57628e-007">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.1021 0.4133 0.9586"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="POWERUP_MULTITAP_GROUND"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="100"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="Super_Repeat" pos="0 -1">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.1021 0.4133 0.9586"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="POWERUP_MULTITAP_GROUND"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:CropStart value="15"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="40"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="Super_Air_Start" pos="2.6 3.57628e-007">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.1021 0.4133 0.9586"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="POWERUP_MULTITAP_AIR"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event2 class="AnimTreeStateEventProperty" value="FALL_HARD">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="100"/>
+     </p:Event2>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="Super_Air_Repeat" pos="2.6 -1">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.1021 0.4133 0.9586"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="POWERUP_MULTITAP_AIR"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:CropStart value="15"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="FALL_HARD">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="40"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch61">
+   <p:BranchTo value="Super_Start"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_MULTITAP_START"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch62">
+   <p:BranchTo value="Super_Air_Start"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_MULTITAP_AIR_START"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch66">
+   <p:BranchTo value="Super_Repeat"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_MULTITAP_REPEAT"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch67">
+   <p:BranchTo value="Ezra_Ricochet_Charge_In"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_RICOCHET_CHARGE_IN"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch68">
+   <p:BranchTo value="Ezra_Ricochet_Charge_In_Air"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_RICOCHET_CHARGE_IN_AIR"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Ultron_Bots" expanded="1" pos="12.8 10.2">
+   <AnimTreeState name="PowerUp_SummonMinions" pos="0 -0.4">
+    <p:Clip value="POWERUP_SUMMONMINIONS"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+   </AnimTreeState>
+   <AnimTreeState name="PowerUp_SummonMinions_Air" pos="2.6 2.98023e-008">
+    <p:Clip value="POWERUP_SUMMONMINIONS_AIR"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="65"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch69">
+   <p:BranchTo value="PowerUp_SummonMinions"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_SUMMONMINIONS"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch70">
+   <p:BranchTo value="PowerUp_SummonMinions_Air"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_SUMMONMINIONS_AIR"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="HulkBuster_Super_Group" expanded="1" pos="16.2 -14.8">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="1 0.146785 0.146785"/>
+   <p:StartState value=""/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <AnimTreeState name="HB_Super_Start" pos="6.55651e-007 2.98023e-007">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="1 0.946746 0.25"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="SPECIALMOVE_BOBAFETT_GROUND"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="44"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="HB_Super_Repeat" pos="0 -1.4">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="1 0.934911 0.25"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="SPECIALMOVE_BOBAFETT_GROUND"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:CropStart value="6"/>
+    <p:Speed value="1"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="4"/>
+    <p:CurveSlope value="1"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="40"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="HB_Air_Super_Start" pos="2.6 3.57628e-007">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="1 0.905325 0.25"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="SPECIALMOVE_BOBAFETT_CHARGE_Air"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:CropStart value="0"/>
+    <p:InitialTime value="0"/>
+    <p:Speed value="1"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="0"/>
+    <p:CurveSlope value="1"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="FALL_HARD">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="40"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="HB_Air_Super_Repeat" pos="2.6 -1.4">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="1 0.905325 0.25"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="SPECIALMOVE_BOBAFETT_CHARGE_Air"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:CropStart value="6"/>
+    <p:Speed value="1"/>
+    <p:PostBehavior value="Stop"/>
+    <p:EaseDuration value="4"/>
+    <p:CurveSlope value="1"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="FALL_HARD">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="40"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch71">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:BranchTo value="HB_Air_Super_Start"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_HULKBUSTER_AIR_START"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch72">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:BranchTo value="HB_Super_Start"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_HULKBUSTER_START"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch73">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:BranchTo value="HB_Super_Repeat"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_HULKBUSTER_REPEAT"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch74">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:BranchTo value="HB_Air_Super_Repeat"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_HULKBUSTER_AIR_REPEAT"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch75">
+   <p:BranchTo value="Super_Air_Repeat"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_MULTITAP_AIR_REPEAT"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Orb_Delivery_Group" expanded="1" pos="-4.8 1.8">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Color value="0.7 0.7 0.7"/>
+   <p:StartState value="Orb_Delivery"/>
+   <p:AutoBranchSequence value="Sequential"/>
+   <p:EventsIgnored>
+    <p:Event class="AnimTreeEventPointerProperty" value="DROP_MEDIUM_BOTH_UPPER"/>
+   </p:EventsIgnored>
+   <AnimTreeState name="Orb_Delivery" pos="16.8 -17.2">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.7 0.134146 0.7"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="ORB_DELIVERY"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="ORB_DELIVERY_END">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="17"/>
+     </p:Event>
+     <p:Event2 class="AnimTreeStateEventProperty" value="STOP_UPPERBODY2">
+      <p:When value="EnteringState"/>
+     </p:Event2>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch466">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      ""
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:BranchTo value="Orb_Delivery"/>
+   <p:DefaultBranch value="FALSE"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="ORB_DELIVERY"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Vibranium_Beam_Group" expanded="1" pos="-5 -12.4">
+   <p:Color value="0.311585 0.46132 0.7"/>
+   <AnimTreeState name="Vibranium_Beam" pos="2.6 -0.599999">
+    <p:Clip value="CAPCW_ATK_SPECIAL_VIBRAINIUM"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="66"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="Vibranium_Beam_Air" pos="0.4 -1.2">
+    <p:Clip value="CAPCW_ATK_SPECIAL_VIBRAINIUM_AIR"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="70"/>
+     </p:Event>
+     <p:Event2 class="AnimTreeStateEventProperty" value="FALL_HARD">
+      <p:When value="ClipEnds"/>
+     </p:Event2>
+    </p:EventsFired>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch76">
+   <p:BranchTo value="Vibranium_Beam"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_VIBRANIUM_BEAM"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch77">
+   <p:BranchTo value="WebStormLand"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch78">
+   <p:BranchTo value="WebStormStartMBA"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="MBA_WEBSTORM_START"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch79">
+   <p:BranchTo value="Vibranium_Beam_Air"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_VIBRANIUM_BEAM_AIR"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch80">
+   <p:BranchTo value="FeatherStormJumpLoop"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="FEATHERSTORM_LOOP"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Hulk_Powerup_GroundSmash" expanded="1" pos="-6.6 -2.8">
+   <p:Color value="0.27449 0.5 0.243902"/>
+   <AnimTreeState name="GroundSmash_Left_A" pos="-4.76837e-007 0.0896281">
+    <p:Color value="0.481707 0.185046 0.401874"/>
+    <p:Clip value="LIGHTSABER_POWERUP_L1"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="11"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="GroundSmash_Left_B" pos="7.15256e-007 -0.544813">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.481707 0.185046 0.401874"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="LIGHTSABER_POWERUP_L2"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="11"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="GroundSmash_Left" pos="-2.2 -0.772407">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.481707 0.185046 0.401874"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value=""/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="GroundSmash_Left_A"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch2">
+     <p:BranchTo value="GroundSmash_Left_B"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="GroundSmash_Right_A" pos="-1.49012e-007 -3.65519">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.481707 0.185046 0.401874"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="LIGHTSABER_POWERUP_R1"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="11"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="GroundSmash_Right_B" pos="1.43051e-006 -4.28963">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.481707 0.185046 0.401874"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="LIGHTSABER_POWERUP_R2"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="11"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="GroundSmash_Right" pos="-2.2 -3.37241">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.481707 0.185046 0.401874"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value=""/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="GroundSmash_Right_A"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value=""/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch2">
+     <p:Notes>
+      <p:Notes>
+       <d:Value>
+        ""
+       </d:Value>
+      </p:Notes>
+     </p:Notes>
+     <p:BranchTo value="GroundSmash_Right_B"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty" value=""/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="GroundSmash_Selector" pos="-9.53674e-007 -2.11037">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Color value="0.481707 0.185046 0.401874"/>
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value=""/>
+    <p:AISync value="FALSE"/>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="GroundSmash_Left"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+    <AnimTreeBranch name="Branch2">
+     <p:BranchTo value="GroundSmash_Right"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch84">
+   <p:BranchTo value="GroundSmash_Selector"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_GROUNDSMASH"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch81">
+   <p:BranchTo value="GroundSmash_Right_A"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_GROUNDSMASH_FIRST"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch82">
+   <p:BranchTo value="GroundSmash_Right"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_GROUNDSMASH_RIGHT"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch83">
+   <p:BranchTo value="GroundSmash_Left"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_GROUNDSMASH_LEFT"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch85">
+   <p:BranchTo value="PowerUpThrowAir"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_THROW_AIR"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch86">
+   <p:BranchTo value=""/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_DISCTHROW"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch87">
+   <p:BranchTo value=""/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="POWERUP_DISCTHROW_AIR"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeStateGroup name="Powerup_State_Group" expanded="1" pos="-3.2 -7.20001">
+   <p:Color value="0.762195 0.245737 0.171959"/>
+   <AnimTreeState name="PowerUp_State_Start" pos="4.76837e-007 -0.999995">
+    <p:AutoBranchSequence value="Sequential"/>
+    <p:Clip value="POWERUP_STATE_START"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="28"/>
+     </p:Event>
+    </p:EventsFired>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="PowerUp_State_Idle"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="PowerUp_State_Move" pos="1.8 0.200001">
+    <p:Clip value="POWERUP_STATE_MOVE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+   </AnimTreeState>
+   <AnimTreeState name="PowerUp_State_Idle" pos="0.399999 -3.20001">
+    <p:Clip value="POWERUP_STATE_IDLE"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:PostBehavior value="Loop"/>
+   </AnimTreeState>
+   <AnimTreeState name="PowerUp_State_End" pos="3.4 -3.7">
+    <p:Clip value="POWERUP_STATE_FINISH"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="43"/>
+     </p:Event>
+    </p:EventsFired>
+   </AnimTreeState>
+   <AnimTreeState name="PowerUp_State_GroundCombo1" pos="4.1 3.09944e-006">
+    <p:Clip value="POWERUP_STATE_ATTACK1"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="41"/>
+     </p:Event>
+    </p:EventsFired>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="PowerUp_State_Idle"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="PowerUp_State_GroundCombo2" pos="4.1 -1.2">
+    <p:Clip value="POWERUP_STATE_ATTACK2"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="41"/>
+     </p:Event>
+    </p:EventsFired>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="PowerUp_State_Idle"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+   <AnimTreeState name="PowerUp_State_PressNHold_Attack" pos="4.1 -2.35">
+    <p:Clip value="POWERUP_STATE_PRESSNHOLD_ATTACK"/>
+    <p:ClipTimeSource value=".Global.Time"/>
+    <p:AISync value="TRUE"/>
+    <p:EventsFired>
+     <p:Event class="AnimTreeStateEventProperty" value="SET_INTERRUPTIBLE">
+      <p:When value="ClipStarts"/>
+      <p:Offset value="48"/>
+     </p:Event>
+    </p:EventsFired>
+    <AnimTreeBranch name="Branch1">
+     <p:BranchTo value="PowerUp_State_Idle"/>
+     <p:DefaultBranch value="TRUE"/>
+     <p:Events>
+      <p:Event class="AnimTreeEventPointerProperty"/>
+     </p:Events>
+    </AnimTreeBranch>
+   </AnimTreeState>
+  </AnimTreeStateGroup>
+  <AnimTreeBranch name="Branch88">
+   <p:BranchTo value="PowerUp_State_Start"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="PowerUp_State_Start"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch89">
+   <p:BranchTo value="PowerUp_State_Move"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="PowerUp_State_Move"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch90">
+   <p:BranchTo value="PowerUp_State_End"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="PowerUp_State_End"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch91">
+   <p:BranchTo value="PowerUp_State_Idle"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="PowerUp_State_Idle"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch92">
+   <p:BranchTo value="PowerUp_State_GroundCombo1"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="PowerUp_State_Attack"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch93">
+   <p:BranchTo value="PowerUp_State_GroundCombo2"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="PowerUp_State_Attack2"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch94">
+   <p:BranchTo value="PowerUp_State_PressNHold_Attack"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="PowerUp_State_PressNHoldAttack"/>
+   </p:Events>
+  </AnimTreeBranch>
+ </AnimTree>
+
+</d:SnipeFile>

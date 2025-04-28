@@ -1,0 +1,1370 @@
+<?xml version="1.0" ?>
+<root_node>
+   <MeridianNodePool>
+      <MNode type="reference_string">
+         0
+         <Type type="string">NameSpaceBegin</Type>
+         <Name type="string">Hulk_Prem_Atk_Combo_Y</Name>
+         <GraphFileName type="string">Hulk_Prem_Atk_Combo_Y</GraphFileName>
+         <UserNamespace type="string">hulk_prem_atk_combo_y</UserNamespace>
+         <GraphVersion type="uint16">20101</GraphVersion>
+         <RootNodeCount type="int8">22</RootNodeCount>
+         <EnableNetworking type="int8">1</EnableNetworking>
+         <ParameterValues type="uint16_uint8_bin">
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>1</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>15</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>2</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>31</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>0</entry>
+            <entry>64</entry>
+            <entry>28</entry>
+            <entry>198</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>47</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>1</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>64</entry>
+            <entry>28</entry>
+            <entry>198</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>67</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>1</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>64</entry>
+            <entry>28</entry>
+            <entry>198</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>86</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>1</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>64</entry>
+            <entry>28</entry>
+            <entry>198</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>128</entry>
+            <entry>63</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>105</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>126</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>127</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>1</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>1</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>64</entry>
+            <entry>28</entry>
+            <entry>198</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>128</entry>
+            <entry>63</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>128</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>148</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>149</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>1</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>1</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>3</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>150</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+            <entry>255</entry>
+         </ParameterValues>
+         <ParameterStrings type="uint8_list">
+            <entry>76</entry>
+            <entry>97</entry>
+            <entry>121</entry>
+            <entry>111</entry>
+            <entry>117</entry>
+            <entry>116</entry>
+            <entry>124</entry>
+            <entry>108</entry>
+            <entry>111</entry>
+            <entry>99</entry>
+            <entry>97</entry>
+            <entry>116</entry>
+            <entry>111</entry>
+            <entry>114</entry>
+            <entry>0</entry>
+            <entry>76</entry>
+            <entry>97</entry>
+            <entry>121</entry>
+            <entry>111</entry>
+            <entry>117</entry>
+            <entry>116</entry>
+            <entry>124</entry>
+            <entry>108</entry>
+            <entry>111</entry>
+            <entry>99</entry>
+            <entry>97</entry>
+            <entry>116</entry>
+            <entry>111</entry>
+            <entry>114</entry>
+            <entry>49</entry>
+            <entry>0</entry>
+            <entry>76</entry>
+            <entry>97</entry>
+            <entry>121</entry>
+            <entry>111</entry>
+            <entry>117</entry>
+            <entry>116</entry>
+            <entry>124</entry>
+            <entry>108</entry>
+            <entry>111</entry>
+            <entry>99</entry>
+            <entry>97</entry>
+            <entry>116</entry>
+            <entry>111</entry>
+            <entry>114</entry>
+            <entry>50</entry>
+            <entry>0</entry>
+            <entry>104</entry>
+            <entry>117</entry>
+            <entry>108</entry>
+            <entry>107</entry>
+            <entry>95</entry>
+            <entry>112</entry>
+            <entry>114</entry>
+            <entry>101</entry>
+            <entry>109</entry>
+            <entry>95</entry>
+            <entry>105</entry>
+            <entry>109</entry>
+            <entry>112</entry>
+            <entry>97</entry>
+            <entry>99</entry>
+            <entry>116</entry>
+            <entry>95</entry>
+            <entry>108</entry>
+            <entry>103</entry>
+            <entry>0</entry>
+            <entry>104</entry>
+            <entry>117</entry>
+            <entry>108</entry>
+            <entry>107</entry>
+            <entry>95</entry>
+            <entry>112</entry>
+            <entry>114</entry>
+            <entry>101</entry>
+            <entry>109</entry>
+            <entry>95</entry>
+            <entry>106</entry>
+            <entry>117</entry>
+            <entry>109</entry>
+            <entry>112</entry>
+            <entry>100</entry>
+            <entry>117</entry>
+            <entry>115</entry>
+            <entry>116</entry>
+            <entry>0</entry>
+            <entry>104</entry>
+            <entry>117</entry>
+            <entry>108</entry>
+            <entry>107</entry>
+            <entry>95</entry>
+            <entry>112</entry>
+            <entry>114</entry>
+            <entry>101</entry>
+            <entry>109</entry>
+            <entry>95</entry>
+            <entry>102</entry>
+            <entry>111</entry>
+            <entry>111</entry>
+            <entry>116</entry>
+            <entry>102</entry>
+            <entry>97</entry>
+            <entry>108</entry>
+            <entry>108</entry>
+            <entry>0</entry>
+            <entry>104</entry>
+            <entry>117</entry>
+            <entry>108</entry>
+            <entry>107</entry>
+            <entry>95</entry>
+            <entry>112</entry>
+            <entry>114</entry>
+            <entry>101</entry>
+            <entry>109</entry>
+            <entry>95</entry>
+            <entry>100</entry>
+            <entry>105</entry>
+            <entry>115</entry>
+            <entry>116</entry>
+            <entry>111</entry>
+            <entry>114</entry>
+            <entry>116</entry>
+            <entry>105</entry>
+            <entry>111</entry>
+            <entry>110</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>104</entry>
+            <entry>117</entry>
+            <entry>108</entry>
+            <entry>107</entry>
+            <entry>95</entry>
+            <entry>112</entry>
+            <entry>114</entry>
+            <entry>101</entry>
+            <entry>109</entry>
+            <entry>95</entry>
+            <entry>106</entry>
+            <entry>117</entry>
+            <entry>109</entry>
+            <entry>112</entry>
+            <entry>116</entry>
+            <entry>114</entry>
+            <entry>97</entry>
+            <entry>105</entry>
+            <entry>108</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>76</entry>
+            <entry>97</entry>
+            <entry>121</entry>
+            <entry>111</entry>
+            <entry>117</entry>
+            <entry>116</entry>
+            <entry>124</entry>
+            <entry>108</entry>
+            <entry>111</entry>
+            <entry>99</entry>
+            <entry>97</entry>
+            <entry>116</entry>
+            <entry>111</entry>
+            <entry>114</entry>
+            <entry>51</entry>
+            <entry>0</entry>
+         </ParameterStrings>
+      </MNode>
+      <MNode type="reference_string">
+         1
+         <Type type="string">LocatorNode</Type>
+         <Handle type="int8">0</Handle>
+         <Heading type="int8">1</Heading>
+         <Position type="int8">2</Position>
+         <Euler type="int8">3</Euler>
+         <Scale type="int8">4</Scale>
+         <Transform type="int8">5</Transform>
+         <NumOutLinks type="int8">2</NumOutLinks>
+         <BoundObjectName type="string">Layout|locator</BoundObjectName>
+         <Mer_ParametersOffset type="int8">0</Mer_ParametersOffset>
+         <Mer_ParameterDescription type="uint8_list">
+            <entry>3</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>1</entry>
+            <entry>94</entry>
+            <entry>239</entry>
+            <entry>190</entry>
+            <entry>221</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>237</entry>
+            <entry>105</entry>
+            <entry>179</entry>
+            <entry>77</entry>
+            <entry>4</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>3</entry>
+            <entry>170</entry>
+            <entry>197</entry>
+            <entry>77</entry>
+            <entry>49</entry>
+            <entry>8</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+         </Mer_ParameterDescription>
+      </MNode>
+      <MNode type="reference_string">
+         2
+         <Type type="string">LocatorNode</Type>
+         <NumOutLinks type="int8">2</NumOutLinks>
+         <BoundObjectName type="string">Layout|locator1</BoundObjectName>
+         <Mer_ParametersOffset type="int8">20</Mer_ParametersOffset>
+         <Mer_ParameterDescription type="uint8_list">
+            <entry>3</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>1</entry>
+            <entry>94</entry>
+            <entry>239</entry>
+            <entry>190</entry>
+            <entry>221</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>237</entry>
+            <entry>105</entry>
+            <entry>179</entry>
+            <entry>77</entry>
+            <entry>4</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>3</entry>
+            <entry>170</entry>
+            <entry>197</entry>
+            <entry>77</entry>
+            <entry>49</entry>
+            <entry>8</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+         </Mer_ParameterDescription>
+      </MNode>
+      <MNode type="reference_string">
+         3
+         <Type type="string">LocatorNode</Type>
+         <NumOutLinks type="int8">3</NumOutLinks>
+         <BoundObjectName type="string">Layout|locator2</BoundObjectName>
+         <Mer_ParametersOffset type="int8">40</Mer_ParametersOffset>
+         <Mer_ParameterDescription type="uint8_list">
+            <entry>3</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>1</entry>
+            <entry>94</entry>
+            <entry>239</entry>
+            <entry>190</entry>
+            <entry>221</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>237</entry>
+            <entry>105</entry>
+            <entry>179</entry>
+            <entry>77</entry>
+            <entry>4</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>3</entry>
+            <entry>170</entry>
+            <entry>197</entry>
+            <entry>77</entry>
+            <entry>49</entry>
+            <entry>8</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+         </Mer_ParameterDescription>
+      </MNode>
+      <MNode type="reference_string">
+         4
+         <Type type="string">NodeGroup</Type>
+         <Uuid type="uint8_list">
+            <entry>7</entry>
+            <entry>188</entry>
+            <entry>239</entry>
+            <entry>5</entry>
+            <entry>30</entry>
+            <entry>226</entry>
+            <entry>132</entry>
+            <entry>67</entry>
+            <entry>149</entry>
+            <entry>64</entry>
+            <entry>179</entry>
+            <entry>135</entry>
+            <entry>124</entry>
+            <entry>155</entry>
+            <entry>169</entry>
+            <entry>159</entry>
+         </Uuid>
+         <Mer_ParametersOffset type="int8">60</Mer_ParametersOffset>
+         <Mer_ParameterDescription type="uint8_list">
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+         </Mer_ParameterDescription>
+      </MNode>
+      <MNode type="reference_string">
+         5
+         <Type type="string">Event</Type>
+         <LeafNameHash type="uint32">292159187</LeafNameHash>
+         <Mer_ParametersOffset type="int8">60</Mer_ParametersOffset>
+         <Mer_ParameterDescription type="uint8_list">
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+         </Mer_ParameterDescription>
+      </MNode>
+      <MNode type="reference_string">
+         6
+         <Type type="string">Event</Type>
+         <LeafNameHash type="uint32">289024000</LeafNameHash>
+         <Mer_ParametersOffset type="int8">60</Mer_ParametersOffset>
+         <Mer_ParameterDescription type="uint8_list">
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+         </Mer_ParameterDescription>
+      </MNode>
+      <MNode type="reference_string">
+         7
+         <Type type="string">EventSurge</Type>
+         <Begin type="int8">5</Begin>
+         <End type="int8">6</End>
+         <Parent type="int8">4</Parent>
+         <LeafNameHash type="uint32">445342271</LeafNameHash>
+         <NumOutLinks type="int8">1</NumOutLinks>
+         <Mer_ParametersOffset type="int8">60</Mer_ParametersOffset>
+         <Mer_ParameterDescription type="uint8_list">
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+         </Mer_ParameterDescription>
+      </MNode>
+      <MNode type="reference_string">
+         8
+         <Type type="string">DataSource</Type>
+         <Parent type="int8">4</Parent>
+         <LeafNameHash type="uint32">879817953</LeafNameHash>
+         <Mer_ParametersOffset type="int8">60</Mer_ParametersOffset>
+         <Mer_ParameterDescription type="uint8_list">
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+         </Mer_ParameterDescription>
+      </MNode>
+      <MNode type="reference_string">
+         9
+         <Type type="string">NodeGroup</Type>
+         <Uuid type="uint8_list">
+            <entry>60</entry>
+            <entry>112</entry>
+            <entry>7</entry>
+            <entry>188</entry>
+            <entry>70</entry>
+            <entry>31</entry>
+            <entry>37</entry>
+            <entry>73</entry>
+            <entry>159</entry>
+            <entry>196</entry>
+            <entry>17</entry>
+            <entry>143</entry>
+            <entry>232</entry>
+            <entry>26</entry>
+            <entry>152</entry>
+            <entry>158</entry>
+         </Uuid>
+         <Mer_ParametersOffset type="int8">60</Mer_ParametersOffset>
+         <Mer_ParameterDescription type="uint8_list">
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+         </Mer_ParameterDescription>
+      </MNode>
+      <MNode type="reference_string">
+         10
+         <Type type="string">Event</Type>
+         <Parent type="int8">9</Parent>
+         <LeafNameHash type="uint32">445342271</LeafNameHash>
+         <NumOutLinks type="int8">3</NumOutLinks>
+         <Mer_ParametersOffset type="int8">60</Mer_ParametersOffset>
+         <Mer_ParameterDescription type="uint8_list">
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+         </Mer_ParameterDescription>
+      </MNode>
+      <MNode type="reference_string">
+         11
+         <Type type="string">DataSource</Type>
+         <Parent type="int8">9</Parent>
+         <LeafNameHash type="uint32">879817953</LeafNameHash>
+         <Mer_ParametersOffset type="int8">60</Mer_ParametersOffset>
+         <Mer_ParameterDescription type="uint8_list">
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+         </Mer_ParameterDescription>
+      </MNode>
+      <MNode type="reference_string">
+         12
+         <Type type="string">Particle2Effect</Type>
+         <Link_Out type="int8">2</Link_Out>
+         <Link_In type="int8">0</Link_In>
+         <YDeathPlane type="int8">1</YDeathPlane>
+         <NumInLinks type="int8">2</NumInLinks>
+         <Mer_ParametersOffset type="int8">60</Mer_ParametersOffset>
+         <Mer_ParameterDescription type="uint8_list">
+            <entry>6</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>2</entry>
+            <entry>92</entry>
+            <entry>255</entry>
+            <entry>152</entry>
+            <entry>161</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>1</entry>
+            <entry>197</entry>
+            <entry>38</entry>
+            <entry>120</entry>
+            <entry>23</entry>
+            <entry>4</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>3</entry>
+            <entry>7</entry>
+            <entry>157</entry>
+            <entry>46</entry>
+            <entry>178</entry>
+            <entry>8</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>49</entry>
+            <entry>2</entry>
+            <entry>213</entry>
+            <entry>69</entry>
+            <entry>20</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>177</entry>
+            <entry>69</entry>
+            <entry>23</entry>
+            <entry>27</entry>
+            <entry>24</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>1</entry>
+            <entry>51</entry>
+            <entry>240</entry>
+            <entry>150</entry>
+            <entry>24</entry>
+            <entry>28</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+         </Mer_ParameterDescription>
+      </MNode>
+      <MNode type="reference_string">
+         13
+         <Type type="string">Particle2Effect</Type>
+         <NumInLinks type="int8">2</NumInLinks>
+         <Mer_ParametersOffset type="int8">92</Mer_ParametersOffset>
+         <Mer_ParameterDescription type="uint8_list">
+            <entry>6</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>2</entry>
+            <entry>92</entry>
+            <entry>255</entry>
+            <entry>152</entry>
+            <entry>161</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>1</entry>
+            <entry>197</entry>
+            <entry>38</entry>
+            <entry>120</entry>
+            <entry>23</entry>
+            <entry>4</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>3</entry>
+            <entry>7</entry>
+            <entry>157</entry>
+            <entry>46</entry>
+            <entry>178</entry>
+            <entry>8</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>49</entry>
+            <entry>2</entry>
+            <entry>213</entry>
+            <entry>69</entry>
+            <entry>20</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>177</entry>
+            <entry>69</entry>
+            <entry>23</entry>
+            <entry>27</entry>
+            <entry>24</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>1</entry>
+            <entry>51</entry>
+            <entry>240</entry>
+            <entry>150</entry>
+            <entry>24</entry>
+            <entry>28</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+         </Mer_ParameterDescription>
+      </MNode>
+      <MNode type="reference_string">
+         14
+         <Type type="string">Particle2Effect</Type>
+         <NumInLinks type="int8">3</NumInLinks>
+         <Mer_ParametersOffset type="int8">124</Mer_ParametersOffset>
+         <Mer_ParameterDescription type="uint8_list">
+            <entry>6</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>2</entry>
+            <entry>92</entry>
+            <entry>255</entry>
+            <entry>152</entry>
+            <entry>161</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>1</entry>
+            <entry>197</entry>
+            <entry>38</entry>
+            <entry>120</entry>
+            <entry>23</entry>
+            <entry>4</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>3</entry>
+            <entry>7</entry>
+            <entry>157</entry>
+            <entry>46</entry>
+            <entry>178</entry>
+            <entry>8</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>49</entry>
+            <entry>2</entry>
+            <entry>213</entry>
+            <entry>69</entry>
+            <entry>20</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>177</entry>
+            <entry>69</entry>
+            <entry>23</entry>
+            <entry>27</entry>
+            <entry>24</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>1</entry>
+            <entry>51</entry>
+            <entry>240</entry>
+            <entry>150</entry>
+            <entry>24</entry>
+            <entry>28</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+         </Mer_ParameterDescription>
+      </MNode>
+      <MNode type="reference_string">
+         15
+         <Type type="string">Particle2Emitter</Type>
+         <Link_In type="int8">0</Link_In>
+         <Link_Out type="int8">7</Link_Out>
+         <EmissionsStart type="int8">1</EmissionsStart>
+         <EmissionsStop type="int8">2</EmissionsStop>
+         <YDeathPlane type="int8">3</YDeathPlane>
+         <SecondaryTransform type="int8">4</SecondaryTransform>
+         <EmissionRate type="int8">5</EmissionRate>
+         <Spline type="int8">6</Spline>
+         <NumInLinks type="int8">4</NumInLinks>
+         <Mer_ParametersOffset type="uint16">156</Mer_ParametersOffset>
+         <Mer_ParameterDescription type="uint8_list">
+            <entry>9</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>2</entry>
+            <entry>92</entry>
+            <entry>255</entry>
+            <entry>152</entry>
+            <entry>161</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>2</entry>
+            <entry>188</entry>
+            <entry>166</entry>
+            <entry>171</entry>
+            <entry>62</entry>
+            <entry>4</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>1</entry>
+            <entry>197</entry>
+            <entry>38</entry>
+            <entry>120</entry>
+            <entry>23</entry>
+            <entry>8</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>3</entry>
+            <entry>98</entry>
+            <entry>216</entry>
+            <entry>199</entry>
+            <entry>126</entry>
+            <entry>12</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>3</entry>
+            <entry>246</entry>
+            <entry>231</entry>
+            <entry>218</entry>
+            <entry>48</entry>
+            <entry>24</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>3</entry>
+            <entry>35</entry>
+            <entry>61</entry>
+            <entry>222</entry>
+            <entry>59</entry>
+            <entry>36</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>255</entry>
+            <entry>134</entry>
+            <entry>46</entry>
+            <entry>84</entry>
+            <entry>48</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>177</entry>
+            <entry>69</entry>
+            <entry>23</entry>
+            <entry>27</entry>
+            <entry>52</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>1</entry>
+            <entry>51</entry>
+            <entry>240</entry>
+            <entry>150</entry>
+            <entry>24</entry>
+            <entry>56</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+         </Mer_ParameterDescription>
+      </MNode>
+      <MNode type="reference_string">
+         16
+         <Type type="string">Particle2Emitter</Type>
+         <NumInLinks type="int8">2</NumInLinks>
+         <Mer_ParametersOffset type="uint16">216</Mer_ParametersOffset>
+         <Mer_ParameterDescription type="uint8_list">
+            <entry>9</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>2</entry>
+            <entry>92</entry>
+            <entry>255</entry>
+            <entry>152</entry>
+            <entry>161</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>2</entry>
+            <entry>188</entry>
+            <entry>166</entry>
+            <entry>171</entry>
+            <entry>62</entry>
+            <entry>4</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>1</entry>
+            <entry>197</entry>
+            <entry>38</entry>
+            <entry>120</entry>
+            <entry>23</entry>
+            <entry>8</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>3</entry>
+            <entry>98</entry>
+            <entry>216</entry>
+            <entry>199</entry>
+            <entry>126</entry>
+            <entry>12</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>3</entry>
+            <entry>246</entry>
+            <entry>231</entry>
+            <entry>218</entry>
+            <entry>48</entry>
+            <entry>24</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>3</entry>
+            <entry>35</entry>
+            <entry>61</entry>
+            <entry>222</entry>
+            <entry>59</entry>
+            <entry>36</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>255</entry>
+            <entry>134</entry>
+            <entry>46</entry>
+            <entry>84</entry>
+            <entry>48</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>177</entry>
+            <entry>69</entry>
+            <entry>23</entry>
+            <entry>27</entry>
+            <entry>52</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>1</entry>
+            <entry>51</entry>
+            <entry>240</entry>
+            <entry>150</entry>
+            <entry>24</entry>
+            <entry>56</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+         </Mer_ParameterDescription>
+      </MNode>
+      <MNode type="reference_string">
+         17
+         <Type type="string">NodeGroup</Type>
+         <Uuid type="uint8_list">
+            <entry>106</entry>
+            <entry>163</entry>
+            <entry>32</entry>
+            <entry>77</entry>
+            <entry>228</entry>
+            <entry>253</entry>
+            <entry>83</entry>
+            <entry>65</entry>
+            <entry>149</entry>
+            <entry>93</entry>
+            <entry>203</entry>
+            <entry>172</entry>
+            <entry>172</entry>
+            <entry>118</entry>
+            <entry>240</entry>
+            <entry>146</entry>
+         </Uuid>
+         <Mer_ParametersOffset type="uint16">276</Mer_ParametersOffset>
+         <Mer_ParameterDescription type="uint8_list">
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+         </Mer_ParameterDescription>
+      </MNode>
+      <MNode type="reference_string">
+         18
+         <Type type="string">Event</Type>
+         <LeafNameHash type="uint32">292159187</LeafNameHash>
+         <Mer_ParametersOffset type="uint16">276</Mer_ParametersOffset>
+         <Mer_ParameterDescription type="uint8_list">
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+         </Mer_ParameterDescription>
+      </MNode>
+      <MNode type="reference_string">
+         19
+         <Type type="string">Event</Type>
+         <LeafNameHash type="uint32">289024000</LeafNameHash>
+         <Mer_ParametersOffset type="uint16">276</Mer_ParametersOffset>
+         <Mer_ParameterDescription type="uint8_list">
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+         </Mer_ParameterDescription>
+      </MNode>
+      <MNode type="reference_string">
+         20
+         <Type type="string">EventSurge</Type>
+         <Begin type="int8">18</Begin>
+         <End type="int8">19</End>
+         <Parent type="int8">17</Parent>
+         <LeafNameHash type="uint32">445342271</LeafNameHash>
+         <NumOutLinks type="int8">1</NumOutLinks>
+         <Mer_ParametersOffset type="uint16">276</Mer_ParametersOffset>
+         <Mer_ParameterDescription type="uint8_list">
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+         </Mer_ParameterDescription>
+      </MNode>
+      <MNode type="reference_string">
+         21
+         <Type type="string">DataSource</Type>
+         <Parent type="int8">17</Parent>
+         <LeafNameHash type="uint32">879817953</LeafNameHash>
+         <Mer_ParametersOffset type="uint16">276</Mer_ParametersOffset>
+         <Mer_ParameterDescription type="uint8_list">
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+         </Mer_ParameterDescription>
+      </MNode>
+      <MNode type="reference_string">
+         22
+         <Type type="string">LocatorNode</Type>
+         <NumOutLinks type="int8">1</NumOutLinks>
+         <BoundObjectName type="string">Layout|locator3</BoundObjectName>
+         <Mer_ParametersOffset type="uint16">276</Mer_ParametersOffset>
+         <Mer_ParameterDescription type="uint8_list">
+            <entry>3</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>1</entry>
+            <entry>94</entry>
+            <entry>239</entry>
+            <entry>190</entry>
+            <entry>221</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>237</entry>
+            <entry>105</entry>
+            <entry>179</entry>
+            <entry>77</entry>
+            <entry>4</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>3</entry>
+            <entry>170</entry>
+            <entry>197</entry>
+            <entry>77</entry>
+            <entry>49</entry>
+            <entry>8</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+         </Mer_ParameterDescription>
+      </MNode>
+      <MNode type="reference_string">
+         23
+         <Type type="string">NameSpaceEnd</Type>
+      </MNode>
+   </MeridianNodePool>
+   <MeridianLinkPool>
+      <MLink type="reference_string">
+         0
+         <Type type="string">NameSpaceBegin</Type>
+         <Name type="string">Hulk_Prem_Atk_Combo_Y</Name>
+         <GraphFileName type="string">Hulk_Prem_Atk_Combo_Y</GraphFileName>
+         <UserNamespace type="string">hulk_prem_atk_combo_y</UserNamespace>
+      </MLink>
+      <MLink type="reference_string">
+         1
+         <Type type="string">LinksBuffer</Type>
+         <Data type="uint8_list">
+            <entry>13</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>3</entry>
+            <entry>0</entry>
+            <entry>2</entry>
+            <entry>4</entry>
+            <entry>6</entry>
+            <entry>0</entry>
+            <entry>14</entry>
+            <entry>0</entry>
+            <entry>1</entry>
+            <entry>4</entry>
+            <entry>9</entry>
+            <entry>0</entry>
+            <entry>13</entry>
+            <entry>0</entry>
+            <entry>1</entry>
+            <entry>4</entry>
+            <entry>9</entry>
+            <entry>0</entry>
+            <entry>11</entry>
+            <entry>0</entry>
+            <entry>1</entry>
+            <entry>4</entry>
+            <entry>9</entry>
+            <entry>0</entry>
+            <entry>12</entry>
+            <entry>0</entry>
+            <entry>3</entry>
+            <entry>20</entry>
+            <entry>2</entry>
+            <entry>0</entry>
+            <entry>11</entry>
+            <entry>0</entry>
+            <entry>3</entry>
+            <entry>20</entry>
+            <entry>2</entry>
+            <entry>0</entry>
+            <entry>12</entry>
+            <entry>0</entry>
+            <entry>3</entry>
+            <entry>20</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>13</entry>
+            <entry>0</entry>
+            <entry>3</entry>
+            <entry>20</entry>
+            <entry>1</entry>
+            <entry>0</entry>
+            <entry>13</entry>
+            <entry>0</entry>
+            <entry>3</entry>
+            <entry>20</entry>
+            <entry>1</entry>
+            <entry>0</entry>
+            <entry>14</entry>
+            <entry>0</entry>
+            <entry>3</entry>
+            <entry>20</entry>
+            <entry>2</entry>
+            <entry>0</entry>
+            <entry>14</entry>
+            <entry>0</entry>
+            <entry>3</entry>
+            <entry>20</entry>
+            <entry>0</entry>
+            <entry>0</entry>
+            <entry>14</entry>
+            <entry>0</entry>
+            <entry>3</entry>
+            <entry>20</entry>
+            <entry>21</entry>
+            <entry>0</entry>
+            <entry>15</entry>
+            <entry>0</entry>
+            <entry>2</entry>
+            <entry>4</entry>
+            <entry>19</entry>
+            <entry>0</entry>
+            <entry>15</entry>
+            <entry>0</entry>
+         </Data>
+      </MLink>
+      <MLink type="reference_string">
+         2
+         <Type type="string">NameSpaceEnd</Type>
+      </MLink>
+   </MeridianLinkPool>
+</root_node>

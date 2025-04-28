@@ -1,0 +1,75 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Speed" =
+	{
+	}
+	FloatParameter "Lightsaber" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Lightsaber"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/tcw_yoda/motions/yoda_bm_idle_passive_pose.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/tcw_yoda/motions/yoda_bm_idle_active_pose.oct"
+			}
+		}
+	}
+	KeyBlendTrack "Key Blend2" =
+	{
+		BlendMethod = 1
+		Value = "Lightsaber"
+		Tracks =
+		{
+			KeyBlendTrack "Land" =
+			{
+				Value = "Speed"
+				Keys =
+				[
+					0.0 0.1 
+				]
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/human/motions/human_bm_land_normal_add.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/human/motions/human_bm_jump_land_add.oct"
+					}
+				}
+			}
+			KeyBlendTrack "Key Blend" =
+			{
+				Value = "Speed"
+				Keys =
+				[
+					0.0 0.1 
+				]
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/human/motions/human_bm_land_normal_add.oct"
+					}
+					ReferencedTrack =
+					{
+						Filename = "characters/tcw_yoda/motions/yoda_bm_jump_land_add_saber.oct"
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,547 @@
+{
+  "Version": "1.1",
+  "ModID": "Breeze",
+  "Author": {
+    "Name": "Cassinni4",
+    "Role": "Lead Project Developer"
+  },
+  "Contributors": [
+    {
+      "Name": "Bread",
+      "Role": "Provided help with the Text Creator; helped with some early developer Rouge One characters. Also created the Hall of Heroes fix. Helped me through all of those late night calls."
+    },
+    {
+      "Name": "satoru-kun",
+      "Role": "Gateway insight, Original character creation graph."
+    },
+	{
+      "Name": "Jumanji Alan",
+      "Role": "Helped restore Premium Buzz Lightyear, Doctor Strange, Spider-Gwen, Maui, Zurg, and Peter Pan."
+    },
+    {
+      "Name": "JiroTheOne",
+      "Role": "Along with my help, made the script to crack the gateway and add characters!"
+    },
+    {
+      "Name": "JohnLogostini",
+      "Role": "Gave me permission to use some of his existing mods on Nexus Mods."
+    },
+    {
+      "Name": "BeyondCarL",
+      "Role": "Provided the custom Premium Elsa textures."
+    },
+    {
+      "Name": "TheSithEternal",
+      "Role": "Helped provide files for Zurg."
+    },
+    {
+      "Name": "GBA64",
+      "Role": "Provided files for Dory and Nemo."
+    },
+	{
+      "Name": "Chronis",
+      "Role": "Provided UI for Zurg, Maui, and Captain Marvel. Also discovered the official character descriptions. Just a big help in general!"
+    },
+    {
+      "Name": "EXTRA CREDITS",
+      "Role": "Below are some names I would think deserve credit, but played a minor role in development."
+    },
+	{
+      "Name": "Dasorik",
+      "Role": "Provided support with this very Continuum port!"
+    },
+    {
+      "Name": "LiontHD",
+      "Role": "Cheering me on throughout this 7-month journey (as of Release 1.0 - Gateway). Also created all the promotional art/assets for the mod!"
+    },
+    {
+      "Name": "maximilian",
+      "Role": "REDACTED! Will come in a future update ;)."
+    },
+    {
+      "Name": "ThatBrownBat",
+      "Role": "Provided tutorials on his YouTube channel for a few minor things."
+    },
+    {
+      "Name": "mrc",
+      "Role": "Major Beta Tester and bug finder."
+    },
+	{
+      "Name": "C.M.M.",
+      "Role": "Major Beta Tester and bug finder."
+    },
+    {
+      "Name": "YOU!",
+      "Role": "Thanks for downloading!"
+    }
+  ],
+  "DisplayName": "Breeze",
+  "DisplayImage": "assets\\art\\portrait.png",
+  "DisplayBackground": "assets\\art\\background.png",
+  "Description": "#Info\nA mod that restores unfinished and left out content to the Gold Edition of Disney Infinity 3.0",
+	"Settings": [{
+		"Category": "Settings",
+		"Settings": [{
+			"SettingID": "enable-no-crash-mode",
+			"SettingName": "Enable No Crash Mode",
+			"Type": "Checkbox",
+			"DefaultValue": true,
+			"Description": "Toggles crashes for Premium HulkBuster and Nemo."
+			
+		},	
+		{
+			"SettingID": "fro-elsa-premium-tbody",
+			"SettingName": "Add the Premium Elsa Textures",
+			"Type": "Checkbox",
+			"DefaultValue": false,
+			"Description": "This will give Elsa her Premium Elsa textures. Note that this will also replace original Elsa's textures."
+			
+		},	
+        {	
+            "SettingID": "lfx-characters",
+            "SettingName": "Add the Light FX characters",
+            "Type": "Checkbox",
+            "DefaultValue": false,
+            "Description": "Adds the Light FX characters into the selection menu."
+        },
+        {
+            "SettingID": "toyboxstats-limits",
+            "SettingName": "Max out Toy Box memory",
+            "Type": "Checkbox",
+            "DefaultValue": false,
+            "Description": "Increases the Toy Box memory."
+        }]
+	}],
+  "LinkedIntegrations": [
+    {
+      "IntegrationID": "disney-infinity-3-0",
+      "TargetVersion": "1.*",
+      "MinimumVersion": "1.*",
+      "ModCategory": "character"
+    }
+  ],
+  "InstallActions": [
+{
+  "Action": "QuickBMSExtract",
+  "UseAutoMapping": true,
+  "DeleteWhenComplete": true,
+  "TargetFiles": [
+    "[Game]\\assets\\presentation\\presentation.zip",
+    "[Game]\\assets\\flash\\loadingscreen\\loadingscreen.zip",
+    "[Game]\\assets\\startup.zip",
+    "[Game]\\assets\\startup2.zip"
+  ]
+},
+{
+  "Action": "ReplaceFile",
+  "ReplacementFile": "[Mod]\\gateway.lua",
+  "TargetFile": "[Game]\\assets\\gateway.lua"
+},
+{
+  "Action": "ReplaceFile",
+  "ReplacementFile": "[Mod]\\hohdata.lua",
+  "TargetFile": "[Game]\\assets\\hohdata.lua"
+},
+{
+  "Action": "QuickBMSExtract",
+  "UseAutoMapping": false,
+  "DeleteWhenComplete": true,
+  "TargetFiles": [
+    "[Game]\\assets\\expendables_data\\dna\\dna.zip",
+  ]
+},
+{
+  "Action": "CopyFile",
+  "TargetFile": "[Mod]\\expendables_data\\dna\\avg_hulk_premium_charged1.dnax",
+  "DestinationPath": "[Game]\\assets\\expendables_data\\dna\\dna\\avg_hulk_premium_charged1.dnax"
+},
+{
+  "Action": "MoveFiles",
+  "TargetPath": "[Game]\\assets\\expendables_data\\dna\\dna\\",
+  "FileFilter": ".*",
+  "IncludeSubfolders": true,
+  "DestinationPath": "[Game]\\assets\\expendables_data\\dna\\"
+},
+{
+  "Action": "CopyFiles",
+  "TargetPath": "[Mod]\\flash\\loadingscreen\\",
+  "FileFilter": ".*",
+  "IncludeSubfolders": true,
+  "DestinationPath": "[Game]\\assets\\flash\\loadingscreen\\"
+},
+{
+  "Action": "MoveFiles",
+  "TargetPath": "[Game]\\assets\\flash\\loadingscreen\\textures\\",
+  "FileFilter": ".*",
+  "IncludeSubfolders": true,
+  "DestinationPath": "[Game]\\assets\\textures\\"
+},
+{
+  "Action": "CopyFiles",
+  "TargetPath": "[Mod]\\worlds\\",
+  "FileFilter": ".*",
+  "IncludeSubfolders": true,
+  "DestinationPath": "[Game]\\assets\\worlds\\"
+},
+{
+  "Action": "CopyFiles",
+  "TargetPath": "[Mod]\\exploders\\",
+  "FileFilter": ".*",
+  "IncludeSubfolders": true,
+  "DestinationPath": "[Game]\\assets\\exploders\\"
+},
+{
+  "Action": "CopyFiles",
+  "TargetPath": "[Mod]\\choreographies\\",
+  "FileFilter": ".*",
+  "IncludeSubfolders": true,
+  "DestinationPath": "[Game]\\assets\\choreographies\\"
+},
+{
+  "Action": "CopyFiles",
+  "TargetPath": "[Mod]\\crash_mode\\",
+  "FileFilter": ".*",
+  "IncludeSubfolders": true,
+  "DestinationPath": "[Game]\\assets\\choreographies\\",
+  "Disabled": "$MOD.enable-no-crash-mode = true"
+},
+{
+  "Action": "CopyFiles",
+  "TargetPath": "[Mod]\\gamedb\\avengers\\",
+  "FileFilter": ".*",
+  "IncludeSubfolders": true,
+  "DestinationPath": "[Game]\\assets\\gamedb\\avengers\\"
+},
+{
+  "Action": "CopyFiles",
+  "TargetPath": "[Mod]\\gamedb\\battlearena\\",
+  "FileFilter": ".*",
+  "IncludeSubfolders": true,
+  "DestinationPath": "[Game]\\assets\\gamedb\\battlearena\\"
+},
+{
+  "Action": "CopyFiles",
+  "TargetPath": "[Mod]\\gamedb\\civilwar\\",
+  "FileFilter": ".*",
+  "IncludeSubfolders": true,
+  "DestinationPath": "[Game]\\assets\\gamedb\\civilwar\\"
+},
+{
+  "Action": "CopyFiles",
+  "TargetPath": "[Mod]\\gamedb\\toybox\\",
+  "FileFilter": ".*",
+  "IncludeSubfolders": true,
+  "DestinationPath": "[Game]\\assets\\gamedb\\toybox\\"
+},
+{
+  "Action": "CopyFiles",
+  "TargetPath": "[Mod]\\gamedb\\spiderman\\",
+  "FileFilter": ".*",
+  "IncludeSubfolders": true,
+  "DestinationPath": "[Game]\\assets\\gamedb\\spiderman\\"
+},
+{
+  "Action": "CopyFiles",
+  "TargetPath": "[Mod]\\gamedb\\core\\",
+  "FileFilter": ".*",
+  "IncludeSubfolders": false,
+  "DestinationPath": "[Game]\\assets\\gamedb\\core\\"
+},
+{
+  "Action": "CopyFiles",
+  "TargetPath": "[Mod]\\gamedb\\core\\toyboxstats_limits\\",
+  "FileFilter": ".*",
+  "IncludeSubfolders": false,
+  "DestinationPath": "[Game]\\assets\\gamedb\\core\\",
+  "Disabled": "$MOD.toyboxstats-limits = true"
+},
+{
+  "Action": "CopyFiles",
+  "TargetPath": "[Mod]\\gamedb\\core\\toyboxstats_limits_max\\",
+  "FileFilter": ".*",
+  "IncludeSubfolders": false,
+  "DestinationPath": "[Game]\\assets\\gamedb\\core\\",
+  "Disabled": "$MOD.toyboxstats-limits = false"
+},
+{
+  "Action": "ReplaceFiles",
+  "ReplacementPath": "[Mod]\\gamedb\\core\\replace\\",
+  "FileFilter": ".*",
+  "IncludeSubfolders": true,
+  "TargetPath": "[Game]\\assets\\gamedb\\core\\"
+},
+{
+  "Action": "CopyFile",
+  "TargetFile": "[Mod]\\gamedb\\gamestats.h.lua",
+  "DestinationPath": "[Game]\\assets\\gamedb\\gamestats.h.lua"
+},
+{
+  "Action": "CopyFile",
+  "TargetFile": "[Mod]\\gamedb\\customizationclouddata.lua",
+  "DestinationPath": "[Game]\\assets\\gamedb\\customizationclouddata.lua"
+},
+{
+  "Action": "ReplaceFiles",
+  "ReplacementPath": "[Mod]\\presentation\\",
+  "FileFilter": ".*",
+  "IncludeSubfolders": false,
+  "TargetPath": "[Game]\\assets\\presentation\\"
+},
+{
+  "Action": "ReplaceFiles",
+  "ReplacementPath": "[Mod]\\presentation\\non_lfx\\",
+  "FileFilter": ".*",
+  "IncludeSubfolders": false,
+  "TargetPath": "[Game]\\assets\\presentation\\",
+  "Disabled": "$MOD.lfx-characters = true"
+},
+{
+  "Action": "ReplaceFiles",
+  "ReplacementPath": "[Mod]\\presentation\\lfx\\",
+  "FileFilter": ".*",
+  "IncludeSubfolders": false,
+  "TargetPath": "[Game]\\assets\\presentation\\",
+  "Disabled": "$MOD.lfx-characters = false"
+},
+{
+  "Action": "CopyFiles",
+  "TargetPath": "[Mod]\\characters\\",
+  "FileFilter": ".*",
+  "IncludeSubfolders": true,
+  "DestinationPath": "[Game]\\assets\\characters\\"
+},
+{
+  "Action": "ReplaceFile",
+  "ReplacementFile": "[Mod]\\characters_replace\\default.dnax",
+  "TargetFile": "[Game]\\assets\\characters\\default.dnax"
+},
+{
+  "Action": "CopyFiles",
+  "TargetPath": "[Mod]\\ui\\icons\\",
+  "FileFilter": ".*",
+  "IncludeSubfolders": false,
+  "DestinationPath": "[Game]\\assets\\ui\\icons\\"
+},
+{
+  "Action": "ReplaceFiles",
+  "ReplacementPath": "[Mod]\\ui\\icons\\replace\\",
+  "FileFilter": ".*",
+  "IncludeSubfolders": true,
+  "TargetPath": "[Game]\\assets\\ui\\icons\\"
+},
+{
+  "Action": "CopyFiles",
+  "TargetPath": "[Mod]\\ui\\virtualreadercharacters\\",
+  "FileFilter": ".*",
+  "IncludeSubfolders": false,
+  "DestinationPath": "[Game]\\assets\\ui\\virtualreadercharacters\\"
+},
+{
+  "Action": "ReplaceFiles",
+  "ReplacementPath": "[Mod]\\ui\\virtualreadercharacters\\replace\\",
+  "FileFilter": ".*",
+  "IncludeSubfolders": true,
+  "TargetPath": "[Game]\\assets\\ui\\virtualreadercharacters\\"
+},
+{
+  "Action": "CopyFiles",
+  "TargetPath": "[Mod]\\textures\\",
+  "FileFilter": ".*",
+  "IncludeSubfolders": false,
+  "DestinationPath": "[Game]\\assets\\textures\\"
+},
+{
+  "Action": "ReplaceFile",
+  "ReplacementFile": "[Mod]\\textures\\replace\\0fa20c046a6b52df.tbody",
+  "TargetFile": "[Game]\\assets\\textures\\0fa20c046a6b52df.tbody"
+},
+{
+  "Action": "ReplaceFile",
+  "ReplacementFile": "[Mod]\\textures\\replace\\4db8a8ce111f960c.tbody",
+  "TargetFile": "[Game]\\assets\\textures\\4db8a8ce111f960c.tbody"
+},
+{
+  "Action": "ReplaceFile",
+  "ReplacementFile": "[Mod]\\textures\\replace\\8cf6af35dd885333.tbody",
+  "TargetFile": "[Game]\\assets\\textures\\8cf6af35dd885333.tbody"
+},
+{
+  "Action": "ReplaceFile",
+  "ReplacementFile": "[Mod]\\textures\\replace\\9a73e341175b756d.tbody",
+  "TargetFile": "[Game]\\assets\\textures\\9a73e341175b756d.tbody"
+},
+{
+  "Action": "ReplaceFile",
+  "ReplacementFile": "[Mod]\\textures\\replace\\9fc54673cda3e0d1.tbody",
+  "TargetFile": "[Game]\\assets\\textures\\9fc54673cda3e0d1.tbody"
+},
+{
+  "Action": "ReplaceFile",
+  "ReplacementFile": "[Mod]\\textures\\replace\\35be5b5d3c27f883.tbody",
+  "TargetFile": "[Game]\\assets\\textures\\35be5b5d3c27f883.tbody"
+},
+{
+  "Action": "ReplaceFile",
+  "ReplacementFile": "[Mod]\\textures\\replace\\75bc0739bab30e46.tbody",
+  "TargetFile": "[Game]\\assets\\textures\\75bc0739bab30e46.tbody"
+},
+{
+  "Action": "ReplaceFile",
+  "ReplacementFile": "[Mod]\\textures\\replace\\373ded6a8aec362d.tbody",
+  "TargetFile": "[Game]\\assets\\textures\\373ded6a8aec362d.tbody"
+},
+{
+  "Action": "ReplaceFile",
+  "ReplacementFile": "[Mod]\\textures\\replace\\3711f3880574ade9.tbody",
+  "TargetFile": "[Game]\\assets\\textures\\3711f3880574ade9.tbody"
+},
+{
+  "Action": "ReplaceFile",
+  "ReplacementFile": "[Mod]\\textures\\replace\\a405911d9097018d.tbody",
+  "TargetFile": "[Game]\\assets\\textures\\a405911d9097018d.tbody"
+},
+{
+  "Action": "ReplaceFile",
+  "ReplacementFile": "[Mod]\\textures\\replace\\b88aab404f149c89.tbody",
+  "TargetFile": "[Game]\\assets\\textures\\b88aab404f149c89.tbody"
+},
+{
+  "Action": "ReplaceFile",
+  "ReplacementFile": "[Mod]\\textures\\replace\\e3a6ca1d5b391841.tbody",
+  "TargetFile": "[Game]\\assets\\textures\\e3a6ca1d5b391841.tbody"
+},
+{
+  "Action": "ReplaceFile",
+  "ReplacementFile": "[Mod]\\textures\\replace\\f219125b0ebb7f6e.tbody",
+  "TargetFile": "[Game]\\assets\\textures\\f219125b0ebb7f6e.tbody"
+},
+{
+  "Action": "ReplaceFile",
+  "ReplacementFile": "[Mod]\\textures\\fro_elsa_premium\\3896f066f6c51a10.tbody",
+  "TargetFile": "[Game]\\assets\\textures\\3896f066f6c51a10.tbody",
+  "Disabled": "$MOD.fro-elsa-premium-tbody = false"
+},
+{
+  "Action": "ReplaceFile",
+  "ReplacementFile": "[Mod]\\textures\\fro_elsa_premium\\1edae36bf187d763.tbody",
+  "TargetFile": "[Game]\\assets\\textures\\1edae36bf187d763.tbody",
+  "Disabled": "$MOD.fro-elsa-premium-tbody = false"
+},
+{
+  "Action": "DeleteFiles",
+  "TargetFiles": [
+    "[Game]\\assets\\characters\\characters.zip",
+    "[Game]\\assets\\characters\\ali_alice\\ali_alice.zip",
+    "[Game]\\assets\\characters\\ali_alice\\ali_alice.zip",
+    "[Game]\\assets\\characters\\ali_madhatter\\ali_madhatter.zip",
+    "[Game]\\assets\\characters\\ali_madhatter\\ali_madhatter_pieces.zip",
+    "[Game]\\assets\\characters\\ali_time\\ali_time.zip",
+    "[Game]\\assets\\characters\\ali_time\\ali_time_pieces.zip",
+    "[Game]\\assets\\characters\\ali_alice\\ali_alice.zip",
+    "[Game]\\assets\\characters\\animtree_includes\\animtree_includes.zip",
+    "[Game]\\assets\\characters\\ant_antman\\ant_antman.zip",
+    "[Game]\\assets\\characters\\ant_antman\\ant_antman_mba.zip",
+    "[Game]\\assets\\characters\\ant_antman\\ant_antman_pieces.zip",
+    "[Game]\\assets\\characters\\avg_blackpanther\\avg_blackpanther.zip",
+    "[Game]\\assets\\characters\\avg_blackpanther\\avg_blackpanther_mba.zip",
+    "[Game]\\assets\\characters\\avg_blackpanther\\avg_blackpanther_pieces.zip",
+    "[Game]\\assets\\characters\\avg_hulk\\avg_hulk.zip",
+    "[Game]\\assets\\characters\\avg_hulk\\avg_hulk_aikart.zip",
+    "[Game]\\assets\\characters\\avg_hulk\\avg_hulk_mba.zip",
+    "[Game]\\assets\\characters\\avg_hulk\\avg_hulk_mba.zip",
+    "[Game]\\assets\\characters\\avg_hulk\\avg_hulk_pieces.zip",
+    "[Game]\\assets\\characters\\avg_hulk\\avg_hulk_premium.zip",
+    "[Game]\\assets\\characters\\avg_hulk\\avg_hulkmba.zip",
+    "[Game]\\assets\\characters\\avg_hulkbuster\\avg_hulkbuster.zip",
+    "[Game]\\assets\\characters\\avg_hulkbuster\\avg_hulkbuster_aikart.zip",
+    "[Game]\\assets\\characters\\avg_hulkbuster\\avg_hulkbuster_mba.zip",
+    "[Game]\\assets\\characters\\avg_hulkbuster\\avg_hulkbuster_pieces.zip",
+    "[Game]\\assets\\characters\\avg_hulkbuster\\avg_hulkbuster_premium.zip",
+    "[Game]\\assets\\characters\\avg_hulkbuster\\avg_hulkbuster_premium.zip",
+    "[Game]\\assets\\characters\\avg_hulkbuster\\avg_hulkbuster_ps.zip",
+    "[Game]\\assets\\characters\\avg_hulkbuster\\avg_hulkbustermba.zip",
+    "[Game]\\assets\\characters\\avg_ultron\\avg_ultron.zip",
+    "[Game]\\assets\\characters\\avg_ultron\\avg_ultron_aikart.zip",
+    "[Game]\\assets\\characters\\avg_ultron\\avg_ultron_bot.zip",
+    "[Game]\\assets\\characters\\avg_ultron\\avg_ultron_bot_debris.zip",
+    "[Game]\\assets\\characters\\avg_ultron\\avg_ultron_ccl.zip",
+    "[Game]\\assets\\characters\\avg_ultron\\avg_ultron_debris.zip",
+    "[Game]\\assets\\characters\\avg_ultron\\avg_ultron_mba.zip",
+    "[Game]\\assets\\characters\\avg_ultron\\avg_ultron_pieces.zip",
+    "[Game]\\assets\\characters\\avg_ultron\\avg_ultron_ps.zip",
+    "[Game]\\assets\\characters\\avg_ultron\\avg_ultronbot.zip",
+    "[Game]\\assets\\characters\\avg_ultron\\avg_ultronbot_mba.zip",
+    "[Game]\\assets\\characters\\avg_ultron\\avg_ultronbot_ps.zip",
+    "[Game]\\assets\\characters\\avg_ultron\\avg_ultronmba.zip",
+    "[Game]\\assets\\characters\\avg_vision\\avg_vision.zip",
+    "[Game]\\assets\\characters\\avg_vision\\avg_vision_mba.zip",
+    "[Game]\\assets\\characters\\avg_vision\\avg_vision_pieces.zip",
+    "[Game]\\assets\\characters\\bhs_baymax\\bhs_baymax.zip",
+    "[Game]\\assets\\characters\\bhs_baymax\\bhs_baymax_aikart.zip",
+    "[Game]\\assets\\characters\\bhs_baymax\\bhs_baymax_pieces.zip",
+    "[Game]\\assets\\characters\\biped\\biped.zip",
+    "[Game]\\assets\\characters\\car\\car.zip",
+	"[Game]\\assets\\characters\\dor_dory\\dor_dory.zip",
+	"[Game]\\assets\\characters\\dor_dory\\dor_dory_pieces.zip",
+	"[Game]\\assets\\characters\\dor_dory\\fish.zip",
+	"[Game]\\assets\\characters\\dor_nemo\\dor_nemo.zip",
+	"[Game]\\assets\\characters\\dor_nemo\\dor_nemo_pieces.zip",
+    "[Game]\\assets\\characters\\emp_darthvader\\emp_darthvader.zip",
+    "[Game]\\assets\\characters\\emp_darthvader\\emp_darthvader_aikart.zip",
+    "[Game]\\assets\\characters\\emp_darthvader\\emp_darthvader_npc.zip",
+    "[Game]\\assets\\characters\\emp_darthvader\\emp_darthvader_pieces.zip",
+    "[Game]\\assets\\characters\\emp_darthvader\\emp_darthvader_premium.zip",
+    "[Game]\\assets\\characters\\emp_darthvader\\emp_darthvader_ps.zip",
+    "[Game]\\assets\\characters\\emp_darthvader\\emp_darthvadernpc_phase1.zip",
+    "[Game]\\assets\\characters\\emp_darthvader\\emp_darthvadernpc_phase2.zip",
+    "[Game]\\assets\\characters\\fro_elsa\\fro_elsa.zip",
+    "[Game]\\assets\\characters\\fro_elsa\\fro_elsa_aikart.zip",
+    "[Game]\\assets\\characters\\fro_elsa\\fro_elsa_pieces.zip",
+    "[Game]\\assets\\characters\\fro_elsa\\fro_elsa_premium.zip",
+    "[Game]\\assets\\characters\\inc_bob\\inc_bob.zip",
+    "[Game]\\assets\\characters\\inc_bob\\inc_bob_aikart.zip",
+    "[Game]\\assets\\characters\\inc_bob\\inc_bob_infinite_pieces.zip",
+    "[Game]\\assets\\characters\\inc_bob\\inc_bob_pieces.zip",
+    "[Game]\\assets\\characters\\jetpack\\jetpack.zip",
+    "[Game]\\assets\\characters\\jetpack\\jetpack_glow.zip",
+    "[Game]\\assets\\characters\\jetpack\\jetpack_infinite.zip",
+	"[Game]\\assets\\characters\\moa_maui\\moa_maui.zip",
+    "[Game]\\assets\\characters\\nbc_jackskellington\\nbc_jackskellington.zip",
+    "[Game]\\assets\\characters\\nbc_jackskellington\\nbc_jackskellington_aikart.zip",
+    "[Game]\\assets\\characters\\nbc_jackskellington\\nbc_jackskellington_pieces.zip",
+    "[Game]\\assets\\characters\\nbc_jackskellington\\nbc_jackskellington_premium.zip",
+    "[Game]\\assets\\characters\\nbc_jackskellington_santa\\nbc_jackskellington_santa.zip",
+    "[Game]\\assets\\characters\\nbc_jackskellington_santa\\nbc_jackskellington_santa_pieces.zip",
+    "[Game]\\assets\\characters\\spd_nova\\spd_nova.zip",
+    "[Game]\\assets\\characters\\spd_nova\\spd_nova_aikart.zip",
+    "[Game]\\assets\\characters\\spd_nova\\spd_nova_mba.zip",
+    "[Game]\\assets\\characters\\spd_nova\\spd_nova_pieces.zip",
+    "[Game]\\assets\\characters\\spd_nova\\spd_novamba.zip",
+    "[Game]\\assets\\characters\\spd_spiderman\\spd_spiderman.zip",
+    "[Game]\\assets\\characters\\spd_spiderman\\spd_spiderman_aikart.zip",
+    "[Game]\\assets\\characters\\spd_spiderman\\spd_spiderman_black.zip",
+    "[Game]\\assets\\characters\\spd_spiderman\\spd_spiderman_blackin3.zip",
+    "[Game]\\assets\\characters\\spd_spiderman\\spd_spiderman_mba.zip",
+    "[Game]\\assets\\characters\\spd_spiderman\\spd_spiderman_pieces.zip",
+    "[Game]\\assets\\characters\\spd_spiderman\\spd_spidermanmba.zip",
+    "[Game]\\assets\\characters\\spd_spiderman\\spd_spidermansymbiote.zip",
+    "[Game]\\assets\\characters\\spd_spiderman\\spd_spidermansymbiote_pieces.zip",
+    "[Game]\\assets\\characters\\tbx_baloo\\tbx_baloo.zip",
+    "[Game]\\assets\\characters\\ts_buzz\\ts_buzz.zip",
+    "[Game]\\assets\\characters\\ts_buzz\\ts_buzz_aikart.zip",
+    "[Game]\\assets\\characters\\ts_buzz\\ts_buzz_glow_pieces.zip",
+    "[Game]\\assets\\characters\\ts_buzz\\ts_buzz_infinite_pieces.zip",
+    "[Game]\\assets\\characters\\ts_buzz\\ts_buzz_pieces.zip",
+    "[Game]\\assets\\characters\\ts_buzz\\ts_buzznpc.zip",
+    "[Game]\\assets\\characters\\ts_zurg\\ts_zurg.zip",
+    "[Game]\\assets\\characters\\ts_zurg\\ts_zurg_holo.zip",
+    "[Game]\\assets\\gamedb\\avengers\\avengers.zip",
+    "[Game]\\assets\\gamedb\\battlearena\\battlearena.zip",
+    "[Game]\\assets\\gamedb\\core\\core.zip",
+    "[Game]\\assets\\gamedb\\spiderman\\spiderman.zip",
+    "[Game]\\assets\\gamedb\\toybox\\toybox.zip",
+    "[Game]\\assets\\gamedb\\gamedb.zip"
+  ]
+}
+  ]
+}

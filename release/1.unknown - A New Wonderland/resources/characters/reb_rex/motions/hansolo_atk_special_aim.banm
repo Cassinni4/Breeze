@@ -1,0 +1,51 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Pitch" =
+	{
+	}
+	FloatParameter "Turn" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Pitch"
+		Keys =
+		[
+			0.0 0.48 1.0
+		]
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/emp_hansolo/motions/hansolo_atk_special_pose_a_dwn.oct"
+				Phase = "Turn"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/emp_hansolo/motions/hansolo_atk_special_pose_a.oct"
+				Phase = "Turn"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/emp_hansolo/motions/hansolo_atk_special_pose_a_up.oct"
+				Phase = "Turn"
+			}
+		}
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Weight = 0.65
+		Filename = "characters/emp_hansolo/motions/hansolo_atk_special_add.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Filename = "characters/emp_hansolo/motions/hansolo_atk_special_recoil.oct"
+	}
+}

@@ -1,0 +1,36 @@
+--**********************************************************************************************************************************************************************************************************--
+--                                                                                                                                                                                                          --
+-- Breeze Release 1.0.1                                                                                                                                                                                     --
+-- Build by Cassinni4                                                                                                                                                                                       --
+-- Special thanks to: Bread, LiontHD, Jumanji Alan, JohnLogostini, BeyondCarL, satoru-kun, JiroTheOne, Dasorik, mrc, C.M.M., TheSithEternal, and maximilian for help and support on this massive project!   --
+--                                                                                                                                                                                                          --
+--**********************************************************************************************************************************************************************************************************--
+
+Changelog:
+_____________________________
+|                           |
+|                           |
+|       MISCELLANEOUS       |
+|                           |
+|___________________________|
+
+________________________
+Marvel Battlegrounds:
+
+-It works now
+-Still needs controller
+
+________________________
+Power Discs:
+
+-Actually added the Light Cycle power disc this time.
+
+________________________
+Other:
+
+-Added a toggleable option for increased toy box memory.
+
+________________________
+
+Much love <3
+Cassinni4

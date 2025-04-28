@@ -1,0 +1,65 @@
+--**********************************************************************************************************************************************************************************************************--
+--                                                                                                                                                                                                          --
+-- Breeze Release 1.1: "A New Wonderland"                                                                                                                                                                   --
+-- Build by Cassinni4                                                                                                                                                                                       -- -- -- -- -- -- -- --
+-- Special thanks to: Bread, LiontHD, Jumanji Alan, JohnLogostini, BeyondCarL, satoru-kun, JiroTheOne, Dasorik, GBA64, TummyTums, mrc, C.M.M., TheSithEternal, Chronis, and maximilian for help and support on this massive project! --
+--                                                                                                                                                                                                          -- -- -- -- -- -- -- --
+--**********************************************************************************************************************************************************************************************************--
+
+Changelog:
+
+_____________________________
+|                           |
+|                           |
+|           MARVEL          |
+|                           |
+|___________________________|
+
+________________________
+Ant-Man:
+
+-SOME attack trails are there.
+
+________________________
+Vision:
+
+-Added Beam but ONLY on air combo
+-Added some attack trails.
+-He seems to have gotten the effect of crashing on first/second load. I don't know the pattern yet.
+
+_____________________________
+|                           |
+|                           |
+|           DISNEY          |
+|                           |
+|___________________________|
+
+________________________
+Alice:
+
+-Hedgehog was gifted textures by the Gods. Very bright for some reason though.
+
+________________________
+Mad Hatter:
+
+-His teacup in YYY is textured, along with the ones in the tornado. If I had to guess, the one for the ground pound also is, but still doesn't work
+-The rod to hold out his teacup in YYY actually isn't even textured at all in console. Verified by me because I own him and looked at it.
+
+________________________
+Time:
+
+-Added attack trails (for Y and YY)
+-Gear textures. Still not in the right spot.
+
+________________________
+Baloo:
+
+-Added attack trails
+-I played him a bit more. Really happy how he turned out.
+
+________________________
+
+There's probably more I forgot, but this is what I thought was notable.
+
+Much love <3
+Cassinni4

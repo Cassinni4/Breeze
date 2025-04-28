@@ -1,0 +1,22 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Trajectory" =
+	{
+	}
+}
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/out_sadness/motions/sad_cannon_pose.oct"
+		Phase = "Trajectory"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Weight = 0.18
+		Filename = "characters/biped/motions/biped_bm_idle_stance_add.oct"
+	}
+}

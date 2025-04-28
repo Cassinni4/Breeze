@@ -1,0 +1,563 @@
+<d:SnipeFile type="BehaviorTree" fileVersion="7" productVersion="2.0.76 x64" branch="in3" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <Project>
+  <BehaviorTree name="%FILENAME%" Validated="TRUE">
+   <BTRoot name="Root" pos="-3 0">
+    <p:Id value="1"/>
+   </BTRoot>
+   <BTSelector name="Selector" pos="-2.3 0">
+    <p:Id value="2"/>
+   </BTSelector>
+   <BTLink name="BTLink">
+    <d:Source value="Root.Output"/>
+    <d:Target value="Selector.Input"/>
+    <p:SourceId value="1"/>
+    <p:TargetId value="2"/>
+    <p:Index value="0"/>
+   </BTLink>
+   <BTSubBehavior name="SubBehavior" pos="0.9 -3">
+    <p:Id value="4"/>
+    <p:Directory value="Characters\AiBehaviorTrees\"/>
+    <p:File value="FriendlyAroundOwnerMovement.behaviortree"/>
+    <p:Param1Source value=""/>
+    <p:Param1Target value=""/>
+    <p:Param2Source value=""/>
+    <p:Param2Target value=""/>
+    <p:Param3Source value=""/>
+    <p:Param3Target value=""/>
+   </BTSubBehavior>
+   <BTConditionBBFloat name="BBFloat" pos="1.72 -0.0999999">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Id value="5"/>
+    <p:A>
+     <p:Type value="DistanceToSelf"/>
+     <p:Eval value="Horizontal"/>
+     <p:From>
+      <p:Type value="Agent"/>
+      <p:Key value="Target"/>
+     </p:From>
+    </p:A>
+    <p:Compare value="Less"/>
+    <p:B>
+     <p:Type value="Constant"/>
+     <p:Constant value="12"/>
+    </p:B>
+   </BTConditionBBFloat>
+   <BTActionExecuteAttack name="ExecuteAttack" pos="7.4 1.2">
+    <p:Id value="7"/>
+    <p:ContinuousChecking value="TRUE"/>
+    <p:Lock value="FALSE"/>
+    <p:DontFail value="FALSE"/>
+    <p:Target value="Target"/>
+    <p:Attack>
+     <p:Type value="Constant"/>
+     <p:Constant value="UltronBot_Leap"/>
+    </p:Attack>
+   </BTActionExecuteAttack>
+   <BTSequence name="Sequence3" pos="6.1 0.9">
+    <p:Id value="8"/>
+    <p:ContinuousChecking value="FALSE"/>
+    <p:Lock value="TRUE"/>
+    <p:DontSucceed value="FALSE"/>
+   </BTSequence>
+   <BTDecoratorTimerGate name="TimerGate" pos="3 1.19209e-007">
+    <p:Id value="9"/>
+    <p:Duration>
+     <p:Type value="Constant"/>
+     <p:Constant value="1"/>
+    </p:Duration>
+    <p:OnSuccess value="TRUE"/>
+    <p:OnFailure value="FALSE"/>
+    <p:OnImmediateFailure value="FALSE"/>
+    <p:OnAbort value="TRUE"/>
+    <p:StartAtEntry value="FALSE"/>
+    <p:Key value=""/>
+   </BTDecoratorTimerGate>
+   <BTSelector name="Got Target, Think!" pos="0.4 -7.45058e-009">
+    <p:Id value="10"/>
+   </BTSelector>
+   <BTLink name="BTLink7">
+    <d:Source value="Selector.Output"/>
+    <d:Target value="'Got Target, Think!'.Input"/>
+    <p:SourceId value="2"/>
+    <p:TargetId value="10"/>
+    <p:Index value="2"/>
+   </BTLink>
+   <BTConditionBBIsSet name="BBIsSet" pos="-0.325 -0.1">
+    <p:Id value="11"/>
+    <p:Key value="Target"/>
+   </BTConditionBBIsSet>
+   <BTLink name="BTLink8">
+    <d:Source value="BBIsSet.Output"/>
+    <d:Target value="'Got Target, Think!'.Conditions"/>
+    <p:SourceId value="11"/>
+    <p:TargetId value="10"/>
+    <p:Index value="0"/>
+   </BTLink>
+   <BTLink name="BTLink4">
+    <d:Source value="'Got Target, Think!'.Output"/>
+    <d:Target value="TimerGate.Input"/>
+    <p:SourceId value="10"/>
+    <p:TargetId value="9"/>
+    <p:Index value="2"/>
+   </BTLink>
+   <BTLink name="BTLink5">
+    <d:Source value="BBFloat.Output"/>
+    <d:Target value="TimerGate.Conditions"/>
+    <p:SourceId value="5"/>
+    <p:TargetId value="9"/>
+    <p:Index value="0"/>
+   </BTLink>
+   <BTLink name="BTLink10">
+    <d:Source value="Sequence3.Output"/>
+    <d:Target value="ExecuteAttack.Input"/>
+    <p:SourceId value="8"/>
+    <p:TargetId value="7"/>
+    <p:Index value="0"/>
+   </BTLink>
+   <BTActionExecuteAttack name="ExecuteAttack2" pos="1.1 3.8">
+    <p:Id value="15"/>
+    <p:Target value="NoOne"/>
+    <p:Attack>
+     <p:Type value="Constant"/>
+     <p:Constant value="UltronBot_Explode"/>
+    </p:Attack>
+   </BTActionExecuteAttack>
+   <BTSequence name="Sequence" pos="-2.98023e-008 3.4">
+    <p:Id value="17"/>
+    <p:Repeat value="FALSE"/>
+   </BTSequence>
+   <BTLink name="BTLink14">
+    <d:Source value="Selector.Output"/>
+    <d:Target value="Sequence.Input"/>
+    <p:SourceId value="2"/>
+    <p:TargetId value="17"/>
+    <p:Index value="1"/>
+   </BTLink>
+   <BTSequence name="Sequence2" pos="-0.6 -2.5">
+    <p:Id value="19"/>
+    <p:Repeat value="TRUE"/>
+   </BTSequence>
+   <BTActionSetTimer name="SetTimer" pos="1.5 -1.9">
+    <p:Id value="20"/>
+    <p:Key value="NoEnemiesAroundTimeout"/>
+    <p:Value>
+     <p:Type value="Constant"/>
+     <p:Constant value="8"/>
+    </p:Value>
+   </BTActionSetTimer>
+   <BTActionSetBBBool name="SetBBBool" pos="2.98023e-008 4.1">
+    <p:Id value="21"/>
+    <p:Key value="DieNow"/>
+    <p:Value>
+     <p:Type value="Constant"/>
+     <p:Constant value="TRUE"/>
+    </p:Value>
+   </BTActionSetBBBool>
+   <BTConditionTimerExpired name="TimerExpired" pos="-1.985 4.5">
+    <p:Id value="22"/>
+    <p:Key value="NoEnemiesAroundTimeout"/>
+   </BTConditionTimerExpired>
+   <BTActionUnsetBB name="UnsetBB" pos="3 1.3">
+    <p:Id value="23"/>
+    <p:Key value="NoEnemiesAroundTimeout"/>
+   </BTActionUnsetBB>
+   <BTConditionBBIsSet name="BBIsSet3" pos="-2.025 5">
+    <p:Id value="24"/>
+    <p:Key value="NoEnemiesAroundTimeout"/>
+   </BTConditionBBIsSet>
+   <BTConditionBBBool name="BBBool" pos="-1.515 3.3">
+    <p:Id value="18"/>
+    <p:A>
+     <p:Type value="Blackboard"/>
+     <p:Key value="DieNow"/>
+    </p:A>
+    <p:Compare value="Equal"/>
+    <p:B>
+     <p:Type value="Constant"/>
+     <p:Constant value="TRUE"/>
+    </p:B>
+   </BTConditionBBBool>
+   <BTLink name="BTLink17">
+    <d:Source value="BBBool.Output"/>
+    <d:Target value="Sequence.Conditions"/>
+    <p:SourceId value="18"/>
+    <p:TargetId value="17"/>
+    <p:Index value="0"/>
+   </BTLink>
+   <BTConditionBBIsSet name="BBIsSet2" pos="1.475 1.2">
+    <p:Id value="25"/>
+    <p:Key value="NoEnemiesAroundTimeout"/>
+   </BTConditionBBIsSet>
+   <BTLink name="BTLink24">
+    <d:Source value="BBIsSet2.Output"/>
+    <d:Target value="UnsetBB.Conditions"/>
+    <p:SourceId value="25"/>
+    <p:TargetId value="23"/>
+    <p:Index value="0"/>
+   </BTLink>
+   <BTActionIdle name="Idle2" pos="-0.5 -4.5">
+    <p:Id value="26"/>
+    <p:ContinuousChecking value="TRUE"/>
+    <p:Lock value="FALSE"/>
+    <p:DontSucceed value="FALSE"/>
+    <p:Immediate value="FALSE"/>
+   </BTActionIdle>
+   <BTConditionBBBool name="BBBool2" pos="-1.475 4">
+    <p:Id value="3"/>
+    <p:A>
+     <p:Type value="Blackboard"/>
+     <p:Key value="DieNow"/>
+    </p:A>
+    <p:Compare value="Equal"/>
+    <p:B>
+     <p:Type value="Constant"/>
+     <p:Constant value="FALSE"/>
+    </p:B>
+   </BTConditionBBBool>
+   <BTLink name="BTLink15">
+    <d:Source value="Sequence.Output"/>
+    <d:Target value="ExecuteAttack2.Input"/>
+    <p:SourceId value="17"/>
+    <p:TargetId value="15"/>
+    <p:Index value="0"/>
+   </BTLink>
+   <BTLink name="BTLink3">
+    <d:Source value="Selector.Output"/>
+    <d:Target value="SetBBBool.Input"/>
+    <p:SourceId value="2"/>
+    <p:TargetId value="21"/>
+    <p:Index value="0"/>
+   </BTLink>
+   <BTLink name="BTLink2">
+    <d:Source value="Selector.Output"/>
+    <d:Target value="Sequence2.Input"/>
+    <p:SourceId value="2"/>
+    <p:TargetId value="19"/>
+    <p:Index value="3"/>
+   </BTLink>
+   <BTLink name="BTLink20">
+    <d:Source value="'Got Target, Think!'.Output"/>
+    <d:Target value="UnsetBB.Input"/>
+    <p:SourceId value="10"/>
+    <p:TargetId value="23"/>
+    <p:Index value="0"/>
+   </BTLink>
+   <BTSubBehavior name="SubBehavior2" pos="3 0.7">
+    <p:Id value="12"/>
+    <p:Directory value="Characters\AiBehaviorTrees\"/>
+    <p:File value="EnemyPursue.behaviortree"/>
+    <p:Param1Source value=""/>
+    <p:Param1Target value=""/>
+    <p:Param2Source value=""/>
+    <p:Param2Target value=""/>
+    <p:Param3Source value=""/>
+    <p:Param3Target value=""/>
+   </BTSubBehavior>
+   <BTLink name="BTLink11">
+    <d:Source value="'Got Target, Think!'.Output"/>
+    <d:Target value="SubBehavior2.Input"/>
+    <p:SourceId value="10"/>
+    <p:TargetId value="12"/>
+    <p:Index value="1"/>
+   </BTLink>
+   <BTActionSetBBBool name="SetBBBool2" pos="7.4 0.5">
+    <p:Id value="6"/>
+    <p:Key value="DieNow"/>
+    <p:Value>
+     <p:Type value="Constant"/>
+     <p:Constant value="TRUE"/>
+    </p:Value>
+   </BTActionSetBBBool>
+   <BTLink name="BTLink9">
+    <d:Source value="Sequence3.Output"/>
+    <d:Target value="SetBBBool2.Input"/>
+    <p:SourceId value="8"/>
+    <p:TargetId value="6"/>
+    <p:Index value="1"/>
+   </BTLink>
+   <BTConditionBBBool name="BBBool3" pos="6.695 0.4">
+    <p:Id value="13"/>
+    <p:A>
+     <p:Type value="Blackboard"/>
+     <p:Key value="DieNow"/>
+    </p:A>
+    <p:Compare value="Equal"/>
+    <p:B>
+     <p:Type value="Constant"/>
+     <p:Constant value="FALSE"/>
+    </p:B>
+   </BTConditionBBBool>
+   <BTLink name="BTLink12">
+    <d:Source value="BBBool3.Output"/>
+    <d:Target value="SetBBBool2.Conditions"/>
+    <p:SourceId value="13"/>
+    <p:TargetId value="6"/>
+    <p:Index value="0"/>
+   </BTLink>
+   <BTConditionLogic name="Logic" pos="-0.73 4.5">
+    <p:Id value="14"/>
+    <p:Type value="And"/>
+   </BTConditionLogic>
+   <BTLink name="BTLink13">
+    <d:Source value="Logic.Output"/>
+    <d:Target value="SetBBBool.Conditions"/>
+    <p:SourceId value="14"/>
+    <p:TargetId value="21"/>
+    <p:Index value="0"/>
+   </BTLink>
+   <BTLink name="BTLink21">
+    <d:Source value="TimerExpired.Output"/>
+    <d:Target value="Logic.Input"/>
+    <p:SourceId value="22"/>
+    <p:TargetId value="14"/>
+    <p:Index value="1"/>
+   </BTLink>
+   <BTLink name="BTLink22">
+    <d:Source value="BBBool2.Output"/>
+    <d:Target value="Logic.Input"/>
+    <p:SourceId value="3"/>
+    <p:TargetId value="14"/>
+    <p:Index value="2"/>
+   </BTLink>
+   <BTLink name="BTLink23">
+    <d:Source value="BBIsSet3.Output"/>
+    <d:Target value="Logic.Input"/>
+    <p:SourceId value="24"/>
+    <p:TargetId value="14"/>
+    <p:Index value="0"/>
+   </BTLink>
+   <BTActionMoveTo name="MoveTo" pos="3 -1.1">
+    <p:Id value="27"/>
+    <p:ContinuousChecking value="TRUE"/>
+    <p:Lock value="FALSE"/>
+    <p:DontSucceed value="FALSE"/>
+    <p:Destination>
+     <p:Type value="Agent"/>
+     <p:Key value="Target"/>
+    </p:Destination>
+    <p:KeepUpdating value="TRUE"/>
+    <p:Speed>
+     <p:Type value="Blackboard"/>
+     <p:Key value="RunSpeed"/>
+    </p:Speed>
+    <p:UseCollPreventer value="TRUE"/>
+    <p:OnlyMoveForward value="FALSE"/>
+    <p:ForcedStartSpeed>
+     <p:Type value="Constant"/>
+     <p:Constant value="0"/>
+    </p:ForcedStartSpeed>
+   </BTActionMoveTo>
+   <BTLink name="BTLink25">
+    <d:Source value="'Got Target, Think!'.Output"/>
+    <d:Target value="MoveTo.Input"/>
+    <p:SourceId value="10"/>
+    <p:TargetId value="27"/>
+    <p:Index value="3"/>
+   </BTLink>
+   <BTActionSuicide name="Suicide" pos="1.1 3.1">
+    <p:Id value="16"/>
+    <p:Silent value="FALSE"/>
+   </BTActionSuicide>
+   <BTLink name="BTLink16">
+    <d:Source value="Sequence.Output"/>
+    <d:Target value="Suicide.Input"/>
+    <p:SourceId value="17"/>
+    <p:TargetId value="16"/>
+    <p:Index value="1"/>
+   </BTLink>
+   <BTLink name="BTLink19">
+    <d:Source value="Sequence2.Output"/>
+    <d:Target value="SubBehavior.Input"/>
+    <p:SourceId value="19"/>
+    <p:TargetId value="4"/>
+    <p:Index value="1"/>
+   </BTLink>
+   <BTLink name="BTLink26">
+    <d:Source value="Selector.Output"/>
+    <d:Target value="Idle2.Input"/>
+    <p:SourceId value="2"/>
+    <p:TargetId value="26"/>
+    <p:Index value="4"/>
+   </BTLink>
+   <BTRandomSelector name="RandomSelector" pos="4.4 -5.96046e-008">
+    <p:Id value="28"/>
+    <p:NotTwiceInARow value="TRUE"/>
+   </BTRandomSelector>
+   <BTLink name="BTLink6">
+    <d:Source value="TimerGate.Output"/>
+    <d:Target value="RandomSelector.Input"/>
+    <p:SourceId value="9"/>
+    <p:TargetId value="28"/>
+    <p:Index value="0"/>
+   </BTLink>
+   <BTLink name="BTLink27">
+    <d:Source value="RandomSelector.Output"/>
+    <d:Target value="Sequence3.Input"/>
+    <p:SourceId value="28"/>
+    <p:TargetId value="8"/>
+    <p:Index value="0"/>
+    <p:Chance value="1"/>
+   </BTLink>
+   <BTSequence name="Sequence4" pos="6 -1.1">
+    <p:Id value="29"/>
+   </BTSequence>
+   <BTLink name="BTLink28">
+    <d:Source value="RandomSelector.Output"/>
+    <d:Target value="Sequence4.Input"/>
+    <p:SourceId value="28"/>
+    <p:TargetId value="29"/>
+    <p:Index value="1"/>
+    <p:Chance value="1"/>
+   </BTLink>
+   <BTActionMoveTo name="MoveTo2" pos="7.5 -0.4">
+    <p:Id value="30"/>
+    <p:ContinuousChecking value="TRUE"/>
+    <p:Lock value="FALSE"/>
+    <p:DontFail value="TRUE"/>
+    <p:Destination>
+     <p:Type value="Agent"/>
+     <p:Key value="Target"/>
+    </p:Destination>
+    <p:KeepUpdating value="TRUE"/>
+    <p:Speed>
+     <p:Type value="Blackboard"/>
+     <p:Key value="RunSpeed"/>
+    </p:Speed>
+    <p:UseCollPreventer value="TRUE"/>
+    <p:OnlyMoveForward value="FALSE"/>
+    <p:ForcedStartSpeed>
+     <p:Type value="Constant"/>
+     <p:Constant value="0"/>
+    </p:ForcedStartSpeed>
+   </BTActionMoveTo>
+   <BTLink name="BTLink29">
+    <d:Source value="Sequence4.Output"/>
+    <d:Target value="MoveTo2.Input"/>
+    <p:SourceId value="29"/>
+    <p:TargetId value="30"/>
+    <p:Index value="0"/>
+   </BTLink>
+   <BTConditionBBFloat name="BBFloat2" pos="5.69 -1.5">
+    <p:Id value="31"/>
+    <p:A>
+     <p:Type value="DistanceToSelf"/>
+     <p:Eval value="Horizontal"/>
+     <p:From>
+      <p:Type value="Agent"/>
+      <p:Key value="Target"/>
+     </p:From>
+    </p:A>
+    <p:Compare value="More"/>
+    <p:B>
+     <p:Type value="Constant"/>
+     <p:Constant value="2"/>
+    </p:B>
+   </BTConditionBBFloat>
+   <BTLink name="BTLink30">
+    <d:Source value="BBFloat2.Output"/>
+    <d:Target value="MoveTo2.Conditions"/>
+    <p:SourceId value="31"/>
+    <p:TargetId value="30"/>
+    <p:Index value="0"/>
+   </BTLink>
+   <BTActionSetBBBool name="SetBBBool3" pos="7.5 -1.5">
+    <p:Id value="32"/>
+    <p:ContinuousChecking value="TRUE"/>
+    <p:Lock value="FALSE"/>
+    <p:DontSucceed value="FALSE"/>
+    <p:Key value="DieNow"/>
+    <p:Value>
+     <p:Type value="Constant"/>
+     <p:Constant value="TRUE"/>
+    </p:Value>
+   </BTActionSetBBBool>
+   <BTConditionBBBool name="BBBool4" pos="6.795 -1.6">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Id value="33"/>
+    <p:A>
+     <p:Type value="Blackboard"/>
+     <p:Key value="DieNow"/>
+    </p:A>
+    <p:Compare value="Equal"/>
+    <p:B>
+     <p:Type value="Constant"/>
+     <p:Constant value="FALSE"/>
+    </p:B>
+   </BTConditionBBBool>
+   <BTLink name="BTLink31">
+    <d:Source value="BBBool4.Output"/>
+    <d:Target value="SetBBBool3.Conditions"/>
+    <p:SourceId value="33"/>
+    <p:TargetId value="32"/>
+    <p:Index value="0"/>
+   </BTLink>
+   <BTLink name="BTLink32">
+    <d:Source value="Sequence4.Output"/>
+    <d:Target value="SetBBBool3.Input"/>
+    <p:SourceId value="29"/>
+    <p:TargetId value="32"/>
+    <p:Index value="1"/>
+   </BTLink>
+   <BTSelector name="Selector2" pos="0.8 -1.9">
+    <p:Id value="34"/>
+   </BTSelector>
+   <BTConditionBBIsSet name="BBIsSet4" pos="-0.125 -1.6">
+    <p:Notes>
+     <p:Notes>
+      <d:Value>
+       ""
+      </d:Value>
+     </p:Notes>
+    </p:Notes>
+    <p:Id value="35"/>
+    <p:Key value="Owner"/>
+   </BTConditionBBIsSet>
+   <BTLink name="BTLink33">
+    <d:Source value="BBIsSet4.Output"/>
+    <d:Target value="Selector2.Conditions"/>
+    <p:SourceId value="35"/>
+    <p:TargetId value="34"/>
+    <p:Index value="0"/>
+   </BTLink>
+   <BTLink name="BTLink18">
+    <d:Source value="Selector2.Output"/>
+    <d:Target value="SetTimer.Input"/>
+    <p:SourceId value="34"/>
+    <p:TargetId value="20"/>
+    <p:Index value="0"/>
+   </BTLink>
+   <BTConditionBBAgentIsAlive name="BBAgentIsAlive" pos="-0.4 -2">
+    <p:Id value="36"/>
+    <p:Key value="Owner"/>
+   </BTConditionBBAgentIsAlive>
+   <BTLink name="BTLink34">
+    <d:Source value="BBAgentIsAlive.Output"/>
+    <d:Target value="Selector2.Conditions"/>
+    <p:SourceId value="36"/>
+    <p:TargetId value="34"/>
+    <p:Index value="1"/>
+   </BTLink>
+   <BTLink name="BTLink35">
+    <d:Source value="Sequence2.Output"/>
+    <d:Target value="Selector2.Input"/>
+    <p:SourceId value="19"/>
+    <p:TargetId value="34"/>
+    <p:Index value="0"/>
+   </BTLink>
+  </BehaviorTree>
+ </Project>
+
+</d:SnipeFile>

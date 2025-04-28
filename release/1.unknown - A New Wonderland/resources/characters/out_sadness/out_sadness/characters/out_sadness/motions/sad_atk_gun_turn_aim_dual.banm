@@ -1,0 +1,35 @@
+Version = "1.0g"
+Parameters =
+{
+	FloatParameter "Turn" =
+	{
+	}
+	FloatParameter "Pitch" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Pitch"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/out_sadness/motions/sad_atk_gun_turn_aim_dual_down90.oct"
+				Phase = "Turn"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/out_sadness/motions/sad_atk_gun_turn_aim_dual.oct"
+				Phase = "Turn"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/out_sadness/motions/sad_atk_gun_turn_aim_dual_up90.oct"
+				Phase = "Turn"
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Turn" =
+	{
+	}
+}
+Tracks =
+{
+	GroupTrack "Group1" =
+	{
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/class_toon/motions/toon_mnt_mtrcyc_norm_cntr_pose.oct"
+			}
+			ReferencedTrack =
+			{
+				BlendMethod = 1
+				Filename = "characters/biped/motions/biped_mnt_mtrcyc_norm_land_add.oct"
+			}
+			ReferencedTrack =
+			{
+				BlendMethod = 1
+				Filename = "characters/class_toon/motions/toon_mnt_mtrcyc_norm_proc_cntr_lr_add.oct"
+				Phase = "Turn"
+			}
+		}
+	}
+}

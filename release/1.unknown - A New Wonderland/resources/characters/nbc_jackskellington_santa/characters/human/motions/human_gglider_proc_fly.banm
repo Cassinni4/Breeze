@@ -1,0 +1,92 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "LeanFB" =
+	{
+		DefaultPhase = 0.5
+	}
+	FloatParameter "Turn" =
+	{
+		DefaultPhase = 0.5
+	}
+}
+Tracks =
+{
+	GroupTrack "Group1" =
+	{
+		Tracks =
+		{
+			KeyBlendTrack "Drive" =
+			{
+				Value = "LeanFB"
+				Tracks =
+				{
+					GroupTrack "Group1" =
+					{
+						Tracks =
+						{
+							ReferencedTrack =
+							{
+								Filename = "characters/human/motions/human_gglider_proc_slow_pose.oct"
+								Phase = "Turn"
+							}
+							ReferencedTrack =
+							{
+								BlendMethod = 1
+								Filename = "characters/biped/motions/biped_gglider_proc_slow_lr_add.oct"
+								Phase = "Turn"
+							}
+						}
+					}
+					GroupTrack "Group2" =
+					{
+						Tracks =
+						{
+							ReferencedTrack =
+							{
+								Filename = "characters/human/motions/human_gglider_proc_cntr_pose.oct"
+								Phase = "Turn"
+							}
+							ReferencedTrack =
+							{
+								BlendMethod = 1
+								Filename = "characters/biped/motions/biped_gglider_proc_cntr_lr_add.oct"
+								Phase = "Turn"
+							}
+						}
+					}
+					GroupTrack "Group3" =
+					{
+						Tracks =
+						{
+							ReferencedTrack =
+							{
+								Filename = "characters/human/motions/human_gglider_proc_fast_pose.oct"
+								Phase = "Turn"
+							}
+							ReferencedTrack =
+							{
+								BlendMethod = 1
+								Filename = "characters/biped/motions/biped_gglider_proc_fast_lr_add.oct"
+								Phase = "Turn"
+							}
+						}
+					}
+				}
+			}
+			KeyBlendTrack "Key Blend" =
+			{
+				BlendMethod = 1
+				Value = "LeanFB"
+				Tracks =
+				{
+					ReferencedTrack =
+					{
+						Filename = "characters/biped/motions/biped_gglider_idle_add.oct"
+					}
+				}
+			}
+		}
+	}
+}

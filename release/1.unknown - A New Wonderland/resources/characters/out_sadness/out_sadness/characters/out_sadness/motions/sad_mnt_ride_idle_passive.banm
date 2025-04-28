@@ -1,0 +1,21 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	GroupTrack "Group1" =
+	{
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/out_sadness/motions/sad_mnt_ride_cntr_pose.oct"
+			}
+			ReferencedTrack =
+			{
+				BlendMethod = 1
+				Weight = 0.45
+				Filename = "characters/class_toon/motions/toon_mnt_ride_idle_passive_add.oct"
+			}
+		}
+	}
+}

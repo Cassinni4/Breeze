@@ -1,0 +1,167 @@
+<d:SnipeFile type="AnimTree" fileVersion="7" productVersion="2.0.28 x64" branch="in3" xmlns:d="Data" xmlns:l="Lists" xmlns:p="Properties" format="http://slcwiki/display/oct/Snipe+XML+File+Schema">
+
+ <AnimTree name="%FILENAME%" motionIndex="11">
+  <p:Interface value="Hood"/>
+  <p:StartState value="KillInterface"/>
+  <AnimTreeState name="CloseHood" pos="1.4 -5.96046e-008">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      "Adjusted speed to -100% to play in reverse."
+      "Set interp at 20 to slow anim down for cannon to retract."
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Clip value="HOOD_OPEN"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:CropStart value="0"/>
+   <p:CropEnd value="10"/>
+   <p:InitialTime value="10"/>
+   <p:Speed value="-1"/>
+   <p:PostBehavior value="Stop"/>
+   <p:EaseDuration value="0"/>
+   <p:EventsFired>
+    <p:Event class="AnimTreeStateEventProperty" value="HoodClosed"/>
+   </p:EventsFired>
+   <AnimTreeBranch name="Branch1">
+    <p:BranchTo value="KillInterface"/>
+    <p:DefaultBranch value="TRUE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeState>
+  <AnimTreeBranch name="Branch1">
+   <p:BranchTo value="CloseHood"/>
+   <p:CropStart value="0"/>
+   <p:CropEnd value="77"/>
+   <p:Speed value="-1"/>
+   <p:EaseDuration value="30"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="HoodClose"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch2">
+   <p:BranchTo value="OpenHood"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="HoodOpen"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeState name="KillInterface" pos="0 2">
+   <p:Color value="0 0 0"/>
+  </AnimTreeState>
+  <AnimTreeState name="ROOF_OPEN" pos="-1.4 3.2">
+   <p:Clip value="ROOF_OPEN"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:CropEnd value="30"/>
+   <p:InitialTime value="0"/>
+   <AnimTreeBranch name="Branch1">
+    <p:BranchTo value="ROOF_CLOSE"/>
+    <p:DefaultBranch value="TRUE"/>
+   </AnimTreeBranch>
+  </AnimTreeState>
+  <AnimTreeBranch name="Branch3">
+   <p:BranchTo value="ROOF_OPEN"/>
+   <p:CropStart value="0"/>
+   <p:CropEnd value="30"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="ROOF_OPEN"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeState name="ROOF_CLOSE" pos="1.4 3.2">
+   <p:Clip value="ROOF_OPEN"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:CropEnd value="6"/>
+   <p:InitialTime value="6"/>
+   <p:Speed value="-1"/>
+   <AnimTreeBranch name="Branch1">
+    <p:BranchTo value="KillInterface"/>
+    <p:DefaultBranch value="TRUE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeState>
+  <AnimTreeState name="OpenHood" pos="-1.4 5.96046e-008">
+   <p:Notes>
+    <p:Notes>
+     <d:Value>
+      "Added 8 interp to slow it down"
+     </d:Value>
+    </p:Notes>
+   </p:Notes>
+   <p:Clip value="HOOD_OPEN"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:PostBehavior value="Pause"/>
+   <p:EaseDuration value="0"/>
+  </AnimTreeState>
+  <AnimTreeBranch name="Branch4">
+   <p:BranchTo value="OpenAndCloseHood"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="HoodOpenAndClose"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeState name="OpenAndCloseHood" pos="1.2 -2">
+   <p:Clip value="HOOD_OPEN"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:CropEnd value="200"/>
+   <AnimTreeBranch name="Branch1">
+    <p:BranchTo value="CloseHood"/>
+    <p:DefaultBranch value="TRUE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeState>
+  <AnimTreeState name="Hatch_Open" pos="-5 1.6">
+   <p:Color value="0.788462 0.502381 0.303255"/>
+   <p:Clip value="HATCH_OPEN"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:PostBehavior value="Pause"/>
+  </AnimTreeState>
+  <AnimTreeState name="Hatch_Close" pos="-5 0.2">
+   <p:Color value="0.79 0.5 0.3"/>
+   <p:Clip value="HATCH_CLOSE"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:PostBehavior value="Pause"/>
+   <AnimTreeBranch name="Branch1">
+    <p:BranchTo value="KillInterface"/>
+    <p:DefaultBranch value="TRUE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeState>
+  <AnimTreeBranch name="Branch5">
+   <p:BranchTo value="Hatch_Open"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="DRIVE"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeBranch name="Branch6">
+   <p:BranchTo value="Hatch_Close"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="DISMOUNT"/>
+   </p:Events>
+  </AnimTreeBranch>
+  <AnimTreeState name="SpeederBike_Flaps" pos="5 1.6">
+   <p:Clip value="SPDRBK_FLAPS_OPENCLOSE"/>
+   <p:ClipTimeSource value=".Global.Time"/>
+   <p:PostBehavior value="Loop"/>
+   <AnimTreeBranch name="Branch1">
+    <p:BranchTo value="KillInterface"/>
+    <p:DefaultBranch value="TRUE"/>
+    <p:Events>
+     <p:Event class="AnimTreeEventPointerProperty"/>
+    </p:Events>
+   </AnimTreeBranch>
+  </AnimTreeState>
+  <AnimTreeBranch name="Branch7">
+   <p:BranchTo value="SpeederBike_Flaps"/>
+   <p:Events>
+    <p:Event class="AnimTreeEventPointerProperty" value="SpeederBike_Flaps"/>
+   </p:Events>
+  </AnimTreeBranch>
+ </AnimTree>
+
+</d:SnipeFile>

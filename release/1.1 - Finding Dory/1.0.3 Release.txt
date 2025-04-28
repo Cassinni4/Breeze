@@ -1,0 +1,21 @@
+--**********************************************************************************************************************************************************************************************************--
+--                                                                                                                                                                                                          --
+-- Breeze Release 1.0.3                                                                                                                                                                                     --
+-- Build by Cassinni4                                                                                                                                                                                       -- -- --
+-- Special thanks to: Bread, LiontHD, Jumanji Alan, JohnLogostini, BeyondCarL, satoru-kun, JiroTheOne, Dasorik, mrc, C.M.M., TheSithEternal, Chronis, and maximilian for help and support on this massive project!   --
+--                                                                                                                                                                                                          -- -- --
+--**********************************************************************************************************************************************************************************************************--
+
+Changelog:
+
+-Premium Hulk attack trails (only partial).
+-Reworked Dr. Strange's ground combo.
+-Fixed Spider-Gwen's original .BENT (CURTOSY OF CHRONIS! THANK YOU!).
+-Premium Lightning McQueen UI revamp. (CURTOSY OF CHRONIS! THANK YOU!)
+-Premium Jack Skellington's Christmas lights in the pull finally show, but scuffed.
+-Premium Buzz Lightyear's finisher shows, but very buggy and does no damage.
+-MAUI REVAMP!
+-Moana loading screens on dev worlds (CURTOSY OF CHRONIS! THANK YOU!)
+
+Much love <3
+Cassinni4

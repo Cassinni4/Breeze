@@ -1,0 +1,31 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Crouch" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Crouch"
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/emp_hansolo/motions/hansolo_sneak_pose.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/emp_hansolo/motions/hansolo_bm_crouchpose.oct"
+			}
+		}
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Filename = "characters/emp_hansolo/motions/hansolo_bm_idle_passive_add.oct"
+	}
+}

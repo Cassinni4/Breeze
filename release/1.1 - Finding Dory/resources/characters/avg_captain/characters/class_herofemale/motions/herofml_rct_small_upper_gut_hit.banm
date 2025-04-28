@@ -1,0 +1,38 @@
+Version = "1.0g"
+DependsOnTime = 1
+Parameters =
+{
+	FloatParameter "Velocity" =
+	{
+	}
+}
+Tracks =
+{
+	KeyBlendTrack "Key Blend" =
+	{
+		Value = "Velocity"
+		Keys =
+		[
+			0.0 0.3 0.3 1.0
+		]
+		Tracks =
+		{
+			ReferencedTrack =
+			{
+				Filename = "characters/class_herofemale/motions/herofml_rct_small_upper_gut_hitsm.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/class_herofemale/motions/herofml_rct_small_upper_gut_hitsm.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/class_herofemale/motions/herofml_rct_small_upper_gut_hit.oct"
+			}
+			ReferencedTrack =
+			{
+				Filename = "characters/class_herofemale/motions/herofml_rct_small_upper_gut_hit.oct"
+			}
+		}
+	}
+}

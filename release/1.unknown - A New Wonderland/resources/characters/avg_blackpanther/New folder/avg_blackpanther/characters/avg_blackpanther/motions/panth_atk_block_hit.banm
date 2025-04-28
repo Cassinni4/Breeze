@@ -1,0 +1,14 @@
+Version = "1.0g"
+DependsOnTime = 1
+Tracks =
+{
+	ReferencedTrack =
+	{
+		Filename = "characters/avg_blackpanther/motions/panth_atk_block_pose.oct"
+	}
+	ReferencedTrack =
+	{
+		BlendMethod = 1
+		Filename = "characters/avg_captainamerica/motions/cap_atk_block_hit_add.oct"
+	}
+}
