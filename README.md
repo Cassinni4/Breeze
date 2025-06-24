@@ -70,3 +70,73 @@ List of current content in the mod:
 - Developer Maps
 - Add More Sparks
 - Text Creator
+- Hall of Heroes Update
+
+# Toys:
+
+- Asgard Crate
+- Lunar Outpost Freeze Crate
+- Lunar Outpost Freeze Barrel
+- Lunar Outpost Exploding Barrel
+- Canister
+- Knowhere Crate
+- Explosive barrel
+- Vibranium Crate
+- Pipe Rack
+- Button Casing
+- Tanker Train Car
+- Subway Car
+- Asgard Gate
+- Knowhere Portal
+- Enhancement Station
+- Ultron Core
+- Lunar Outpost Rocket Engine
+- Lunar Outpost Gantry Claw
+- Wakanda Mining Drone
+- Electrified Floor
+- Wooden Crate A
+- Wooden Crate B
+- Small Lunar Outpost Crate
+- Large Lunar Outpost Crate
+- Lunar Outpost Barrel
+- Vibranium Barrel
+- Ultron Arm
+- Asgard Urn
+- Left Asgard Arch
+- Right Asgard Arch
+- Bulldozer
+- Train Container Car A
+- Train Container Car B
+- Train Container Car C
+- Train Flatbed Car
+- Cliff A
+- Cliff B
+- Cliff C
+- Cliff D
+- Cliff E
+- Wakandan Rock
+- Asgard Ice Chunk
+- Asgard Icy Rock
+- Trainyard Train Track
+- Train Stopper
+- Trainyard Billboard
+- Straight Asgard Wall
+- Curved Asgard Wall
+- S.H.I.E.L.D. Screen
+- Spotted Eagle Ray Vehicle
+- Diver's Mask
+- Photo of Darla
+- Sunken Ship
+- Buried Treasure
+- Dory Costume
+- Nemo Costume
+- Dory Portrait
+- Nemo Portrait
+- Alice Portrait
+- Mad Hatter Portrait
+- Time Portrait
+- Baloo Portrait
+- Ant-Man Portrait
+- Black Panther Portrait
+- Captain America - The First Avenger Portrait
+- Vision Portrait 
