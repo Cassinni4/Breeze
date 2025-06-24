@@ -60,6 +60,10 @@ List of current content in the mod:
 - Light Cycle
 - Darkhawk Blast
 - Cosmic Cube Blast
+- Mickey's Sorcerer Hat
+- Merlin's Summon
+- Chernabog's Power
+- Electro-Charge
 
 # Miscellaneous:
 
